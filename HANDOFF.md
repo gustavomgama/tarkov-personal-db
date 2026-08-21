@@ -4,23 +4,39 @@
 
 Fresh Rails 8.1 / Ruby 4.0 app, SQLite, local-only reference DB. No frontend yet (explicitly deferred).
 
+**Source-of-truth policy: the Fandom EFT wiki is authoritative for display names.**
+json.tarkov.dev remains the structural data source (ids, objectives, barters, hideout levels).
+
+### Name resolution (FandomNameSyncer, runs LAST in tarkov:sync)
+
+- `app/services/tarkov/fandom/client.rb` — MediaWiki API wrapper (batched 50/query,
+  normalization + redirect resolution via maps, category members w/ cmcontinue pagination).
+- items (4986/5312) + tasks (511/517): resolve canonical title from `wiki_link` slug
+  (batched pages query). Unmatched keep tarkov.dev placeholder names.
+- traders (11/16): matched from `Category:Traders` members via `normalized_name`.
+  The 5 unmatched are API-only event traders not on the wiki.
+- stations (26/26): wiki has NO per-station pages (all redirect to Hideout article) —
+  names come from curated map in `config/hideout_station_names.yml`
+  (`HideoutStation::DISPLAY_NAMES`); unknown keys fall back to raw normalized name.
+- NOTE: base syncers overwrite names with API values each run; fandom step must run after
+  (orchestrator order handles this; standalone subtasks like `tarkov:sync:items` restore
+  placeholders until `tarkov:sync:fandom_names` is re-run).
+- Empty-string wikiLinks (167 items) handled gracefully.
+
 ### Built & Verified
 
-- **Schema** (`db/migrate/`): 9 tables keyed by remote `tid` string with unique indexes:
-  `items`, `traders`, `tasks`, `trader_items` (trader↔item join), `task_objectives` (task↔item join),
-  `hideout_stations`, `hideout_levels`, `hideout_item_requirements`, `hideout_requirements`
-  (type: station|trader|skill). Note: `items.types` is JSON-serialized text (SQLite has no array cols).
-- **Models** (`app/models/`): full associations + validations.
-- **Sync pipeline**:
-  - `app/services/tarkov/client.rb` — Faraday GET wrapper for json.tarkov.dev
-    (endpoints: items/tasks/traders/barters/hideout; gameMode + lang injectable).
-  - `app/services/tarkov/syncers/{item,trader,task,trader_item,hideout}_syncer.rb` — upsert by tid.
-  - `app/services/tarkov/syncer.rb` — orchestrator (items → traders → tasks → barters → hideout).
-  - `lib/tasks/tarkov.rake` — `rake tarkov:sync[<entity>]`, env: `GAME_MODE=regular|pve`, `TARKOV_LANG=en`.
-- **Tests**: `bin/rails test` — 20 runs, 78 assertions, green. Fake client + fixtures in `test/support/`.
-- **Lint**: `bin/rubocop` clean.
-- **Live sync verified** into dev DB: items 5312, traders 16, tasks 517, barters 789→770 trader_items,
-  hideout stations 26.
+- **Schema**: 9 tables keyed by remote `tid` + `traders.normalized_name`,
+  `hideout_stations.normalized_name`, `tasks.wiki_link` (items already had it),
+  `items.types` JSON-serialized text (SQLite has no array cols).
+- **Models** with associations/validations.
+- **Sync pipeline**: Tarkov::Client (json.tarkov.dev) + Fandom::Client (wiki) +
+  per-entity Syncers + FandomNameSyncer + orchestrator (`Tarkov::Syncer`) +
+  rake: `tarkov:sync[items|traders|tasks|barters|hideout|fandom_names]`,
+  env GAME_MODE=regular|pve, TARKOV_LANG=en.
+- **Tests**: 24 runs, 94 assertions, green. Fakes: FakeTarkovClient, FakeFandomClient
+  (test/support/). Faraday test adapter used for both clients (path `/api.php` for fandom).
+- **Lint**: rubocop clean.
+- **Live verified**: M80 → "7.62x51mm M80"; tasks → real quest names; traders/stations named.
 
 ### API shapes learned (json.tarkov.dev, gameMode=regular)
 
@@ -37,9 +53,12 @@ Fresh Rails 8.1 / Ruby 4.0 app, SQLite, local-only reference DB. No frontend yet
 
 1. **Stale db/schema.rb shadows migrations on empty DBs** (Rails 8.1 silently loads schema instead of
    running migrations). If schema looks wrong after rebuild: delete `db/schema.rb`, then drop/create/migrate.
-2. **Upstream placeholder names**: JSON API returns `"<tid> Name"` / `"<tid> Nickname"` for all name fields
-   regardless of lang; GraphQL API was down when checked. Re-sync will pick real names once fixed upstream.
+2. **Upstream placeholder names**: json.tarkov.dev returns `"<tid> Name"` style placeholders for all name
+   fields regardless of lang; FandomNameSyncer fixes display names (see above).
 3. Barter `offeredItem.item` holds the item tid (not `.id`).
+4. Hideout station `name` from API is a localization key (`hideout_area_13_name`), not a placeholder —
+   curated YAML map is the only sane source for those.
+5. Fandom wiki redirects station-like titles to the "Hideout" article with `tofragment: Modules`.
 
 ## PENDING PIVOT (user requested, not started)
 

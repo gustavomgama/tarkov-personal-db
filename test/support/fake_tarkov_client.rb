@@ -51,6 +51,7 @@ module TarkovTestFixtures
       "trader-1" => {
         "id" => "trader-1",
         "name" => "Prapor",
+        "normalizedName" => "prapor",
         "description" => "Trader description",
         "currency" => "RUB",
         "resetTime" => "2026-08-21T08:40:23.000Z"
@@ -107,6 +108,7 @@ module TarkovTestFixtures
       "station-1" => {
         "id" => "station-1",
         "name" => "Generator",
+        "normalizedName" => "generator",
         "levels" => [
           {
             "level" => 1,
@@ -130,6 +132,7 @@ module TarkovTestFixtures
       "station-2" => {
         "id" => "station-2",
         "name" => "Water Collector",
+        "normalizedName" => "water-collector",
         "levels" => []
       }
     }

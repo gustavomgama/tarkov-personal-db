@@ -12,7 +12,7 @@ module Tarkov
 
       def upsert_all_stations(stations)
         stations.each_value do |attrs|
-          upsert!(find_station(attrs), { name: attrs["name"] })
+          upsert!(find_station(attrs), { name: attrs["name"], normalized_name: attrs["normalizedName"] })
         end
       end
 

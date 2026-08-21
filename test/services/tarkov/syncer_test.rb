@@ -12,7 +12,7 @@ module Tarkov
       )
       Item.create!(tid: "item-2", name: "Dollars")
 
-      results = Syncer.new(client: client, logger: Logger.new(nil)).call
+      results = Syncer.new(client: client, logger: Logger.new(nil), fandom_client: FakeFandomClient.new).call
 
       assert_equal %w[items traders tasks barters hideout], client.requested.uniq
       assert_equal 1, results[:items]
@@ -20,6 +20,7 @@ module Tarkov
       assert_equal 2, results[:tasks]
       assert_equal 1, results[:barters]
       assert_equal 2, results[:hideout]
+      assert_kind_of Hash, results[:fandom_names]
     end
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_171723) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_190500) do
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -47,8 +47,10 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_171723) do
   create_table "hideout_stations", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "name", null: false
+    t.string "normalized_name"
     t.string "tid", null: false
     t.datetime "updated_at", null: false
+    t.index ["normalized_name"], name: "index_hideout_stations_on_normalized_name"
     t.index ["tid"], name: "index_hideout_stations_on_tid", unique: true
   end
 
@@ -90,6 +92,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_171723) do
     t.string "tid", null: false
     t.integer "trader_id"
     t.datetime "updated_at", null: false
+    t.string "wiki_link"
     t.index ["tid"], name: "index_tasks_on_tid", unique: true
     t.index ["trader_id"], name: "index_tasks_on_trader_id"
   end
@@ -113,9 +116,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_171723) do
     t.string "currency", default: "RUB", null: false
     t.text "description"
     t.string "name", null: false
+    t.string "normalized_name"
     t.datetime "reset_time"
     t.string "tid", null: false
     t.datetime "updated_at", null: false
+    t.index ["normalized_name"], name: "index_traders_on_normalized_name"
     t.index ["tid"], name: "index_traders_on_tid", unique: true
   end
 

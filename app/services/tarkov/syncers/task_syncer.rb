@@ -28,7 +28,8 @@ module Tarkov
           name: attrs["name"],
           trader: attrs["trader"].present? ? Trader.find_by(tid: attrs["trader"]) : nil,
           min_player_level: attrs["minPlayerLevel"],
-          kappa_required: attrs["kappaRequired"] || false
+          kappa_required: attrs["kappaRequired"] || false,
+          wiki_link: attrs["wikiLink"]
         }
       end
 

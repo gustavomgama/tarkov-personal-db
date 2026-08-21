@@ -4,10 +4,11 @@ namespace :tarkov do
     "traders" => "Tarkov::Syncers::TraderSyncer",
     "tasks" => "Tarkov::Syncers::TaskSyncer",
     "barters" => "Tarkov::Syncers::TraderItemSyncer",
-    "hideout" => "Tarkov::Syncers::HideoutSyncer"
+    "hideout" => "Tarkov::Syncers::HideoutSyncer",
+    "fandom_names" => "Tarkov::Syncers::FandomNameSyncer"
   }.freeze
 
-  desc "Sync all reference data from json.tarkov.dev (GAME_MODE=regular|pve, TARKOV_LANG=en)"
+  desc "Sync all reference data from json.tarkov.dev + Fandom wiki names (GAME_MODE=regular|pve, TARKOV_LANG=en)"
   task sync: :environment do
     results = syncer.call
     results.each { |entity, count| puts "#{entity}: #{count} records" }
@@ -15,7 +16,7 @@ namespace :tarkov do
 
   namespace :sync do
     SYNCERS.each_key do |entity|
-      desc "Sync #{entity} from json.tarkov.dev (GAME_MODE=regular|pve, TARKOV_LANG=en)"
+      desc "Sync #{entity} (Fandom wiki is authoritative for names; run after entity syncs to restore names)"
       task entity.to_sym => :environment do
         count = SYNCERS.fetch(entity).constantize.new(client: client).call
         puts "#{entity}: #{count} records"
