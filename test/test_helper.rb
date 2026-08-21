@@ -2,8 +2,12 @@ ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
+Dir[Rails.root.join("test/support/**/*.rb")].sort.each { |file| require file }
+
 module ActiveSupport
   class TestCase
+    include TarkovTestFixtures
+
     # Run tests in parallel with specified workers
     parallelize(workers: :number_of_processors)
 
