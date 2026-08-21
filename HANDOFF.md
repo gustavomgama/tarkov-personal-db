@@ -4,8 +4,21 @@
 
 Fresh Rails 8.1 / Ruby 4.0 app, SQLite, local-only reference DB. No frontend yet (explicitly deferred).
 
-**Source-of-truth policy: the Fandom EFT wiki is authoritative for display names.**
-json.tarkov.dev remains the structural data source (ids, objectives, barters, hideout levels).
+**Source-of-truth policy: the Fandom EFT wiki is authoritative for everything it exposes.**
+json.tarkov.dev is secondary/structural only where the wiki has no machine-readable data
+(objective counts, barter recipes, hideout costs/levels, min player levels).
+
+### Wiki enrichment (FandomEnrichmentSyncer, runs after FandomNameSyncer)
+
+- `Tarkov::Fandom::WikitextParser` — parses first Infobox template params (brace/link-depth aware,
+  pipes inside [[a|b]] handled) + lead paragraph as description (resolves {{PAGENAME}}, strips markup).
+- `Tarkov::Fandom::Client#raw_wikitext(titles)` — batched full wikitext via
+  `prop=revisions&rvslots=main` (50/batch), input-title-keyed, redirects/normalization resolved.
+- items (+4986): `description` = wiki lead sentence; `unlock_text` = infobox `trader` param when it
+  mentions a task (e.g. M80 → "Peacekeeper LL4, after completing his task The Cleaner"). 263 items
+  currently carry unlock text.
+- tasks (+510): `description`; `previous_task_title` from infobox `previous` (quest chain link).
+- Quest infobox also has `given by`, `leads to`, `reqkappa` — available for future structured parsing.
 
 ### Name resolution (FandomNameSyncer, runs LAST in tarkov:sync)
 
@@ -22,6 +35,16 @@ json.tarkov.dev remains the structural data source (ids, objectives, barters, hi
   (orchestrator order handles this; standalone subtasks like `tarkov:sync:items` restore
   placeholders until `tarkov:sync:fandom_names` is re-run).
 - Empty-string wikiLinks (167 items) handled gracefully.
+
+### Version gate (tarkov:sync only triggers on game version change)
+
+- `Tarkov::Fandom::Client#latest_game_version` parses `Template:Gameversion`
+  (wikitext `[[Changelog|<version>]]`) on the wiki — one tiny request.
+- `SyncState` table stores each synced version + timestamp.
+- `rake tarkov:sync` aborts if the live version can't be fetched (FORCE=1 does NOT bypass that);
+  skips if unchanged ("already synced"); runs + records when changed.
+- Per-entity subtasks (`tarkov:sync:<entity>`) are manual repair tools and are NOT gated.
+- Current version as of 2026-08-21: **1.1.0.1.46911**.
 
 ### Built & Verified
 

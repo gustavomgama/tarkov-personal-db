@@ -5,13 +5,26 @@ namespace :tarkov do
     "tasks" => "Tarkov::Syncers::TaskSyncer",
     "barters" => "Tarkov::Syncers::TraderItemSyncer",
     "hideout" => "Tarkov::Syncers::HideoutSyncer",
-    "fandom_names" => "Tarkov::Syncers::FandomNameSyncer"
+    "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
+    "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer"
   }.freeze
 
-  desc "Sync all reference data from json.tarkov.dev + Fandom wiki names (GAME_MODE=regular|pve, TARKOV_LANG=en)"
+  desc "Sync all reference data (skips unless the wiki Changelog shows a new game version; FORCE=1 overrides)"
   task sync: :environment do
-    results = syncer.call
-    results.each { |entity, count| puts "#{entity}: #{count} records" }
+    live_version = fandom_client.latest_game_version
+    last_version = SyncState.last_synced_version
+
+    if last_version == live_version && ENV["FORCE"].blank?
+      puts "Game version #{live_version} already synced - skipping (FORCE=1 to override)"
+      next
+    end
+
+    puts "Syncing game version #{live_version}#{last_version ? " (was #{last_version})" : ""}..."
+    syncer.call
+    SyncState.record_sync!(live_version)
+    puts "Done: synced up to game version #{live_version}"
+  rescue Tarkov::Fandom::Client::Error => e
+    abort "Cannot verify current game version, refusing to sync: #{e.message} (FORCE=1 does not bypass this)"
   end
 
   namespace :sync do
@@ -26,6 +39,10 @@ namespace :tarkov do
 
   def client
     Tarkov::Client.new(game_mode: ENV.fetch("GAME_MODE", "regular"), lang: ENV.fetch("TARKOV_LANG", "en"))
+  end
+
+  def fandom_client
+    @fandom_client ||= Tarkov::Fandom::Client.new
   end
 
   def syncer

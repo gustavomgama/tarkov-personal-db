@@ -6,8 +6,14 @@ module Tarkov
       tasks: "Tarkov::Syncers::TaskSyncer",
       barters: "Tarkov::Syncers::TraderItemSyncer",
       hideout: "Tarkov::Syncers::HideoutSyncer",
-      fandom_names: "Tarkov::Syncers::FandomNameSyncer"
+      fandom_names: "Tarkov::Syncers::FandomNameSyncer",
+      fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer"
     }.freeze
+
+    FANDOM_STEPS = [
+      "Tarkov::Syncers::FandomNameSyncer",
+      "Tarkov::Syncers::FandomEnrichmentSyncer"
+    ].freeze
 
     def initialize(client: Tarkov::Client.new, logger: Rails.logger, fandom_client: nil)
       @client = client
@@ -34,7 +40,7 @@ module Tarkov
     end
 
     def step_uses_fandom?(klass)
-      klass == "Tarkov::Syncers::FandomNameSyncer"
+      FANDOM_STEPS.include?(klass)
     end
 
     def log(message)

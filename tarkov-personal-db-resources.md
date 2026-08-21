@@ -1,5 +1,11 @@
 # Tarkov Personal Database — Resource Document
 
+> **Source priority (updated 2026-08-21):** the **Fandom EFT wiki is the absolute source of truth**
+> for everything it exposes (names, descriptions, item infoboxes incl. trader/unlock info + node ids,
+> quest infoboxes incl. previous/given-by). json.tarkov.dev is **secondary**, used only where the wiki
+> has no machine-readable data (objective counts, barter recipes, hideout costs/levels, min levels).
+> See `HANDOFF.md` for implementation details.
+
 Scope: local, single-user reference database. Items, tasks, traders, trader items, task items, hideout, hideout items, hideout requirements. No flea market, no price data, no analytics, no exposed API.
 
 ## 1. Data Source

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_190500) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -65,11 +65,19 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_190500) do
     t.string "short_name"
     t.string "tid", null: false
     t.text "types", default: "[]"
+    t.string "unlock_text"
     t.datetime "updated_at", null: false
     t.decimal "weight", precision: 8, scale: 3
     t.integer "width"
     t.string "wiki_link"
     t.index ["tid"], name: "index_items_on_tid", unique: true
+  end
+
+  create_table "sync_states", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "synced_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "version", null: false
   end
 
   create_table "task_objectives", force: :cascade do |t|
@@ -86,9 +94,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_190500) do
 
   create_table "tasks", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.text "description"
     t.boolean "kappa_required", default: false
     t.integer "min_player_level"
     t.string "name", null: false
+    t.string "previous_task_title"
     t.string "tid", null: false
     t.integer "trader_id"
     t.datetime "updated_at", null: false

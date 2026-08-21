@@ -70,6 +70,34 @@ module Tarkov
         assert_equal %w[Prapor Skier], client.category_members("Category:Traders")
       end
 
+      test "parses latest game version from the Gameversion template" do
+        client = client_with_stubs do |stub|
+          stub.get(API_PATH) do |env|
+            assert_equal "Template:Gameversion", env.params["titles"]
+            [ 200, json_headers, {
+              "query" => {
+                "pages" => [
+                  { "pageid" => 1, "title" => "Template:Gameversion",
+                    "revisions" => [ { "slots" => { "main" => { "content" => "[[Changelog|1.1.0.1.46911]]" } } } ] }
+                ]
+              }
+            }.to_json ]
+          end
+        end
+
+        assert_equal "1.1.0.1.46911", client.latest_game_version
+      end
+
+      test "raises when game version cannot be parsed" do
+        client = client_with_stubs do |stub|
+          stub.get(API_PATH) do
+            [ 200, json_headers, { "query" => { "pages" => [] } }.to_json ]
+          end
+        end
+
+        assert_raises(Client::Error) { client.latest_game_version }
+      end
+
       private
 
       def json_headers
