@@ -12,7 +12,7 @@ module Tarkov
       end
     end
 
-    %w[items tasks traders barters hideout].each do |endpoint|
+    %w[items tasks traders barters hideout crafts].each do |endpoint|
       define_method(endpoint) do
         fetch(endpoint)
       end

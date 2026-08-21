@@ -62,6 +62,15 @@ json.tarkov.dev is secondary/structural only where the wiki has no machine-reada
 - tasks.lightkeeper_required + tasks.faction_name synced.
 - Backfill excludes quest items (no wiki infobox to match); they stay nameless by design.
 
+### Crafts & cross-checks (backlog cleared)
+
+- `hideout_crafts` + `craft_items` (kind required/reward) synced from /regular/crafts
+  (`HideoutCraftSyncer`; stale-craft cleanup).
+- `trader_items.unlock_task_id` populated from barter `taskUnlock`.
+- `rake tarkov:crosscheck` compares wiki unlock claims vs dev taskUnlock per item:
+  live result 5 checked, 2 agree, 3 disagree (same quest-line variants / unsynced-task
+  placeholders), 111 wiki-only claims.
+
 ### Query & consistency (Phase C complete)
 
 - `Tarkov::TaskChainView` — requires (up, incl. wiki fallback) + leads_to (down) walks.

@@ -10,7 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_202000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
+  create_table "craft_items", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", null: false
+    t.integer "hideout_craft_id", null: false
+    t.integer "item_id", null: false
+    t.string "kind", null: false
+    t.datetime "updated_at", null: false
+    t.index ["hideout_craft_id", "item_id", "kind"], name: "index_craft_items_uniqueness", unique: true
+    t.index ["hideout_craft_id"], name: "index_craft_items_on_hideout_craft_id"
+    t.index ["item_id"], name: "index_craft_items_on_item_id"
+  end
+
+  create_table "hideout_crafts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "duration"
+    t.integer "hideout_station_id", null: false
+    t.integer "level"
+    t.string "tid", null: false
+    t.datetime "updated_at", null: false
+    t.index ["hideout_station_id"], name: "index_hideout_crafts_on_hideout_station_id"
+    t.index ["tid"], name: "index_hideout_crafts_on_tid", unique: true
+  end
+
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -140,10 +163,12 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_202000) do
     t.integer "min_trader_level"
     t.decimal "price", precision: 10, scale: 2
     t.integer "trader_id", null: false
+    t.integer "unlock_task_id"
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_trader_items_on_item_id"
     t.index ["trader_id", "item_id"], name: "index_trader_items_on_trader_id_and_item_id", unique: true
     t.index ["trader_id"], name: "index_trader_items_on_trader_id"
+    t.index ["unlock_task_id"], name: "index_trader_items_on_unlock_task_id"
   end
 
   create_table "trader_loyalty_levels", force: :cascade do |t|
@@ -170,6 +195,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_202000) do
     t.index ["tid"], name: "index_traders_on_tid", unique: true
   end
 
+  add_foreign_key "craft_items", "hideout_crafts"
+  add_foreign_key "craft_items", "items"
+  add_foreign_key "hideout_crafts", "hideout_stations"
   add_foreign_key "hideout_item_requirements", "hideout_levels"
   add_foreign_key "hideout_item_requirements", "items"
   add_foreign_key "hideout_levels", "hideout_stations"
@@ -181,6 +209,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_202000) do
   add_foreign_key "task_requirements", "tasks", column: "required_task_id"
   add_foreign_key "tasks", "traders"
   add_foreign_key "trader_items", "items"
+  add_foreign_key "trader_items", "tasks", column: "unlock_task_id"
   add_foreign_key "trader_items", "traders"
   add_foreign_key "trader_loyalty_levels", "traders"
 end

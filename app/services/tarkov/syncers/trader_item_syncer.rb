@@ -16,6 +16,7 @@ module Tarkov
 
         upsert!(find_trader_item(trader, item), {
           min_trader_level: barter["minTraderLevel"] || barter["level"],
+          unlock_task_id: Task.find_by(tid: barter["taskUnlock"])&.id,
           barter: true
         })
         true

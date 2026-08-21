@@ -1,5 +1,5 @@
 class FakeTarkovClient
-  ENDPOINTS = %w[items tasks traders barters hideout].freeze
+  ENDPOINTS = %w[items tasks traders barters hideout crafts].freeze
 
   attr_reader :requested
 
@@ -7,8 +7,12 @@ class FakeTarkovClient
                  tasks: { "tasks" => {} },
                  traders: {},
                  barters: [],
-                 hideout: {})
-    @payloads = { "items" => items, "tasks" => tasks, "traders" => traders, "barters" => barters, "hideout" => hideout }
+                 hideout: {},
+                 crafts: [])
+    @payloads = {
+      "items" => items, "tasks" => tasks, "traders" => traders,
+      "barters" => barters, "hideout" => hideout, "crafts" => crafts
+    }
     @requested = []
   end
 
@@ -115,9 +119,30 @@ module TarkovTestFixtures
         "offeredItem" => { "item" => "item-2", "count" => 1 }
       },
       {
+        "id" => "barter-unlock",
+        "trader" => "trader-1",
+        "minTraderLevel" => 4,
+        "taskUnlock" => "task-1",
+        "requiredItems" => [ { "item" => "item-1", "count" => 1 } ],
+        "offeredItem" => { "item" => "qitem-9", "count" => 1 }
+      },
+      {
         "id" => "barter-broken",
         "trader" => "trader-unknown",
         "offeredItem" => { "item" => "item-1", "count" => 1 }
+      }
+    ]
+  end
+
+  def crafts_payload
+    [
+      {
+        "id" => "craft-1",
+        "station" => "station-2",
+        "level" => 1,
+        "duration" => 3600,
+        "requiredItems" => [ { "item" => "item-1", "count" => 2 } ],
+        "productItem" => { "item" => "item-2", "count" => 1 }
       }
     ]
   end

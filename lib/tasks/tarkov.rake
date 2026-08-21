@@ -5,6 +5,7 @@ namespace :tarkov do
     "tasks" => "Tarkov::Syncers::TaskSyncer",
     "barters" => "Tarkov::Syncers::TraderItemSyncer",
     "hideout" => "Tarkov::Syncers::HideoutSyncer",
+    "crafts" => "Tarkov::Syncers::HideoutCraftSyncer",
     "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
     "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer",
     "item_backfill" => "Tarkov::Syncers::ItemBackfillSyncer"
@@ -75,6 +76,31 @@ namespace :tarkov do
     else
       puts "  Unlocking task not found locally: #{entry.unlock.unlocking_task_title}"
     end
+  end
+
+  desc "Cross-check wiki item unlocks against tarkov.dev barter taskUnlock"
+  task crosscheck: :environment do
+    checked = 0
+    agree = 0
+    disagree = []
+    only_wiki = 0
+    ItemUnlock.where.not(unlocking_task_title: [ nil, "" ]).includes(:item).find_each do |row|
+      task = Task.find_by_wiki_title(row.unlocking_task_title)
+      only_wiki += 1 and next unless task
+      offers = row.item.trader_items.where.not(unlock_task_id: nil)
+      next if offers.empty?
+
+      checked += 1
+      if offers.any? { |offer| offer.unlock_task_id == task.id }
+        agree += 1
+      else
+        disagree << { item: row.item.name, wiki_says: task.name,
+                      dev_says: Task.find_by(id: offers.first.unlock_task_id)&.name }
+      end
+    end
+    puts "checked: #{checked}, agree: #{agree}, wiki-only (no dev claim): #{only_wiki}"
+    puts "disagreements: #{disagree.size}"
+    disagree.first(10).each { |d| puts "  #{d[:item]}: wiki=#{d[:wiki_says]} | dev=#{d[:dev_says]}" }
   end
 
   desc "Data sanity checks: counts and dangling references"
