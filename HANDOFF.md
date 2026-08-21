@@ -55,6 +55,13 @@ json.tarkov.dev is secondary/structural only where the wiki has no machine-reada
   M80 → Peacekeeper LL4 / Ref LL3 ← The Cleaner ← The Guide ← Wet Job 6..1 (entry L8).
 - Known quirk: unlock text sometimes lists multiple traders ("Ref LL3; Peacekeeper LL4") — one row each.
 
+### Quest items & task flags (Phase B partial)
+
+- findQuestItem/plantQuestItem objectives: quest items stored as Item rows with
+  types ["questItem"], joined through normal task_objectives (103 live).
+- tasks.lightkeeper_required + tasks.faction_name synced.
+- Backfill excludes quest items (no wiki infobox to match); they stay nameless by design.
+
 ### Query & consistency (Phase C complete)
 
 - `Tarkov::TaskChainView` — requires (up, incl. wiki fallback) + leads_to (down) walks.

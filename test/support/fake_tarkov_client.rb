@@ -72,10 +72,13 @@ module TarkovTestFixtures
           "trader" => "trader-1",
           "minPlayerLevel" => 5,
           "kappaRequired" => true,
+          "lightkeeperRequired" => true,
+          "factionName" => "Any",
           "objectives" => [
             { "id" => "obj-1", "type" => "findItem", "items" => [ "item-1" ], "count" => 3, "foundInRaid" => true },
             { "id" => "obj-2", "type" => "visit", "count" => 1 },
-            { "id" => "obj-3", "type" => "buildWeapon", "item" => "item-missing", "count" => 1 }
+            { "id" => "obj-3", "type" => "buildWeapon", "item" => "item-missing", "count" => 1 },
+            { "id" => "obj-4", "type" => "findQuestItem", "questItem" => "qitem-9", "count" => 2 }
           ]
         },
         "task-2" => {
@@ -86,6 +89,17 @@ module TarkovTestFixtures
           "kappaRequired" => false,
           "taskRequirements" => [ { "task" => "task-1", "status" => [ "complete" ] } ],
           "objectives" => []
+        }
+      },
+      "questItems" => {
+        "qitem-9" => {
+          "id" => "qitem-9",
+          "name" => "Military Intel",
+          "shortName" => "Intel",
+          "description" => "Quest item",
+          "width" => 1,
+          "height" => 1,
+          "iconLink" => "https://assets.tarkov.dev/qitem-9-icon.webp"
         }
       }
     }

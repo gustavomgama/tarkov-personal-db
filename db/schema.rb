@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_201000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_202000) do
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -118,7 +118,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_201000) do
   create_table "tasks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.text "description"
+    t.string "faction_name"
     t.boolean "kappa_required", default: false
+    t.boolean "lightkeeper_required", default: false, null: false
     t.integer "min_player_level"
     t.string "name", null: false
     t.string "previous_task_title"

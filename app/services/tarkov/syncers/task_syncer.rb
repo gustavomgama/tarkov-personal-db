@@ -2,19 +2,22 @@ module Tarkov
   module Syncers
     class TaskSyncer < Base
       ITEM_OBJECTIVE_TYPES = %w[findItem giveItem plantItem buildWeapon].freeze
+      QUEST_ITEM_OBJECTIVE_TYPES = %w[findQuestItem plantQuestItem handoverQuestItem].freeze
 
       def call
-        tasks = (client.tasks["tasks"] || {})
-        records = tasks.each_value.filter_map { |attrs| sync_task(attrs) }
+        payload = client.tasks
+        tasks = (payload["tasks"] || {})
+        quest_items = (payload["questItems"] || {})
+        records = tasks.each_value.filter_map { |attrs| sync_task(attrs, quest_items) }
         tasks.each_value { |attrs| sync_task_requirements(attrs) }
         records.size
       end
 
       private
 
-      def sync_task(attrs)
+      def sync_task(attrs, quest_items = {})
         task = upsert!(find_task(attrs), task_attributes(attrs))
-        sync_objectives(task, attrs["objectives"])
+        sync_objectives(task, attrs["objectives"], quest_items)
         task
       rescue ActiveRecord::RecordInvalid, KeyError => e
         warn "task #{attrs['id']} skipped: #{e.message}"
@@ -31,6 +34,8 @@ module Tarkov
           trader: attrs["trader"].present? ? Trader.find_by(tid: attrs["trader"]) : nil,
           min_player_level: attrs["minPlayerLevel"],
           kappa_required: attrs["kappaRequired"] || false,
+          lightkeeper_required: attrs["lightkeeperRequired"] || false,
+          faction_name: attrs["factionName"],
           wiki_link: attrs["wikiLink"]
         }
       end
@@ -50,8 +55,12 @@ module Tarkov
         warn "task requirements for #{attrs['id']} skipped: #{e.message}"
       end
 
-      def sync_objectives(task, objectives)
+      def sync_objectives(task, objectives, quest_items = {})
         Array(objectives).each do |objective|
+          if QUEST_ITEM_OBJECTIVE_TYPES.include?(objective["type"])
+            sync_quest_item_objective(task, objective, quest_items)
+            next
+          end
           next unless objective_type_relevant?(objective)
 
           item_tids_for(objective).each do |item_tid|
@@ -63,6 +72,37 @@ module Tarkov
             upsert!(find_objective(task, item), objective_attributes(objective))
           end
         end
+      end
+
+      def sync_quest_item_objective(task, objective, quest_items)
+        tid = extract_quest_item_tid(objective["questItem"])
+        attributes = quest_items[tid]
+        unless tid && attributes
+          warn "task #{task.tid} references unknown quest item #{tid}"
+          return
+        end
+
+        item = upsert!(Item.find_or_initialize_by(tid: tid), quest_item_attributes(attributes))
+        upsert!(find_objective(task, item), objective_attributes(objective))
+      end
+
+      def extract_quest_item_tid(value)
+        return value unless value.is_a?(Hash)
+
+        value["id"] || value["item"]
+      end
+
+      def quest_item_attributes(attrs)
+        {
+          name: attrs["name"],
+          short_name: attrs["shortName"],
+          description: attrs["description"],
+          types: [ "questItem" ],
+          width: attrs["width"],
+          height: attrs["height"],
+          icon_link: attrs["iconLink"],
+          grid_image_link: attrs["gridImageLink"]
+        }
       end
 
       def find_objective(task, item)
