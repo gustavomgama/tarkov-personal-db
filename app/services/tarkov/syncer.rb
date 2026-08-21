@@ -24,10 +24,12 @@ module Tarkov
     end
 
     def call
-      STEPS.each_with_object({}) do |(step, klass), results|
-        log "syncing #{step}..."
-        results[step] = build_syncer(klass).call
-        log "#{step}: #{results[step]} records"
+      ActiveRecord::Base.transaction do
+        STEPS.each_with_object({}) do |(step, klass), results|
+          log "syncing #{step}..."
+          results[step] = build_syncer(klass).call
+          log "#{step}: #{results[step]} records"
+        end
       end
     end
 

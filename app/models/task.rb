@@ -12,9 +12,21 @@ class Task < ApplicationRecord
   validates :name, presence: true
 
   def self.find_by_wiki_title(title)
-    return nil if title.blank?
+    candidates = title.to_s.strip.gsub(/\.+\z/, "").split("/").map(&:strip).reject(&:blank?)
+    candidates.each do |candidate|
+      slug = candidate.tr(" ", "_")
+      found = where("wiki_link LIKE ?", "%/#{slug}").first || find_by(name: candidate)
+      return found if found
+    end
+    nil
+  end
 
-    slug = title.strip.tr(" ", "_")
-    where("wiki_link LIKE ?", "%/#{slug}").first || find_by(name: title.strip)
+  # Wiki is authoritative for chains: fall back to the quest infobox
+  # `previous` link when tarkov.dev carries no taskRequirements.
+  def prerequisite_tasks
+    return required_tasks if required_tasks.any?
+    return Task.none if previous_task_title.blank?
+
+    Task.where(id: Array(Task.find_by_wiki_title(previous_task_title)).map(&:id))
   end
 end

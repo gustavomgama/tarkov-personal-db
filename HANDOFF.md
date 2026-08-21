@@ -55,6 +55,20 @@ json.tarkov.dev is secondary/structural only where the wiki has no machine-reada
   M80 → Peacekeeper LL4 / Ref LL3 ← The Cleaner ← The Guide ← Wet Job 6..1 (entry L8).
 - Known quirk: unlock text sometimes lists multiple traders ("Ref LL3; Peacekeeper LL4") — one row each.
 
+### Query & consistency (Phase C complete)
+
+- `Tarkov::TaskChainView` — requires (up, incl. wiki fallback) + leads_to (down) walks.
+- `Tarkov::ItemUnlockLookup` — unlock paths + trader offers in one call.
+- `rake tarkov:sanity` — counts + warnings: nameless items, unresolved unlock-task titles,
+  raw-tid hideout targets, tasks w/o trader.
+- `rake 'tarkov:chain[Quest Name]'` — prints chain both directions.
+- `Syncer#call` wrapped in one transaction per game version (all-or-nothing; SyncState recorded
+  only after success).
+- Unlock-row parsing handles wiki formats: trailing clause ("after completing his task X"),
+  leading segment ("TaskName; Trader LLn: variant"), "???" unknowns kept as nil;
+  `Task.find_by_wiki_title` strips trailing dots and tries "/"-separated alternative titles.
+  Sanity now reports only genuine "???" unknowns (111 rows).
+
 ### Version gate (tarkov:sync only triggers on game version change)
 
 - `Tarkov::Fandom::Client#latest_game_version` parses `Template:Gameversion`

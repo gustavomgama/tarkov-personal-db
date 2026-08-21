@@ -77,6 +77,48 @@ namespace :tarkov do
     end
   end
 
+  desc "Data sanity checks: counts and dangling references"
+  task sanity: :environment do
+    counts = {
+      items: Item.count, traders: Trader.count, tasks: Task.count,
+      trader_items: TraderItem.count, task_objectives: TaskObjective.count,
+      item_unlocks: ItemUnlock.count, task_requirements: TaskRequirement.count,
+      hideout_stations: HideoutStation.count, hideout_levels: HideoutLevel.count,
+      last_synced_version: SyncState.last_synced_version
+    }
+    counts.each { |label, value| puts format("%-22s %s", "#{label}:", value) }
+
+    nameless = Item.where("name LIKE ? OR name LIKE ? OR name = ''", "% Name", "% ShortName").count
+    unresolved_unlocks = ItemUnlock.where.not(unlocking_task_title: [ nil, "" ])
+                                   .filter_map { |row| row.unlocking_task_title }
+                                   .reject { |title| Task.find_by_wiki_title(title) }.size
+    raw_targets = HideoutRequirement.where("target_name GLOB '[0-9a-f]*' AND length(target_name) = 24").count
+    tasks_without_trader = Task.where(trader_id: nil).count
+
+    puts "--- warnings ---"
+    puts "WARN nameless items (no wiki match): #{nameless}" if nameless.positive?
+    puts "WARN item unlocks referencing unknown tasks: #{unresolved_unlocks}" if unresolved_unlocks.positive?
+    puts "WARN hideout requirements with unresolved tid targets: #{raw_targets}" if raw_targets.positive?
+    puts "WARN tasks without trader: #{tasks_without_trader}" if tasks_without_trader.positive?
+    puts "OK" if [ nameless, unresolved_unlocks, raw_targets ].all?(&:zero?)
+  end
+
+  desc "Show quest chain: rake 'tarkov:chain[Wet Job - Part 1]'"
+  task :chain, [ :name ] => :environment do |_task, args|
+    quest = Task.find_by_wiki_title(args[:name]) || Task.find_by(name: args[:name]) ||
+            Task.where("name LIKE ?", "%#{args[:name]}%").first
+    abort "Task not found: #{args[:name]}" unless quest
+
+    view = Tarkov::TaskChainView.new(quest).call
+    puts "Task: #{view[:task].name}"
+    puts "Requires:"
+    view[:requires].each { |node| puts "  #{'  ' * (node[:depth] - 1)}<- #{node[:task].name}" }
+    puts "(none)" if view[:requires].empty?
+    puts "Leads to:"
+    view[:leads_to].each { |node| puts "  #{'  ' * (node[:depth] - 1)}-> #{node[:task].name}" }
+    puts "(none)" if view[:leads_to].empty?
+  end
+
   def client
     Tarkov::Client.new(game_mode: ENV.fetch("GAME_MODE", "regular"), lang: ENV.fetch("TARKOV_LANG", "en"))
   end

@@ -27,8 +27,15 @@ class UnlockStructureTest < ActiveSupport::TestCase
     @follower.update!(wiki_link: "https://escapefromtarkov.fandom.com/wiki/No_trader_task")
 
     assert_equal @follower, Task.find_by_wiki_title("No Trader Task")
+    assert_equal @follower, Task.find_by_wiki_title("No Trader Task.")
     assert_nil Task.find_by_wiki_title("")
     assert_nil Task.find_by_wiki_title("Nonexistent Quest")
+  end
+
+  test "finds tasks by alternative slash-separated titles" do
+    @follower.update!(name: "Shaking Up the Teller")
+
+    assert_equal @follower, Task.find_by_wiki_title("Oil Run/Shaking Up the Teller")
   end
 
   test "resolves full unlock path from item through chain to root quest" do
@@ -62,5 +69,23 @@ class UnlockStructureTest < ActiveSupport::TestCase
     assert_nil entry.task
     assert_empty entry.prerequisites
     assert_nil entry.required_player_level
+  end
+
+  test "parses leading-task unlock format and variant notes" do
+    item = Item.create!(tid: "item-var", name: "T.O 2k24")
+    Tarkov::Fandom::UnlockRows.sync!(item, "Kings of the Rooftops; Jaeger LL3: OV variant; ???; Ref LL2")
+
+    rows = item.item_unlocks.order(:trader_title)
+    assert_equal %w[Jaeger Ref], rows.pluck(:trader_title)
+    assert_equal [ 3, 2 ], rows.pluck(:loyalty_level)
+    assert_equal [ "Kings of the Rooftops", "Kings of the Rooftops" ], rows.map(&:unlocking_task_title)
+  end
+
+  test "stops trailing task clause at semicolons" do
+    item = Item.create!(tid: "item-clause", name: "Test Item")
+    Tarkov::Fandom::UnlockRows.sync!(item, "Ref LL4 after completing his task The Punisher - Part 4; Mechanic LL3")
+
+    row = item.item_unlocks.find_by(trader_title: "Ref")
+    assert_equal "The Punisher - Part 4", row.unlocking_task_title
   end
 end

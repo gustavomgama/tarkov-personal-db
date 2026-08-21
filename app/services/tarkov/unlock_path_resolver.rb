@@ -18,7 +18,7 @@ module Tarkov
 
       prerequisites = collect_prerequisites(task)
       all_nodes = prerequisites + [ { task: task } ]
-      roots = all_nodes.select { |node| prerequisite_tasks_for(node[:task]).empty? }
+      roots = all_nodes.select { |node| node[:task].prerequisite_tasks.empty? }
       Entry.new(
         unlock: unlock,
         task: task,
@@ -33,7 +33,7 @@ module Tarkov
       queue = [ [ task, 0 ] ]
       until queue.empty?
         current, depth = queue.shift
-        prerequisite_tasks_for(current).each do |required|
+        current.prerequisite_tasks.each do |required|
           next if visited.key?(required.id)
 
           visited[required.id] = { task: required, depth: depth + 1 }
@@ -41,15 +41,6 @@ module Tarkov
         end
       end
       visited.values.sort_by { |node| [ node[:depth], node[:task].name ] }
-    end
-
-    # Wiki is authoritative for chains: fall back to the quest infobox
-    # `previous` link when tarkov.dev carries no taskRequirements.
-    def prerequisite_tasks_for(task)
-      return task.required_tasks if task.required_tasks.any?
-      return [] if task.previous_task_title.blank?
-
-      Array(Task.find_by_wiki_title(task.previous_task_title))
     end
   end
 end
