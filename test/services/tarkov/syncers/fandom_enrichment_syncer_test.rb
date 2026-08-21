@@ -6,7 +6,7 @@ module Tarkov
       M80_WIKITEXT = <<~WIKI.freeze
         {{Infobox ammo
         |weight             =0.024 kg
-        |trader             =[[Peacekeeper]] LL4, after completing his task [[The Cleaner]]
+        |trader             =[[Ref]] LL3<br/>[[Peacekeeper]] LL4, after completing his task [[The Cleaner]]
         |node               =58dd3ad986f77403051cba8f
         }}
 
@@ -36,7 +36,12 @@ module Tarkov
 
         assert_equal 1, results[:items]
         assert_equal "7.62x51mm M80 is a cartridge in Escape from Tarkov.", @item.reload.description
-        assert_equal "Peacekeeper LL4, after completing his task The Cleaner", @item.unlock_text
+        assert_equal "Ref LL3; Peacekeeper LL4, after completing his task The Cleaner", @item.unlock_text
+
+        unlocks = @item.item_unlocks.order(:trader_title)
+        assert_equal %w[Peacekeeper Ref], unlocks.pluck(:trader_title)
+        assert_equal [ 4, 3 ], unlocks.pluck(:loyalty_level)
+        assert_equal [ "The Cleaner", "The Cleaner" ], unlocks.pluck(:unlocking_task_title)
       end
 
       test "enriches tasks with description and previous quest title" do

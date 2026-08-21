@@ -5,7 +5,9 @@ module Tarkov
 
       def call
         tasks = (client.tasks["tasks"] || {})
-        tasks.each_value.sum { |attrs| sync_task(attrs) ? 1 : 0 }
+        records = tasks.each_value.filter_map { |attrs| sync_task(attrs) }
+        tasks.each_value { |attrs| sync_task_requirements(attrs) }
+        records.size
       end
 
       private
@@ -13,10 +15,10 @@ module Tarkov
       def sync_task(attrs)
         task = upsert!(find_task(attrs), task_attributes(attrs))
         sync_objectives(task, attrs["objectives"])
-        true
+        task
       rescue ActiveRecord::RecordInvalid, KeyError => e
         warn "task #{attrs['id']} skipped: #{e.message}"
-        false
+        nil
       end
 
       def find_task(attrs)
@@ -31,6 +33,21 @@ module Tarkov
           kappa_required: attrs["kappaRequired"] || false,
           wiki_link: attrs["wikiLink"]
         }
+      end
+
+      def sync_task_requirements(attrs)
+        task = Task.find_by(tid: attrs["id"])
+        return unless task
+
+        kept = Array(attrs["taskRequirements"]).filter_map do |requirement|
+          required = Task.find_by(tid: requirement["task"])
+          next unless required
+
+          TaskRequirement.find_or_create_by!(task: task, required_task: required)
+        end
+        (task.task_requirements - kept).each(&:destroy!)
+      rescue ActiveRecord::RecordInvalid => e
+        warn "task requirements for #{attrs['id']} skipped: #{e.message}"
       end
 
       def sync_objectives(task, objectives)

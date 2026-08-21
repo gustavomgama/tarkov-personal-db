@@ -82,6 +82,7 @@ module Tarkov
 
       def clean(text)
         text.dup
+            .gsub(/<br\s*\/?>/i, "; ")
             .gsub(/\[\[([^|\]]*)\|([^\]]*)\]\]/) { Regexp.last_match(2) }
             .gsub(/\[\[([^\]]*)\]\]/) { Regexp.last_match(1).split("|").last }
             .gsub(/\{\{[^{}]*\}\}/, "")

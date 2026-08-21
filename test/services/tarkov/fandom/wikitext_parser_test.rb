@@ -8,8 +8,7 @@ module Tarkov
         |image              =7.62x51 M80 banner.png
         |weight             =0.024 kg
         |grid               =1x1
-        |trader             =[[Ref]] LL3<br/>[[Peacekeeper]] LL4, after completing his task [[The Cleaner]]
-        |velocity           =820 m/s
+        |trader             =[[Ref]] LL3<br/>[[Peacekeeper]] LL4, after completing his task [[The Cleaner]]        |velocity           =820 m/s
         |accuracy           =<font color="red">-13</font>
         |node               =58dd3ad986f77403051cba8f
         }}
@@ -26,7 +25,7 @@ module Tarkov
 
         assert_equal "0.024 kg", params["weight"]
         assert_equal "1x1", params["grid"]
-        assert_equal "Ref LL3 Peacekeeper LL4, after completing his task The Cleaner", params["trader"]
+        assert_equal "Ref LL3; Peacekeeper LL4, after completing his task The Cleaner", params["trader"]
         assert_equal "58dd3ad986f77403051cba8f", params["node"]
       end
 

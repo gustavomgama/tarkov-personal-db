@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_200000) do
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -54,6 +54,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
     t.index ["tid"], name: "index_hideout_stations_on_tid", unique: true
   end
 
+  create_table "item_unlocks", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "item_id", null: false
+    t.integer "loyalty_level"
+    t.string "trader_title", null: false
+    t.string "unlocking_task_title"
+    t.datetime "updated_at", null: false
+    t.index ["item_id", "trader_title"], name: "index_item_unlocks_on_item_id_and_trader_title", unique: true
+    t.index ["item_id"], name: "index_item_unlocks_on_item_id"
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "category"
     t.datetime "created_at", null: false
@@ -92,6 +103,16 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
     t.index ["task_id"], name: "index_task_objectives_on_task_id"
   end
 
+  create_table "task_requirements", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "required_task_id", null: false
+    t.integer "task_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["required_task_id"], name: "index_task_requirements_on_required_task_id"
+    t.index ["task_id", "required_task_id"], name: "index_task_requirements_on_task_id_and_required_task_id", unique: true
+    t.index ["task_id"], name: "index_task_requirements_on_task_id"
+  end
+
   create_table "tasks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.text "description"
@@ -121,6 +142,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
     t.index ["trader_id"], name: "index_trader_items_on_trader_id"
   end
 
+  create_table "trader_loyalty_levels", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "level", null: false
+    t.integer "required_player_level"
+    t.decimal "required_reputation", precision: 8, scale: 2
+    t.integer "trader_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trader_id", "level"], name: "index_trader_loyalty_levels_on_trader_id_and_level", unique: true
+    t.index ["trader_id"], name: "index_trader_loyalty_levels_on_trader_id"
+  end
+
   create_table "traders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "currency", default: "RUB", null: false
@@ -138,9 +170,13 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_194000) do
   add_foreign_key "hideout_item_requirements", "items"
   add_foreign_key "hideout_levels", "hideout_stations"
   add_foreign_key "hideout_requirements", "hideout_levels"
+  add_foreign_key "item_unlocks", "items"
   add_foreign_key "task_objectives", "items"
   add_foreign_key "task_objectives", "tasks"
+  add_foreign_key "task_requirements", "tasks"
+  add_foreign_key "task_requirements", "tasks", column: "required_task_id"
   add_foreign_key "tasks", "traders"
   add_foreign_key "trader_items", "items"
   add_foreign_key "trader_items", "traders"
+  add_foreign_key "trader_loyalty_levels", "traders"
 end

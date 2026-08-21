@@ -36,6 +36,19 @@ json.tarkov.dev is secondary/structural only where the wiki has no machine-reada
   placeholders until `tarkov:sync:fandom_names` is re-run).
 - Empty-string wikiLinks (167 items) handled gracefully.
 
+### Unlockables (Phase A complete)
+
+- `task_requirements` join synced from payload `taskRequirements` (two-pass; stale-edge cleanup).
+- `trader_loyalty_levels` synced from traders payload `levels[]`.
+- `item_unlocks` parsed from wiki infobox `trader` param in FandomEnrichmentSyncer
+  (trader title, LL level, unlocking task title). WikitextParser keeps `<br/>` as "; " separators.
+- `Tarkov::UnlockPathResolver` — item → unlock rows → chain walk → entry quests + max required level.
+  **Chain sources merged:** tarkov.dev edges first, wiki `previous_task_title` fallback per node
+  (wiki is truth where tarkov.dev has gaps — e.g. The Cleaner has empty taskRequirements upstream).
+- `rake 'tarkov:unlock[7.62x51mm M80]'` prints the full path. Verified live:
+  M80 → Peacekeeper LL4 / Ref LL3 ← The Cleaner ← The Guide ← Wet Job 6..1 (entry L8).
+- Known quirk: unlock text sometimes lists multiple traders ("Ref LL3; Peacekeeper LL4") — one row each.
+
 ### Version gate (tarkov:sync only triggers on game version change)
 
 - `Tarkov::Fandom::Client#latest_game_version` parses `Template:Gameversion`

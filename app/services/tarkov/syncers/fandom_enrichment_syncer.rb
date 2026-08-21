@@ -20,10 +20,12 @@ module Tarkov
         records = Item.where.not(wiki_link: [ nil, "" ])
         enrich(records) do |record, parser|
           unlock = parser.infobox_params["trader"].to_s
-          {
+          attributes = {
             description: parser.lead_description.presence || record.description,
             unlock_text: unlock.match?(UNLOCK_PATTERN) ? unlock : nil
           }
+          sync_unlock_rows(record, attributes[:unlock_text])
+          attributes
         end
       end
 
@@ -59,6 +61,26 @@ module Tarkov
       rescue ActiveRecord::RecordInvalid => e
         Rails.logger.warn("[tarkov:sync] enrichment for #{record.class}##{record.id} rejected: #{e.message}")
         false
+      end
+
+      def sync_unlock_rows(item, unlock_text)
+        return destroy_unlock_rows(item) if unlock_text.blank?
+
+        task_title = unlock_text[/after completing \w+ task (.+)$/i, 1]
+        kept = unlock_text.scan(/([^;,]+?)\s+LL(\d+)/i).map do |trader_title, loyalty|
+          row = ItemUnlock.find_or_initialize_by(item: item, trader_title: trader_title.strip)
+          row.assign_attributes(loyalty_level: loyalty.to_i, unlocking_task_title: task_title&.strip)
+          row.save!
+          row
+        end
+        (item.item_unlocks - kept).each(&:destroy!)
+      rescue ActiveRecord::RecordInvalid => e
+        Rails.logger.warn("[tarkov:sync] unlocks for #{item.tid} skipped: #{e.message}")
+        []
+      end
+
+      def destroy_unlock_rows(item)
+        item.item_unlocks.destroy_all
       end
 
       def title_from_link(link)

@@ -54,7 +54,11 @@ module TarkovTestFixtures
         "normalizedName" => "prapor",
         "description" => "Trader description",
         "currency" => "RUB",
-        "resetTime" => "2026-08-21T08:40:23.000Z"
+        "resetTime" => "2026-08-21T08:40:23.000Z",
+        "levels" => [
+          { "level" => 1, "requiredPlayerLevel" => 0, "requiredReputation" => 0 },
+          { "level" => 2, "requiredPlayerLevel" => 6, "requiredReputation" => 0.7 }
+        ]
       }
     }
   end
@@ -78,8 +82,9 @@ module TarkovTestFixtures
           "id" => "task-2",
           "name" => "No trader task",
           "trader" => nil,
-          "minPlayerLevel" => nil,
+          "minPlayerLevel" => 14,
           "kappaRequired" => false,
+          "taskRequirements" => [ { "task" => "task-1", "status" => [ "complete" ] } ],
           "objectives" => []
         }
       }
