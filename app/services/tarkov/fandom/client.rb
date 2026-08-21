@@ -52,6 +52,23 @@ module Tarkov
         raise Error, "fandom gameversion query failed: #{e.message}"
       end
 
+      def search_titles(query, limit: 5)
+        response = @connection.get("", {
+          action: "query",
+          format: "json",
+          formatversion: "2",
+          list: "search",
+          srnamespace: "0",
+          srlimit: limit.to_s,
+          srsearch: query
+        })
+        raise Error, "fandom search failed with status #{response.status}" unless response.success?
+
+        response.body.dig("query", "search").to_a.map { |hit| hit["title"] }
+      rescue Faraday::Error => e
+        raise Error, "fandom search failed: #{e.message}"
+      end
+
       def category_members(category)
         members = []
         continuation = nil

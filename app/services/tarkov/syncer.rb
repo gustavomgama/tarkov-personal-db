@@ -7,12 +7,14 @@ module Tarkov
       barters: "Tarkov::Syncers::TraderItemSyncer",
       hideout: "Tarkov::Syncers::HideoutSyncer",
       fandom_names: "Tarkov::Syncers::FandomNameSyncer",
-      fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer"
+      fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer",
+      item_backfill: "Tarkov::Syncers::ItemBackfillSyncer"
     }.freeze
 
     FANDOM_STEPS = [
       "Tarkov::Syncers::FandomNameSyncer",
-      "Tarkov::Syncers::FandomEnrichmentSyncer"
+      "Tarkov::Syncers::FandomEnrichmentSyncer",
+      "Tarkov::Syncers::ItemBackfillSyncer"
     ].freeze
 
     def initialize(client: Tarkov::Client.new, logger: Rails.logger, fandom_client: nil)

@@ -38,6 +38,12 @@ json.tarkov.dev is secondary/structural only where the wiki has no machine-reada
 
 ### Unlockables (Phase A complete)
 
+- `item_backfill` step (ItemBackfillSyncer): for items without wikiLink, searches the wiki by
+  normalized_name, verifies infobox `node` == tid before applying (no false positives), then fully
+  enriches via ItemEnricher. Threaded (BACKFILL_THREADS=8 default). Live result: nameless items
+  327 -> 206; 5106/5312 items carry real names. Items re-sync resets names - always run fandom
+  steps after entity syncs (full tarkov:sync handles order).
+
 - `task_requirements` join synced from payload `taskRequirements` (two-pass; stale-edge cleanup).
 - `trader_loyalty_levels` synced from traders payload `levels[]`.
 - `item_unlocks` parsed from wiki infobox `trader` param in FandomEnrichmentSyncer

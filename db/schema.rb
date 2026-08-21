@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_200000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_201000) do
   create_table "hideout_item_requirements", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -73,6 +73,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_200000) do
     t.integer "height"
     t.string "icon_link"
     t.string "name", null: false
+    t.string "normalized_name"
     t.string "short_name"
     t.string "tid", null: false
     t.text "types", default: "[]"
@@ -81,6 +82,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_200000) do
     t.decimal "weight", precision: 8, scale: 3
     t.integer "width"
     t.string "wiki_link"
+    t.index ["normalized_name"], name: "index_items_on_normalized_name"
     t.index ["tid"], name: "index_items_on_tid", unique: true
   end
 

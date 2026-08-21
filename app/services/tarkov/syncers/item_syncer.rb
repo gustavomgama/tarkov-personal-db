@@ -21,6 +21,7 @@ module Tarkov
           description: attrs["description"],
           category: category_for(attrs["categories"], categories),
           types: attrs["types"] || [],
+          normalized_name: attrs["normalizedName"],
           width: attrs["width"],
           height: attrs["height"],
           weight: attrs["weight"],

@@ -6,7 +6,8 @@ namespace :tarkov do
     "barters" => "Tarkov::Syncers::TraderItemSyncer",
     "hideout" => "Tarkov::Syncers::HideoutSyncer",
     "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
-    "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer"
+    "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer",
+    "item_backfill" => "Tarkov::Syncers::ItemBackfillSyncer"
   }.freeze
 
   desc "Sync all reference data (skips unless the wiki Changelog shows a new game version; FORCE=1 overrides)"
