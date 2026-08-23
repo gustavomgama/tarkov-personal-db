@@ -30,6 +30,7 @@ module TarkovTestFixtures
       "items" => {
         "item-1" => {
           "id" => "item-1",
+          "normalizedName" => "colt-m4a1",
           "name" => "Colt M4A1",
           "shortName" => "M4A1",
           "description" => "Assault rifle",
@@ -77,6 +78,11 @@ module TarkovTestFixtures
           "minPlayerLevel" => 5,
           "kappaRequired" => true,
           "lightkeeperRequired" => true,
+          "finishRewards" => {
+            "items" => [ { "item" => "item-2", "count" => 5000 } ],
+            "offerUnlock" => [ { "level" => 4, "item" => "qitem-9", "trader" => "trader-1" } ],
+            "craftUnlock" => []
+          },
           "factionName" => "Any",
           "objectives" => [
             { "id" => "obj-1", "type" => "findItem", "items" => [ "item-1" ], "count" => 3, "foundInRaid" => true },

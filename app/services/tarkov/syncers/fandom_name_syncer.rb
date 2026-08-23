@@ -37,8 +37,9 @@ module Tarkov
         titles_by_key = fandom_client.category_members(TRADERS_CATEGORY).to_h do |title|
           [ wiki_key(title), title ]
         end
+        keys_by_tid = client.traders.transform_values { |attrs| wiki_key(attrs["normalizedName"].to_s) }
         Trader.find_each.count do |trader|
-          title = titles_by_key[wiki_key(trader.normalized_name.to_s)]
+          title = titles_by_key[keys_by_tid[trader.tid]]
           apply_name(trader, title)
         end
       end

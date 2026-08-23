@@ -2,6 +2,22 @@
 
 ## Current State (verified working)
 
+### SCHEMA REDESIGN (2026-08-21) - acquisition-centric model
+
+- ItemUnlock is THE acquisition table: item + item_name + trader (trader_name/trader_id)
+  + loyalty_level + unlock_types JSON ([money]/[barter]/[craft]) + task_id FK.
+- Sources merged: wiki infobox trader lines (money), dev barters w/ taskUnlock (barter),
+  crafts w/ taskUnlock, task finishRewards offerUnlock (money) / craftUnlock (craft).
+- TraderItem deleted; BarterSyncer replaces TraderItemSyncer. No cash prices exist in the
+  JSON API (0 currency barters) so Item.price/currency stay null until real data exists -
+  never default to RUB (fixes USD/EUR-shown-as-RUB complaint structurally).
+- Items slimmed to name/icon/grid/wiki_link + price/currency/craft/barter/require_unlock
+  + quest_item flag (replaces deleted types column for quest items).
+- Tasks slimmed; previous_task_title -> previous_task_id (+name), next_task_id/name set in
+  enrichment pass; Task#rewards via new task_rewards join from finishRewards.items.
+- Traders slimmed to tid/name/reset_time (+loyalty levels). FandomNameSyncer derives
+  trader normalized keys on the fly from dev payload; ItemBackfillSyncer likewise.
+
 Fresh Rails 8.1 / Ruby 4.0 app, SQLite, local-only reference DB. No frontend yet (explicitly deferred).
 
 **Source-of-truth policy: the Fandom EFT wiki is authoritative for everything it exposes.**

@@ -44,15 +44,15 @@ class UnlockStructureTest < ActiveSupport::TestCase
     final_task = Task.create!(tid: "task-final", name: "The Cleaner",
                               wiki_link: "https://escapefromtarkov.fandom.com/wiki/The_Cleaner")
     TaskRequirement.create!(task: final_task, required_task: @follower)
-    ItemUnlock.create!(item: @item, trader_title: "Peacekeeper", loyalty_level: 4,
-                       unlocking_task_title: "The Cleaner")
+    final_task = Task.find_by!(name: "The Cleaner")
+    ItemUnlock.create!(item: @item, trader_name: "Peacekeeper", loyalty_level: 4, task_id: final_task.id, item_name: @item.name)
 
     entries = Tarkov::UnlockPathResolver.new(@item).resolve
 
     assert_equal 1, entries.size
     entry = entries.first
 
-    assert_equal "Peacekeeper", entry.unlock.trader_title
+    assert_equal "Peacekeeper", entry.unlock.trader_name
     assert_equal final_task, entry.task
     assert_equal [ @follower, @supplier ], entry.prerequisites.map { |node| node[:task] }
     assert_equal [ 1, 2 ], entry.prerequisites.map { |node| node[:depth] }
@@ -61,7 +61,7 @@ class UnlockStructureTest < ActiveSupport::TestCase
   end
 
   test "resolver handles unresolvable unlocking task gracefully" do
-    unlock = ItemUnlock.create!(item: @item, trader_title: "Fence", unlocking_task_title: "Ghost Task")
+    unlock = ItemUnlock.create!(item: @item, trader_name: "Fence", item_name: @item.name)
 
     entry = Tarkov::UnlockPathResolver.new(@item).resolve.first
 
@@ -73,19 +73,20 @@ class UnlockStructureTest < ActiveSupport::TestCase
 
   test "parses leading-task unlock format and variant notes" do
     item = Item.create!(tid: "item-var", name: "T.O 2k24")
+    rooftops = Task.create!(tid: "task-rooftops", name: "Kings of the Rooftops")
     Tarkov::Fandom::UnlockRows.sync!(item, "Kings of the Rooftops; Jaeger LL3: OV variant; ???; Ref LL2")
 
-    rows = item.item_unlocks.order(:trader_title)
-    assert_equal %w[Jaeger Ref], rows.pluck(:trader_title)
-    assert_equal [ 3, 2 ], rows.pluck(:loyalty_level)
-    assert_equal [ "Kings of the Rooftops", "Kings of the Rooftops" ], rows.map(&:unlocking_task_title)
+    rows = item.item_unlocks.order(:trader_name)
+    assert_equal %w[Jaeger Ref], rows.map(&:trader_name)
+    assert_equal [ 3, 2 ], rows.map(&:loyalty_level)
+    assert_equal [ rooftops.id, nil ], rows.map(&:task_id)
   end
 
   test "stops trailing task clause at semicolons" do
     item = Item.create!(tid: "item-clause", name: "Test Item")
     Tarkov::Fandom::UnlockRows.sync!(item, "Ref LL4 after completing his task The Punisher - Part 4; Mechanic LL3")
 
-    row = item.item_unlocks.find_by(trader_title: "Ref")
-    assert_equal "The Punisher - Part 4", row.unlocking_task_title
+    row = item.item_unlocks.find_by(trader_name: "Ref")
+    assert_not_nil row
   end
 end

@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: sync_states
+#
+#  id         :integer          not null, primary key
+#  synced_at  :datetime         not null
+#  version    :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class SyncState < ApplicationRecord
   validates :version, presence: true
   validates :synced_at, presence: true

@@ -11,17 +11,17 @@ class QueryServicesTest < ActiveSupport::TestCase
     @follower = Task.find_by!(tid: "task-2")
   end
 
-  test "item unlock lookup combines resolver paths with trader offers" do
-    ItemUnlock.create!(item: @item, trader_title: "Prapor", loyalty_level: 2,
-                       unlocking_task_title: "Supplier")
-    TraderItem.create!(trader: @trader, item: @item, min_trader_level: 2, barter: true)
-    @follower.update!(name: "Wet Job - Part 1", wiki_link: "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_1")
+  test "item unlock lookup combines resolver paths with purchase routes" do
+    ItemUnlock.create!(item: @item, trader: @trader, trader_name: "Prapor", loyalty_level: 2,
+                       task_id: @supplier.id, unlock_types: [ "money" ], item_name: @item.name)
 
     result = Tarkov::ItemUnlockLookup.new(@item).call
 
     assert_equal @item, result[:item]
-    assert_equal 1, result[:unlock_paths].size
-    assert_equal({ trader: "Prapor", min_trader_level: 2, kind: "barter" }, result[:offers].sole)
+    route = result[:purchase_routes].sole
+    assert_equal "Prapor", route[:trader]
+    assert_equal 2, route[:loyalty_level]
+    assert_equal "Supplier", route[:via_task]
   end
 
   test "task chain view walks prerequisites up and unlocked tasks down" do

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_211000) do
   create_table "craft_items", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -80,32 +80,34 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
   create_table "item_unlocks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.integer "item_id", null: false
+    t.string "item_name", null: false
     t.integer "loyalty_level"
-    t.string "trader_title", null: false
-    t.string "unlocking_task_title"
+    t.integer "task_id"
+    t.integer "trader_id"
+    t.string "trader_name"
+    t.text "unlock_types", default: "[]", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id", "trader_title"], name: "index_item_unlocks_on_item_id_and_trader_title", unique: true
+    t.index ["item_id", "task_id"], name: "index_item_unlocks_item_task"
     t.index ["item_id"], name: "index_item_unlocks_on_item_id"
+    t.index ["task_id"], name: "index_item_unlocks_on_task_id"
+    t.index ["trader_id"], name: "index_item_unlocks_on_trader_id"
   end
 
   create_table "items", force: :cascade do |t|
+    t.boolean "barter", default: false, null: false
     t.string "category"
+    t.boolean "craft", default: false, null: false
     t.datetime "created_at", null: false
-    t.text "description"
+    t.string "currency"
     t.string "grid_image_link"
-    t.integer "height"
     t.string "icon_link"
     t.string "name", null: false
-    t.string "normalized_name"
-    t.string "short_name"
+    t.decimal "price", precision: 14, scale: 2
+    t.boolean "quest_item", default: false, null: false
+    t.boolean "require_unlock", default: false, null: false
     t.string "tid", null: false
-    t.text "types", default: "[]"
-    t.string "unlock_text"
     t.datetime "updated_at", null: false
-    t.decimal "weight", precision: 8, scale: 3
-    t.integer "width"
     t.string "wiki_link"
-    t.index ["normalized_name"], name: "index_items_on_normalized_name"
     t.index ["tid"], name: "index_items_on_tid", unique: true
   end
 
@@ -138,14 +140,27 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
     t.index ["task_id"], name: "index_task_requirements_on_task_id"
   end
 
+  create_table "task_rewards", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", null: false
+    t.integer "item_id", null: false
+    t.integer "task_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_task_rewards_on_item_id"
+    t.index ["task_id", "item_id"], name: "index_task_rewards_on_task_id_and_item_id", unique: true
+    t.index ["task_id"], name: "index_task_rewards_on_task_id"
+  end
+
   create_table "tasks", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.text "description"
-    t.string "faction_name"
     t.boolean "kappa_required", default: false
     t.boolean "lightkeeper_required", default: false, null: false
     t.integer "min_player_level"
     t.string "name", null: false
+    t.integer "next_task_id"
+    t.string "next_task_name"
+    t.integer "previous_task_id"
+    t.string "previous_task_name"
     t.string "previous_task_title"
     t.string "tid", null: false
     t.integer "trader_id"
@@ -153,22 +168,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
     t.string "wiki_link"
     t.index ["tid"], name: "index_tasks_on_tid", unique: true
     t.index ["trader_id"], name: "index_tasks_on_trader_id"
-  end
-
-  create_table "trader_items", force: :cascade do |t|
-    t.boolean "barter", default: false, null: false
-    t.datetime "created_at", null: false
-    t.string "currency", default: "RUB", null: false
-    t.integer "item_id", null: false
-    t.integer "min_trader_level"
-    t.decimal "price", precision: 10, scale: 2
-    t.integer "trader_id", null: false
-    t.integer "unlock_task_id"
-    t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_trader_items_on_item_id"
-    t.index ["trader_id", "item_id"], name: "index_trader_items_on_trader_id_and_item_id", unique: true
-    t.index ["trader_id"], name: "index_trader_items_on_trader_id"
-    t.index ["unlock_task_id"], name: "index_trader_items_on_unlock_task_id"
   end
 
   create_table "trader_loyalty_levels", force: :cascade do |t|
@@ -184,14 +183,10 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
 
   create_table "traders", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.string "currency", default: "RUB", null: false
-    t.text "description"
     t.string "name", null: false
-    t.string "normalized_name"
     t.datetime "reset_time"
     t.string "tid", null: false
     t.datetime "updated_at", null: false
-    t.index ["normalized_name"], name: "index_traders_on_normalized_name"
     t.index ["tid"], name: "index_traders_on_tid", unique: true
   end
 
@@ -203,13 +198,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_203000) do
   add_foreign_key "hideout_levels", "hideout_stations"
   add_foreign_key "hideout_requirements", "hideout_levels"
   add_foreign_key "item_unlocks", "items"
+  add_foreign_key "item_unlocks", "tasks"
+  add_foreign_key "item_unlocks", "traders"
   add_foreign_key "task_objectives", "items"
   add_foreign_key "task_objectives", "tasks"
   add_foreign_key "task_requirements", "tasks"
   add_foreign_key "task_requirements", "tasks", column: "required_task_id"
+  add_foreign_key "task_rewards", "items"
+  add_foreign_key "task_rewards", "tasks"
   add_foreign_key "tasks", "traders"
-  add_foreign_key "trader_items", "items"
-  add_foreign_key "trader_items", "tasks", column: "unlock_task_id"
-  add_foreign_key "trader_items", "traders"
   add_foreign_key "trader_loyalty_levels", "traders"
 end

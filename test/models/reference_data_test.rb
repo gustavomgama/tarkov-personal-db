@@ -13,25 +13,28 @@ class ItemTest < ActiveSupport::TestCase
     assert_not_empty anonymous.errors[:name]
   end
 
-  test "serializes types as JSON array" do
-    item = Item.create!(tid: "x", name: "Item", types: %w[gun wearable])
+  test "acquisition flags default to false" do
+    item = Item.create!(tid: "x", name: "Item")
 
-    assert_equal %w[gun wearable], item.reload.types
+    assert_not item.barter?
+    assert_not item.craft?
+    assert_not item.require_unlock?
+    assert_nil item.price
+    assert_nil item.currency
   end
 end
 
 class TraderTest < ActiveSupport::TestCase
-  test "defaults currency to RUB at the database level" do
+  test "keeps reset time when payload omits it" do
     trader = Trader.create!(tid: "t", name: "Prapor")
 
-    assert_equal "RUB", trader.currency
+    assert_nil trader.reset_time
   end
 end
 
 class TaskObjectiveTest < ActiveSupport::TestCase
   test "uniqueness scoped to task and item" do
-    trader = Trader.create!(tid: "t", name: "Prapor")
-    task = Task.create!(tid: "task", name: "Task", trader: trader)
+    task = Task.create!(tid: "task", name: "Task")
     item = Item.create!(tid: "item", name: "Item")
     TaskObjective.create!(task: task, item: item)
 

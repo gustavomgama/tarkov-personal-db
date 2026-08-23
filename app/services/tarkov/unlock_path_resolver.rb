@@ -7,13 +7,13 @@ module Tarkov
     end
 
     def resolve
-      @item.item_unlocks.order(:trader_title).map { |unlock| entry_for(unlock) }
+      @item.item_unlocks.order(:trader_name).map { |unlock| entry_for(unlock) }
     end
 
     private
 
     def entry_for(unlock)
-      task = Task.find_by_wiki_title(unlock.unlocking_task_title.to_s)
+      task = unlock.task
       return Entry.new(unlock: unlock, task: nil, prerequisites: [], root_quests: [], required_player_level: nil) unless task
 
       prerequisites = collect_prerequisites(task)

@@ -23,7 +23,7 @@ module Tarkov
         )
         HideoutStation.create!(tid: "station-1", name: "x", normalized_name: "water-collector")
 
-        results = FandomNameSyncer.new(client: fake_dev_client, fandom_client: fandom).call
+        results = FandomNameSyncer.new(client: FakeTarkovClient.new(traders: trader_payload), fandom_client: fandom).call
 
         assert_equal 1, results[:items]
         assert_equal "Colt M4A1 5.56x45 assault rifle", @item.reload.name
@@ -39,10 +39,6 @@ module Tarkov
       end
 
       private
-
-      def fake_dev_client
-        FakeTarkovClient.new
-      end
     end
   end
 end

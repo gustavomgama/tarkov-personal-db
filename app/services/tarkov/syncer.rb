@@ -4,7 +4,7 @@ module Tarkov
       items: "Tarkov::Syncers::ItemSyncer",
       traders: "Tarkov::Syncers::TraderSyncer",
       tasks: "Tarkov::Syncers::TaskSyncer",
-      barters: "Tarkov::Syncers::TraderItemSyncer",
+      barters: "Tarkov::Syncers::BarterSyncer",
       hideout: "Tarkov::Syncers::HideoutSyncer",
       crafts: "Tarkov::Syncers::HideoutCraftSyncer",
       fandom_names: "Tarkov::Syncers::FandomNameSyncer",

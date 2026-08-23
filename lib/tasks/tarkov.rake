@@ -3,7 +3,7 @@ namespace :tarkov do
     "items" => "Tarkov::Syncers::ItemSyncer",
     "traders" => "Tarkov::Syncers::TraderSyncer",
     "tasks" => "Tarkov::Syncers::TaskSyncer",
-    "barters" => "Tarkov::Syncers::TraderItemSyncer",
+    "barters" => "Tarkov::Syncers::BarterSyncer",
     "hideout" => "Tarkov::Syncers::HideoutSyncer",
     "crafts" => "Tarkov::Syncers::HideoutCraftSyncer",
     "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
@@ -61,7 +61,8 @@ namespace :tarkov do
   end
 
   def print_entry(entry)
-    puts "- Trader: #{entry.unlock.trader_title}#{entry.unlock.loyalty_level ? " (LL#{entry.unlock.loyalty_level})" : ''}"
+    trader = entry.unlock.trader_name || entry.unlock.trader&.name
+    puts "- Trader: #{trader}#{entry.unlock.loyalty_level ? " (LL#{entry.unlock.loyalty_level})" : ''}"
     if entry.task
       puts "  Unlocked by task: #{entry.task.name}"
       entry.prerequisites.each do |node|
@@ -74,50 +75,46 @@ namespace :tarkov do
       end
       puts "  Total player level needed: #{entry.required_player_level || 'unknown'}"
     else
-      puts "  Unlocking task not found locally: #{entry.unlock.unlocking_task_title}"
+      puts "  Unlocking task not found locally (unlock row has no task reference)"
     end
   end
 
-  desc "Cross-check wiki item unlocks against tarkov.dev barter taskUnlock"
+  desc "Cross-check wiki money-unlock claims against dev-side barter/craft evidence"
   task crosscheck: :environment do
     checked = 0
-    agree = 0
-    disagree = []
-    only_wiki = 0
-    ItemUnlock.where.not(unlocking_task_title: [ nil, "" ]).includes(:item).find_each do |row|
-      task = Task.find_by_wiki_title(row.unlocking_task_title)
-      only_wiki += 1 and next unless task
-      offers = row.item.trader_items.where.not(unlock_task_id: nil)
-      next if offers.empty?
+    corroborated = 0
+    wiki_only = []
+
+    ItemUnlock.of_type("money").where.not(task_id: nil).includes(:item, :task).find_each do |row|
+      has_dev_route = row.item.item_unlocks.of_type("barter").exists? ||
+                      row.item.item_unlocks.of_type("craft").exists? ||
+                      row.item.barter? || row.item.craft?
+      unless has_dev_route
+        wiki_only << row
+        next
+      end
 
       checked += 1
-      if offers.any? { |offer| offer.unlock_task_id == task.id }
-        agree += 1
-      else
-        disagree << { item: row.item.name, wiki_says: task.name,
-                      dev_says: Task.find_by(id: offers.first.unlock_task_id)&.name }
-      end
+      corroborated += 1 if row.item.require_unlock?
     end
-    puts "checked: #{checked}, agree: #{agree}, wiki-only (no dev claim): #{only_wiki}"
-    puts "disagreements: #{disagree.size}"
-    disagree.first(10).each { |d| puts "  #{d[:item]}: wiki=#{d[:wiki_says]} | dev=#{d[:dev_says]}" }
+    puts "wiki claims with task: #{checked + wiki_only.size}, corroborated by dev routes: #{corroborated}, no dev route found: #{wiki_only.size}"
+    wiki_only.first(10).each { |row| puts "  #{row.item.name}: wiki says '#{row.task.name}' unlocks it, but no dev barter/craft data" }
   end
 
   desc "Data sanity checks: counts and dangling references"
   task sanity: :environment do
     counts = {
       items: Item.count, traders: Trader.count, tasks: Task.count,
-      trader_items: TraderItem.count, task_objectives: TaskObjective.count,
       item_unlocks: ItemUnlock.count, task_requirements: TaskRequirement.count,
+      task_rewards: TaskReward.count, hideout_crafts: HideoutCraft.count,
+      quest_items: Item.where(quest_item: true).count, task_objectives: TaskObjective.count,
       hideout_stations: HideoutStation.count, hideout_levels: HideoutLevel.count,
       last_synced_version: SyncState.last_synced_version
     }
     counts.each { |label, value| puts format("%-22s %s", "#{label}:", value) }
 
     nameless = Item.where("name LIKE ? OR name LIKE ? OR name = ''", "% Name", "% ShortName").count
-    unresolved_unlocks = ItemUnlock.where.not(unlocking_task_title: [ nil, "" ])
-                                   .filter_map { |row| row.unlocking_task_title }
-                                   .reject { |title| Task.find_by_wiki_title(title) }.size
+    unresolved_unlocks = ItemUnlock.of_type("money").where(task_id: nil).count
     raw_targets = HideoutRequirement.where("target_name GLOB '[0-9a-f]*' AND length(target_name) = 24").count
     tasks_without_trader = Task.where(trader_id: nil).count
 

@@ -1,8 +1,6 @@
 module Tarkov
   module Syncers
     class FandomEnrichmentSyncer < Base
-      UNLOCK_PATTERN = /task/i
-
       def initialize(client:, fandom_client: Tarkov::Fandom::Client.new)
         super(client: client)
         @fandom_client = fandom_client
@@ -20,49 +18,54 @@ module Tarkov
         records = Item.where.not(wiki_link: [ nil, "" ])
         enrich(records) do |record, parser|
           unlock = parser.infobox_params["trader"].to_s
-          attributes = {
-            description: parser.lead_description.presence || record.description,
-            unlock_text: unlock.match?(UNLOCK_PATTERN) ? unlock : nil
-          }
-          Fandom::UnlockRows.sync!(record, attributes[:unlock_text])
-          attributes
+          Fandom::UnlockRows.sync!(record, unlock.match?(/task/i) ? unlock : nil)
+          {}
         end
       end
 
       def enrich_tasks
         records = Task.where.not(wiki_link: [ nil, "" ])
-        enrich(records) do |record, parser|
-          previous = parser.infobox_params["previous"].to_s
-          {
-            description: parser.lead_description.presence || record.description,
-            previous_task_title: previous.presence
-          }
+        count = enrich(records) do |record, parser|
+          previous_title = parser.infobox_params["previous"].to_s
+          resolve_previous_task(record, previous_title)
+          {}
+        end
+        link_next_pointers
+        count
+      end
+
+      def resolve_previous_task(record, previous_title)
+        previous = Task.find_by_wiki_title(previous_title)
+        record.update!(
+          previous_task_id: previous&.id,
+          previous_task_name: previous&.name
+        )
+      end
+
+      def link_next_pointers
+        Task.where.not(previous_task_id: nil).find_each do |previous|
+          next_task = Task.find_by(id: previous.previous_task_id)
+          next unless next_task
+
+          next_task.update!(
+            next_task_id: previous.id,
+            next_task_name: previous.name
+          )
         end
       end
 
       def enrich(scope)
         titles_by_id = scope.to_h { |record| [ record.id, title_from_link(record.wiki_link) ] }
         contents = fandom_client.raw_wikitext(titles_by_id.values.compact.uniq)
-        scope.find_each.count do |record|
+        scope.count do |record|
           title = titles_by_id.fetch(record.id)
           wikitext = contents[title]
           next false unless wikitext
 
-          attributes = yield(record, Tarkov::Fandom::WikitextParser.new(wikitext, page_title: title))
-          apply_enrichment(record, attributes)
+          yield(record, Tarkov::Fandom::WikitextParser.new(wikitext, page_title: title))
+          true
         end
       end
-
-      def apply_enrichment(record, attributes)
-        return false if attributes.values.all?(&:nil?)
-
-        record.update!(attributes)
-        true
-      rescue ActiveRecord::RecordInvalid => e
-        Rails.logger.warn("[tarkov:sync] enrichment for #{record.class}##{record.id} rejected: #{e.message}")
-        false
-      end
-
 
       def title_from_link(link)
         slug = URI(link).path.split("/").last

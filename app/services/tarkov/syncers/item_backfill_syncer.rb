@@ -22,11 +22,11 @@ module Tarkov
 
       def nameless_items
         Item.where("name LIKE ? OR name LIKE ? OR name = ''", "% Name", "% ShortName")
-            .where.not(normalized_name: [ nil, "" ])
-            .where.not("types LIKE ?", "%questItem%")
+            .where.not(quest_item: true)
       end
 
       def collect_matches
+        names_by_tid = client.items.fetch("items", {}).transform_values { |attrs| attrs["normalizedName"].to_s }
         queue = Queue.new
         nameless_items.find_each { |item| queue << item }
         found = Queue.new
@@ -35,7 +35,7 @@ module Tarkov
           Thread.new do
             loop do
               item = queue.pop(true)
-              if (match = match_for(item))
+              if (match = match_for(item, names_by_tid[item.tid]))
                 found << [ item, match[0], match[1] ]
               end
             end
@@ -47,8 +47,10 @@ module Tarkov
         drain(found)
       end
 
-      def match_for(item)
-        candidates = fandom_client.search_titles(item.normalized_name.tr("-", " "))
+      def match_for(item, normalized_name)
+        return nil if normalized_name.blank?
+
+        candidates = fandom_client.search_titles(normalized_name.tr("-", " "))
         contents = fandom_client.raw_wikitext(candidates)
         candidates.each do |title|
           wikitext = contents[title]

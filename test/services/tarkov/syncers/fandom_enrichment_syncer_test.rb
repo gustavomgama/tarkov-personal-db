@@ -5,12 +5,11 @@ module Tarkov
     class FandomEnrichmentSyncerTest < ActiveSupport::TestCase
       M80_WIKITEXT = <<~WIKI.freeze
         {{Infobox ammo
-        |weight             =0.024 kg
         |trader             =[[Ref]] LL3<br/>[[Peacekeeper]] LL4, after completing his task [[The Cleaner]]
         |node               =58dd3ad986f77403051cba8f
         }}
 
-        '''{{PAGENAME}}''' is a [[7.62x51mm NATO|cartridge]] in ''[[Escape from Tarkov]]''.
+        '''{{PAGENAME}}''' is a [[7.62x51mm NATO|cartridge]].
       WIKI
 
       QUEST_WIKITEXT = <<~WIKI.freeze
@@ -19,37 +18,41 @@ module Tarkov
         |previous     =[[Wet Job - Part 1]]
         }}
 
-        '''{{PAGENAME}}''' is a [[Quests|Quest]] in ''[[Escape from Tarkov]]''.
+        '''{{PAGENAME}}''' is a [[Quests|Quest]].
       WIKI
 
       setup do
         ItemSyncer.new(client: FakeTarkovClient.new(items: item_payload)).call
+        TraderSyncer.new(client: FakeTarkovClient.new(traders: trader_payload)).call
         TaskSyncer.new(client: FakeTarkovClient.new(tasks: tasks_payload)).call
         @item = Item.find_by!(tid: "item-1")
         @item.update!(wiki_link: "https://escapefromtarkov.fandom.com/wiki/7.62x51mm_M80")
         @task = Task.find_by!(tid: "task-1")
-        @task.update!(wiki_link: "https://escapefromtarkov.fandom.com/wiki/The_Cleaner")
+        @task.update!(name: "The Cleaner", wiki_link: "https://escapefromtarkov.fandom.com/wiki/The_Cleaner")
+        @previous = Task.find_by!(tid: "task-2").tap do |t|
+          t.update!(name: "Wet Job - Part 1", wiki_link: "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_1")
+        end
       end
 
-      test "enriches items with wiki description and unlock text" do
+      test "creates money unlock rows resolving the task by wiki title" do
         results = run_enrichment
 
         assert_equal 1, results[:items]
-        assert_equal "7.62x51mm M80 is a cartridge in Escape from Tarkov.", @item.reload.description
-        assert_equal "Ref LL3; Peacekeeper LL4, after completing his task The Cleaner", @item.unlock_text
-
-        unlocks = @item.item_unlocks.order(:trader_title)
-        assert_equal %w[Peacekeeper Ref], unlocks.pluck(:trader_title)
-        assert_equal [ 4, 3 ], unlocks.pluck(:loyalty_level)
-        assert_equal [ "The Cleaner", "The Cleaner" ], unlocks.pluck(:unlocking_task_title)
+        rows = @item.reload.item_unlocks.of_type("money").order(:loyalty_level)
+        assert_equal %w[Ref Peacekeeper], rows.map(&:trader_name)
+        assert_equal [ 3, 4 ], rows.map(&:loyalty_level)
+        assert rows.all? { |row| row.task == @task }
+        assert_predicate @item.reload, :require_unlock?
       end
 
-      test "enriches tasks with description and previous quest title" do
+      test "resolves previous/next task links from quest infoboxes" do
         results = run_enrichment
 
         assert_equal 1, results[:tasks]
-        assert_equal "The Cleaner is a Quest in Escape from Tarkov.", @task.reload.description
-        assert_equal "Wet Job - Part 1", @task.previous_task_title
+        assert_equal @previous.id, @task.reload.previous_task_id
+        assert_equal "Wet Job - Part 1", @task.previous_task_name
+        assert_equal @task.id, @previous.reload.next_task_id
+        assert_equal "The Cleaner", @previous.next_task_name
       end
 
       test "leaves records untouched when wiki content is missing" do
@@ -59,8 +62,7 @@ module Tarkov
 
         assert_equal 0, results[:items]
         assert_equal 0, results[:tasks]
-        assert_equal "Assault rifle", @item.reload.description
-        assert_nil @item.reload.unlock_text
+        assert_empty @item.reload.item_unlocks
       end
 
       private

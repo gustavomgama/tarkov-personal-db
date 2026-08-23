@@ -9,12 +9,11 @@ class CraftsAndUnlockTaskTest < ActiveSupport::TestCase
     @item_2 = Item.create!(tid: "item-2", name: "Dollars")
   end
 
-  test "records barter unlock task on trader items" do
-    Tarkov::Syncers::TraderItemSyncer.new(client: FakeTarkovClient.new(barters: barter_payload)).call
+  test "records barter unlock task on item unlocks" do
+    Tarkov::Syncers::BarterSyncer.new(client: FakeTarkovClient.new(barters: barter_payload)).call
 
-    offer = TraderItem.joins(:item).find_by!(items: { tid: "qitem-9" })
-    assert_equal Task.find_by!(tid: "task-1"), offer.unlock_task
-    assert_nil TraderItem.joins(:item).find_by!(items: { tid: "item-2" }).unlock_task_id
+    offer = Item.find_by!(tid: "qitem-9").item_unlocks.sole
+    assert_equal Task.find_by!(tid: "task-1"), offer.task
   end
 
   test "syncs hideout crafts with required and reward items" do
@@ -26,6 +25,7 @@ class CraftsAndUnlockTaskTest < ActiveSupport::TestCase
     craft = HideoutCraft.find_by!(tid: "craft-1")
     assert_equal HideoutStation.find_by!(tid: "station-2"), craft.hideout_station
     assert_equal 3600, craft.duration
+    assert_predicate Item.find_by!(tid: "item-2").reload, :craft?
 
     required = craft.craft_items.find_by!(kind: "required")
     assert_equal "item-1", required.item.tid

@@ -1,5 +1,15 @@
 require "test_helper"
 
+# == Schema Information
+#
+# Table name: sync_states
+#
+#  id         :integer          not null, primary key
+#  synced_at  :datetime         not null
+#  version    :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class SyncStateTest < ActiveSupport::TestCase
   test "records syncs and reports the last synced version" do
     assert_nil SyncState.last_synced_version

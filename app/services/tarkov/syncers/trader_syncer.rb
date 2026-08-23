@@ -21,9 +21,6 @@ module Tarkov
       def trader_attributes(attrs)
         {
           name: attrs["name"],
-          description: attrs["description"],
-          currency: attrs["currency"] || "RUB",
-          normalized_name: attrs["normalizedName"],
           reset_time: parse_time(attrs["resetTime"])
         }
       end

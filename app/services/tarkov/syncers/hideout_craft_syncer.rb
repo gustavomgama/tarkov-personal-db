@@ -23,12 +23,29 @@ module Tarkov
           level: attrs["level"],
           duration: attrs["duration"]
         })
+        task = Task.find_by(tid: attrs["taskUnlock"])
+        mark_crafted_item(attrs, task)
         sync_items(craft, "required", attrs["requiredItems"])
         product = attrs["productItem"]
         rewards = product ? [ { "item" => product["item"], "count" => product["count"] } ] : []
         sync_items(craft, "reward", rewards)
       rescue ActiveRecord::RecordInvalid => e
         Rails.logger.warn("[tarkov:sync] craft #{attrs['id']} skipped: #{e.message}")
+      end
+
+      def mark_crafted_item(attrs, task)
+        product = attrs["productItem"]
+        item = product && Item.find_by(tid: product["item"])
+        return unless item
+
+        item.update!(craft: true)
+        return unless task
+
+        row = ItemUnlock.find_or_initialize_by(item: item, task_id: task.id).tap { |row| row.unlock_types = [ "craft" ] }
+        row.assign_attributes(item_name: item.name)
+        row.save!
+      rescue ActiveRecord::RecordInvalid => e
+        Rails.logger.warn("[tarkov:sync] craft unlock for #{attrs['id']} skipped: #{e.message}")
       end
 
       def find_craft(attrs)

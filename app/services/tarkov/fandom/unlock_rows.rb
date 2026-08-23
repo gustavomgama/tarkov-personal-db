@@ -3,20 +3,47 @@ module Tarkov
     class UnlockRows
       UNKNOWN_MARKERS = %w[??? ??].freeze
 
+      # Wiki trader lines are purchase ("money") unlocks.
       def self.sync!(item, unlock_text)
-        return item.item_unlocks.destroy_all if unlock_text.blank?
+        return item.item_unlocks.of_type("money").destroy_all if unlock_text.blank?
 
-        task_title = task_title_from(unlock_text)
-        kept = unlock_text.scan(/([^;,]+?)\s+LL(\d+)/i).map do |trader_title, loyalty|
-          row = ItemUnlock.find_or_initialize_by(item: item, trader_title: trader_title.strip)
-          row.assign_attributes(loyalty_level: loyalty.to_i, unlocking_task_title: task_title)
+        task = Task.find_by_wiki_title(task_title_from(unlock_text).to_s)
+        # A trailing "after completing his task X" phrase governs every listed
+        # route; a leading title only governs the first one.
+        task_for_all = trailing_clause(unlock_text).present?
+        kept = unlock_text.scan(/([^;,]+?)\s+LL(\d+)/i).each_with_index.map do |(trader_name, loyalty), index|
+          row_task = task if task && (task_for_all || index.zero?)
+          row = find_row(item, trader_name.strip, row_task)
+          row.assign_attributes(
+            item_name: item.name,
+            loyalty_level: loyalty.to_i,
+            unlock_types: [ "money" ]
+          )
           row.save!
+          item.update!(require_unlock: true) if row_task
           row
         end
-        (item.item_unlocks - kept).each(&:destroy!)
+        stale = item.item_unlocks.of_type("money").reject { |row| kept.include?(row) }
+        stale.each(&:destroy!)
+        kept
       rescue ActiveRecord::RecordInvalid => e
         Rails.logger.warn("[tarkov:sync] unlocks for #{item.tid} skipped: #{e.message}")
         []
+      end
+
+      def self.find_row(item, trader_name, task)
+        scope = ItemUnlock.where(item: item, trader_name: trader_name).of_type("money")
+        scope = scope.where(task_id: task&.id)
+        scope.first || ItemUnlock.new(
+          item: item,
+          trader_name: trader_name,
+          trader_id: trader_for(trader_name)&.id,
+          task_id: task&.id
+        )
+      end
+
+      def self.trader_for(name)
+        Trader.find_by(name: name)
       end
 
       def self.task_title_from(text)

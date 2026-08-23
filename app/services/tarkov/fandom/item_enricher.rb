@@ -10,16 +10,10 @@ module Tarkov
       def apply!(wikitext, page_title)
         parser = WikitextParser.new(wikitext, page_title: page_title)
         unlock = parser.infobox_params["trader"].to_s
-        attributes = {
-          name: page_title,
-          wiki_link: wiki_link_for(page_title),
-          description: parser.lead_description.presence || @item.description,
-          unlock_text: unlock.match?(UNLOCK_PATTERN) ? unlock : nil
-        }
-        return false if attributes.values.compact.all?(&:blank?)
+        has_unlock_info = unlock.match?(UNLOCK_PATTERN)
 
-        @item.update!(attributes)
-        UnlockRows.sync!(@item, attributes[:unlock_text])
+        @item.update!(name: page_title, wiki_link: wiki_link_for(page_title))
+        UnlockRows.sync!(@item, has_unlock_info ? unlock : nil)
         true
       rescue ActiveRecord::RecordInvalid => e
         Rails.logger.warn("[tarkov:sync] enrichment for #{@item.tid} rejected: #{e.message}")
@@ -27,8 +21,6 @@ module Tarkov
       end
 
       private
-
-      attr_reader :item
 
       def wiki_link_for(title)
         "https://escapefromtarkov.fandom.com/wiki/#{title.tr(' ', '_')}"

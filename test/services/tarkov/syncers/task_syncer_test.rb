@@ -28,7 +28,7 @@ module Tarkov
         TaskSyncer.new(client: fake_client).call
 
         quest_item = Item.find_by!(tid: "qitem-9")
-        assert_equal [ "questItem" ], quest_item.types
+        assert_predicate quest_item, :quest_item?
         assert_equal "Military Intel", quest_item.name
 
         objective = Task.find_by!(tid: "task-1").task_objectives.find_by!(item: quest_item)
@@ -40,7 +40,6 @@ module Tarkov
 
         task = Task.find_by!(tid: "task-1")
         assert_predicate task, :lightkeeper_required?
-        assert_equal "Any", task.faction_name
       end
 
       test "creates tasks without trader when payload has none" do
