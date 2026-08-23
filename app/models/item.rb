@@ -9,7 +9,7 @@
 #  grid_image_link :string
 #  icon_link       :string
 #  name            :string           not null
-#  price           :decimal(14, 2)
+#  price           :integer
 #  quest_item      :boolean          default(FALSE), not null
 #  require_unlock  :boolean          default(FALSE), not null
 #  tid             :string           not null
