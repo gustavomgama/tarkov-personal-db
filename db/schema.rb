@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_23_200000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_23_201000) do
   create_table "craft_items", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -101,7 +101,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_23_200000) do
     t.string "grid_image_link"
     t.string "icon_link"
     t.string "name", null: false
-    t.integer "price"
+    t.decimal "price", precision: 14, scale: 2
     t.boolean "quest_item", default: false, null: false
     t.boolean "require_unlock", default: false, null: false
     t.string "tid", null: false

@@ -9,7 +9,7 @@
 #  grid_image_link :string
 #  icon_link       :string
 #  name            :string           not null
-#  price           :integer
+#  price           :decimal(14, 2)
 #  quest_item      :boolean          default(FALSE), not null
 #  require_unlock  :boolean          default(FALSE), not null
 #  tid             :string           not null
@@ -34,4 +34,9 @@ class Item < ApplicationRecord
 
   validates :tid, presence: true, uniqueness: true
   validates :name, presence: true
+
+  # BigDecimal renders as scientific notation (e.g. "0.7e1"); expose plain floats.
+  def price
+    super&.to_f
+  end
 end
