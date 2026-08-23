@@ -15,6 +15,8 @@ module Tarkov
         count = BarterSyncer.new(client: fake_client).call
 
         assert_equal 2, count
+        cash = Item.find_by!(tid: "item-2").item_unlocks.of_type("money")
+        assert_empty cash
         unlocked = Item.find_by!(tid: "qitem-9").item_unlocks.of_type("barter").sole
         assert_equal "barter", unlocked.unlock_types.first
         assert_equal @trader, unlocked.trader
@@ -54,10 +56,20 @@ module Tarkov
         end
       end
 
+      test "syncs cash offers into money unlock rows with loyalty levels" do
+        client = FakeTarkovClient.new(barters: [], items: item_payload)
+        BarterSyncer.new(client: client).call
+
+        rows = Item.find_by!(tid: "item-1").item_unlocks.of_type("money").order(:loyalty_level)
+        assert_equal [ 2, 3 ], rows.map(&:loyalty_level)
+        assert_equal [ "Prapor" ], rows.map(&:trader_name).uniq
+        assert_not_predicate Item.find_by!(tid: "item-1").reload, :require_unlock?
+      end
+
       private
 
       def fake_client
-        FakeTarkovClient.new(barters: barter_payload)
+        FakeTarkovClient.new(barters: barter_payload, items: item_payload)
       end
     end
   end

@@ -6,6 +6,7 @@ module Tarkov
       # item at several loyalty levels keeps one row per level.
 
       def call
+        sync_cash_offers
         barters = client.barters
         kept = []
         barters.each do |barter|
@@ -18,6 +19,34 @@ module Tarkov
         (kept.any? ? stale_scope : ItemUnlock.of_type("barter")).reject { |row| kept.include?(row) }
                                                                .each(&:destroy!)
         kept.size
+      end
+
+      # Structured money routes from the items payload (buyFromTrader).
+      # Additive only - wiki-derived money rows are never deleted here.
+      def sync_cash_offers
+        (client.items.fetch("items", {})).each_value do |attrs|
+          item = Item.find_by(tid: attrs["id"])
+          next unless item
+
+          Array(attrs["buyFromTrader"]).each do |offer|
+            trader = Trader.find_by(tid: offer["trader"])
+            task_id = Task.find_by(tid: offer["taskUnlock"])&.id
+            row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id,
+                                   task_id: task_id, loyalty_level: offer["minTraderLevel"])
+                            .of_type("money").first ||
+                  ItemUnlock.new(
+                    item_id: item.id, item_name: item.name,
+                    trader_id: trader&.id, trader_name: trader&.name,
+                    task_id: task_id, loyalty_level: offer["minTraderLevel"],
+                    unlock_types: [ "money" ]
+                  )
+            row.assign_attributes(loyalty_level: offer["minTraderLevel"])
+            row.save!
+            item.update!(require_unlock: true) if task_id
+          end
+        end
+      rescue ActiveRecord::RecordInvalid => e
+        Rails.logger.warn("[tarkov:sync] cash offers skipped: #{e.message}")
       end
 
       private

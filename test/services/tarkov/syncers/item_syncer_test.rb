@@ -10,6 +10,8 @@ module Tarkov
         item = Item.find_by!(tid: "item-1")
         assert_equal "Colt M4A1", item.name
         assert_equal "https://assets.tarkov.dev/item-1-icon.webp", item.icon_link
+        assert_equal 70, item.price.to_f
+        assert_equal "USD", item.currency
         assert_not item.barter?
         assert_not item.craft?
         assert_not item.require_unlock?

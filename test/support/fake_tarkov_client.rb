@@ -32,6 +32,10 @@ module TarkovTestFixtures
           "id" => "item-1",
           "normalizedName" => "colt-m4a1",
           "name" => "Colt M4A1",
+          "buyFromTrader" => [
+            { "trader" => "trader-1", "price" => 6500, "priceRUB" => 6500, "currency" => "RUB", "minTraderLevel" => 2 },
+            { "trader" => "trader-1", "price" => 70, "priceRUB" => 6300, "currency" => "USD", "minTraderLevel" => 3 }
+          ],
           "shortName" => "M4A1",
           "description" => "Assault rifle",
           "types" => [ "gun" ],

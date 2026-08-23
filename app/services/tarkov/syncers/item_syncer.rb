@@ -20,6 +20,17 @@ module Tarkov
           icon_link: attrs["iconLink"],
           grid_image_link: attrs["gridImageLink"],
           wiki_link: attrs["wikiLink"]
+        }.merge(trader_price_attributes(attrs))
+      end
+
+      # Cheapest trader buy offer; flea-market prices are deliberately ignored.
+      def trader_price_attributes(attrs)
+        offer = Array(attrs["buyFromTrader"]).min_by { |offer| offer["priceRUB"].to_f }
+        return {} unless offer
+
+        {
+          price: offer["price"],
+          currency: offer["currency"]
         }
       end
     end

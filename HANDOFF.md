@@ -179,3 +179,11 @@ Reference data doc: `tarkov-personal-db-resources.md` (repo root).
 - Remaining placeholders are source-absent: 311 items (208 regular w/o wiki page, 103 quest
   items w/o node ids), 6 tasks (event quests w/o wiki pages), 5 event traders (no pages -
   taran/radio-station/mr-kerman/voevoda/survivor). Do not fuzzy-name these.
+
+### Trader prices (2026-08-23)
+
+- "No prices" scope = flea market only. Trader BUY prices wanted and now synced from the
+  items payload `buyFromTrader` (price + real currency RUB/USD/EUR; cheapest offer by priceRUB).
+- Live: 2598 items priced (1820 RUB / 723 USD / 55 EUR). M80 = $7 USD via Peacekeeper.
+- BarterSyncer also materializes cash offers as money-type ItemUnlock rows keyed on
+  [item, trader, task, loyalty] - multiple loyalty tiers coexist.
