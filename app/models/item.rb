@@ -22,6 +22,8 @@
 #  index_items_on_tid  (tid) UNIQUE
 #
 class Item < ApplicationRecord
+  attribute :price, :float
+
   has_many :task_objectives, dependent: :destroy
   has_many :tasks, through: :task_objectives
   has_many :hideout_item_requirements, dependent: :destroy
@@ -34,9 +36,4 @@ class Item < ApplicationRecord
 
   validates :tid, presence: true, uniqueness: true
   validates :name, presence: true
-
-  # BigDecimal renders as scientific notation (e.g. "0.7e1"); expose plain floats.
-  def price
-    super&.to_f
-  end
 end
