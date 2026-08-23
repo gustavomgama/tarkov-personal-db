@@ -9,7 +9,6 @@
 #  name                 :string           not null
 #  next_task_name       :string
 #  previous_task_name   :string
-#  previous_task_title  :string
 #  tid                  :string           not null
 #  wiki_link            :string
 #  created_at           :datetime         not null

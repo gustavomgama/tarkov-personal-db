@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_21_211000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_21_213000) do
   create_table "craft_items", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", null: false
@@ -95,7 +95,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_211000) do
 
   create_table "items", force: :cascade do |t|
     t.boolean "barter", default: false, null: false
-    t.string "category"
     t.boolean "craft", default: false, null: false
     t.datetime "created_at", null: false
     t.string "currency"
@@ -161,7 +160,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_21_211000) do
     t.string "next_task_name"
     t.integer "previous_task_id"
     t.string "previous_task_name"
-    t.string "previous_task_title"
     t.string "tid", null: false
     t.integer "trader_id"
     t.datetime "updated_at", null: false

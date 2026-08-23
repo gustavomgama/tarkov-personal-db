@@ -167,3 +167,15 @@ Planned changes (not implemented):
 6. Keep no-frontend decision until user asks.
 
 Reference data doc: `tarkov-personal-db-resources.md` (repo root).
+
+### Local DB cleanup round (post-redesign)
+
+- BarterSyncer: writes trader_name, identity includes loyalty_level (multi-level offers kept),
+  reconciles stale barter-type rows; upsert refreshes trader fields on re-sync.
+- DenormalizedNamesRefresh runs as final sync step - item_unlocks.item_name always mirrors
+  Item.name (fixes 810 stale copies).
+- Dead columns removed: tasks.previous_task_title, items.category.
+- Backfill now also searches quest items.
+- Remaining placeholders are source-absent: 311 items (208 regular w/o wiki page, 103 quest
+  items w/o node ids), 6 tasks (event quests w/o wiki pages), 5 event traders (no pages -
+  taran/radio-station/mr-kerman/voevoda/survivor). Do not fuzzy-name these.

@@ -4,7 +4,6 @@
 #
 #  id              :integer          not null, primary key
 #  barter          :boolean          default(FALSE), not null
-#  category        :string
 #  craft           :boolean          default(FALSE), not null
 #  currency        :string
 #  grid_image_link :string

@@ -22,7 +22,6 @@ module Tarkov
 
       def nameless_items
         Item.where("name LIKE ? OR name LIKE ? OR name = ''", "% Name", "% ShortName")
-            .where.not(quest_item: true)
       end
 
       def collect_matches

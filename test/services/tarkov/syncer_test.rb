@@ -21,6 +21,7 @@ module Tarkov
       assert_equal 2, results[:barters]
       assert_equal 2, results[:hideout]
       assert_kind_of Hash, results[:fandom_names]
+      assert_kind_of Integer, results[:refresh_names]
     end
   end
 end

@@ -12,7 +12,7 @@ class CraftsAndUnlockTaskTest < ActiveSupport::TestCase
   test "records barter unlock task on item unlocks" do
     Tarkov::Syncers::BarterSyncer.new(client: FakeTarkovClient.new(barters: barter_payload)).call
 
-    offer = Item.find_by!(tid: "qitem-9").item_unlocks.sole
+    offer = Item.find_by!(tid: "qitem-9").item_unlocks.of_type("barter").sole
     assert_equal Task.find_by!(tid: "task-1"), offer.task
   end
 

@@ -9,7 +9,8 @@ module Tarkov
       crafts: "Tarkov::Syncers::HideoutCraftSyncer",
       fandom_names: "Tarkov::Syncers::FandomNameSyncer",
       fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer",
-      item_backfill: "Tarkov::Syncers::ItemBackfillSyncer"
+      item_backfill: "Tarkov::Syncers::ItemBackfillSyncer",
+      refresh_names: "Tarkov::Syncers::DenormalizedNamesRefresh"
     }.freeze
 
     FANDOM_STEPS = [

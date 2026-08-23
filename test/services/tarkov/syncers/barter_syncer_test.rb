@@ -15,9 +15,10 @@ module Tarkov
         count = BarterSyncer.new(client: fake_client).call
 
         assert_equal 2, count
-        unlocked = Item.find_by!(tid: "qitem-9").item_unlocks.sole
+        unlocked = Item.find_by!(tid: "qitem-9").item_unlocks.of_type("barter").sole
         assert_equal "barter", unlocked.unlock_types.first
         assert_equal @trader, unlocked.trader
+        assert_equal "Prapor", unlocked.trader_name
         assert_equal 4, unlocked.loyalty_level
         assert_equal Task.find_by!(tid: "task-1"), unlocked.task
 
@@ -25,6 +26,26 @@ module Tarkov
         assert_nil plain.task_id
         assert_predicate Item.find_by!(tid: "qitem-9").reload, :barter?
         assert_predicate Item.find_by!(tid: "item-2").reload, :barter?
+      end
+
+      test "keeps one row per loyalty level when a trader offers multiple" do
+        barters = barter_payload + [ barter_payload.first.merge("id" => "barter-low", "minTraderLevel" => 1) ]
+        count = BarterSyncer.new(client: FakeTarkovClient.new(barters: barters)).call
+
+        levels = Item.find_by!(tid: "item-2").item_unlocks.of_type("barter").map(&:loyalty_level).sort
+        assert_equal [ 1, 2 ], levels
+        assert_equal 3, count
+      end
+
+      test "destroys stale barter rows missing from payload" do
+        BarterSyncer.new(client: fake_client).call
+        ItemUnlock.create!(item: Item.find_by!(tid: "item-2"), trader: @trader,
+                           trader_name: "Prapor", loyalty_level: 9, unlock_types: [ "barter" ],
+                           item_name: "Dollars")
+
+        BarterSyncer.new(client: fake_client).call
+
+        assert_nil ItemUnlock.find_by(loyalty_level: 9)
       end
 
       test "skips barters referencing unknown traders or items" do
