@@ -20,7 +20,7 @@ module Tarkov
 
       def trader_attributes(attrs)
         {
-          name: attrs["name"],
+          name: client.localizations.trader_nickname(attrs.fetch("id")) || attrs["name"],
           image_url: attrs["imageLink"],
           reset_time: parse_time(attrs["resetTime"])
         }

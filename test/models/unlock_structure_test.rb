@@ -73,25 +73,6 @@ class UnlockStructureTest < ActiveSupport::TestCase
     assert_nil entry.required_player_level
   end
 
-  test "parses leading-task unlock format and variant notes" do
-    item = Item.create!(tid: "item-var", name: "T.O 2k24")
-    rooftops = Task.create!(tid: "task-rooftops", name: "Kings of the Rooftops")
-    Tarkov::Fandom::UnlockRows.sync!(item, "Kings of the Rooftops; Jaeger LL3: OV variant; ???; Ref LL2")
-
-    rows = item.item_unlocks.order(:trader_name)
-    assert_equal %w[Jaeger Ref], rows.map(&:trader_name)
-    assert_equal [ 3, 2 ], rows.map(&:loyalty_level)
-    assert_equal [ rooftops.id, nil ], rows.map(&:task_id)
-  end
-
-  test "stops trailing task clause at semicolons" do
-    item = Item.create!(tid: "item-clause", name: "Test Item")
-    Tarkov::Fandom::UnlockRows.sync!(item, "Ref LL4 after completing his task The Punisher - Part 4; Mechanic LL3")
-
-    row = item.item_unlocks.find_by(trader_name: "Ref")
-    assert_not_nil row
-  end
-
   test "merged_chain orders dependencies before dependents" do
     root = Task.create!(tid: "mc-root", name: "AAA Entry", min_player_level: 8)
     mid = Task.create!(tid: "mc-mid", name: "BBB Mid")

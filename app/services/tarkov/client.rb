@@ -18,6 +18,15 @@ module Tarkov
       end
     end
 
+    # Display-name dictionaries; memoized so one sync costs three requests.
+    def localizations
+      @localizations ||= Localizations.new(
+        items: fetch("items_#{@lang}"),
+        tasks: fetch("tasks_#{@lang}"),
+        traders: fetch("traders_#{@lang}")
+      )
+    end
+
     def fetch(endpoint)
       response = @connection.get("/#{@game_mode}/#{endpoint}", { lang: @lang })
       raise Error, "tarkov.dev #{endpoint} request failed with status #{response.status}" unless response.success?

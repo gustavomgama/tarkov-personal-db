@@ -3,10 +3,7 @@ namespace :tarkov do
     "items" => "Tarkov::Syncers::ItemSyncer",
     "traders" => "Tarkov::Syncers::TraderSyncer",
     "tasks" => "Tarkov::Syncers::TaskSyncer",
-    "barters" => "Tarkov::Syncers::BarterSyncer",
-    "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
-    "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer",
-    "item_backfill" => "Tarkov::Syncers::ItemBackfillSyncer"
+    "barters" => "Tarkov::Syncers::BarterSyncer"
   }.freeze
 
   desc "Sync all reference data (skips unless the wiki Changelog shows a new game version; FORCE=1 overrides)"
@@ -29,7 +26,7 @@ namespace :tarkov do
 
   namespace :sync do
     SYNCERS.each_key do |entity|
-      desc "Sync #{entity} (Fandom wiki is authoritative for names; run after entity syncs to restore names)"
+      desc "Sync #{entity} (manual repair tool; names resolve from json.tarkov.dev localization files)"
       task entity.to_sym => :environment do
         count = SYNCERS.fetch(entity).constantize.new(client: client).call
         puts "#{entity}: #{count} records"
@@ -44,7 +41,7 @@ namespace :tarkov do
 
     puts "Item: #{item.name}"
     entries = Tarkov::UnlockPathResolver.new(item).resolve
-    abort "No wiki unlock info recorded for this item." if entries.empty?
+    abort "No acquisition routes recorded for this item." if entries.empty?
 
     entries.each do |entry|
       print_entry(entry)
@@ -77,26 +74,9 @@ namespace :tarkov do
     end
   end
 
-  desc "Cross-check wiki money-unlock claims against dev-side barter/craft evidence"
-  task crosscheck: :environment do
-    checked = 0
-    corroborated = 0
-    wiki_only = []
-
-    ItemUnlock.of_type("money").where.not(task_id: nil).includes(:item, :task).find_each do |row|
-      has_dev_route = row.item.item_unlocks.of_type("barter").exists? ||
-                      row.item.item_unlocks.of_type("craft").exists? ||
-                      row.item.barter? || row.item.craft?
-      unless has_dev_route
-        wiki_only << row
-        next
-      end
-
-      checked += 1
-      corroborated += 1 if row.item.require_unlock?
-    end
-    puts "wiki claims with task: #{checked + wiki_only.size}, corroborated by dev routes: #{corroborated}, no dev route found: #{wiki_only.size}"
-    wiki_only.first(10).each { |row| puts "  #{row.item.name}: wiki says '#{row.task.name}' unlocks it, but no dev barter/craft data" }
+  desc "Verify local data against the Fandom wiki (report-only, writes log/factcheck-<version>.md)"
+  task factcheck: :environment do
+    Tarkov::FactChecker.new.call
   end
 
   desc "Data sanity checks: counts and dangling references"
@@ -104,22 +84,20 @@ namespace :tarkov do
     counts = {
       items: Item.count, traders: Trader.count, tasks: Task.count,
       item_unlocks: ItemUnlock.count, task_requirements: TaskRequirement.count,
-      hideout_stations: HideoutStation.count, hideout_levels: HideoutLevel.count,
       last_synced_version: SyncState.last_synced_version
     }
     counts.each { |label, value| puts format("%-22s %s", "#{label}:", value) }
 
     nameless = Item.where("name LIKE ? OR name LIKE ? OR name = ''", "% Name", "% ShortName").count
-    unresolved_unlocks = ItemUnlock.of_type("money").where(task_id: nil).count
-    raw_targets = HideoutRequirement.where("target_name GLOB '[0-9a-f]*' AND length(target_name) = 24").count
+    dangling_unlock_tasks = ItemUnlock.where.not(task_id: nil)
+                                      .where("task_id NOT IN (SELECT id FROM tasks)").count
     tasks_without_trader = Task.where(trader_id: nil).count
 
     puts "--- warnings ---"
-    puts "WARN nameless items (no wiki match): #{nameless}" if nameless.positive?
-    puts "WARN item unlocks referencing unknown tasks: #{unresolved_unlocks}" if unresolved_unlocks.positive?
-    puts "WARN hideout requirements with unresolved tid targets: #{raw_targets}" if raw_targets.positive?
+    puts "WARN nameless items (placeholder names): #{nameless}" if nameless.positive?
+    puts "WARN unlock rows referencing deleted tasks: #{dangling_unlock_tasks}" if dangling_unlock_tasks.positive?
     puts "WARN tasks without trader: #{tasks_without_trader}" if tasks_without_trader.positive?
-    puts "OK" if [ nameless, unresolved_unlocks, raw_targets ].all?(&:zero?)
+    puts "OK" if [ nameless, dangling_unlock_tasks, tasks_without_trader ].all?(&:zero?)
   end
 
   desc "Show quest chain: rake 'tarkov:chain[Wet Job - Part 1]'"

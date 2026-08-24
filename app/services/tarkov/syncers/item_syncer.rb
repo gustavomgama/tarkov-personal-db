@@ -2,9 +2,10 @@ module Tarkov
   module Syncers
     class ItemSyncer < Base
       def call
+        names = client.localizations
         items = (client.items["items"] || {})
         items.each_value.sum do |attrs|
-          upsert!(find_item(attrs), item_attributes(attrs)) ? 1 : 0
+          upsert!(find_item(attrs), item_attributes(attrs, names)) ? 1 : 0
         end
       end
 
@@ -14,9 +15,9 @@ module Tarkov
         Item.find_or_initialize_by(tid: attrs.fetch("id"))
       end
 
-      def item_attributes(attrs)
+      def item_attributes(attrs, names)
         {
-          name: attrs["name"],
+          name: names.item_name(attrs.fetch("id")) || attrs["name"],
           icon_link: attrs["iconLink"],
           wiki_link: attrs["wikiLink"]
         }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs))

@@ -8,12 +8,19 @@ class FakeTarkovClient
                  traders: {},
                  barters: [],
                  hideout: {},
-                 crafts: [])
+                 crafts: [],
+                 localizations: {})
     @payloads = {
       "items" => items, "tasks" => tasks, "traders" => traders,
       "barters" => barters, "hideout" => hideout, "crafts" => crafts
     }
+    @localizations = localizations
     @requested = []
+  end
+
+  # Not tracked in +requested+: it is metadata, not an entity payload.
+  def localizations
+    Tarkov::Localizations.new(**@localizations)
   end
 
   ENDPOINTS.each do |endpoint|
@@ -156,40 +163,5 @@ module TarkovTestFixtures
         "productItem" => { "item" => "item-2", "count" => 1 }
       }
     ]
-  end
-
-  def hideout_payload
-    {
-      "station-1" => {
-        "id" => "station-1",
-        "name" => "Generator",
-        "normalizedName" => "generator",
-        "levels" => [
-          {
-            "level" => 1,
-            "constructionTime" => 60,
-            "description" => "Basic generator",
-            "itemRequirements" => [
-              { "id" => "req-1", "item" => "item-1", "count" => 2 }
-            ],
-            "stationLevelRequirements" => [
-              { "id" => "sreq-1", "station" => "station-2", "level" => 2 }
-            ],
-            "traderRequirements" => [
-              { "id" => "treq-1", "trader" => "trader-1", "value" => 3 }
-            ],
-            "skillRequirements" => [
-              { "id" => "kreq-1", "skill" => "HideoutManagement", "level" => 5 }
-            ]
-          }
-        ]
-      },
-      "station-2" => {
-        "id" => "station-2",
-        "name" => "Water Collector",
-        "normalizedName" => "water-collector",
-        "levels" => []
-      }
-    }
   end
 end

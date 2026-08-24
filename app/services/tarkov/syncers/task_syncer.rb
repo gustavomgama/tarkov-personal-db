@@ -26,7 +26,7 @@ module Tarkov
 
       def task_attributes(attrs)
         {
-          name: attrs["name"],
+          name: client.localizations.task_name(attrs.fetch("id")) || attrs["name"],
           trader: attrs["trader"].present? ? Trader.find_by(tid: attrs["trader"]) : nil,
           min_player_level: attrs["minPlayerLevel"],
           kappa_required: attrs["kappaRequired"] || false,

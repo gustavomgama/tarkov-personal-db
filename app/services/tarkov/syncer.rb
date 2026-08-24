@@ -5,23 +5,13 @@ module Tarkov
       traders: "Tarkov::Syncers::TraderSyncer",
       tasks: "Tarkov::Syncers::TaskSyncer",
       barters: "Tarkov::Syncers::BarterSyncer",
-      fandom_names: "Tarkov::Syncers::FandomNameSyncer",
       trader_purge: "Tarkov::Syncers::TraderPurge",
-      fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer",
-      item_backfill: "Tarkov::Syncers::ItemBackfillSyncer",
       refresh_names: "Tarkov::Syncers::DenormalizedNamesRefresh"
     }.freeze
 
-    FANDOM_STEPS = [
-      "Tarkov::Syncers::FandomNameSyncer",
-      "Tarkov::Syncers::FandomEnrichmentSyncer",
-      "Tarkov::Syncers::ItemBackfillSyncer"
-    ].freeze
-
-    def initialize(client: Tarkov::Client.new, logger: Rails.logger, fandom_client: nil)
+    def initialize(client: Tarkov::Client.new, logger: Rails.logger)
       @client = client
       @logger = logger
-      @fandom_client = fandom_client
     end
 
     def call
@@ -36,16 +26,10 @@ module Tarkov
 
     private
 
-    attr_reader :logger, :fandom_client
+    attr_reader :logger
 
     def build_syncer(klass)
-      args = { client: @client }
-      args[:fandom_client] = fandom_client if fandom_client && step_uses_fandom?(klass)
-      klass.constantize.new(**args)
-    end
-
-    def step_uses_fandom?(klass)
-      FANDOM_STEPS.include?(klass)
+      klass.constantize.new(client: @client)
     end
 
     def log(message)

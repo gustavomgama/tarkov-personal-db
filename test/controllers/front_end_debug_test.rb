@@ -24,23 +24,4 @@ class FrontEndDebugTest < ActionDispatch::IntegrationTest
     assert_match "LL3", response.body
     assert_match "LL4", response.body
   end
-
-  test "task page tolerates malformed wiki links on enrichment" do
-    @task.update!(wiki_link: "http://exa mple")
-
-    silence do
-      Tarkov::Syncers::FandomEnrichmentSyncer.new(
-        client: FakeTarkovClient.new,
-        fandom_client: FakeFandomClient.new(wikitext: { "The Cleaner" => nil })
-      ).call
-    end
-  end
-
-  def silence(&block)
-    old = Rails.logger.level
-    Rails.logger.level = Logger::ERROR
-    block.call
-  ensure
-    Rails.logger.level = old
-  end
 end
