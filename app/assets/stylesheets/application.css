@@ -26,6 +26,14 @@ body {
     radial-gradient(1200px 500px at 50% -10%, #18201a 0%, var(--tk-bg) 60%);
   font-size: .95rem;
 }
+/* table headers reuse the stencil label look without breaking table layout */
+thead.tk-label { display: table-header-group; }
+thead.tk-label::before { content: none; }
+thead.tk-label th {
+  text-transform: uppercase; letter-spacing: .12em;
+  font-size: .72rem; color: var(--tk-accent);
+}
+
 /* section labels — stencil vibe */
 .tk-label {
   display: inline-block; text-transform: uppercase; letter-spacing: .14em;
