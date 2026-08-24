@@ -76,3 +76,27 @@ DDIA principles"*. Full rule files live inside each skill folder.
 
 *Note: ponytail's repo also targets a "Hermes" chat harness (slash commands) — only the skill
 bundles above are installed here.*
+
+## 5. Rails audit — nuke-on-rails (1)
+
+| Skill | Purpose |
+|---|---|
+| `nuke-on-rails` | Principal-engineer Rails audit: rubycritic + Brakeman + bundler-audit + ruby_audit, OWASP arsenal, impact-ranked action plan. Explicit invocation only (model auto-invocation disabled). |
+
+**Use:** *"run nuke on rails on this project"* — expect it to shell out to the scanners.
+
+## 6. Ruby pack — rubyn-code (14) + ruby-skills (3)
+
+`rubyn-ruby` · `rubyn-ruby_project` · `rubyn-rails` · `rubyn-sinatra` · `rubyn-solid` ·
+`rubyn-minitest` · `rubyn-rspec` · `rubyn-refactoring` · `rubyn-code_quality` ·
+`rubyn-design_patterns` · `rubyn-gems` · `rubyn-megaplan` · `rubyn-self_test`
+
+Reference libraries distilled from the rubyn-code project; trigger by topic
+(*"apply rubyn-solid to this service"*, *"check rubyn-rails conventions here"*).
+
+`ruby-resource-map` · `ruby-test-frameworks` · `ruby-version-manager` — st0012's Ruby
+navigation/testing/version-manager guidance.
+
+---
+
+Total: **45 skills installed** (28 documented above + the 17 added from these three packs).
