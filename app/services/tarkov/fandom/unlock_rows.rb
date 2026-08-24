@@ -5,7 +5,7 @@ module Tarkov
 
       # Wiki trader lines are purchase ("money") unlocks.
       def self.sync!(item, unlock_text)
-        return item.item_unlocks.of_type("money").destroy_all if unlock_text.blank?
+        return item.item_unlocks.where(source: "wiki").of_type("money").destroy_all if unlock_text.blank?
 
         task = Task.find_by_wiki_title(task_title_from(unlock_text).to_s)
         # A trailing "after completing his task X" phrase governs every listed
@@ -23,7 +23,7 @@ module Tarkov
           item.update!(require_unlock: true) if row_task
           row
         end
-        stale = item.item_unlocks.of_type("money").reject { |row| kept.include?(row) }
+        stale = item.item_unlocks.where(source: "wiki").of_type("money").reject { |row| kept.include?(row) }
         stale.each(&:destroy!)
         kept
       rescue ActiveRecord::RecordInvalid => e
@@ -32,10 +32,11 @@ module Tarkov
       end
 
       def self.find_row(item, trader_name, task)
-        scope = ItemUnlock.where(item: item, trader_name: trader_name).of_type("money")
+        scope = ItemUnlock.where(item: item, trader_name: trader_name, source: "wiki").of_type("money")
         scope = scope.where(task_id: task&.id)
         scope.first || ItemUnlock.new(
           item: item,
+          source: "wiki",
           trader_name: trader_name,
           trader_id: trader_for(trader_name)&.id,
           task_id: task&.id

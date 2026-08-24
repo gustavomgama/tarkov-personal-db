@@ -22,6 +22,19 @@ class ItemsController < ApplicationController
     @required_level = @unlock_entries.map(&:required_player_level).compact.max
     @compatible_guns = compatible_guns(@item)
     @compatible_ammo = compatible_ammo(@item)
+    @tree_roots, @tree_children = build_chain_tree(@chain)
+    @unlock_task_ids = @unlock_entries.filter_map { |e| e.task&.id }.to_set
+  end
+
+  def build_chain_tree(chain)
+    ids = chain.map(&:id).to_set
+    children = Hash.new { |h, k| h[k] = [] }
+    roots = []
+    chain.each do |task|
+      parents = task.prerequisite_tasks.select { |pre| ids.include?(pre.id) }
+      parents.empty? ? roots << task : parents.each { |pre| children[pre.id] << task }
+    end
+    [ roots, children ]
   end
 
   private
@@ -31,6 +44,7 @@ class ItemsController < ApplicationController
       trader = entry.unlock.trader_name.presence || entry.unlock.trader&.name
       {
         trader: trader,
+        trader_record: entry.unlock.trader,
         loyalty: entry.unlock.loyalty_level,
         loyalty_cost: loyalty_cost(entry.unlock.trader_id, entry.unlock.loyalty_level),
         types: entry.unlock.unlock_types,

@@ -38,10 +38,13 @@ module Tarkov
         results = run_enrichment
 
         assert_equal 1, results[:items]
-        rows = @item.reload.item_unlocks.of_type("money").order(:loyalty_level)
-        assert_equal %w[Ref Peacekeeper], rows.map(&:trader_name)
-        assert_equal [ 3, 4 ], rows.map(&:loyalty_level)
+        rows = @item.reload.item_unlocks.of_type("money").order(:loyalty_level, :trader_name)
+        assert_equal %w[Ref Peacekeeper Prapor], rows.map(&:trader_name)
+        assert_equal [ 3, 4, 4 ], rows.map(&:loyalty_level)
         assert rows.all? { |row| row.task == @task }
+
+        wiki_rows = rows.select { |row| row.source == "wiki" }
+        assert_equal %w[Peacekeeper Ref], wiki_rows.map(&:trader_name).sort
         assert_predicate @item.reload, :require_unlock?
       end
 

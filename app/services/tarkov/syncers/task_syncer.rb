@@ -47,10 +47,10 @@ module Tarkov
             next unless item
 
             trader = Trader.find_by(tid: offer["trader"])
-            row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id, task_id: task.id)
-                            .of_type("money").first ||
+            row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id, task_id: task.id,
+                                  source: "dev").of_type("money").first ||
                   ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
-                                 trader_id: trader&.id, unlock_types: [ "money" ])
+                                 trader_id: trader&.id, source: "dev", unlock_types: [ "money" ])
             upsert!(row, { item_name: item.name, trader_name: trader&.name,
                            loyalty_level: offer["level"] })
             item.update!(require_unlock: true)

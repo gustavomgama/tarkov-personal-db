@@ -217,3 +217,15 @@ Progress checkboxes deliberately NOT implemented yet.
   clobber the merged resultset otherwise.
 - False tagline removed; trader wiki links underscore-encoded; compact route chips
   (Buy · X / Barter · Y / Craft + LL cost); text-bg-accent badge CSS defined.
+
+### Requirements-visibility fixes (2026-08-24)
+
+- ROOT CAUSE of missing purchase requirements: FandomEnrichmentSyncer's stale-cleanup
+  destroyed dev-created cash-offer rows for items whose wiki page has no trader line.
+  Fix: item_unlocks.source column (wiki|dev); each writer only manages its own rows.
+- Money-row identity now includes loyalty_level - multiple tiers per trader coexist.
+- BarterSyncer cash offers refactored to per-offer sync_money_offer w/ per-offer rescue
+  (one bad offer no longer aborts the remaining ~5000-item loop).
+- Traders store image_url; condition chips render trader avatars + readable text.
+- Item page shows recursive task TREE (branches supported) instead of linear list.
+- Verified live: SRO -> PK LL3 $277; Leupold -> PK LL2 $208; M80 full route set.

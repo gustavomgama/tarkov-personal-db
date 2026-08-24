@@ -5,6 +5,7 @@
 #  id            :integer          not null, primary key
 #  item_name     :string           not null
 #  loyalty_level :integer
+#  source        :string           default("wiki"), not null
 #  trader_name   :string
 #  unlock_types  :text             default("[]"), not null
 #  created_at    :datetime         not null

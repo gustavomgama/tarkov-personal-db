@@ -19,8 +19,10 @@ class FrontEndDebugTest < ActionDispatch::IntegrationTest
     get item_path(@item)
 
     assert_response :success
-    assert_match "Buy · Ref", response.body
-    assert_match "Buy · Peacekeeper", response.body
+    assert_match "Ref", response.body
+    assert_match "Peacekeeper", response.body
+    assert_match "LL3", response.body
+    assert_match "LL4", response.body
   end
 
   test "task page tolerates malformed wiki links on enrichment" do

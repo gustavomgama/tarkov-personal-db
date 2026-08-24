@@ -44,6 +44,7 @@ module Tarkov
         BarterSyncer.new(client: fake_client).call
         ItemUnlock.create!(item: Item.find_by!(tid: "item-2"), trader: @trader,
                            trader_name: "Prapor", loyalty_level: 9, unlock_types: [ "barter" ],
+                           source: "dev",
                            item_name: "Dollars")
 
         BarterSyncer.new(client: fake_client).call

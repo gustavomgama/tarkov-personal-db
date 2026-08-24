@@ -21,6 +21,7 @@ module Tarkov
       def trader_attributes(attrs)
         {
           name: attrs["name"],
+          image_url: attrs["imageLink"],
           reset_time: parse_time(attrs["resetTime"])
         }
       end

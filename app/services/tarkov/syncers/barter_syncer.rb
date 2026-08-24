@@ -14,7 +14,7 @@ module Tarkov
           kept << row if row
         end
 
-        stale_scope = ItemUnlock.of_type("barter")
+        stale_scope = ItemUnlock.where(source: "dev").of_type("barter")
         stale_scope = stale_scope.where(item_id: kept.map(&:item_id).uniq) if kept.any?
         (kept.any? ? stale_scope : ItemUnlock.of_type("barter")).reject { |row| kept.include?(row) }
                                                                .each(&:destroy!)
@@ -29,24 +29,28 @@ module Tarkov
           next unless item
 
           Array(attrs["buyFromTrader"]).each do |offer|
-            trader = Trader.find_by(tid: offer["trader"])
-            task_id = Task.find_by(tid: offer["taskUnlock"])&.id
-            row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id,
-                                   task_id: task_id, loyalty_level: offer["minTraderLevel"])
-                            .of_type("money").first ||
-                  ItemUnlock.new(
-                    item_id: item.id, item_name: item.name,
-                    trader_id: trader&.id, trader_name: trader&.name,
-                    task_id: task_id, loyalty_level: offer["minTraderLevel"],
-                    unlock_types: [ "money" ]
-                  )
-            row.assign_attributes(loyalty_level: offer["minTraderLevel"])
-            row.save!
-            item.update!(require_unlock: true) if task_id
+            sync_money_offer(item, offer)
           end
         end
+      end
+
+      def sync_money_offer(item, offer)
+        trader = Trader.find_by(tid: offer["trader"])
+        task_id = Task.find_by(tid: offer["taskUnlock"])&.id
+        loyalty = offer["minTraderLevel"]
+        row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id,
+                               task_id: task_id, loyalty_level: loyalty,
+                               source: "dev").of_type("money").first ||
+              ItemUnlock.new(
+                item_id: item.id, item_name: item.name,
+                trader_id: trader&.id, trader_name: trader&.name,
+                task_id: task_id, loyalty_level: loyalty,
+                unlock_types: [ "money" ], source: "dev"
+              )
+        upsert!(row, { item_name: item.name })
+        item.update!(require_unlock: true) if task_id
       rescue ActiveRecord::RecordInvalid => e
-        Rails.logger.warn("[tarkov:sync] cash offers skipped: #{e.message}")
+        Rails.logger.warn("[tarkov:sync] money offer skipped for #{item.tid}: #{e.message}")
       end
 
       private
@@ -63,8 +67,9 @@ module Tarkov
                                loyalty_level: loyalty).of_type("barter").first ||
               ItemUnlock.new(item_id: item.id, trader_id: trader.id, trader_name: trader.name,
                              task_id: task_id, loyalty_level: loyalty, unlock_types: [ "barter" ],
-                             item_name: item.name)
-        upsert!(row, { item_name: item.name, trader_id: trader.id, trader_name: trader.name })
+                             source: "dev", item_name: item.name)
+        upsert!(row, { item_name: item.name, source: "dev",
+                       trader_id: trader.id, trader_name: trader.name })
         item.update!(barter: true)
         row
       end

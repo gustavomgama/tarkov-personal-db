@@ -24,11 +24,38 @@
 <% if @conditions.any? %>
   <div class="mb-4 d-flex flex-wrap gap-2">
     <% @conditions.each do |condition| %>
-      <div class="condition-chip rounded px-3 py-1 d-flex align-items-center gap-2 flex-wrap">
-        <span><%= tk_condition_text(condition) %></span>
-        <% if condition[:task] %>
-          <%= link_to condition[:task].name, task_path(condition[:task]), class: "link-accent small" %>
+      <div class="condition-chip rounded px-3 py-2 d-flex align-items-center gap-2">
+        <% if condition[:trader_record]&.image_url.present? %>
+          <%= image_tag condition[:trader_record].image_url, size: "40x40", class: "rounded", alt: condition[:trader] %>
         <% end %>
+        <div>
+          <div class="fw-bold">
+            <%= condition[:types].map { |t| t.capitalize }.join(" / ") %> —
+            <% if condition[:trader_record] %>
+              <%= link_to condition[:trader], trader_path(condition[:trader_record]) %>
+            <% else %>
+              <%= condition[:trader] %>
+            <% end %>
+            <% if condition[:loyalty] %>
+              <span class="text-accent">LL<%= condition[:loyalty] %></span>
+            <% end %>
+          </div>
+          <% if condition[:loyalty_cost] %>
+            <div class="small text-secondary">
+              Needs player level <%= condition[:loyalty_cost].required_player_level || "?" %>
+              and reputation <%= condition[:loyalty_cost].required_reputation %>
+            </div>
+          <% end %>
+          <% if condition[:task] %>
+            <div class="small">
+              Unlocked by completing
+              <%= link_to condition[:task].name, task_path(condition[:task]), class: "link-accent" %>
+              <% if condition[:task].wiki_link.present? %>
+                <%= link_to "wiki ↗", condition[:task].wiki_link, target: "_blank", class: "link-secondary" %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
       </div>
     <% end %>
   </div>
@@ -36,37 +63,19 @@
   <p class="text-secondary mb-4">No acquisition routes recorded for this item.</p>
 <% end %>
 
-<% if @chain.any? %>
+<% if @tree_roots.any? %>
   <div class="card bg-body-tertiary border-secondary mb-4">
     <div class="card-header d-flex justify-content-between align-items-center">
-      <span>Task chain — complete in order</span>
+      <span>Task tree — finish prerequisites before the final task</span>
       <% if @required_level.present? %>
         <span class="text-secondary">player level <strong class="text-accent"><%= @required_level %></strong></span>
       <% end %>
     </div>
     <div class="card-body pt-3">
       <ol class="timeline list-unstyled mb-0">
-        <% final_task = @chain.last %>
-        <% @chain.each_with_index do |task, idx| %>
-          <li class="timeline-step <%= "final" if task == final_task %>">
-            <span class="timeline-marker"></span>
-            <div>
-              <div>
-                <span class="step-number">STEP <%= idx + 1 %>/<%= @chain.size %></span>
-                <%= link_to task.name, task_path(task), class: "link-light fw-bold" %>
-                <%= link_to "wiki ↗", task.wiki_link, class: "link-secondary small", target: "_blank" if task.wiki_link.present? %>
-              </div>
-              <div class="small text-secondary">
-                Given by <%= task.trader&.name || "unknown" %>
-                <% if task.min_player_level.to_i.positive? %>
-                  · requires player level <%= task.min_player_level %>+
-                <% end %>
-                <% if task == final_task %>
-                  · <span class="text-accent">unlocks item</span>
-                <% end %>
-              </div>
-            </div>
-          </li>
+        <% @tree_roots.each do |root| %>
+          <%= render "items/tree_node", task: root, children_map: @tree_children,
+                       final: false, label: nil %>
         <% end %>
       </ol>
     </div>

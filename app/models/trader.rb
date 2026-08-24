@@ -3,6 +3,7 @@
 # Table name: traders
 #
 #  id         :integer          not null, primary key
+#  image_url  :string
 #  name       :string           not null
 #  reset_time :datetime
 #  tid        :string           not null

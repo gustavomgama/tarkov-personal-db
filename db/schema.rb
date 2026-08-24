@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_23_213000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_23_221000) do
   create_table "item_unlocks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.integer "item_id", null: false
     t.string "item_name", null: false
     t.integer "loyalty_level"
+    t.string "source", default: "wiki", null: false
     t.integer "task_id"
     t.integer "trader_id"
     t.string "trader_name"
@@ -94,6 +95,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_23_213000) do
 
   create_table "traders", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.string "image_url"
     t.string "name", null: false
     t.datetime "reset_time"
     t.string "tid", null: false
