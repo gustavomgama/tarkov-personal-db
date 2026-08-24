@@ -4,6 +4,9 @@ source "https://rubygems.org"
 gem "rails", "~> 8.1.3"
 # HTTP client for the tarkov.dev JSON API sync rake task
 gem "faraday"
+# Frontend: Hotwire + Bootstrap (vendored, no Sass build needed)
+gem "hotwire-rails"
+gem "importmap-rails"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use sqlite3 as the database for Active Record

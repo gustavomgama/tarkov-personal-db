@@ -187,3 +187,13 @@ Reference data doc: `tarkov-personal-db-resources.md` (repo root).
 - Live: 2598 items priced (1820 RUB / 723 USD / 55 EUR). M80 = $7 USD via Peacekeeper.
 - BarterSyncer also materializes cash offers as money-type ItemUnlock rows keyed on
   [item, trader, task, loyalty] - multiple loyalty tiers coexist.
+
+### Frontend v1 (2026-08-23)
+
+- Stack: ERB + Hotwire (turbo-rails/stimulus-rails via importmap) + vendored Bootstrap 5.3
+  dark theme (app/assets/{stylesheets,javascripts}; Propshaft has no Sass build).
+- Routes are localhost-constrained (127.0.0.1/::1) - keeps local-only promise.
+- ItemsController: index w/ search + currency/barter/craft/task-gated filters (SQLite: use
+  LOWER(name) LIKE, not ILIKE), show = acquisition routes via ItemUnlockLookup +
+  UnlockPathResolver + "needed for tasks" panel.
+- Pending views: Tasks, Traders, Hideout (navbar placeholders).

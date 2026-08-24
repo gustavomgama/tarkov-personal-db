@@ -1,0 +1,66 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Items <span class="text-secondary fs-6">(<%= @total %> total<%= " · showing #{@items.size}" %>)</span></h1>
+  <%= link_to "Sync DB", root_path, class: "btn btn-sm btn-outline-secondary", title: "Run bin/rails tarkov:sync" %>
+</div>
+
+<%= form_with url: items_path, method: :get, local: true, class: "row g-2 mb-4" do %>
+  <div class="col-md-5">
+    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Search items...", autofocus: true %>
+  </div>
+  <div class="col-md-2">
+    <%= select_tag :currency,
+          options_for_select([["Any currency", ""], "RUB", "USD", "EUR"], params[:currency]),
+          class: "form-select" %>
+  </div>
+  <div class="col-md-4 d-flex gap-3 align-items-center">
+    <div class="form-check">
+      <%= check_box_tag :barter, "1", params[:barter] == "1", class: "form-check-input" %>
+      <%= label_tag :barter, "Barter", class: "form-check-label" %>
+    </div>
+    <div class="form-check">
+      <%= check_box_tag :craft, "1", params[:craft] == "1", class: "form-check-input" %>
+      <%= label_tag :craft, "Craft", class: "form-check-label" %>
+    </div>
+    <div class="form-check">
+      <%= check_box_tag :unlocked, "1", params[:unlocked] == "1", class: "form-check-input" %>
+      <%= label_tag :unlocked, "Task-gated", class: "form-check-label" %>
+    </div>
+  </div>
+  <div class="col-md-1">
+    <%= submit_tag "Filter", class: "btn btn-warning w-100" %>
+  </div>
+<% end %>
+
+<div class="table-responsive">
+  <table class="table table-hover align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>Item</th>
+        <th>Buy price</th>
+        <th>Routes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @items.each do |item| %>
+        <tr>
+          <td><%= link_to item.name, item_path(item), class: "link-light text-decoration-none" %></td>
+          <td>
+            <% if item.price.present? %>
+              <span class="badge text-bg-success"><%= number_with_delimiter(Integer(item.price)) %> <%= item.currency %></span>
+            <% else %>
+              <span class="text-secondary">—</span>
+            <% end %>
+          </td>
+          <td>
+            <% if item.require_unlock? %><span class="badge text-bg-warning">task-gated</span><% end %>
+            <% if item.barter? %><span class="badge text-bg-info">barter</span><% end %>
+            <% if item.craft? %><span class="badge text-bg-primary">craft</span><% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<% if @items.empty? %>
+  <p class="text-secondary">No items match your filters.</p>
+<% end %>

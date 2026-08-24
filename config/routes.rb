@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  constraints ->(req) { req.remote_ip.in?([ "127.0.0.1", "::1" ]) } do
+    root "items#index"
+    resources :items, only: %i[index show]
+  end
 end
