@@ -2,6 +2,30 @@
 
 ## Current State (verified working)
 
+### SYNC REFACTOR (2026-08-24) - json.tarkov.dev primary, wiki = fact-checker only
+
+- **GraphQL is dead upstream** (api.tarkov.dev/graphql 503 since 2026-07-21, issue #474 open);
+  json.tarkov.dev REST is the same dataset and stays the transport.
+- **Names come from localization files** (`{entity}_{lang}` endpoints): entity payloads carry
+  `<tid> Name` placeholders; `Tarkov::Localizations` maps them to real display names
+  (items `{tid} Name`/`{tid} ShortName`, tasks `{tid} name`, traders `{tid} Nickname`).
+  Result: placeholder items 309 -> 1 (one RFID keycard absent upstream).
+- **All Fandom write-paths deleted**: FandomNameSyncer, FandomEnrichmentSyncer,
+  ItemBackfillSyncer (+ ItemEnricher/UnlockRows). Fandom::Client remains ONLY for the
+  version gate (Template:Gameversion) and the fact checker.
+- **Accepted data losses** (wiki no longer writes): 492 wiki-source unlock rows (456 money +
+  36 craft), previous/next_task_* chain links (dev payload has requirement edges only,
+  221/517 tasks), infobox descriptions (columns already gone pre-refactor).
+- **Orchestrator steps**: items, traders, tasks, barters, trader_purge, refresh_names -
+  one transaction per game version, SyncState recorded after success (unchanged).
+- **Fact checker** (`rake tarkov:factcheck`): read-only wiki verification, report-only,
+  writes log/factcheck-<version>.md. Checks: name drift vs canonical titles (preset/
+  variant suffixes like "(Black)"/"Default" are not drift), task-gated money routes vs
+  infobox trader lines, chain gaps where wiki knows a predecessor dev lacks.
+  First live run: 312 findings (52 real name diffs, 3 task, 138 unverified routes, 119 gaps).
+- **Parity verified** before cutover: shadow-run matched dev-side exactly (3523 unlocks,
+  barter 778, loyalty 35, requirements 241); items 5312 (quest-item rows gone by design).
+
 ### SCHEMA REDESIGN (2026-08-21) - acquisition-centric model
 
 - ItemUnlock is THE acquisition table: item + item_name + trader (trader_name/trader_id)
@@ -20,9 +44,9 @@
 
 Fresh Rails 8.1 / Ruby 4.0 app, SQLite, local-only reference DB. No frontend yet (explicitly deferred).
 
-**Source-of-truth policy: the Fandom EFT wiki is authoritative for everything it exposes.**
-json.tarkov.dev is secondary/structural only where the wiki has no machine-readable data
-(objective counts, barter recipes, hideout costs/levels, min player levels).
+**Source-of-truth policy (updated 2026-08-24): json.tarkov.dev feeds all data; the Fandom
+EFT wiki is consulted only for the version gate and read-only fact-checking - it never
+writes.**
 
 ### Wiki enrichment (FandomEnrichmentSyncer, runs after FandomNameSyncer)
 
