@@ -7,10 +7,15 @@ module Tarkov
 
       def call
         refreshed = 0
-        ItemUnlock.includes(:item).find_each do |row|
-          next if row.item_name == row.item.name
+        ItemUnlock.includes(:item, :trader).find_each do |row|
+          updates = {}
+          updates[:item_name] = row.item.name if row.item_name != row.item.name
+          if row.trader && row.trader_name != row.trader.name
+            updates[:trader_name] = row.trader.name
+          end
+          next if updates.empty?
 
-          row.update_columns(item_name: row.item.name)
+          row.update_columns(updates)
           refreshed += 1
         end
         refreshed
