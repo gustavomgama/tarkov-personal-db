@@ -2,7 +2,7 @@
 
 <div class="d-flex align-items-center gap-3 my-3">
   <h1 class="h3 mb-0"><%= @trader.name %></h1>
-  <%= link_to "Wiki ↗", "https://escapefromtarkov.fandom.com/wiki/#{@trader.name}", class: "btn btn-sm btn-outline-secondary", target: "_blank" %>
+  <%= link_to "Wiki ↗", "https://escapefromtarkov.fandom.com/wiki/#{@trader.name.gsub(" ", "_")}", class: "btn btn-sm btn-outline-secondary", target: "_blank" %>
 </div>
 
 <span class="tk-label">Loyalty progression</span>

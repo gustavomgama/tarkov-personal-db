@@ -1,3 +1,11 @@
+require "simplecov"
+SimpleCov.merge_timeout 3600
+SimpleCov.start do
+  skip "/test/"
+  skip "lib/tasks"
+  minimum_coverage 100
+end
+
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
@@ -9,7 +17,7 @@ module ActiveSupport
     include TarkovTestFixtures
 
     # Run tests in parallel with specified workers
-    parallelize(workers: :number_of_processors)
+    parallelize(workers: 1)
 
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all

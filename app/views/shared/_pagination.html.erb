@@ -1,0 +1,14 @@
+<% pages = (total.to_f / per).ceil %>
+<% if pages > 1 %>
+  <nav class="d-flex justify-content-between align-items-center my-4" aria-label="Pages">
+    <span class="tk-mono text-secondary">page <%= page %> / <%= pages %></span>
+    <div class="btn-group">
+      <% if page > 1 %>
+        <%= link_to "◂ Prev", request.query_parameters.merge(page: page - 1), class: "btn btn-sm btn-outline-secondary" %>
+      <% end %>
+      <% if page < pages %>
+        <%= link_to "Next ▸", request.query_parameters.merge(page: page + 1), class: "btn btn-sm btn-outline-secondary" %>
+      <% end %>
+    </div>
+  </nav>
+<% end %>

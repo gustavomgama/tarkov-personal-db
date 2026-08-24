@@ -7,18 +7,14 @@ module ApplicationHelper
 
   def tk_condition_text(condition)
     parts = []
-    parts << "Buy from #{condition[:trader]}" if condition[:trader] && condition[:types].include?("money")
-    parts << "Barter at #{condition[:trader]}" if condition[:trader] && condition[:types].include?("barter")
-    parts << "Craft" if condition[:types].include?("craft")
-    text = parts.join(" · ")
-    return text if condition[:loyalty_cost].blank?
-
-    text + " — reach Loyalty Level #{condition[:loyalty]} " \
-           "(player level #{condition[:loyalty_cost].required_player_level || '?'}, " \
-           "rep #{condition[:loyalty_cost].required_reputation})"
-  end
-
-  def tk_badges(*items)
-    safe_join(items.compact, " ")
+    parts << "Buy · #{condition[:trader]}" if condition[:trader] && condition[:types].include?("money")
+    parts << "Barter · #{condition[:trader]}" if condition[:trader] && condition[:types].include?("barter")
+    parts << "Craft" if condition[:types].include?("craft") && condition[:trader].blank?
+    if condition[:loyalty_cost]
+      parts << "LL#{condition[:loyalty]} (level #{condition[:loyalty_cost].required_player_level || "?"}, rep #{condition[:loyalty_cost].required_reputation})"
+    elsif condition[:loyalty]
+      parts << "LL#{condition[:loyalty]}"
+    end
+    parts.join(" · ")
   end
 end

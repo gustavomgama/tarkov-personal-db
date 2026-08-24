@@ -4,6 +4,10 @@ source "https://rubygems.org"
 gem "rails", "~> 8.1.3"
 # HTTP client for the tarkov.dev JSON API sync rake task
 gem "faraday"
+
+group :test do
+  gem "simplecov", require: false
+end
 # Frontend: Hotwire + Bootstrap (vendored, no Sass build needed)
 gem "hotwire-rails"
 gem "importmap-rails"

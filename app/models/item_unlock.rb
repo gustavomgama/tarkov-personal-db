@@ -36,8 +36,4 @@ class ItemUnlock < ApplicationRecord
   validates :item_name, presence: true
 
   scope :of_type, ->(type) { where("unlock_types LIKE ?", "%\"#{type}\"%") }
-
-  def self.for_item(item)
-    where(item_id: item.id)
-  end
 end

@@ -3,13 +3,15 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.order(:name)
-    @items = @items.where("LOWER(name) LIKE ?", "%#{params[:q].downcase}%") if params[:q].present?
+    @items = Item.token_search(:name, params[:q]).order(:name) if params[:q].present?
     @items = @items.where(currency: params[:currency]) if params[:currency].present?
     @items = @items.where(barter: true) if params[:barter] == "1"
     @items = @items.where(craft: true) if params[:craft] == "1"
     @items = @items.where(require_unlock: true) if params[:unlocked] == "1"
     @total = @items.count
-    @items = @items.limit(INDEX_LIMIT)
+    @per = [ [ params.fetch(:per, 10).to_i, 10 ].max, 200 ].min
+    @page = [ params.fetch(:page, 1).to_i, 1 ].max
+    @items = @items.offset((@page - 1) * @per).limit(@per)
   end
 
   def show
@@ -41,10 +43,9 @@ class ItemsController < ApplicationController
   def compatible_guns(item)
     return Item.none unless item.ammo?
 
-    guns = Item.where(gun: true).where("allowed_ammo LIKE ?", "%\"#{item.tid}\"%")
-    return guns.order(:name) if guns.any?
-
-    Item.where(gun: true, caliber: item.caliber).order(:name)
+    by_allowed = Item.where(gun: true).where("allowed_ammo LIKE ?", "%\"#{item.tid}\"%")
+    by_caliber = item.caliber ? Item.where(gun: true, caliber: item.caliber) : Item.none
+    (by_allowed.to_a + by_caliber.to_a).uniq.sort_by(&:name)
   end
 
   def compatible_ammo(item)

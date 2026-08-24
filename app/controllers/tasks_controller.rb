@@ -6,7 +6,8 @@ class TasksController < ApplicationController
                 .group("tasks.id").order(:name)
     scope = scope.where(trader_id: params[:trader_id]) if params[:trader_id].present?
     scope = scope.where("LOWER(tasks.name) LIKE ?", "%#{params[:q].downcase}%") if params[:q].present?
-    @tasks = scope.limit(200)
+    @page = [ params.fetch(:page, 1).to_i, 1 ].max
+    @tasks = scope.offset((@page - 1) * 50).limit(50)
   end
 
   def show

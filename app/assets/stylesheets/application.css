@@ -80,3 +80,15 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   background: var(--tk-panel); border: 1px solid var(--tk-line);
   border-left: 3px solid var(--tk-accent);
 }
+
+/* accent badge (bootstrap has no text-bg-accent) */
+.text-bg-accent {
+  color: #14120c !important;
+  background-color: var(--tk-accent) !important;
+}
+.link-accent { color: var(--tk-accent) !important; }
+.form-select, .form-control { background-color: var(--tk-panel); border-color: var(--tk-line); }
+@media (max-width: 768px) {
+  h1, .h1 { font-size: 1.35rem; }
+  .condition-chip { font-size: .85rem; }
+}

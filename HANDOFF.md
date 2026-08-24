@@ -207,3 +207,13 @@ Frontend: item show = route cards w/ vertical timeline (chain steps, wiki links,
 from trader_loyalty_levels, entry quest + total level); Tasks index/show (prev-next nav,
 "Unlocks" panel); Traders index/show (loyalty ladder + gated + sold lists). Navbar enabled.
 Progress checkboxes deliberately NOT implemented yet.
+
+### Frontend polish + coverage (2026-08-24)
+
+- Pagination: 10/page default, selector up to 200, shared partial (items/tasks).
+- Search: token-based AND matching via ApplicationRecord.token_search (order-independent words).
+- Coverage: SimpleCov wired, eager_load=true in test env so controllers/helpers count;
+  **100.00% line coverage** (86 tests). parallelize(workers:1) required - forked workers
+  clobber the merged resultset otherwise.
+- False tagline removed; trader wiki links underscore-encoded; compact route chips
+  (Buy · X / Barter · Y / Craft + LL cost); text-bg-accent badge CSS defined.

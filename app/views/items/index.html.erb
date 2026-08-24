@@ -9,11 +9,15 @@
     <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Item name…", autofocus: true %>
   </div>
   <div class="col-md-2">
+    <%= select_tag :per,
+          options_for_select([10, 25, 50, 100, 200], @per), class: "form-select", aria_label: "Items per page" %>
+  </div>
+  <div class="col-md-2">
     <%= select_tag :currency,
           options_for_select([["Any currency", ""], "RUB", "USD", "EUR"], params[:currency]),
           class: "form-select" %>
   </div>
-  <div class="col-md-3 d-flex gap-3 align-items-center pt-2">
+  <div class="col-lg-3 d-flex gap-3 align-items-center flex-wrap">
     <div class="form-check"><%= check_box_tag :barter, "1", params[:barter] == "1", class: "form-check-input" %> <%= label_tag :barter, "Barter", class: "form-check-label" %></div>
     <div class="form-check"><%= check_box_tag :craft, "1", params[:craft] == "1", class: "form-check-input" %> <%= label_tag :craft, "Craft", class: "form-check-label" %></div>
     <div class="form-check"><%= check_box_tag :unlocked, "1", params[:unlocked] == "1", class: "form-check-input" %> <%= label_tag :unlocked, "Task-gated", class: "form-check-label" %></div>
@@ -31,7 +35,7 @@
     <tbody>
       <% @items.each do |item| %>
         <tr>
-          <td>
+          <td class="text-nowrap">
             <div class="d-flex align-items-center gap-2">
               <% if item.icon_link.present? %>
                 <%= image_tag item.icon_link, size: "28x28", alt: "" %>
@@ -56,3 +60,4 @@
 <% if @items.empty? %>
   <p class="text-secondary">Nothing matches. Loosen the filters.</p>
 <% end %>
+<%= render "shared/pagination", total: @total, per: @per, page: @page %>

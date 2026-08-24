@@ -2,7 +2,6 @@
   <h1 class="h3 mb-0">Tasks</h1>
   <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@tasks.size} shown" %></span>
 </div>
-<div class="text-secondary mb-4">Every task gates something. Find the ones standing between you and your gear.</div>
 
 <%= form_with url: tasks_path, method: :get, local: true, class: "row g-2 mb-4" do %>
   <div class="col-md-6">
@@ -35,3 +34,4 @@
     </tbody>
   </table>
 </div>
+<%= render "shared/pagination", total: @total, per: 50, page: @page %>

@@ -1,22 +1,20 @@
 <%= link_to "← All items", items_path, class: "link-secondary small" %>
 
-<div class="d-flex align-items-center gap-3 my-3">
+<div class="d-flex align-items-center gap-3 my-3 flex-wrap">
   <% if @item.icon_link.present? %>
     <%= image_tag @item.icon_link, size: "72x72", class: "rounded border border-secondary", alt: "" %>
   <% end %>
   <div>
-    <div class="tk-label">Item dossier</div>
     <h1 class="h3 mb-1"><%= @item.name %></h1>
-    <div class="d-flex gap-2 align-items-center">
+    <div class="d-flex gap-2 align-items-center flex-wrap">
       <% price = tk_money(@item) %>
       <% if price %><span class="badge text-bg-success fs-6"><%= price %></span><% end %>
       <% if @item.require_unlock? %><span class="badge text-bg-accent">task-gated</span><% end %>
       <% if @item.barter? %><span class="badge text-bg-info">barterable</span><% end %>
       <% if @item.craft? %><span class="badge text-bg-primary">craftable</span><% end %>
-      <% if @item.caliber.present? %><span class="tk-mono text-secondary"><%= @item.caliber %></span><% end %>
     </div>
   </div>
-  <div class="ms-auto">
+  <div class="ms-auto flex-shrink-0">
     <%= link_to "Wiki ↗", @item.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank" if @item.wiki_link.present? %>
   </div>
 </div>
@@ -24,13 +22,12 @@
 <h2 class="h5 text-secondary mb-3">Requirements to unlock</h2>
 
 <% if @conditions.any? %>
-  <div class="mb-4 d-flex flex-column gap-2">
+  <div class="mb-4 d-flex flex-wrap gap-2">
     <% @conditions.each do |condition| %>
-      <div class="condition-chip rounded px-3 py-2">
-        <%= tk_condition_text(condition) %>
+      <div class="condition-chip rounded px-3 py-1 d-flex align-items-center gap-2 flex-wrap">
+        <span><%= tk_condition_text(condition) %></span>
         <% if condition[:task] %>
-          — see step
-          <%= link_to condition[:task].name, task_path(condition[:task]), class: "link-accent" %>
+          <%= link_to condition[:task].name, task_path(condition[:task]), class: "link-accent small" %>
         <% end %>
       </div>
     <% end %>
@@ -44,7 +41,7 @@
     <div class="card-header d-flex justify-content-between align-items-center">
       <span>Task chain — complete in order</span>
       <% if @required_level.present? %>
-        <span class="text-secondary">reach player level <strong class="text-accent"><%= @required_level %></strong> along the way</span>
+        <span class="text-secondary">player level <strong class="text-accent"><%= @required_level %></strong></span>
       <% end %>
     </div>
     <div class="card-body pt-3">
@@ -65,7 +62,7 @@
                   · requires player level <%= task.min_player_level %>+
                 <% end %>
                 <% if task == final_task %>
-                  · <span class="text-accent">completing this unlocks the item</span>
+                  · <span class="text-accent">unlocks item</span>
                 <% end %>
               </div>
             </div>
@@ -79,7 +76,7 @@
 <% end %>
 
 <% if @compatible_guns.any? %>
-  <span class="tk-label mt-4">Fits these weapons (<%= @compatible_guns.size %>)</span>
+  <span class="tk-label mt-4 d-block">Compatible guns (<%= @compatible_guns.size %>)</span>
   <div class="d-flex flex-wrap gap-2 mb-4">
     <% @compatible_guns.each do |gun| %>
       <%= link_to item_path(gun) do %>
@@ -90,7 +87,7 @@
 <% end %>
 
 <% if @compatible_ammo.any? %>
-  <span class="tk-label mt-4">Compatible ammunition (<%= @compatible_ammo.size %>)</span>
+  <span class="tk-label mt-4 d-block">Compatible ammunition (<%= @compatible_ammo.size %>)</span>
   <div class="table-responsive">
     <table class="table table-sm table-hover align-middle">
       <tbody>
