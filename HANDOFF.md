@@ -163,6 +163,10 @@ writes.**
 
 ### Gotchas
 
+0. **Production mode needs a prepared DB**: `RAILS_ENV=production bin/rails db:prepare` then
+   `FORCE=1 bin/rails tarkov:sync` - otherwise every page 500s ("Could not find table").
+   Local prod run verified working after this (routes stay localhost-constrained).
+
 1. **Stale db/schema.rb shadows migrations on empty DBs** (Rails 8.1 silently loads schema instead of
    running migrations). If schema looks wrong after rebuild: delete `db/schema.rb`, then drop/create/migrate.
 2. **Upstream placeholder names**: json.tarkov.dev returns `"<tid> Name"` style placeholders for all name
