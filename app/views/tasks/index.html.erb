@@ -1,8 +1,12 @@
-<h1 class="h3 mb-3">Tasks <span class="text-secondary fs-6">(<%= @total %>)</span></h1>
+<div class="d-flex justify-content-between align-items-end mb-1">
+  <h1 class="h3 mb-0">Tasks</h1>
+  <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@tasks.size} shown" %></span>
+</div>
+<div class="text-secondary mb-4">Every task gates something. Find the ones standing between you and your gear.</div>
 
 <%= form_with url: tasks_path, method: :get, local: true, class: "row g-2 mb-4" do %>
   <div class="col-md-6">
-    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Search tasks...", autofocus: true %>
+    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Task name…", autofocus: true %>
   </div>
   <div class="col-md-4">
     <%= select_tag :trader_id,
@@ -10,14 +14,14 @@
           include_blank: "Any trader", class: "form-select" %>
   </div>
   <div class="col-md-2">
-    <%= submit_tag "Filter", class: "btn btn-warning w-100" %>
+    <%= submit_tag "Filter", class: "btn btn-warning w-100 text-black" %>
   </div>
 <% end %>
 
 <div class="table-responsive">
   <table class="table table-hover align-middle">
-    <thead class="table-dark">
-      <tr><th>Task</th><th>Trader</th><th>Level</th><th>Unlocks</th></tr>
+    <thead class="tk-label">
+      <tr><th>Task</th><th>Given by</th><th>Level</th><th>Gates</th></tr>
     </thead>
     <tbody>
       <% @tasks.each do |task| %>
@@ -25,7 +29,7 @@
           <td><%= link_to task.name, task_path(task), class: "link-light text-decoration-none" %></td>
           <td><span class="text-secondary"><%= task.trader&.name || "—" %></span></td>
           <td><% if task.min_player_level.to_i.positive? %><span class="badge text-bg-danger"><%= task.min_player_level %>+</span><% end %></td>
-          <td><% count = task.item_unlocks.count %><% if count.positive? %><span class="badge text-bg-primary"><%= count %></span><% end %></td>
+          <td class="tk-mono"><% count = task.unlocks_count.to_i %><% if count.positive? %><span class="badge text-bg-primary"><%= count %> item#{'s' if count > 1}</span><% end %></td>
         </tr>
       <% end %>
     </tbody>

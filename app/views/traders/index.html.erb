@@ -1,11 +1,13 @@
-<h1 class="h3 mb-3">Traders</h1>
+<h1 class="h3 mb-1">Traders</h1>
+<div class="text-secondary mb-4">Nine people control everything worth owning.</div>
 <div class="row g-3">
   <% @traders.each do |trader| %>
     <div class="col-md-4">
       <%= link_to trader_path(trader), class: "text-decoration-none" do %>
         <div class="card bg-body-tertiary border-secondary h-100">
           <div class="card-body">
-            <h5 class="card-title mb-0"><%= trader.name %></h5>
+            <h5 class="card-title mb-0 text-uppercase"><%= trader.name %></h5>
+            <span class="tk-label mb-0">loyalty · gated items</span>
           </div>
         </div>
       <% end %>

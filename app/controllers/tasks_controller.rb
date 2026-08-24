@@ -1,10 +1,12 @@
 class TasksController < ApplicationController
   def index
-    @tasks = Task.order(:name)
-    @tasks = @tasks.where(trader_id: params[:trader_id]) if params[:trader_id].present?
-    @tasks = @tasks.where("LOWER(name) LIKE ?", "%#{params[:q].downcase}%") if params[:q].present?
-    @total = @tasks.count
-    @tasks = @tasks.limit(200)
+    @total = Task.count
+    scope = Task.left_joins(:item_unlocks)
+                .select("tasks.*, COUNT(item_unlocks.id) AS unlocks_count")
+                .group("tasks.id").order(:name)
+    scope = scope.where(trader_id: params[:trader_id]) if params[:trader_id].present?
+    scope = scope.where("LOWER(tasks.name) LIKE ?", "%#{params[:q].downcase}%") if params[:q].present?
+    @tasks = scope.limit(200)
   end
 
   def show
