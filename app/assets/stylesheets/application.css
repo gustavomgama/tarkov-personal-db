@@ -142,7 +142,11 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   .route-step { padding-left: 1.7rem; }
 }
 
+/* image sizing — resolution-correct, aspect preserved */
+.item-hero-img { height: 110px; width: auto; object-fit: contain; }
+.row-icon { height: 30px; width: auto; }
+
 /* trader portraits */
 .trader-card { transition: border-color .15s ease; }
 .trader-card:hover { border-color: var(--tk-accent) !important; }
-.trader-portrait { border-radius: 4px; border: 1px solid var(--tk-line); }
+.trader-portrait { height: 56px; width: auto; border-radius: 4px; border: 1px solid var(--tk-line); }

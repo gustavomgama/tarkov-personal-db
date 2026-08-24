@@ -4,8 +4,9 @@ module Tarkov
       def call
         names = client.localizations
         items = (client.items["items"] || {})
+        deriver = CategoryDeriver.new(items.values.group_by { |a| a["normalizedName"].to_s })
         items.each_value.sum do |attrs|
-          upsert!(find_item(attrs), item_attributes(attrs, names)) ? 1 : 0
+          upsert!(find_item(attrs), item_attributes(attrs, names, deriver)) ? 1 : 0
         end
       end
 
@@ -15,13 +16,13 @@ module Tarkov
         Item.find_or_initialize_by(tid: attrs.fetch("id"))
       end
 
-      def item_attributes(attrs, names)
+      def item_attributes(attrs, names, deriver)
         {
           name: names.item_name(attrs.fetch("id")) || attrs["name"],
           icon_link: attrs["image512pxLink"] || attrs["iconLink"],
           image_link: attrs["image8xLink"] || attrs["inspectImageLink"] || attrs["baseImageLink"],
           wiki_link: attrs["wikiLink"],
-          categories: Array(attrs["types"])
+          categories: deriver.derive(attrs)
         }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs))
       end
 

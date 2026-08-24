@@ -83,6 +83,15 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_no_match "Nothing matches", response.body
   end
 
+  test "items index filters by trader" do
+    get items_path, params: { trader_id: @prapor.id }
+    assert_response :success
+    assert_match "Colt M4A1", response.body
+
+    get items_path, params: { q: "zzzz", trader_id: @prapor.id }
+    assert_response :success
+  end
+
   test "items index sorts by name and price" do
     get items_path, params: { sort: "price", dir: "asc" }
     assert_response :success

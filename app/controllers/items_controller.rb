@@ -6,14 +6,18 @@ class ItemsController < ApplicationController
   }.freeze
 
   CATEGORIES = {
-    "buyable" => "price IS NOT NULL",
-    "ammo" => "categories LIKE '%\"ammo\"%' OR categories LIKE '%\"ammoBox\"%'",
+    "ammo" => "categories LIKE '%\"ammo\"%'",
     "gun" => "categories LIKE '%\"gun\"%'",
     "helmet" => "categories LIKE '%\"helmet\"%'",
-    "armor" => "categories LIKE '%\"armor\"%' OR categories LIKE '%\"armorPlate\"%'",
+    "armor" => "categories LIKE '%\"armor\"%'",
+    "armored rig" => "categories LIKE '%\"armored rig\"%'",
     "rig" => "categories LIKE '%\"rig\"%'",
     "backpack" => "categories LIKE '%\"backpack\"%'",
-    "headset" => "categories LIKE '%\"headphones\"%'"
+    "headset_earpiece" => "categories LIKE '%\"headset_earpiece\"%'",
+    "gun_parts" => "categories LIKE '%\"gun_parts\"%'",
+    "wearable_parts" => "categories LIKE '%\"wearable_parts\"%'",
+    "containers" => "categories LIKE '%\"containers\"%'",
+    "others" => "categories LIKE '%\"others\"%'"
   }.freeze
 
   def index
@@ -23,6 +27,10 @@ class ItemsController < ApplicationController
     @items = @items.where(currency: currencies) if currencies.any?
     category_filters.each do |condition|
       @items = @items.where(condition)
+    end
+    if params[:trader_id].present?
+      @trader = Trader.find_by(id: params[:trader_id])
+      @items = @items.joins(:item_unlocks).where(item_unlocks: { trader_id: @trader&.id }).distinct
     end
     @items = @items.where(barter: true) if params[:barter] == "1"
     @items = @items.where(craft: true) if params[:craft] == "1"

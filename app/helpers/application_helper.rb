@@ -7,14 +7,18 @@ module ApplicationHelper
 
   def category_options
     {
-      "buyable" => "Buyable",
       "ammo" => "Ammo",
-      "gun" => "Gun / weapon",
+      "gun" => "Gun",
       "helmet" => "Helmet",
       "armor" => "Armor",
-      "rig" => "Rig / armored rig",
+      "armored rig" => "Armored rig",
+      "rig" => "Rig",
       "backpack" => "Backpack",
-      "headset" => "Headset"
+      "headset_earpiece" => "Headset / earpiece",
+      "gun_parts" => "Gun parts",
+      "wearable_parts" => "Wearable parts",
+      "containers" => "Containers",
+      "others" => "Others"
     }
   end
 

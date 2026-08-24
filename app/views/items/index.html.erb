@@ -8,6 +8,11 @@
   <div class="col-md-5">
     <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Item name…", autofocus: true %>
   </div>
+  <div class="col-md-3">
+    <%= select_tag :trader_id,
+          options_from_collection_for_select(Trader.order(:name), :id, :name, params[:trader_id]),
+          include_blank: "Any trader", class: "form-select", aria_label: "Filter by trader" %>
+  </div>
   <div class="col-md-2">
     <%= hidden_field_tag :sort, params[:sort] %>
     <%= hidden_field_tag :dir, params[:dir] %>
@@ -53,7 +58,7 @@
           <td class="text-nowrap">
             <div class="d-flex align-items-center gap-2">
               <% if item.icon_link.present? %>
-                <%= image_tag item.icon_link, size: "28x28", alt: "" %>
+                <%= image_tag item.icon_link, class: "row-icon", alt: "" %>
               <% end %>
               <%= link_to item.name, item_path(item), class: "link-light text-decoration-none" %>
             </div>
