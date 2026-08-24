@@ -19,9 +19,7 @@ class FrontEndDebugTest < ActionDispatch::IntegrationTest
     get item_path(@item)
 
     assert_response :success
-    assert_match "Ref", response.body
-    assert_match "Peacekeeper", response.body
-    assert_match "LL3", response.body
-    assert_match "LL4", response.body
+    flat = response.body.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
+    assert_match "Buy from Ref at loyalty level 3 or Buy from Peacekeeper at loyalty level 4 or Buy from Prapor at loyalty level 4 .", flat
   end
 end

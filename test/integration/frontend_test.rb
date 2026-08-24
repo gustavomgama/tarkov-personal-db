@@ -86,15 +86,31 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "Prev", response.body
   end
 
-  test "item show renders routes, tree branches and unlock markers" do
+  test "item show renders ordered unlock instructions, easiest first" do
     get item_path(@m80)
     assert_response :success
-    assert_match "Money —", response.body
-    assert_match "Needs player level 6", response.body
-    assert_match "Supplier", response.body
-    assert_match "unlocks item", response.body
-    assert_match "Side Branch", response.body
-    assert_match "requires player level 14+", response.body
+    assert_match "How to unlock this item", response.body
+    assert_match "There are 2 ways to get it", response.body
+    assert_match ">easiest</span>", response.body
+
+    flat = response.body.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
+
+    assert_match "2 tasks to complete first.", flat
+    assert_match "3 tasks to complete first.", flat
+
+    # Route 1: chain root first, then the branch task, then the buy action.
+    assert_match "1 Complete Wet Job - Part 1", flat
+    assert_match "2 Complete Side Branch", flat
+    assert_match "Buy from Mechanic at loyalty level 3 .", flat
+
+    # Route 2: deepest prerequisite plays before nearer ones; unlock task last.
+    assert_match "3 tasks to complete first.", flat
+    p6 = flat.index("2 Complete Wet Job - Part 6")
+    supplier = flat.index("3 Complete Supplier")
+    assert_not_nil p6
+    assert_not_nil supplier
+    assert_match "Given by unknown · requires player level 14+", flat
+    assert_match "Buy from Prapor at loyalty level 2 or Buy from Prapor at loyalty level 4 .", flat
     assert_match "Compatible ammunition", response.body
   end
 
@@ -104,10 +120,13 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "No acquisition routes recorded", response.body
   end
 
-  test "item show notes when conditions exist without a chain" do
+  test "item show renders a no-task route in plain language" do
     get item_path(@barter_item)
     assert_response :success
-    assert_match "No quest chain recorded", response.body
+    assert_match "There is one way to get it.", response.body
+    assert_match "No tasks required.", response.body
+    flat = response.body.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
+    assert_match "Barter at Prapor at loyalty level 4 .", flat
   end
 
   test "unknown item renders 404" do

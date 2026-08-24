@@ -92,3 +92,45 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   h1, .h1 { font-size: 1.35rem; }
   .condition-chip { font-size: .85rem; }
 }
+
+/* ============ UNLOCK ROUTES — the product centerpiece ============ */
+.tk-rule { border-color: var(--tk-line); opacity: 1; margin: 1.25rem 0; }
+
+.route-stack { display: grid; gap: 1rem; }
+.route-card {
+  background: linear-gradient(180deg, var(--tk-panel-2), var(--tk-panel));
+  border: 1px solid var(--tk-line);
+  border-left: 3px solid var(--tk-accent-dim);
+  padding: .9rem 1.1rem;
+}
+.route-card.route-easiest { border-left-color: var(--tk-accent); }
+.route-head { border-bottom: 1px dashed var(--tk-line); padding-bottom: .5rem; margin-bottom: .65rem; }
+.route-tag {
+  text-transform: uppercase; letter-spacing: .14em; font-size: .72rem;
+  color: var(--tk-accent); font-weight: 700;
+}
+.route-tag::before { content: "// "; color: var(--tk-accent-dim); }
+
+.route-steps { display: grid; gap: .55rem; }
+.route-step { position: relative; padding-left: 2rem; }
+.step-num {
+  position: absolute; left: 0; top: .05rem;
+  width: 1.4rem; height: 1.4rem; line-height: 1.35rem; text-align: center;
+  font-family: ui-monospace, Menlo, monospace; font-size: .8rem;
+  color: var(--tk-accent); border: 1px solid var(--tk-accent-dim);
+  background: var(--tk-bg);
+}
+.route-step-level .step-num { color: var(--tk-muted); border-color: var(--tk-line); }
+.route-step-final .step-num {
+  color: #14120c; background: var(--tk-accent); border-color: var(--tk-accent);
+  box-shadow: 0 0 8px rgba(201,168,106,.45); font-weight: 700;
+}
+.route-step-final { padding-top: .35rem; border-top: 1px dashed var(--tk-line); margin-top: .35rem; }
+.wiki-link { font-size: .78rem; margin-left: .25rem; white-space: nowrap; }
+.chip-link { text-decoration: none; }
+.chip-link:hover .badge { background-color: var(--tk-accent) !important; color: #14120c !important; }
+
+@media (max-width: 768px) {
+  .route-card { padding: .75rem .8rem; }
+  .route-step { padding-left: 1.7rem; }
+}

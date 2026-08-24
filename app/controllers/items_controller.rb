@@ -17,12 +17,9 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     view = Tarkov::ItemAcquisitionView.new(@item)
-    @conditions = view.conditions
-    @required_level = view.required_level
+    @routes = view.routes
     @compatible_guns = view.compatible_guns
     @compatible_ammo = view.compatible_ammo
-    @tree_roots, @tree_children = view.chain_tree
-    @unlock_task_ids = view.unlock_task_ids
   end
 
   private

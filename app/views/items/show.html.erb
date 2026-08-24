@@ -9,104 +9,106 @@
     <div class="d-flex gap-2 align-items-center flex-wrap">
       <% price = tk_money(@item) %>
       <% if price %><span class="badge text-bg-success fs-6"><%= price %></span><% end %>
-      <% if @item.require_unlock? %><span class="badge text-bg-accent">task-gated</span><% end %>
-      <% if @item.barter? %><span class="badge text-bg-info">barterable</span><% end %>
-      <% if @item.craft? %><span class="badge text-bg-primary">craftable</span><% end %>
     </div>
   </div>
   <div class="ms-auto flex-shrink-0">
-    <%= link_to "Wiki ↗", @item.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank" if @item.wiki_link.present? %>
+    <%= link_to "Wiki ↗", @item.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank", rel: "noopener" if @item.wiki_link.present? %>
   </div>
 </div>
 
-<h2 class="h5 text-secondary mb-3">Requirements to unlock</h2>
+<hr class="tk-rule" />
 
-<% if @conditions.any? %>
-  <div class="mb-4 d-flex flex-wrap gap-2">
-    <% @conditions.each do |condition| %>
-      <div class="condition-chip rounded px-3 py-2 d-flex align-items-center gap-2">
-        <% if condition[:trader_record]&.image_url.present? %>
-          <%= image_tag condition[:trader_record].image_url, size: "40x40", class: "rounded", alt: condition[:trader] %>
-        <% end %>
-        <div>
-          <div class="fw-bold">
-            <%= condition[:types].map { |t| t.capitalize }.join(" / ") %> —
-            <% if condition[:trader_record] %>
-              <%= link_to condition[:trader], trader_path(condition[:trader_record]) %>
-            <% else %>
-              <%= condition[:trader] %>
-            <% end %>
-            <% if condition[:loyalty] %>
-              <span class="text-accent">LL<%= condition[:loyalty] %></span>
-            <% end %>
-          </div>
-          <% if condition[:loyalty_cost] %>
-            <div class="small text-secondary">
-              Needs player level <%= condition[:loyalty_cost].required_player_level || "?" %>
-              and reputation <%= condition[:loyalty_cost].required_reputation %>
-            </div>
-          <% end %>
-          <% if condition[:task] %>
-            <div class="small">
-              Unlocked by completing
-              <%= link_to condition[:task].name, task_path(condition[:task]), class: "link-accent" %>
-              <% if condition[:task].wiki_link.present? %>
-                <%= link_to "wiki ↗", condition[:task].wiki_link, target: "_blank", class: "link-secondary" %>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    <% end %>
-  </div>
-<% else %>
-  <p class="text-secondary mb-4">No acquisition routes recorded for this item.</p>
-<% end %>
+<section aria-labelledby="unlock-heading">
+  <h2 id="unlock-heading" class="tk-label">How to unlock this item</h2>
 
-<% if @tree_roots.any? %>
-  <div class="card bg-body-tertiary border-secondary mb-4">
-    <div class="card-header d-flex justify-content-between align-items-center">
-      <span>Task tree — finish prerequisites before the final task</span>
-      <% if @required_level.present? %>
-        <span class="text-secondary">player level <strong class="text-accent"><%= @required_level %></strong></span>
+  <% if @routes.empty? %>
+    <p class="text-secondary mb-4">No acquisition routes recorded for this item.</p>
+  <% else %>
+    <p class="text-secondary mb-3">
+      <%= @routes.size == 1 ? "There is one way to get it." : "There are #{@routes.size} ways to get it — easiest first." %>
+    </p>
+
+    <div class="route-stack">
+      <% @routes.each_with_index do |route, index| %>
+        <article class="route-card <%= "route-easiest" if index.zero? %>">
+          <header class="route-head d-flex flex-wrap align-items-center gap-2">
+            <span class="route-tag">Route <%= index + 1 %></span>
+            <% if index.zero? && @routes.size > 1 %>
+              <span class="badge text-bg-accent">easiest</span>
+            <% end %>
+            <span class="text-secondary small">
+              <%= route[:tasks].empty? ? "No tasks required." : "#{route[:tasks].size} #{'task'.pluralize(route[:tasks].size)} to complete first." %>
+            </span>
+          </header>
+
+          <ol class="route-steps list-unstyled mb-0">
+            <% step_no = 0 %>
+            <% if route[:required_level].to_i.positive? %>
+              <li class="route-step route-step-level">
+                <span class="step-num">•</span>
+                <span>Reach player level <strong class="text-accent"><%= route[:required_level] %></strong>.</span>
+              </li>
+            <% end %>
+            <% route[:tasks].each do |task| %>
+              <li class="route-step">
+                <span class="step-num"><%= step_no += 1 %></span>
+                <span class="step-body">
+                  Complete <strong><%= link_to task.name, task_path(task), class: "link-light" %></strong>
+                  <% if task.wiki_link.present? %>
+                    <%= link_to "wiki ↗", task.wiki_link, class: "wiki-link", target: "_blank", rel: "noopener", "aria-label": "#{task.name} on the wiki" %>
+                  <% end %>
+                  <span class="text-secondary small d-block">
+                    Given by <%= task.trader&.name || "unknown" %><%= " · requires player level #{task.min_player_level}+" if task.min_player_level.to_i.positive? %>
+                  </span>
+                </span>
+              </li>
+            <% end %>
+            <li class="route-step route-step-final">
+              <span class="step-num">✓</span>
+              <span class="step-body">
+                <% route[:traders].each_with_index do |t, i| %><% if i > 0 %> or <% end %>
+                  <%= route[:actions].include?("barter") ? "Barter at" : "Buy from" %>
+                  <strong><%= t[:name] %></strong><%= " at loyalty level #{t[:loyalty]}" if t[:loyalty] %>
+                <% end %><%= "." if route[:traders].present? %>
+                <% if route[:actions].include?("craft") %>
+                  Craft it<%= " at the hideout" if route[:traders].empty? %>.
+                <% end %>
+              </span>
+            </li>
+          </ol>
+        </article>
       <% end %>
     </div>
-    <div class="card-body pt-3">
-      <ol class="timeline list-unstyled mb-0">
-        <% @tree_roots.each do |root| %>
-          <%= render "items/tree_node", task: root, children_map: @tree_children,
-                       final: false, label: nil %>
-        <% end %>
-      </ol>
-    </div>
-  </div>
-<% elsif !@conditions.empty? %>
-  <p class="text-secondary">No quest chain recorded — the conditions above apply directly.</p>
-<% end %>
+  <% end %>
+</section>
 
 <% if @compatible_guns.any? %>
-  <span class="tk-label mt-4 d-block">Compatible guns (<%= @compatible_guns.size %>)</span>
-  <div class="d-flex flex-wrap gap-2 mb-4">
-    <% @compatible_guns.each do |gun| %>
-      <%= link_to item_path(gun) do %>
-        <span class="badge text-bg-secondary p-2"><%= gun.name %></span>
+  <section aria-labelledby="guns-heading" class="mt-4">
+    <span id="guns-heading" class="tk-label mt-4 d-block">Compatible guns (<%= @compatible_guns.size %>)</span>
+    <div class="d-flex flex-wrap gap-2 mb-4">
+      <% @compatible_guns.each do |gun| %>
+        <%= link_to item_path(gun), class: "chip-link" do %>
+          <span class="badge text-bg-secondary p-2"><%= gun.name %></span>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
+  </section>
 <% end %>
 
 <% if @compatible_ammo.any? %>
-  <span class="tk-label mt-4 d-block">Compatible ammunition (<%= @compatible_ammo.size %>)</span>
-  <div class="table-responsive">
-    <table class="table table-sm table-hover align-middle">
-      <tbody>
-        <% @compatible_ammo.each do |ammo| %>
-          <tr>
-            <td><%= link_to ammo.name, item_path(ammo), class: "link-light text-decoration-none" %></td>
-            <td class="text-end tk-mono"><%= tk_money(ammo) %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+  <section aria-labelledby="ammo-heading" class="mt-4">
+    <span id="ammo-heading" class="tk-label mt-4 d-block">Compatible ammunition (<%= @compatible_ammo.size %>)</span>
+    <div class="table-responsive">
+      <table class="table table-sm table-hover align-middle">
+        <tbody>
+          <% @compatible_ammo.each do |ammo| %>
+            <tr>
+              <td><%= link_to ammo.name, item_path(ammo), class: "link-light text-decoration-none" %></td>
+              <td class="text-end tk-mono"><%= tk_money(ammo) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </section>
 <% end %>

@@ -1,42 +1,36 @@
 module Tarkov
-  # Presents one item's acquisition routes: unlock entries, merged prerequisite
-  # chain, route conditions and gun/ammo compatibility. Extracted from
-  # ItemsController so the web layer only assigns what the templates render.
+  # Presents one item's acquisition routes as ordered player instructions, plus
+  # gun/ammo compatibility. Extracted from ItemsController so the web layer only
+  # assigns what the templates render.
   class ItemAcquisitionView
     def initialize(item)
       @item = item
       @unlock_entries = UnlockPathResolver.new(item).resolve
-      @chain = UnlockPathResolver.merged_chain(@unlock_entries)
     end
 
-    def required_level
-      @unlock_entries.filter_map(&:required_player_level).compact.max
-    end
+    # The product centerpiece: every way to get the item, expressed as ordered
+    # instructions. Routes with fewer tasks come first ("easiest"), ties broken
+    # by the lowest total player level gate.
+    def routes
+      @unlock_entries.group_by { |entry| entry.task&.id }.map do |_task_id, entries|
+        lead = entries.first
+        # Deeper prerequisites come first: that is the order a player completes them.
+        steps = lead.task ? lead.prerequisites.sort_by { |node| -node[:depth] }
+                                             .map { |node| node[:task] } + [ lead.task ] : []
+        actions = entries.flat_map { |e| e.unlock.unlock_types }.uniq
+        traders = entries.filter_map do |e|
+          name = e.unlock.trader_name.presence || e.unlock.trader&.name
+          next if name.blank?
 
-    def conditions
-      @unlock_entries.filter_map do |entry|
-        trader = entry.unlock.trader_name.presence || entry.unlock.trader&.name
+          { name: name, loyalty: e.unlock.loyalty_level }
+        end.uniq { |t| [ t[:name], t[:loyalty] ] }.sort_by { |t| t[:loyalty].to_i }
         {
-          trader: trader,
-          trader_record: entry.unlock.trader,
-          loyalty: entry.unlock.loyalty_level,
-          loyalty_cost: loyalty_cost(entry.unlock.trader_id, entry.unlock.loyalty_level),
-          types: entry.unlock.unlock_types,
-          task: entry.task
+          tasks: steps,
+          actions: actions,
+          traders: traders,
+          required_level: entries.map(&:required_player_level).compact.max
         }
-      end.compact.uniq { |c| [ c[:trader], c[:loyalty], c[:task]&.id ] }
-         .reject { |c| c[:trader].nil? && c[:task].nil? }
-    end
-
-    def chain_tree
-      ids = @chain.map(&:id).to_set
-      children = Hash.new { |h, k| h[k] = [] }
-      roots = []
-      @chain.each do |task|
-        parents = task.prerequisite_tasks.select { |pre| ids.include?(pre.id) }
-        parents.empty? ? roots << task : parents.each { |pre| children[pre.id] << task }
-      end
-      [ roots, children ]
+      end.sort_by { |route| [ route[:tasks].size, route[:required_level].to_i ] }
     end
 
     def compatible_guns
@@ -51,18 +45,6 @@ module Tarkov
       return Item.none unless @item.gun? || @item.allowed_ammo.any?
 
       Item.where(tid: @item.allowed_ammo).order(:name)
-    end
-
-    def unlock_task_ids
-      @unlock_entries.filter_map { |entry| entry.task&.id }.to_set
-    end
-
-    private
-
-    def loyalty_cost(trader_id, level)
-      return nil if trader_id.nil? || level.nil?
-
-      TraderLoyaltyLevel.find_by(trader_id: trader_id, level: level)
     end
   end
 end
