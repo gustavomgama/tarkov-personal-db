@@ -28,9 +28,6 @@ class Item < ApplicationRecord
   serialize :allowed_ammo, coder: JSON
 
   has_many :item_unlocks, dependent: :destroy
-  has_many :unlock_tasks, through: :item_unlocks, source: :task
-  has_many :task_rewards, dependent: :destroy
-  has_many :rewarded_by_tasks, through: :task_rewards, source: :task
 
   validates :tid, presence: true, uniqueness: true
   validates :name, presence: true

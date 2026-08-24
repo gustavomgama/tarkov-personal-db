@@ -58,8 +58,4 @@ class Task < ApplicationRecord
 
     Task.where(id: previous_task_id)
   end
-
-  def next_task
-    @next_task ||= Task.find_by(id: next_task_id)
-  end
 end

@@ -27,8 +27,6 @@
 #  trader_id  (trader_id => traders.id)
 #
 class ItemUnlock < ApplicationRecord
-  TYPES = %w[money barter craft].freeze
-
   serialize :unlock_types, coder: JSON
 
   belongs_to :item
