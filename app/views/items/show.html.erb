@@ -85,7 +85,7 @@
   <h2 class="h5 text-secondary mt-4 mb-2">Compatible guns <span class="fs-6">(<%= @compatible_guns.size %>)</span></h2>
   <div class="d-flex flex-wrap gap-2">
     <% @compatible_guns.each do |gun| %>
-      <%= link_to gun_path(gun), class: "text-decoration-none" do %>
+      <%= link_to item_path(gun), class: "text-decoration-none" do %>
         <span class="badge text-bg-secondary p-2"><%= gun.name %></span>
       <% end %>
     <% end %>
