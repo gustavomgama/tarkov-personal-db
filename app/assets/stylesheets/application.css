@@ -134,3 +134,8 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   .route-card { padding: .75rem .8rem; }
   .route-step { padding-left: 1.7rem; }
 }
+
+/* trader portraits */
+.trader-card { transition: border-color .15s ease; }
+.trader-card:hover { border-color: var(--tk-accent) !important; }
+.trader-portrait { border-radius: 4px; border: 1px solid var(--tk-line); }

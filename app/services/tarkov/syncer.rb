@@ -4,6 +4,7 @@ module Tarkov
       items: "Tarkov::Syncers::ItemSyncer",
       traders: "Tarkov::Syncers::TraderSyncer",
       tasks: "Tarkov::Syncers::TaskSyncer",
+      task_chains: "Tarkov::Syncers::TaskChainSyncer",
       barters: "Tarkov::Syncers::BarterSyncer",
       trader_purge: "Tarkov::Syncers::TraderPurge",
       refresh_names: "Tarkov::Syncers::DenormalizedNamesRefresh"

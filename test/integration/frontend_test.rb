@@ -194,11 +194,13 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_response :missing
   end
 
-  test "traders index lists all traders as cards" do
+  test "traders index lists all traders as cards with portraits" do
+    @prapor.update!(image_url: "https://assets.tarkov.dev/prapor.webp")
     get traders_path
     assert_response :success
     assert_match "Prapor", response.body
     assert_match "Mechanic", response.body
+    assert_match 'alt="Prapor portrait"', response.body
   end
 
   test "trader show renders loyalty ladder, gated list and open stock" do
