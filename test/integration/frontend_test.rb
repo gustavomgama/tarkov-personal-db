@@ -123,6 +123,13 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "Any trader", response.body
   end
 
+  test "tasks index pluralizes gate counts without literal interpolation" do
+    get tasks_path
+    assert_response :success
+    assert_no_match "item#", response.body
+    assert_match %r{<span class="badge text-bg-primary">2 items</span>}, response.body
+  end
+
   test "tasks index filters by trader and name" do
     get tasks_path, params: { trader_id: @prapor.id }
     assert_response :success

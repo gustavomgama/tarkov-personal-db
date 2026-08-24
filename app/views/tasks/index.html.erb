@@ -28,7 +28,7 @@
           <td><%= link_to task.name, task_path(task), class: "link-light text-decoration-none" %></td>
           <td><span class="text-secondary"><%= task.trader&.name || "—" %></span></td>
           <td><% if task.min_player_level.to_i.positive? %><span class="badge text-bg-danger"><%= task.min_player_level %>+</span><% end %></td>
-          <td class="tk-mono"><% count = task.unlocks_count.to_i %><% if count.positive? %><span class="badge text-bg-primary"><%= count %> item#{'s' if count > 1}</span><% end %></td>
+          <td class="tk-mono"><% count = task.unlocks_count.to_i %><% if count.positive? %><span class="badge text-bg-primary"><%= count %> <%= "item".pluralize(count) %></span><% end %></td>
         </tr>
       <% end %>
     </tbody>
