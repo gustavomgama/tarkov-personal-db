@@ -1,10 +1,6 @@
 module Tarkov
   module Syncers
     class DenormalizedNamesRefresh < Base
-      def initialize(client: nil, fandom_client: nil)
-        super(client: client)
-      end
-
       def call
         refreshed = 0
         ItemUnlock.includes(:item, :trader).find_each do |row|

@@ -1,7 +1,7 @@
 module Tarkov
   module Syncers
     class Base
-      def initialize(client:)
+      def initialize(client: nil)
         @client = client
       end
 

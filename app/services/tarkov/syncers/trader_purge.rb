@@ -3,10 +3,6 @@ module Tarkov
     class TraderPurge < Base
       KEEP = %w[Fence Jaeger Mechanic Peacekeeper Prapor Ragman Ref Skier Therapist].freeze
 
-      def initialize(client: nil)
-        super(client: client)
-      end
-
       # Event traders have no wiki pages and no place in an unlock navigator.
       def call
         removed = 0
