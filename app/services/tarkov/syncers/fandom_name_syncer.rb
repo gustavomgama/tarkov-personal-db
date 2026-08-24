@@ -12,8 +12,7 @@ module Tarkov
         {
           items: sync_item_names,
           tasks: sync_task_names,
-          traders: sync_trader_names,
-          stations: sync_station_names
+          traders: sync_trader_names
         }
       end
 
@@ -41,15 +40,6 @@ module Tarkov
         Trader.find_each.count do |trader|
           title = titles_by_key[keys_by_tid[trader.tid]]
           apply_name(trader, title)
-        end
-      end
-
-      def sync_station_names
-        # The wiki has no per-station pages (all redirect to the Hideout article),
-        # so station names come from a curated map instead.
-        names = HideoutStation::DISPLAY_NAMES
-        HideoutStation.find_each.count do |station|
-          apply_name(station, names[station.normalized_name])
         end
       end
 

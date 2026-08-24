@@ -4,8 +4,6 @@ namespace :tarkov do
     "traders" => "Tarkov::Syncers::TraderSyncer",
     "tasks" => "Tarkov::Syncers::TaskSyncer",
     "barters" => "Tarkov::Syncers::BarterSyncer",
-    "hideout" => "Tarkov::Syncers::HideoutSyncer",
-    "crafts" => "Tarkov::Syncers::HideoutCraftSyncer",
     "fandom_names" => "Tarkov::Syncers::FandomNameSyncer",
     "fandom_enrichment" => "Tarkov::Syncers::FandomEnrichmentSyncer",
     "item_backfill" => "Tarkov::Syncers::ItemBackfillSyncer"
@@ -106,8 +104,6 @@ namespace :tarkov do
     counts = {
       items: Item.count, traders: Trader.count, tasks: Task.count,
       item_unlocks: ItemUnlock.count, task_requirements: TaskRequirement.count,
-      task_rewards: TaskReward.count, hideout_crafts: HideoutCraft.count,
-      quest_items: Item.where(quest_item: true).count, task_objectives: TaskObjective.count,
       hideout_stations: HideoutStation.count, hideout_levels: HideoutLevel.count,
       last_synced_version: SyncState.last_synced_version
     }

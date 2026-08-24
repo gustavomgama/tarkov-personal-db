@@ -58,11 +58,13 @@ module Tarkov
       test "leaves records untouched when wiki content is missing" do
         fandom = FakeFandomClient.new(wikitext: { "7.62x51mm M80" => nil, "The Cleaner" => nil })
 
+        before_count = @item.item_unlocks.count
+
         results = FandomEnrichmentSyncer.new(client: FakeTarkovClient.new, fandom_client: fandom).call
 
         assert_equal 0, results[:items]
         assert_equal 0, results[:tasks]
-        assert_empty @item.reload.item_unlocks
+        assert_equal before_count, @item.reload.item_unlocks.count
       end
 
       private

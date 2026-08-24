@@ -4,59 +4,30 @@ module Tarkov
   module Syncers
     class TaskSyncerTest < ActiveSupport::TestCase
       setup do
-        ItemSyncer.new(client: FakeTarkovClient.new(items: item_payload)).call
         TraderSyncer.new(client: FakeTarkovClient.new(traders: trader_payload)).call
+        ItemSyncer.new(client: FakeTarkovClient.new(items: item_payload)).call
+        @count = TaskSyncer.new(client: fake_client).call
       end
 
-      test "creates tasks linked to trader with objectives from item references" do
-        count = TaskSyncer.new(client: fake_client).call
-
-        assert_equal 2, count
+      test "creates tasks linked to trader with flags" do
+        assert_equal 2, @count
         task = Task.find_by!(tid: "task-1")
         assert_equal "Supplier", task.name
         assert_equal "trader-1", task.trader.tid
         assert_equal 5, task.min_player_level
         assert_predicate task, :kappa_required?
-
-        objective = task.task_objectives.joins(:item).find_by(items: { tid: "item-1" })
-        assert_equal "item-1", objective.item.tid
-        assert_equal 3, objective.count
-        assert_predicate objective, :found_in_raid?
-      end
-
-      test "stores quest items as typed items linked via objectives" do
-        TaskSyncer.new(client: fake_client).call
-
-        quest_item = Item.find_by!(tid: "qitem-9")
-        assert_predicate quest_item, :quest_item?
-        assert_equal "Military Intel", quest_item.name
-
-        objective = Task.find_by!(tid: "task-1").task_objectives.find_by!(item: quest_item)
-        assert_equal 2, objective.count
-      end
-
-      test "records lightkeeper and faction flags" do
-        TaskSyncer.new(client: fake_client).call
-
-        task = Task.find_by!(tid: "task-1")
         assert_predicate task, :lightkeeper_required?
+
+        assert_nil Task.find_by!(tid: "task-2").trader
       end
 
-      test "creates tasks without trader when payload has none" do
-        TaskSyncer.new(client: fake_client).call
-
-        task = Task.find_by!(tid: "task-2")
-        assert_nil task.trader
-      end
-
-      test "warns and skips objectives referencing unknown items" do
-        TaskSyncer.new(client: fake_client).call
-
-        assert_nothing_raised do
-          Task.find_by!(tid: "task-1").task_objectives.reload
-        end
-        tids = Task.find_by!(tid: "task-1").task_objectives.includes(:item).map { |o| o.item.tid }.sort
-        assert_equal [ "item-1", "qitem-9" ], tids
+      test "creates money unlock rows from finishRewards offerUnlock" do
+        item = Item.find_by!(tid: "item-1")
+        row = item.item_unlocks.of_type("money").sole
+        assert_equal "Prapor", row.trader_name
+        assert_equal 4, row.loyalty_level
+        assert_equal Task.find_by!(tid: "task-1"), row.task
+        assert_predicate item.reload, :require_unlock?
       end
 
       private

@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   constraints ->(req) { req.remote_ip.in?([ "127.0.0.1", "::1" ]) } do
     root "items#index"
     resources :items, only: %i[index show]
+    resources :tasks, only: %i[index show]
+    resources :traders, only: %i[index show]
   end
 end

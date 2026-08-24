@@ -1,3 +1,15 @@
 body { background-color: #1a1d20; }
 .table > :not(caption) > * > * { --bs-table-bg: transparent; }
 .badge.text-bg-warning { color: #000 !important; }
+
+.timeline-step { position: relative; padding: 0 0 1.4rem 1.75rem; }
+.timeline-step::before {
+  content: ""; position: absolute; left: 0.45rem; top: 1.4rem; bottom: -0.15rem;
+  width: 2px; background: var(--bs-secondary-bg);
+}
+.timeline-step:last-child::before { display: none; }
+.timeline-marker {
+  position: absolute; left: 0; top: 0.35rem; width: 1rem; height: 1rem;
+  border-radius: 50%; border: 2px solid var(--bs-warning); background: #1a1d20;
+}
+.timeline-step.final .timeline-marker { background: var(--bs-warning); }

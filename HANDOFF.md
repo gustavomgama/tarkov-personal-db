@@ -197,3 +197,13 @@ Reference data doc: `tarkov-personal-db-resources.md` (repo root).
   LOWER(name) LIKE, not ILIKE), show = acquisition routes via ItemUnlockLookup +
   UnlockPathResolver + "needed for tasks" panel.
 - Pending views: Tasks, Traders, Hideout (navbar placeholders).
+
+### TASKS BRANCH (2026-08-23) - unlock-navigator focus
+
+Product pivot: system = item-unlock requirement navigator ONLY. Deleted: hideout tables/syncers,
+task_objectives, task_rewards, quest_item flag+rows, items.category/grid_image_link.
+TaskSyncer slimmed to name/trader/levels/wiki + taskRequirements + finishRewards.offerUnlock.
+Frontend: item show = route cards w/ vertical timeline (chain steps, wiki links, loyalty costs
+from trader_loyalty_levels, entry quest + total level); Tasks index/show (prev-next nav,
+"Unlocks" panel); Traders index/show (loyalty ladder + gated + sold lists). Navbar enabled.
+Progress checkboxes deliberately NOT implemented yet.

@@ -29,14 +29,12 @@
 class Task < ApplicationRecord
   belongs_to :trader, optional: true
 
-  has_many :task_objectives, dependent: :destroy
-  has_many :items, through: :task_objectives
   has_many :task_requirements, dependent: :destroy, foreign_key: :task_id
   has_many :required_tasks, through: :task_requirements, source: :required_task
   has_many :unlocked_by_requirements, class_name: "TaskRequirement", foreign_key: :required_task_id, dependent: :destroy
   has_many :unlocking_tasks, through: :unlocked_by_requirements, source: :task
-  has_many :task_rewards, dependent: :destroy
-  has_many :rewards, through: :task_rewards, source: :item
+  has_many :item_unlocks, foreign_key: :task_id, dependent: :destroy
+  has_many :unlocked_items, through: :item_unlocks, source: :item
 
   validates :tid, presence: true, uniqueness: true
   validates :name, presence: true

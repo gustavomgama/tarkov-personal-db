@@ -45,7 +45,9 @@ class UnlockStructureTest < ActiveSupport::TestCase
                               wiki_link: "https://escapefromtarkov.fandom.com/wiki/The_Cleaner")
     TaskRequirement.create!(task: final_task, required_task: @follower)
     final_task = Task.find_by!(name: "The Cleaner")
-    ItemUnlock.create!(item: @item, trader_name: "Peacekeeper", loyalty_level: 4, task_id: final_task.id, item_name: @item.name)
+    ItemUnlock.create!(item: @item, trader_name: "Peacekeeper", loyalty_level: 4,
+                       task_id: final_task.id, item_name: @item.name)
+    @item.item_unlocks.where.not(trader_name: "Peacekeeper").destroy_all
 
     entries = Tarkov::UnlockPathResolver.new(@item).resolve
 

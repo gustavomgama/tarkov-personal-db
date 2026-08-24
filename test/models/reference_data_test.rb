@@ -31,27 +31,3 @@ class TraderTest < ActiveSupport::TestCase
     assert_nil trader.reset_time
   end
 end
-
-class TaskObjectiveTest < ActiveSupport::TestCase
-  test "uniqueness scoped to task and item" do
-    task = Task.create!(tid: "task", name: "Task")
-    item = Item.create!(tid: "item", name: "Item")
-    TaskObjective.create!(task: task, item: item)
-
-    duplicate = TaskObjective.new(task: task, item: item)
-
-    assert_predicate duplicate, :invalid?
-    assert_not_empty duplicate.errors[:task_id]
-  end
-end
-
-class HideoutRequirementTest < ActiveSupport::TestCase
-  test "requirement_type inclusion validation" do
-    station = HideoutStation.create!(tid: "s", name: "Generator")
-    level = station.hideout_levels.create!(level: 1)
-    requirement = HideoutRequirement.new(hideout_level: level, requirement_type: "bogus", target_name: "X")
-
-    assert_predicate requirement, :invalid?
-    assert_not_empty requirement.errors[:requirement_type]
-  end
-end

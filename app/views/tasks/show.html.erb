@@ -1,0 +1,52 @@
+<%= link_to "← All tasks", tasks_path, class: "link-secondary small" %>
+
+<div class="d-flex justify-content-between align-items-center my-3">
+  <% if @previous_tasks.any? %>
+    <div>
+      <% @previous_tasks.each do |prev| %>
+        <%= link_to "← #{prev.name}", task_path(prev), class: "link-secondary text-decoration-none small d-block" %>
+      <% end %>
+    </div>
+  <% else %><div></div><% end %>
+
+  <h1 class="h3 mb-0 text-center"><%= @task.name %></h1>
+
+  <% if @next_tasks.any? %>
+    <div class="text-end">
+      <% @next_tasks.each do |nxt| %>
+        <%= link_to "#{nxt.name} →", task_path(nxt), class: "link-secondary text-decoration-none small d-block" %>
+      <% end %>
+    </div>
+  <% else %><div></div><% end %>
+</div>
+
+<div class="d-flex gap-2 align-items-center mb-4">
+  <% if @task.trader %><span class="badge text-bg-warning"><%= @task.trader.name %></span><% end %>
+  <% if @task.min_player_level.to_i.positive? %><span class="badge text-bg-danger">level <%= @task.min_player_level %>+</span><% end %>
+  <% if @task.kappa_required? %><span class="badge text-bg-info">Kappa</span><% end %>
+  <% if @task.lightkeeper_required? %><span class="badge text-bg-dark">Lightkeeper</span><% end %>
+  <%= link_to "Wiki ↗", @task.wiki_link, class: "btn btn-sm btn-outline-secondary ms-auto", target: "_blank" if @task.wiki_link.present? %>
+</div>
+
+<div class="card bg-body-tertiary border-secondary mb-4">
+  <div class="card-header">Unlocks</div>
+  <div class="card-body">
+    <% if @unlocked_items.empty? %>
+      <p class="text-secondary mb-0">Nothing gated behind this task.</p>
+    <% else %>
+      <ul class="list-unstyled mb-0">
+        <% @unlocked_items.each do |item| %>
+          <li class="mb-1">
+            • <%= link_to item.name, item_path(item), class: "link-light" %>
+            <% item.item_unlocks.where(task_id: @task.id).each do |row| %>
+              <span class="badge text-bg-info"><%= row.unlock_types.join("/") %></span>
+              <% if row.trader_name.present? %>
+                <span class="text-secondary small"><%= row.trader_name %><%= " LL#{row.loyalty_level}" if row.loyalty_level %></span>
+              <% end %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+</div>

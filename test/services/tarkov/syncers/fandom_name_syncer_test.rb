@@ -21,7 +21,6 @@ module Tarkov
           },
           category_members: { "Category:Traders" => [ "Prapor" ] }
         )
-        HideoutStation.create!(tid: "station-1", name: "x", normalized_name: "water-collector")
 
         results = FandomNameSyncer.new(client: FakeTarkovClient.new(traders: trader_payload), fandom_client: fandom).call
 
@@ -33,9 +32,6 @@ module Tarkov
 
         assert_equal 1, results[:traders]
         assert_equal "Prapor", Trader.find_by!(tid: "trader-1").name
-
-        assert_equal 1, results[:stations]
-        assert_equal "Water Collector", HideoutStation.find_by!(tid: "station-1").name
       end
 
       private

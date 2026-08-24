@@ -18,7 +18,6 @@ module Tarkov
         {
           name: attrs["name"],
           icon_link: attrs["iconLink"],
-          grid_image_link: attrs["gridImageLink"],
           wiki_link: attrs["wikiLink"]
         }.merge(trader_price_attributes(attrs))
       end

@@ -1,84 +1,92 @@
-<div class="mb-4">
-  <h1 class="h3 mb-1"><%= @item.name %></h1>
-  <div class="d-flex gap-2 align-items-center">
-    <% if @item.price.present? %>
-      <span class="badge text-bg-success fs-6"><%= number_with_delimiter(Integer(@item.price)) %> <%= @item.currency %></span>
-    <% end %>
-    <% if @item.require_unlock? %><span class="badge text-bg-warning">task-gated</span><% end %>
-    <% if @item.barter? %><span class="badge text-bg-info">barterable</span><% end %>
-    <% if @item.craft? %><span class="badge text-bg-primary">craftable</span><% end %>
-    <% if @item.quest_item? %><span class="badge text-bg-secondary">quest item</span><% end %>
-    <%= link_to "wiki ↗", @item.wiki_link, class: "link-secondary small", target: "_blank" if @item.wiki_link.present? %>
+<%= link_to "← All items", items_path, class: "link-secondary small" %>
+
+<div class="d-flex align-items-center gap-3 my-3">
+  <% if @item.icon_link.present? %>
+    <%= image_tag @item.icon_link, size: "56x56", class: "rounded border border-secondary", alt: "" %>
+  <% end %>
+  <div>
+    <h1 class="h3 mb-1"><%= @item.name %></h1>
+    <div class="d-flex gap-2 align-items-center">
+      <% if @item.price.present? %>
+        <span class="badge text-bg-success fs-6"><%= number_with_delimiter(Integer(@item.price)) %> <%= @item.currency %></span>
+      <% end %>
+      <% if @item.require_unlock? %><span class="badge text-bg-warning">task-gated</span><% end %>
+      <% if @item.barter? %><span class="badge text-bg-info">barterable</span><% end %>
+      <% if @item.craft? %><span class="badge text-bg-primary">craftable</span><% end %>
+    </div>
+  </div>
+  <div class="ms-auto">
+    <%= link_to "Wiki ↗", @item.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank" if @item.wiki_link.present? %>
   </div>
 </div>
 
-<div class="row g-4">
-  <div class="col-lg-6">
-    <div class="card bg-body-tertiary border-secondary h-100">
-      <div class="card-header">How to unlock / buy</div>
-      <div class="card-body">
-        <% if @unlock_entries.empty? && @purchase_routes.empty? %>
-          <p class="text-secondary mb-0">No acquisition routes recorded.</p>
-        <% end %>
+<h2 class="h5 text-secondary mb-3">How to get it</h2>
 
-        <% @purchase_routes.each do |trader, rows| %>
-          <div class="mb-3">
-            <strong><%= trader %></strong>
-            <% rows.each do |row| %>
-              <div class="ms-3">
-                LL<%= row.loyalty_level || "?" %>
-                <% if row.task %>
-                  — after completing
-                  <%= link_to row.task.name, "#", class: "link-warning" %>
-                <% end %>
+<% routes = @routes %>
+
+<% if routes.empty? %>
+  <p class="text-secondary">No acquisition routes recorded for this item.</p>
+<% end %>
+
+<% routes.each_with_index do |route, index| %>
+  <div class="card bg-body-tertiary border-secondary mb-4" id="route-<%= index %>">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <div>
+        <strong><%= route[:trader] || "Craft" %></strong>
+        <% if route[:loyalty] %><span class="badge text-bg-warning ms-1">LL<%= route[:loyalty] %></span><% end %>
+        <% if route[:loyalty_cost] %>
+          <span class="text-secondary small ms-2">
+            requires player level <%= route[:loyalty_cost].required_player_level || "?" %> ·
+            reputation <%= route[:loyalty_cost].required_reputation %>
+          </span>
+        <% end %>
+      </div>
+      <div>
+        <% route[:types].each do |type| %>
+          <span class="badge text-bg-info"><%= type %></span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <% if route[:task] %>
+        <ol class="timeline list-unstyled mb-0">
+          <% chain = (route[:prerequisites].map { |n| n[:task] } + [route[:task]]) %>
+          <% chain.each_with_index do |task, idx| %>
+            <li class="timeline-step <%= "final" if idx == chain.size - 1 %>">
+              <span class="timeline-marker"></span>
+              <div>
+                <%= link_to task.name, task_path(task), class: "link-light fw-bold" %>
+                <%= link_to "wiki ↗", task.wiki_link, class: "link-secondary small", target: "_blank" if task.wiki_link.present? %>
+                <div class="small text-secondary">
+                  <%= task.trader&.name || "—" %>
+                  <% if task.min_player_level.to_i.positive? %>
+                    · <span class="text-warning">level <%= task.min_player_level %>+</span>
+                  <% end %>
+                </div>
               </div>
-            <% end %>
-          </div>
+            </li>
+          <% end %>
+        </ol>
+        <% if route[:required_level].present? %>
+          <p class="mt-3 mb-0">
+            Total player level needed:
+            <span class="badge text-bg-danger"><%= route[:required_level] %></span>
+          </p>
         <% end %>
-
-        <% @unlock_entries.each do |entry| %>
-          <% next if entry.task.nil? %>
-          <div class="mb-3">
-            <strong><%= entry.unlock.trader_name.presence || "Any" %></strong>
-            <%= "(LL#{entry.unlock.loyalty_level})" if entry.unlock.loyalty_level %>
-            — unlocked by <em><%= link_to entry.task.name, "#", class: "link-warning" %></em>
-            <% if entry.required_player_level.present? %>
-              <span class="badge text-bg-danger ms-1">player level <%= entry.required_player_level %></span>
-            <% end %>
-            <% unless entry.prerequisites.empty? %>
-              <details class="ms-3 mt-1">
-                <summary class="text-secondary small">quest chain (<%= entry.prerequisites.size %> prerequisites)</summary>
-                <% entry.prerequisites.each do |node| %>
-                  <div class="ms-2"><%= "· " * node[:depth] %><%= node[:task].name %></div>
-                <% end %>
-                <% entry.root_quests.each do |root| %>
-                  <div class="mt-1 small text-warning">
-                    Entry: <%= root[:task].name %>
-                    <%= "(level #{root[:task].min_player_level})" if root[:task].min_player_level.present? %>
-                  </div>
-                <% end %>
-              </details>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
+      <% else %>
+        <p class="text-secondary mb-0">Unlocking task unknown — see wiki.</p>
+      <% end %>
     </div>
   </div>
+<% end %>
 
-  <div class="col-lg-6">
-    <div class="card bg-body-tertiary border-secondary h-100">
-      <div class="card-header">Needed for tasks</div>
-      <div class="card-body">
-        <% if @needed_for_tasks.empty? %>
-          <p class="text-secondary mb-0">Not required by any task.</p>
-        <% else %>
-          <ul class="list-unstyled mb-0">
-            <% @needed_for_tasks.each do |task| %>
-              <li>• <%= task.name %> <span class="text-secondary">(<%= task.trader&.name || "?" %>)</span></li>
-            <% end %>
-          </ul>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<% needed_for = Task.joins(:item_unlocks).where(item_unlocks: { item_id: @item.id }).distinct.order(:name) %>
+<% if needed_for.any? %>
+  <h2 class="h5 text-secondary mt-4 mb-2">Related tasks</h2>
+  <ul class="list-unstyled">
+    <% needed_for.each do |task| %>
+      <li>• <%= link_to task.name, task_path(task), class: "link-light" %></li>
+    <% end %>
+  </ul>
+<% end %>

@@ -84,7 +84,7 @@ module TarkovTestFixtures
           "lightkeeperRequired" => true,
           "finishRewards" => {
             "items" => [ { "item" => "item-2", "count" => 5000 } ],
-            "offerUnlock" => [ { "level" => 4, "item" => "qitem-9", "trader" => "trader-1" } ],
+            "offerUnlock" => [ { "level" => 4, "item" => "item-1", "trader" => "trader-1" } ],
             "craftUnlock" => []
           },
           "factionName" => "Any",

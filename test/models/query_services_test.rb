@@ -18,7 +18,7 @@ class QueryServicesTest < ActiveSupport::TestCase
     result = Tarkov::ItemUnlockLookup.new(@item).call
 
     assert_equal @item, result[:item]
-    route = result[:purchase_routes].sole
+    route = result[:purchase_routes].min_by { |r| r[:loyalty_level] }
     assert_equal "Prapor", route[:trader]
     assert_equal 2, route[:loyalty_level]
     assert_equal "Supplier", route[:via_task]

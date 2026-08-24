@@ -1,0 +1,14 @@
+<h1 class="h3 mb-3">Traders</h1>
+<div class="row g-3">
+  <% @traders.each do |trader| %>
+    <div class="col-md-4">
+      <%= link_to trader_path(trader), class: "text-decoration-none" do %>
+        <div class="card bg-body-tertiary border-secondary h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-0"><%= trader.name %></h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
