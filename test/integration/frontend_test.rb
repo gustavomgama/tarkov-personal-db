@@ -130,6 +130,13 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match %r{<span class="badge text-bg-primary">2 items</span>}, response.body
   end
 
+  test "tasks index shows a count, not the grouped-relation size hash" do
+    get tasks_path
+    assert_response :success
+    assert_no_match "=>", response.body
+    assert_match "5 shown", response.body
+  end
+
   test "tasks index filters by trader and name" do
     get tasks_path, params: { trader_id: @prapor.id }
     assert_response :success
