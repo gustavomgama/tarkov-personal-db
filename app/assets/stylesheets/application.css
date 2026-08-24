@@ -120,7 +120,6 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   color: var(--tk-accent); border: 1px solid var(--tk-accent-dim);
   background: var(--tk-bg);
 }
-.route-step-level .step-num { color: var(--tk-muted); border-color: var(--tk-line); }
 .route-step-final .step-num {
   color: #14120c; background: var(--tk-accent); border-color: var(--tk-accent);
   box-shadow: 0 0 8px rgba(201,168,106,.45); font-weight: 700;
