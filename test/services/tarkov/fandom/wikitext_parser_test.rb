@@ -49,6 +49,12 @@ module Tarkov
         assert_empty result.infobox_params
         assert_equal "Just text.", result.lead_description
       end
+
+      test "handles unclosed templates" do
+        parser = WikitextParser.new("{{Infobox ammo", page_title: "X")
+
+        assert_empty parser.infobox_params
+      end
     end
   end
 end
