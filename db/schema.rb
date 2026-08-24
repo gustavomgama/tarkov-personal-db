@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_23_210000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_23_213000) do
   create_table "item_unlocks", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.integer "item_id", null: false
@@ -28,10 +28,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_23_210000) do
   end
 
   create_table "items", force: :cascade do |t|
+    t.text "allowed_ammo", default: "[]", null: false
+    t.boolean "ammo", default: false, null: false
     t.boolean "barter", default: false, null: false
+    t.string "caliber"
     t.boolean "craft", default: false, null: false
     t.datetime "created_at", null: false
     t.string "currency"
+    t.boolean "gun", default: false, null: false
     t.string "icon_link"
     t.string "name", null: false
     t.decimal "price", precision: 14, scale: 2

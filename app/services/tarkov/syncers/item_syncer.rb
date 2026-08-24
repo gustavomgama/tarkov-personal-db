@@ -19,7 +19,18 @@ module Tarkov
           name: attrs["name"],
           icon_link: attrs["iconLink"],
           wiki_link: attrs["wikiLink"]
-        }.merge(trader_price_attributes(attrs))
+        }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs))
+      end
+
+      def compatibility_attributes(attrs)
+        properties = attrs["properties"] || {}
+        types = Array(attrs["types"])
+        {
+          gun: types.include?("gun"),
+          ammo: types.include?("ammo"),
+          caliber: properties["caliber"],
+          allowed_ammo: Array(properties["allowedAmmo"])
+        }
       end
 
       # Cheapest trader buy offer; flea-market prices are deliberately ignored.

@@ -3,9 +3,13 @@
 # Table name: items
 #
 #  id             :integer          not null, primary key
+#  allowed_ammo   :text             default("[]"), not null
+#  ammo           :boolean          default(FALSE), not null
 #  barter         :boolean          default(FALSE), not null
+#  caliber        :string
 #  craft          :boolean          default(FALSE), not null
 #  currency       :string
+#  gun            :boolean          default(FALSE), not null
 #  icon_link      :string
 #  name           :string           not null
 #  price          :decimal(14, 2)
@@ -21,6 +25,7 @@
 #
 class Item < ApplicationRecord
   attribute :price, :float
+  serialize :allowed_ammo, coder: JSON
 
   has_many :item_unlocks, dependent: :destroy
   has_many :unlock_tasks, through: :item_unlocks, source: :task

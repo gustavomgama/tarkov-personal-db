@@ -39,6 +39,7 @@ module TarkovTestFixtures
           "shortName" => "M4A1",
           "description" => "Assault rifle",
           "types" => [ "gun" ],
+          "properties" => { "caliber" => "Caliber556x45NATO", "allowedAmmo" => [ "item-2" ] },
           "categories" => [ "cat-1", "cat-parent" ],
           "weight" => 3.1,
           "width" => 4,

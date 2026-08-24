@@ -18,6 +18,8 @@ class ItemsController < ApplicationController
     @chain = Tarkov::UnlockPathResolver.merged_chain(@unlock_entries)
     @conditions = build_conditions
     @required_level = @unlock_entries.map(&:required_player_level).compact.max
+    @compatible_guns = compatible_guns(@item)
+    @compatible_ammo = compatible_ammo(@item)
   end
 
   private
@@ -34,6 +36,21 @@ class ItemsController < ApplicationController
       }
     end.compact.uniq { |c| [ c[:trader], c[:loyalty], c[:task]&.id ] }
        .reject { |c| c[:trader].nil? && c[:task].nil? }
+  end
+
+  def compatible_guns(item)
+    return Item.none unless item.ammo?
+
+    guns = Item.where(gun: true).where("allowed_ammo LIKE ?", "%\"#{item.tid}\"%")
+    return guns.order(:name) if guns.any?
+
+    Item.where(gun: true, caliber: item.caliber).order(:name)
+  end
+
+  def compatible_ammo(item)
+    return Item.none unless item.gun? || item.allowed_ammo.any?
+
+    Item.where(tid: item.allowed_ammo).order(:name)
   end
 
   def loyalty_cost(trader_id, level)

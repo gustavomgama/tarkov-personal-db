@@ -81,12 +81,33 @@
   <p class="text-secondary">No quest chain recorded — the unlock conditions above apply directly.</p>
 <% end %>
 
-<% needed_for = Task.joins(:item_unlocks).where(item_unlocks: { item_id: @item.id }).distinct.order(:name) %>
-<% if needed_for.any? %>
-  <h2 class="h5 text-secondary mt-4 mb-2">Related tasks</h2>
-  <ul class="list-unstyled">
-    <% needed_for.each do |task| %>
-      <li>• <%= link_to task.name, task_path(task), class: "link-light" %></li>
+<% if @compatible_guns.any? %>
+  <h2 class="h5 text-secondary mt-4 mb-2">Compatible guns <span class="fs-6">(<%= @compatible_guns.size %>)</span></h2>
+  <div class="d-flex flex-wrap gap-2">
+    <% @compatible_guns.each do |gun| %>
+      <%= link_to gun_path(gun), class: "text-decoration-none" do %>
+        <span class="badge text-bg-secondary p-2"><%= gun.name %></span>
+      <% end %>
     <% end %>
-  </ul>
+  </div>
+<% end %>
+
+<% if @compatible_ammo.any? %>
+  <h2 class="h5 text-secondary mt-4 mb-2">Compatible ammo <span class="fs-6">(<%= @compatible_ammo.size %>)</span></h2>
+  <div class="table-responsive">
+    <table class="table table-sm table-hover align-middle">
+      <tbody>
+        <% @compatible_ammo.each do |ammo| %>
+          <tr>
+            <td><%= link_to ammo.name, item_path(ammo), class: "link-light text-decoration-none" %></td>
+            <td class="text-end">
+              <% if ammo.price.present? %>
+                <span class="text-success"><%= number_with_delimiter(Integer(ammo.price)) %> <%= ammo.currency %></span>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 <% end %>

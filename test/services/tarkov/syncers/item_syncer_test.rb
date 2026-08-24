@@ -12,6 +12,9 @@ module Tarkov
         assert_equal "https://assets.tarkov.dev/item-1-icon.webp", item.icon_link
         assert_equal 70.0, item.price
         refute_includes item.price.to_s, "e"
+        assert_predicate item, :gun?
+        assert_equal "Caliber556x45NATO", item.caliber
+        assert_equal [ "item-2" ], item.allowed_ammo
         assert_equal "USD", item.currency
         assert_not item.barter?
         assert_not item.craft?
