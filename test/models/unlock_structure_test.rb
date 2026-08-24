@@ -91,4 +91,33 @@ class UnlockStructureTest < ActiveSupport::TestCase
     row = item.item_unlocks.find_by(trader_name: "Ref")
     assert_not_nil row
   end
+
+  test "merged_chain orders dependencies before dependents" do
+    root = Task.create!(tid: "mc-root", name: "AAA Entry", min_player_level: 8)
+    mid = Task.create!(tid: "mc-mid", name: "BBB Mid")
+    final = Task.create!(tid: "mc-final", name: "CCC Final")
+    TaskRequirement.create!(task: mid, required_task: root)
+    TaskRequirement.create!(task: final, required_task: mid)
+    ItemUnlock.create!(item: @item, trader_name: "Mechanic", loyalty_level: 3,
+                       task_id: final.id, item_name: @item.name)
+    entry = Tarkov::UnlockPathResolver.new(@item).resolve.find { |e| e.task&.id == final.id }
+
+    names = Tarkov::UnlockPathResolver.merged_chain([ entry ]).map(&:name)
+
+    assert_equal [ "AAA Entry", "BBB Mid", "CCC Final" ], names
+  end
+
+  test "trader purge keeps whitelist and removes their unlock rows" do
+    kept = Trader.create!(tid: "keep-1", name: "Fence")
+    gone = Trader.create!(tid: "gone-1", name: "Anton")
+    orphan_row = ItemUnlock.create!(item: @item, trader: gone, trader_name: "Anton",
+                                    loyalty_level: 2, unlock_types: [ "barter" ], item_name: @item.name)
+
+    removed = Tarkov::Syncers::TraderPurge.new.call
+
+    assert_operator removed, :>=, 1
+    assert_not Trader.exists?(gone.id)
+    assert_not ItemUnlock.exists?(orphan_row.id)
+    assert Trader.exists?(kept.id)
+  end
 end

@@ -6,6 +6,7 @@ module Tarkov
       tasks: "Tarkov::Syncers::TaskSyncer",
       barters: "Tarkov::Syncers::BarterSyncer",
       fandom_names: "Tarkov::Syncers::FandomNameSyncer",
+      trader_purge: "Tarkov::Syncers::TraderPurge",
       fandom_enrichment: "Tarkov::Syncers::FandomEnrichmentSyncer",
       item_backfill: "Tarkov::Syncers::ItemBackfillSyncer",
       refresh_names: "Tarkov::Syncers::DenormalizedNamesRefresh"

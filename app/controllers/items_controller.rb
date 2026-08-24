@@ -14,28 +14,26 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-    @routes = build_routes(@item)
-    @needed_for_tasks = Task.joins(:item_unlocks)
-                            .where(item_unlocks: { item_id: @item.id }).distinct.order(:name)
+    @unlock_entries = Tarkov::UnlockPathResolver.new(@item).resolve
+    @chain = Tarkov::UnlockPathResolver.merged_chain(@unlock_entries)
+    @conditions = build_conditions
+    @required_level = @unlock_entries.map(&:required_player_level).compact.max
   end
 
   private
 
-  def build_routes(item)
-    Tarkov::UnlockPathResolver.new(item).resolve.map do |entry|
-      trader_name = entry.unlock.trader_name.presence || entry.unlock.trader&.name
+  def build_conditions
+    @unlock_entries.filter_map do |entry|
+      trader = entry.unlock.trader_name.presence || entry.unlock.trader&.name
       {
-        trader: trader_name,
+        trader: trader,
         loyalty: entry.unlock.loyalty_level,
         loyalty_cost: loyalty_cost(entry.unlock.trader_id, entry.unlock.loyalty_level),
         types: entry.unlock.unlock_types,
-        task: entry.task,
-        prerequisites: entry.prerequisites,
-        roots: entry.root_quests,
-        required_level: entry.required_player_level
+        task: entry.task
       }
-    end.reject { |route| route[:trader].nil? && route[:task].nil? }
-       .uniq { |route| [ route[:trader], route[:loyalty], route[:task]&.id ] }
+    end.compact.uniq { |c| [ c[:trader], c[:loyalty], c[:task]&.id ] }
+       .reject { |c| c[:trader].nil? && c[:task].nil? }
   end
 
   def loyalty_cost(trader_id, level)
