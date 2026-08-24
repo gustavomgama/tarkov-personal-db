@@ -1,7 +1,7 @@
 module Tarkov
   module Syncers
     class TraderPurge < Base
-      KEEP = %w[Fence Jaeger Mechanic Peacekeeper Prapor Ragman Ref Skier Therapist].freeze
+      KEEP = %w[BTR\ Driver Fence Jaeger Lightkeeper Mechanic Peacekeeper Prapor Ragman Ref Skier Therapist].freeze
 
       # Event traders have no wiki pages and no place in an unlock navigator.
       def call

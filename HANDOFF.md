@@ -161,6 +161,20 @@ writes.**
   traderRequirements{trader,value}, skillRequirements}]}}`.
 - traders: dict keyed by tid; resetTime ISO8601.
 
+### FRONTEND DATA PASS (2026-08-24)
+
+- items.categories (JSON types array) + items.image_link (image8xLink hi-res;
+  icon_link now 512px) - migration + ItemSyncer writes.
+- CraftSyncer: crafts -> craft-type dev unlock rows; craft-only items get routes.
+- TraderPurge KEEP += "BTR Driver", "Lightkeeper" (their gated items, e.g. Aklys
+  Velociraptor via Protect the Sky, were losing routes).
+- ItemPurge: drops items with no price/barter/craft/task-gate (~2000 removed,
+  5312 -> ~3270).
+- Items index: currency checkboxes (multi), category checkboxes (buyable/ammo/
+  gun/helmet/armor/rig/backpack/headset), sortable columns (name/price; tasks:
+  name/level/gates). Armored-rig vs rig not distinguishable upstream; no armored-mask
+  type exists in the API.
+
 ### Gotchas
 
 0. **Production mode needs a prepared DB**: `RAILS_ENV=production bin/rails db:prepare` then

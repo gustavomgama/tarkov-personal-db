@@ -20,7 +20,12 @@
 <div class="table-responsive">
   <table class="table table-hover align-middle">
     <thead class="tk-label">
-      <tr><th>Task</th><th>Given by</th><th>Level</th><th>Gates</th></tr>
+      <tr>
+        <%= sortable_th "name", "Task" %>
+        <th>Given by</th>
+        <%= sortable_th "level", "Level" %>
+        <%= sortable_th "gates", "Gates" %>
+      </tr>
     </thead>
     <tbody>
       <% @tasks.each do |task| %>

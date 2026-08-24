@@ -12,14 +12,17 @@ module Tarkov
       Item.create!(tid: "item-2", name: "Dollars")
       Item.create!(tid: "qitem-9", name: "Intel")
 
-      results = Syncer.new(client: client, logger: Logger.new(nil)).call
+      results = Syncer.new(client: client, logger: Logger.new(nil), fandom_client: FakeFandomClient.new).call
 
-      assert_equal %w[items traders tasks barters], client.requested.uniq
+      assert_equal %w[items traders tasks barters crafts], client.requested.uniq
       assert_equal 1, results[:items]
       assert_equal 1, results[:traders]
       assert_equal 2, results[:tasks]
       assert_equal 2, results[:barters]
+      assert_kind_of Integer, results[:task_chains]
+      assert_kind_of Integer, results[:crafts]
       assert_kind_of Integer, results[:trader_purge]
+      assert_kind_of Integer, results[:junk_purge]
       assert_kind_of Integer, results[:refresh_names]
     end
 

@@ -52,6 +52,8 @@ module TarkovTestFixtures
           "width" => 4,
           "height" => 2,
           "iconLink" => "https://assets.tarkov.dev/item-1-icon.webp",
+          "image512pxLink" => "https://assets.tarkov.dev/item-1-512.webp",
+          "image8xLink" => "https://assets.tarkov.dev/item-1-8x.webp",
           "gridImageLink" => "https://assets.tarkov.dev/item-1-grid.webp",
           "wikiLink" => "https://escapefromtarkov.fandom.com/wiki/M4A1"
         }

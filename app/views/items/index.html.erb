@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-end mb-1">
   <h1 class="h3 mb-0">Item Database</h1>
-  <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@items.size} shown" %></span>
+  <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@items.length} shown" %></span>
 </div>
 <div class="text-secondary mb-4">Search the arsenal. Click an item to see every way to get it.</div>
 
@@ -9,19 +9,30 @@
     <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Item name…", autofocus: true %>
   </div>
   <div class="col-md-2">
+    <%= hidden_field_tag :sort, params[:sort] %>
+    <%= hidden_field_tag :dir, params[:dir] %>
     <%= select_tag :per,
           options_for_select([10, 25, 50, 100, 200], @per), class: "form-select", aria_label: "Items per page" %>
   </div>
-  <div class="col-md-2">
-    <%= select_tag :currency,
-          options_for_select([["Any currency", ""], "RUB", "USD", "EUR"], params[:currency]),
-          class: "form-select" %>
-  </div>
-  <div class="col-lg-3 d-flex gap-3 align-items-center flex-wrap">
+  <div class="col-md-5 d-flex gap-3 align-items-center flex-wrap">
+    <div class="form-check"><%= check_box_tag "currency[]", "RUB", selected_currencies.include?("RUB"), class: "form-check-input", id: "cur_rub" %> <%= label_tag :cur_rub, "RUB", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag "currency[]", "USD", selected_currencies.include?("USD"), class: "form-check-input", id: "cur_usd" %> <%= label_tag :cur_usd, "USD", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag "currency[]", "EUR", selected_currencies.include?("EUR"), class: "form-check-input", id: "cur_eur" %> <%= label_tag :cur_eur, "EUR", class: "form-check-label" %></div>
     <div class="form-check"><%= check_box_tag :barter, "1", params[:barter] == "1", class: "form-check-input" %> <%= label_tag :barter, "Barter", class: "form-check-label" %></div>
     <div class="form-check"><%= check_box_tag :craft, "1", params[:craft] == "1", class: "form-check-input" %> <%= label_tag :craft, "Craft", class: "form-check-label" %></div>
     <div class="form-check"><%= check_box_tag :unlocked, "1", params[:unlocked] == "1", class: "form-check-input" %> <%= label_tag :unlocked, "Task-gated", class: "form-check-label" %></div>
   </div>
+
+  <div class="col-12 d-flex gap-3 align-items-center flex-wrap">
+    <span class="tk-label mb-0">Type</span>
+    <% category_options.each do |key, label| %>
+      <div class="form-check">
+        <%= check_box_tag "categories[]", key, params[:categories]&.include?(key), class: "form-check-input", id: "cat_#{key}" %>
+        <%= label_tag "cat_#{key}", label, class: "form-check-label" %>
+      </div>
+    <% end %>
+  </div>
+
   <div class="col-md-2">
     <%= submit_tag "Filter", class: "btn btn-warning w-100 text-black" %>
   </div>
@@ -30,7 +41,11 @@
 <div class="table-responsive">
   <table class="table table-hover align-middle">
     <thead class="tk-label">
-      <tr><th>Item</th><th>Buy price</th><th>Acquisition</th></tr>
+      <tr>
+        <%= sortable_th "name", "Item" %>
+        <%= sortable_th "price", "Buy price" %>
+        <th>Acquisition</th>
+      </tr>
     </thead>
     <tbody>
       <% @items.each do |item| %>

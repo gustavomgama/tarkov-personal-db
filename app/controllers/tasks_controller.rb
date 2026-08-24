@@ -1,9 +1,17 @@
 class TasksController < ApplicationController
+  SORTS = {
+    "name" => "LOWER(tasks.name)",
+    "level" => "min_player_level",
+    "gates" => "unlocks_count"
+  }.freeze
+
   def index
     @total = Task.count
+    direction = params[:dir] == "desc" ? "DESC" : "ASC"
+    order = Arel.sql("#{SORTS.fetch(params[:sort], SORTS['name'])} #{direction}")
     scope = Task.left_joins(:item_unlocks)
                 .select("tasks.*, COUNT(item_unlocks.id) AS unlocks_count")
-                .group("tasks.id").order(:name)
+                .group("tasks.id").order(order)
     scope = scope.where(trader_id: params[:trader_id]) if params[:trader_id].present?
     scope = scope.where("LOWER(tasks.name) LIKE ?", "%#{params[:q].downcase}%") if params[:q].present?
     @page = [ params.fetch(:page, 1).to_i, 1 ].max

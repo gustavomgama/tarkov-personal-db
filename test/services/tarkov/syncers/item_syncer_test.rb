@@ -9,7 +9,9 @@ module Tarkov
         assert_equal 1, count
         item = Item.find_by!(tid: "item-1")
         assert_equal "Colt M4A1", item.name
-        assert_equal "https://assets.tarkov.dev/item-1-icon.webp", item.icon_link
+        assert_equal "https://assets.tarkov.dev/item-1-512.webp", item.icon_link
+        assert_equal "https://assets.tarkov.dev/item-1-8x.webp", item.image_link
+        assert_equal [ "gun" ], item.categories
         assert_equal 70.0, item.price
         refute_includes item.price.to_s, "e"
         assert_predicate item, :gun?

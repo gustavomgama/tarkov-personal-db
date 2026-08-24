@@ -7,10 +7,12 @@
 #  ammo           :boolean          default(FALSE), not null
 #  barter         :boolean          default(FALSE), not null
 #  caliber        :string
+#  categories     :text
 #  craft          :boolean          default(FALSE), not null
 #  currency       :string
 #  gun            :boolean          default(FALSE), not null
 #  icon_link      :string
+#  image_link     :string
 #  name           :string           not null
 #  price          :decimal(14, 2)
 #  require_unlock :boolean          default(FALSE), not null
@@ -27,6 +29,7 @@ class Item < ApplicationRecord
   normalizes :wiki_link, :icon_link, with: ApplicationRecord::HTTP_LINK
 
   serialize :allowed_ammo, coder: JSON
+  serialize :categories, coder: JSON
 
   has_many :item_unlocks, dependent: :destroy
 

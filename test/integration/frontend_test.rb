@@ -73,6 +73,36 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "Intel", response.body
   end
 
+  test "items index filters by multiple categories and currencies" do
+    get items_path, params: { categories: %w[buyable gun] }
+    assert_response :success
+    assert_match "Colt M4A1", response.body
+
+    get items_path, params: { currency: %w[USD EUR] }
+    assert_response :success
+    assert_no_match "Nothing matches", response.body
+  end
+
+  test "items index sorts by name and price" do
+    get items_path, params: { sort: "price", dir: "asc" }
+    assert_response :success
+    assert_match "dir=desc&amp;sort=price", response.body
+
+    get items_path, params: { sort: "name", dir: "desc" }
+    assert_response :success
+    assert_match "dir=asc", response.body
+  end
+
+  test "tasks index sorts columns" do
+    get tasks_path, params: { sort: "level", dir: "desc" }
+    assert_response :success
+    assert_match "Level ▾", response.body
+
+    get tasks_path, params: { sort: "gates" }
+    assert_response :success
+    assert_match "Gates ▴", response.body
+  end
+
   test "items index clamps per-page and paginates" do
     11.times { |i| Item.create!(tid: "pad-#{i}", name: "Filler #{i}") }
 

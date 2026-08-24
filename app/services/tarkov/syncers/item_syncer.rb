@@ -18,8 +18,10 @@ module Tarkov
       def item_attributes(attrs, names)
         {
           name: names.item_name(attrs.fetch("id")) || attrs["name"],
-          icon_link: attrs["iconLink"],
-          wiki_link: attrs["wikiLink"]
+          icon_link: attrs["image512pxLink"] || attrs["iconLink"],
+          image_link: attrs["image8xLink"] || attrs["inspectImageLink"] || attrs["baseImageLink"],
+          wiki_link: attrs["wikiLink"],
+          categories: Array(attrs["types"])
         }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs))
       end
 
