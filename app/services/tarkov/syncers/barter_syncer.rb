@@ -8,16 +8,21 @@ module Tarkov
       def call
         sync_cash_offers
         barters = client.barters
+        return 0 if barters.empty?
+
         kept = []
         barters.each do |barter|
           row = sync_barter(barter)
           kept << row if row
         end
 
-        stale_scope = ItemUnlock.where(source: "dev").of_type("barter")
-        stale_scope = stale_scope.where(item_id: kept.map(&:item_id).uniq) if kept.any?
-        (kept.any? ? stale_scope : ItemUnlock.of_type("barter")).reject { |row| kept.include?(row) }
-                                                               .each(&:destroy!)
+        if kept.any?
+          # Cleanup only touches dev rows for items still present upstream; an
+          # empty/failed response must never wipe stored unlocks.
+          ItemUnlock.where(source: "dev", item_id: kept.map(&:item_id).uniq).of_type("barter")
+                    .reject { |row| kept.include?(row) }
+                    .each(&:destroy!)
+        end
         kept.size
       end
 

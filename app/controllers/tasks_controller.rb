@@ -12,7 +12,8 @@ class TasksController < ApplicationController
 
   def show
     @task = Task.find(params[:id])
-    @unlocked_items = Item.joins(:item_unlocks).where(item_unlocks: { task_id: @task.id }).distinct.order(:name)
+    @unlocked_items = Item.joins(:item_unlocks).where(item_unlocks: { task_id: @task.id })
+                          .distinct.order(:name).includes(:item_unlocks)
     @previous_tasks = @task.required_tasks.presence ||
                       Task.where(id: @task.previous_task_id)
     @next_tasks = @task.unlocking_tasks.presence ||

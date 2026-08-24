@@ -24,7 +24,8 @@
 #  index_items_on_tid  (tid) UNIQUE
 #
 class Item < ApplicationRecord
-  attribute :price, :float
+  normalizes :wiki_link, :icon_link, with: ApplicationRecord::HTTP_LINK
+
   serialize :allowed_ammo, coder: JSON
 
   has_many :item_unlocks, dependent: :destroy

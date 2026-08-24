@@ -43,21 +43,25 @@ module Tarkov
           next unless task
 
           Array(attrs.dig("finishRewards", "offerUnlock")).each do |offer|
-            item = Item.find_by(tid: extract_item_tid(offer["item"]))
-            next unless item
-
-            trader = Trader.find_by(tid: offer["trader"])
-            row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id, task_id: task.id,
-                                  source: "dev").of_type("money").first ||
-                  ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
-                                 trader_id: trader&.id, source: "dev", unlock_types: [ "money" ])
-            upsert!(row, { item_name: item.name, trader_name: trader&.name,
-                           loyalty_level: offer["level"] })
-            item.update!(require_unlock: true)
+            sync_offer_unlock(task, offer)
           end
         end
+      end
+
+      def sync_offer_unlock(task, offer)
+        item = Item.find_by(tid: extract_item_tid(offer["item"]))
+        return unless item
+
+        trader = Trader.find_by(tid: offer["trader"])
+        row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id, task_id: task.id,
+                              source: "dev").of_type("money").first ||
+              ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
+                            trader_id: trader&.id, source: "dev", unlock_types: [ "money" ])
+        upsert!(row, { item_name: item.name, trader_name: trader&.name,
+                       loyalty_level: offer["level"] })
+        item.update!(require_unlock: true)
       rescue ActiveRecord::RecordInvalid => e
-        Rails.logger.warn("[tarkov:sync] offer unlocks skipped: #{e.message}")
+        warn "offer unlock skipped for #{task.tid}: #{e.message}"
       end
 
       def extract_item_tid(value)

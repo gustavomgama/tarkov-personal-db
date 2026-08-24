@@ -15,6 +15,8 @@
 #  index_traders_on_tid  (tid) UNIQUE
 #
 class Trader < ApplicationRecord
+  normalizes :image_url, with: ApplicationRecord::HTTP_LINK
+
   has_many :tasks, dependent: :nullify
   has_many :trader_loyalty_levels, dependent: :destroy
   has_many :item_unlocks, dependent: :nullify

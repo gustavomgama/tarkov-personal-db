@@ -14,6 +14,9 @@ module Tarkov
       }.compact.uniq
       return [] if tasks.empty?
 
+      # Fresh instances with the underlying edges preloaded - prerequisite_tasks
+      # then hits cached required_tasks (wiki fallback stays available per task).
+      tasks = Task.where(id: tasks.map(&:id)).includes(:required_tasks).to_a
       ids = tasks.map(&:id).to_set
       dependencies = tasks.to_h do |task|
         [ task.id, task.prerequisite_tasks.select { |pre| ids.include?(pre.id) }.map(&:id).to_set ]
@@ -34,10 +37,28 @@ module Tarkov
     end
 
     def resolve
-      @item.item_unlocks.order(:trader_name).map { |unlock| entry_for(unlock) }
+      # trader/task preloaded for the conditions cards; prerequisite edges via one
+      # memoized query instead of per-node association loads.
+      @item.item_unlocks.order(:trader_name).includes(%i[trader task]).map { |unlock| entry_for(unlock) }
     end
 
     private
+
+    def prerequisite_index
+      @prerequisite_index ||= TaskRequirement.includes(:required_task).each_with_object({}) do |req, index|
+        (index[req.task_id] ||= []) << req.required_task
+      end
+    end
+
+    # Mirrors Task#prerequisite_tasks semantics (wiki previous_task fallback)
+    # without re-running the through-association per node.
+    def prerequisite_tasks_for(task)
+      cached = prerequisite_index[task.id]
+      return cached if cached.present?
+      return [] if task.previous_task_id.blank?
+
+      [ Task.find(task.previous_task_id) ]
+    end
 
     def entry_for(unlock)
       task = unlock.task
@@ -45,7 +66,7 @@ module Tarkov
 
       prerequisites = collect_prerequisites(task)
       all_nodes = prerequisites + [ { task: task } ]
-      roots = all_nodes.select { |node| node[:task].prerequisite_tasks.empty? }
+      roots = all_nodes.select { |node| prerequisite_tasks_for(node[:task]).empty? }
       Entry.new(
         unlock: unlock,
         task: task,
@@ -60,7 +81,7 @@ module Tarkov
       queue = [ [ task, 0 ] ]
       until queue.empty?
         current, depth = queue.shift
-        current.prerequisite_tasks.each do |required|
+        prerequisite_tasks_for(current).each do |required|
           next if visited.key?(required.id)
 
           visited[required.id] = { task: required, depth: depth + 1 }

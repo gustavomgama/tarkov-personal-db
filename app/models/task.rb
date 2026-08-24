@@ -27,6 +27,8 @@
 #  trader_id  (trader_id => traders.id)
 #
 class Task < ApplicationRecord
+  normalizes :wiki_link, with: ApplicationRecord::HTTP_LINK
+
   belongs_to :trader, optional: true
 
   has_many :task_requirements, dependent: :destroy, foreign_key: :task_id

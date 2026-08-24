@@ -36,7 +36,7 @@
           <li class="mb-2 d-flex align-items-center gap-2">
             <% if item.icon_link.present? %><%= image_tag item.icon_link, size: "24x24", alt: "" %><% end %>
             <%= link_to item.name, item_path(item), class: "link-light" %>
-            <% item.item_unlocks.where(task_id: @task.id).each do |row| %>
+            <% item.item_unlocks.select { |row| row.task_id == @task.id }.each do |row| %>
               <span class="badge text-bg-info"><%= row.unlock_types.join(" / ") %></span>
               <% if row.trader_name.present? || row.trader %>
                 <span class="text-secondary small"><%= row.trader_name.presence || row.trader&.name %><%= " LL#{row.loyalty_level}" if row.loyalty_level %></span>

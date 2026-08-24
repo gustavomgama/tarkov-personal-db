@@ -58,6 +58,14 @@ module Tarkov
         end
       end
 
+      test "empty upstream response never wipes stored barter rows" do
+        BarterSyncer.new(client: fake_client).call
+
+        assert_no_difference("ItemUnlock.of_type('barter').count") do
+          assert_equal 0, BarterSyncer.new(client: FakeTarkovClient.new(barters: [], items: item_payload)).call
+        end
+      end
+
       test "syncs cash offers into money unlock rows with loyalty levels" do
         Item.find_by!(tid: "item-1").item_unlocks.of_type("money").destroy_all
         client = FakeTarkovClient.new(barters: [], items: item_payload)

@@ -11,7 +11,5 @@ class DropNonUnlockData < ActiveRecord::Migration[8.1]
 
     remove_column :items, :quest_item
     remove_column :items, :grid_image_link
-
-    Item.where(quest_item: true).delete_all rescue nil
   end
 end
