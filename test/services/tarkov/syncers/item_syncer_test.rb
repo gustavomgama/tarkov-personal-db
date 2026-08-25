@@ -6,7 +6,7 @@ module Tarkov
       test "creates items with slim attribute set" do
         count = ItemSyncer.new(client: fake_client).call
 
-        assert_equal 1, count
+        assert_equal 4, count
         item = Item.find_by!(tid: "item-1")
         assert_equal "Colt M4A1", item.name
         assert_equal "https://assets.tarkov.dev/item-1-512.webp", item.icon_link

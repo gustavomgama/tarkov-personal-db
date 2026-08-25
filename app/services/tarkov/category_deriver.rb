@@ -18,12 +18,12 @@ module Tarkov
       categories << "ammo" if (%w[ammo ammoBox] & types).any?
       categories << "gun" if types.include?("gun")
       categories << "helmet" if types.include?("helmet")
-      categories << "armor" if (%w[armor armorPlate] & types).any?
+      categories << "armor" if types.include?("armor")
       categories << (armored_rig?(types, name) ? "armored rig" : "rig") if types.include?("rig")
       categories << "backpack" if types.include?("backpack")
       categories << "headset_earpiece" if types.include?("headphones")
       categories << "gun_parts" if (%w[mods pistolGrip suppressor] & types).any?
-      categories << "wearable_parts" if types.include?("wearable") && gear_wearable?(categories)
+      categories << "wearable_parts" if plate_or_wearable?(types, categories)
       categories << "containers" if types.include?("container")
       categories.empty? ? [ "others" ] : categories.uniq
     end
@@ -54,7 +54,14 @@ module Tarkov
       types.include?("armor") || name.include?("armored")
     end
 
-    def gear_wearable?(categories)
+    def plate_or_wearable?(types, categories)
+      return true if types.include?("armorPlate")
+
+      types.include?("wearable") &&
+        (categories.include?("headset_earpiece") || gear_free?(categories))
+    end
+
+    def gear_free?(categories)
       (categories & %w[gun helmet armor armored\ rig rig backpack]).empty?
     end
   end

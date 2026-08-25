@@ -150,3 +150,6 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
 .trader-card { transition: border-color .15s ease; }
 .trader-card:hover { border-color: var(--tk-accent) !important; }
 .trader-portrait { height: 56px; width: auto; border-radius: 4px; border: 1px solid var(--tk-line); }
+
+/* compatibility groups */
+.compat-group { border: 1px solid var(--tk-line); background: var(--tk-panel); padding: .6rem .8rem; margin-bottom: .5rem; }

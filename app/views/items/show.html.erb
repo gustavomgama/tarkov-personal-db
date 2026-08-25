@@ -76,33 +76,24 @@
   <% end %>
 </section>
 
-<% if @compatible_guns.any? %>
-  <section aria-labelledby="guns-heading" class="mt-4">
-    <span id="guns-heading" class="tk-label mt-4 d-block">Compatible guns (<%= @compatible_guns.size %>)</span>
-    <div class="d-flex flex-wrap gap-2 mb-4">
-      <% @compatible_guns.each do |gun| %>
-        <%= link_to item_path(gun), class: "chip-link" do %>
-          <span class="badge text-bg-secondary p-2"><%= gun.name %></span>
+<% if @compatibilities.any? %>
+  <section aria-labelledby="compat-heading" class="mt-4">
+    <span id="compat-heading" class="tk-label mt-4 d-block">Compatibility</span>
+    <% @compatibilities.each do |group| %>
+      <div class="compat-group">
+        <div class="fw-bold small text-accent"><%= group[:label] %></div>
+        <% if group[:note] %>
+          <p class="text-secondary mb-0"><%= group[:note] %></p>
+        <% else %>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <% group[:items].each do |related| %>
+              <%= link_to item_path(related), class: "chip-link" do %>
+                <span class="badge text-bg-secondary p-2"><%= related.name %><%= " · #{tk_money(related)}" if tk_money(related) && group[:label].start_with?("Compatible") %></span>
+              <% end %>
+            <% end %>
+          </div>
         <% end %>
-      <% end %>
-    </div>
-  </section>
-<% end %>
-
-<% if @compatible_ammo.any? %>
-  <section aria-labelledby="ammo-heading" class="mt-4">
-    <span id="ammo-heading" class="tk-label mt-4 d-block">Compatible ammunition (<%= @compatible_ammo.size %>)</span>
-    <div class="table-responsive">
-      <table class="table table-sm table-hover align-middle">
-        <tbody>
-          <% @compatible_ammo.each do |ammo| %>
-            <tr>
-              <td><%= link_to ammo.name, item_path(ammo), class: "link-light text-decoration-none" %></td>
-              <td class="text-end tk-mono"><%= tk_money(ammo) %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+      </div>
+    <% end %>
   </section>
 <% end %>

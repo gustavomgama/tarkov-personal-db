@@ -45,8 +45,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     view = Tarkov::ItemAcquisitionView.new(@item)
     @routes = view.routes
-    @compatible_guns = view.compatible_guns
-    @compatible_ammo = view.compatible_ammo
+    @compatibilities = view.compatibilities
   end
 
   private

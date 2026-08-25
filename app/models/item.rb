@@ -8,6 +8,7 @@
 #  barter         :boolean          default(FALSE), not null
 #  caliber        :string
 #  categories     :text
+#  compat         :text             default("{}"), not null
 #  craft          :boolean          default(FALSE), not null
 #  currency       :string
 #  gun            :boolean          default(FALSE), not null
@@ -30,6 +31,7 @@ class Item < ApplicationRecord
 
   serialize :allowed_ammo, coder: JSON
   serialize :categories, coder: JSON
+  serialize :compat, coder: JSON
 
   has_many :item_unlocks, dependent: :destroy
 

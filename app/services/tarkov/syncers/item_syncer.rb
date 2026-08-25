@@ -23,7 +23,7 @@ module Tarkov
           image_link: attrs["image8xLink"] || attrs["inspectImageLink"] || attrs["baseImageLink"],
           wiki_link: attrs["wikiLink"],
           categories: deriver.derive(attrs)
-        }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs))
+        }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs)).merge(compat_attributes(attrs))
       end
 
       def compatibility_attributes(attrs)
@@ -35,6 +35,19 @@ module Tarkov
           caliber: properties["caliber"],
           allowed_ammo: Array(properties["allowedAmmo"])
         }
+      end
+
+      # Slot/attachment relations used by the Compatibility section.
+      def compat_attributes(attrs)
+        props = attrs["properties"] || {}
+        types = Array(attrs["types"])
+        plates = Array(props["armorSlots"]).flat_map { |slot| slot["allowedPlates"].to_a }.uniq
+        compat = {}
+        compat["plates"] = plates if plates.any?
+        compat["kind"] = "plate" if types.include?("armorPlate")
+        compat["kind"] = "headset" if types.include?("headphones")
+        compat["no_headset"] = props["blocksHeadset"] == true
+        { compat: compat }
       end
 
       # Cheapest trader buy offer; flea-market prices are deliberately ignored.

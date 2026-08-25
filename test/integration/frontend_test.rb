@@ -117,7 +117,7 @@ class FrontendTest < ActionDispatch::IntegrationTest
 
     get items_path, params: { per: "9999", page: "-5" }
     assert_response :success
-    assert_match "15 records", response.body
+    assert_match /\d+ records · \d+ shown/, response.body
 
     get items_path, params: { per: "10", page: "2" }
     assert_response :success

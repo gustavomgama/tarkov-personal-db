@@ -56,6 +56,26 @@ module TarkovTestFixtures
           "image8xLink" => "https://assets.tarkov.dev/item-1-8x.webp",
           "gridImageLink" => "https://assets.tarkov.dev/item-1-grid.webp",
           "wikiLink" => "https://escapefromtarkov.fandom.com/wiki/M4A1"
+        },
+        "item-3" => {
+          "id" => "item-3",
+          "normalizedName" => "granit-plate",
+          "name" => "Granit Plate",
+          "types" => %w[armorPlate wearable],
+          "properties" => { "class" => 6 }
+        },
+        "item-4" => {
+          "id" => "item-4",
+          "normalizedName" => "peltor-headset",
+          "name" => "Peltor Headset",
+          "types" => %w[headphones wearable]
+        },
+        "item-5" => {
+          "id" => "item-5",
+          "normalizedName" => "ratnik-helmet",
+          "name" => "Ratnik Helmet",
+          "types" => %w[helmet wearable],
+          "properties" => { "blocksHeadset" => true, "armorSlots" => [ { "allowedPlates" => %w[item-3] } ] }
         }
       },
       "itemCategories" => {

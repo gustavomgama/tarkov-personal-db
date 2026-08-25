@@ -1,7 +1,7 @@
 module Tarkov
-  # Presents one item's acquisition routes as ordered player instructions, plus
-  # gun/ammo compatibility. Extracted from ItemsController so the web layer only
-  # assigns what the templates render.
+    # Presents one item's acquisition routes as ordered player instructions, plus
+    # slot compatibility relations. Extracted from ItemsController so the web
+    # layer only assigns what the templates render.
   class ItemAcquisitionView
     def initialize(item)
       @item = item
@@ -45,6 +45,44 @@ module Tarkov
       return Item.none unless @item.gun? || @item.allowed_ammo.any?
 
       Item.where(tid: @item.allowed_ammo).order(:name)
+    end
+
+    # Bidirectional slot relations for the Compatibility section:
+    # ammo <-> guns, plates <-> armor/rigs, headsets <-> helmets.
+    # Gun <-> gun_parts relations are deliberately not shown.
+    def compatibilities
+      groups = []
+      groups << { label: "Used in guns", items: compatible_guns } if @item.ammo?
+      groups << { label: "Compatible ammunition", items: compatible_ammo } if @item.gun?
+      groups.concat(slot_groups)
+      groups
+    end
+
+    private
+
+    def slot_groups
+      compat = @item.compat || {}
+      groups = []
+      case compat["kind"]
+      when "plate"
+        fits = Item.where("compat LIKE ?", "%\"#{@item.tid}\"%")
+                   .where("categories LIKE '%\"armor\"%' OR categories LIKE '%\"armored rig\"%'")
+                   .order(:name)
+        groups << { label: "Fits into armor / armored rigs", items: fits }
+      when "headset"
+        blockers = Item.where("categories LIKE '%\"helmet\"%'")
+                       .where("compat LIKE '%\"no_headset\":true%'").order(:name)
+        if blockers.any?
+          groups << { label: "Does NOT fit these helmets", items: blockers }
+        else
+          groups << { label: "Helmet fit", items: [], note: "Fits in every helmet that accepts headsets." }
+        end
+      end
+      if compat["plates"].present?
+        groups << { label: "Accepts ballistic plates",
+                    items: Item.where(tid: compat["plates"]).order(:name) }
+      end
+      groups.select { |group| group[:items].any? || group[:note] }
     end
   end
 end

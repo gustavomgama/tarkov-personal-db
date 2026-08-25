@@ -45,7 +45,8 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
 
     get item_path(Item.find_by!(tid: "item-2"))
     assert_response :success
-    assert_match "Compatible guns", response.body
+    assert_match "Compatibility", response.body
+    assert_match "Used in guns", response.body
     assert_match "SA-58 Rifle", response.body
   end
 
