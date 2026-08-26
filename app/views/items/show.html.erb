@@ -1,24 +1,26 @@
 <%= link_to "← All items", items_path, class: "link-secondary small" %>
 
 <div class="d-flex align-items-center gap-3 my-3 flex-wrap">
-  <% if @item.image_link.present? || @item.icon_link.present? %>
-    <%= image_tag(@item.image_link || @item.icon_link, class: "item-hero-img rounded border border-secondary", alt: @item.name) %>
-  <% end %>
+  <%= item_hero(@item) %>
   <div>
     <h1 class="h3 mb-1"><%= @item.name %></h1>
     <div class="d-flex gap-2 align-items-center flex-wrap">
       <% price = tk_money(@item) %>
       <% if price %><span class="badge text-bg-success fs-6"><%= price %></span><% end %>
+      <% @item.categories&.each do |cat| %>
+        <span class="badge text-bg-secondary"><%= Item::CATEGORIES.fetch(cat, cat) %></span>
+      <% end %>
     </div>
   </div>
-  <div class="ms-auto flex-shrink-0">
+  <div class="ms-auto flex-shrink-0 d-flex gap-2">
+    <%= dev_item_link(@item) %>
     <%= link_to "Wiki ↗", @item.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank", rel: "noopener" if @item.wiki_link.present? %>
   </div>
 </div>
 
 <hr class="tk-rule" />
 
-<section aria-labelledby="unlock-heading">
+<section aria-labelledby="unlock-heading" class="mb-4">
   <h2 id="unlock-heading" class="tk-label">How to unlock this item</h2>
 
   <% if @routes.empty? %>
@@ -48,27 +50,71 @@
                 <span class="step-num"><%= step_no += 1 %></span>
                 <span class="step-body">
                   Complete <strong><%= link_to task.name, task_path(task), class: "link-light" %></strong>
-                  <% if task.wiki_link.present? %>
-                    <%= link_to "wiki ↗", task.wiki_link, class: "wiki-link", target: "_blank", rel: "noopener", "aria-label": "#{task.name} on the wiki" %>
-                  <% end %>
-                  <span class="text-secondary small d-block">
-                    Given by <%= task.trader&.name || "unknown" %><%= " · requires player level #{task.min_player_level}+" if task.min_player_level.to_i.positive? %>
+                  <span class="wiki-links ms-1">
+                    <%= dev_task_link(task) %>
+                    <%= link_to "wiki ↗", task.wiki_link, class: "link-secondary small ms-2", target: "_blank", rel: "noopener", "aria-label": "#{task.name} on the wiki" if task.wiki_link.present? %>
+                  </span>
+                  <span class="text-secondary small d-flex align-items-center gap-1 flex-wrap">
+                    Given by
+                    <% if task.trader %>
+                      <%= link_to trader_path(task.trader), class: "trader-chip" do %>
+                        <%= trader_avatar(task.trader, size: 20) %> <%= task.trader.name %>
+                      <% end %>
+                    <% else %>unknown<% end %>
+                    <%= " · requires player level #{task.min_player_level}+" if task.min_player_level.to_i.positive? %>
                   </span>
                 </span>
               </li>
             <% end %>
-            <li class="route-step route-step-final">
-              <span class="step-num">✓</span>
-              <span class="step-body">
-                <% route[:traders].each_with_index do |t, i| %><% if i > 0 %> or <% end %>
-                  <%= route[:actions].include?("barter") ? "Barter at" : "Buy from" %>
-                  <strong><%= t[:name] %></strong><%= " at loyalty level #{t[:loyalty]}" if t[:loyalty] %>
-                <% end %><%= "." if route[:traders].present? %>
-                <% if route[:actions].include?("craft") %>
-                  Craft it<%= " at the hideout" if route[:traders].empty? %>.
-                <% end %>
-              </span>
-            </li>
+
+            <% route[:offers].each do |offer| %>
+              <% badge_kind, badge_label = offer_badge(offer) %>
+              <li class="route-step route-step-final offer-line offer-<%= offer[:type] %>">
+                <span class="step-num"><%= step_no += 1 %>✓</span>
+                <span class="step-body d-flex align-items-center gap-2 flex-wrap">
+                  <span class="offer-type-badge badge text-bg-<%= badge_kind %>">
+                    <%= badge_label %>
+                  </span>
+                  <% if offer[:trader] || offer[:unlock].trader_name.present? %>
+                    <%= offer_verb(offer[:type]) %>
+                    <span class="offer-trader d-inline-flex align-items-center gap-1">
+                      <%= trader_avatar(offer[:trader] || offer[:unlock].trader_name, size: 28) %>
+                      <%= trader_link(offer[:trader] || offer[:unlock].trader_name, class: "fw-bold") %>
+                    </span>
+                    <% if offer[:loyalty] %><span class="badge text-bg-warning">LL<%= offer[:loyalty] %></span><% end %>
+                    <% variant = offer[:unlock].source_variant %>
+                    <% if variant.present? %>
+                      <span class="badge text-bg-dark border border-secondary"
+                            title="This offer is for a specific build of the weapon, not the standard variant">
+                        <%= variant %>
+                      </span>
+                    <% end %>
+                    <% if offer[:required_items].any? %>
+                      <%= render "items/offer_recipe", offer: offer %>
+                    <% end %>
+                  <% elsif offer[:type] == "reward" %>
+                    <% reward_task = route[:tasks].last || offer[:unlock].task %>
+                    <span>
+                      Received as a reward for completing
+                      <% if reward_task %><strong><%= link_to reward_task.name, task_path(reward_task), class: "link-light" %></strong><% else %>a task<% end %>.
+                    </span>
+                  <% elsif offer[:type] == "craft" %>
+                    <% if offer[:station].present? %>
+                      <span>Craft it at the
+                        <strong><%= offer[:station] %></strong><%= " (level #{offer[:station_level]})" if offer[:station_level] %>.
+                      </span>
+                    <% else %>
+                      <span>Craft it at the hideout.</span>
+                    <% end %>
+                    <% if offer[:required_items].any? %>
+                      <%= render "items/offer_recipe", offer: offer %>
+                    <% end %>
+                  <% else %>
+                    <span class="small text-secondary">Source unknown.</span>
+                  <% end %>
+                </span>
+              </li>
+            <% end %>
           </ol>
         </article>
       <% end %>
@@ -78,7 +124,7 @@
 
 <% if @compatibilities.any? %>
   <section aria-labelledby="compat-heading" class="mt-4">
-    <span id="compat-heading" class="tk-label mt-4 d-block">Compatibility</span>
+    <h2 id="compat-heading" class="tk-label mt-4 d-block">Compatibility</h2>
     <% @compatibilities.each do |group| %>
       <div class="compat-group">
         <div class="fw-bold small text-accent"><%= group[:label] %></div>
@@ -88,7 +134,7 @@
           <div class="d-flex flex-wrap gap-2 mt-1">
             <% group[:items].each do |related| %>
               <%= link_to item_path(related), class: "chip-link" do %>
-                <span class="badge text-bg-secondary p-2"><%= related.name %><%= " · #{tk_money(related)}" if tk_money(related) && group[:label].start_with?("Compatible") %></span>
+                <span class="badge text-bg-secondary p-2"><%= related.name %><%= " · #{tk_money(related)}" if group[:show_price] && tk_money(related) %></span>
               <% end %>
             <% end %>
           </div>

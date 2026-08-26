@@ -8,7 +8,10 @@ absolute source of truth for everything it exposes — names, descriptions, item
 (incl. trader unlock conditions), quest chains (`previous` links). The
 [tarkov.dev JSON API](https://json.tarkov.dev) is secondary, filling in structural data the
 wiki doesn't machine-readably provide: objective counts, barter recipes, hideout costs,
-loyalty levels, player-level requirements.
+loyalty levels, player-level requirements. The [tarkov-market.com API](https://tarkov-market.com/dev/api)
+is a tertiary cross-check for flea/trader prices and item metadata; its `bsgId` maps 1:1
+to our `items.tid`. Local copies of every payload live in `refjsons/` and are preferred
+over the network by `Tarkov::Client` (delete a snapshot to refresh it from the web).
 
 ## Requirements
 

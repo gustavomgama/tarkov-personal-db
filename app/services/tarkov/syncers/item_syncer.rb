@@ -4,13 +4,26 @@ module Tarkov
       def call
         names = client.localizations
         items = (client.items["items"] || {})
+        collapse = Tarkov::PresetCollapse.new(items.values)
         deriver = CategoryDeriver.new(items.values.group_by { |a| a["normalizedName"].to_s })
-        items.each_value.sum do |attrs|
-          upsert!(find_item(attrs), item_attributes(attrs, names, deriver)) ? 1 : 0
+        count = items.each_value.sum do |attrs|
+          next 0 if collapse.drop?(attrs["id"])
+          next 0 if historical_item?(attrs, names)
+
+          merged = collapse.merge_base_into(attrs)
+          upsert!(find_item(merged), item_attributes(merged, names, deriver)) ? 1 : 0
         end
+        collapse.remap_records!
+        count
       end
 
       private
+
+      # Retired content (fandom "Historical content") never becomes a row.
+      def historical_item?(attrs, names)
+        Tarkov::HistoricalContent.historical?(attrs["name"]) ||
+          Tarkov::HistoricalContent.historical?(names.item_name(attrs["id"]))
+      end
 
       def find_item(attrs)
         Item.find_or_initialize_by(tid: attrs.fetch("id"))
@@ -19,6 +32,7 @@ module Tarkov
       def item_attributes(attrs, names, deriver)
         {
           name: names.item_name(attrs.fetch("id")) || attrs["name"],
+          slug: attrs["normalizedName"],
           icon_link: attrs["image512pxLink"] || attrs["iconLink"],
           image_link: attrs["image8xLink"] || attrs["inspectImageLink"] || attrs["baseImageLink"],
           wiki_link: attrs["wikiLink"],

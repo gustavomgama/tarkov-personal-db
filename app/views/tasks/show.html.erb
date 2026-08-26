@@ -18,33 +18,79 @@
 </div>
 
 <div class="d-flex gap-2 align-items-center mb-4 flex-wrap">
-  <% if @task.trader %><span class="badge text-bg-warning"><%= @task.trader.name %></span><% end %>
+  <% if @task.trader %>
+    <%= link_to trader_path(@task.trader), class: "trader-chip" do %>
+      <%= trader_avatar(@task.trader, size: 24) %> <%= @task.trader.name %>
+    <% end %>
+  <% end %>
   <% if @task.min_player_level.to_i.positive? %><span class="badge text-bg-danger">requires player level <%= @task.min_player_level %>+</span><% end %>
   <% if @task.kappa_required? %><span class="badge text-bg-info">counts for Kappa</span><% end %>
   <% if @task.lightkeeper_required? %><span class="badge text-bg-dark border border-secondary">Lightkeeper route</span><% end %>
-  <%= link_to "Wiki ↗", @task.wiki_link, class: "btn btn-sm btn-outline-secondary ms-auto", target: "_blank" if @task.wiki_link.present? %>
+  <span class="ms-auto d-flex gap-2">
+    <%= dev_task_link(@task) %>
+    <%= link_to "Wiki ↗", @task.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank", rel: "noopener" if @task.wiki_link.present? %>
+  </span>
 </div>
 
-<span class="tk-label">Completing this task unlocks</span>
-<div class="card bg-body-tertiary border-secondary mb-4">
-  <div class="card-body">
-    <% if @unlocked_items.empty? %>
-      <p class="text-secondary mb-0">No items are gated behind this task — it likely advances your standing or opens another quest.</p>
-    <% else %>
-      <ul class="list-unstyled mb-0">
-        <% @unlocked_items.each do |item| %>
-          <li class="mb-2 d-flex align-items-center gap-2">
-            <% if item.icon_link.present? %><%= image_tag item.icon_link, size: "24x24", alt: "" %><% end %>
-            <%= link_to item.name, item_path(item), class: "link-light" %>
-            <% item.item_unlocks.select { |row| row.task_id == @task.id }.each do |row| %>
-              <span class="badge text-bg-info"><%= row.unlock_types.join(" / ") %></span>
-              <% if row.trader_name.present? || row.trader %>
-                <span class="text-secondary small"><%= row.trader_name.presence || row.trader&.name %><%= " LL#{row.loyalty_level}" if row.loyalty_level %></span>
-              <% end %>
+<% if @requires_chain.any? || @leads_to_chain.any? %>
+  <section aria-labelledby="chain-heading" class="mb-4">
+    <h2 id="chain-heading" class="tk-label">Chain position</h2>
+    <div class="row g-3">
+      <% if @requires_chain.any? %>
+        <div class="col-md-6">
+          <div class="fw-bold small text-accent mb-2">// requires first</div>
+          <% @requires_chain.each do |node| %>
+            <div class="timeline-step">
+              <span class="timeline-marker"></span>
+              <%= link_to node[:task].name, task_path(node[:task]), class: "link-light small" %>
+            </div>
+          <% end %>
+          <div class="timeline-step final">
+            <span class="timeline-marker"></span>
+            <span class="small fw-bold"><%= @task.name %></span>
+          </div>
+        </div>
+      <% end %>
+      <% if @leads_to_chain.any? %>
+        <div class="col-md-6">
+          <div class="fw-bold small text-accent mb-2">// then leads to</div>
+          <div class="timeline-step final">
+            <span class="timeline-marker"></span>
+            <span class="small fw-bold"><%= @task.name %></span>
+          </div>
+          <% @leads_to_chain.each do |node| %>
+            <div class="timeline-step">
+              <span class="timeline-marker"></span>
+              <%= link_to node[:task].name, task_path(node[:task]), class: "link-light small" %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </section>
+<% end %>
+
+<%= render layout: "shared/panel", locals: { label: "Completing this task unlocks" } do %>
+  <% if @unlocked_items.empty? %>
+    <p class="text-secondary mb-0">No items are gated behind this task — it likely advances your standing or opens another quest.</p>
+  <% else %>
+    <ul class="list-unstyled mb-0">
+      <% @unlocked_items.each do |item| %>
+        <li class="mb-2 d-flex align-items-center gap-2 flex-wrap">
+          <%= item_icon(item) %>
+          <%= link_to item.name, item_path(item), class: "link-light" %>
+          <% unlock = @unlocks_for_task[item.id] %>
+          <% if unlock %>
+            <span class="badge text-bg-info"><%= unlock.unlock_types.join(" / ") %></span>
+            <% trader_label = unlock.trader_name.presence %>
+            <% if trader_label || unlock.trader %>
+              <span class="text-secondary small d-inline-flex align-items-center gap-1">
+                from <%= trader_avatar(unlock.trader || trader_label, size: 18) %> <%= trader_link(unlock.trader || trader_label, class: "link-secondary") %><%= " LL#{unlock.loyalty_level}" if unlock.loyalty_level %>
+              </span>
             <% end %>
-          </li>
-        <% end %>
-      </ul>
-    <% end %>
-  </div>
-</div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

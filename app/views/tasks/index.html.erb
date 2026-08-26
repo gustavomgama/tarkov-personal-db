@@ -1,21 +1,36 @@
+<% content_for :title, "Tasks" %>
 <div class="d-flex justify-content-between align-items-end mb-1">
   <h1 class="h3 mb-0">Tasks</h1>
   <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@tasks.length} shown" %></span>
 </div>
 
-<%= form_with url: tasks_path, method: :get, local: true, class: "row g-2 mb-4" do %>
-  <div class="col-md-6">
-    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Task name…", autofocus: true %>
+<%= form_with url: tasks_path, method: :get, data: { controller: "filter-form" }, class: "row g-2 mb-3" do %>
+  <%= hidden_field_tag :sort, params[:sort] %>
+  <%= hidden_field_tag :dir, params[:dir] %>
+  <div class="col-md-5">
+    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Task name… (press Enter)" %>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <%= select_tag :trader_id,
           options_from_collection_for_select(Trader.order(:name), :id, :name, params[:trader_id]),
-          include_blank: "Any trader", class: "form-select" %>
+          include_blank: "Any trader", class: "form-select", "aria-label": "Filter by trader",
+          data: { action: "change->filter-form#submit" } %>
   </div>
   <div class="col-md-2">
-    <%= submit_tag "Filter", class: "btn btn-warning w-100 text-black" %>
+    <%= select_tag :per,
+          options_for_select(per_options, @per), class: "form-select", "aria-label": "Tasks per page",
+          data: { action: "change->filter-form#submit" } %>
+  </div>
+  <div class="col-md-2 d-flex align-items-center">
+    <div class="form-check me-3">
+      <%= check_box_tag :kappa, "1", params[:kappa] == "1", class: "form-check-input", data: { action: "change->filter-form#submit" } %>
+      <%= label_tag :kappa, "Kappa only", class: "form-check-label" %>
+    </div>
+    <%= submit_tag "Filter", class: "btn btn-warning text-black" %>
   </div>
 <% end %>
+
+<%= filter_chips("q", "trader_id", "kappa") %>
 
 <div class="table-responsive">
   <table class="table table-hover align-middle">
@@ -31,7 +46,7 @@
       <% @tasks.each do |task| %>
         <tr>
           <td><%= link_to task.name, task_path(task), class: "link-light text-decoration-none" %></td>
-          <td><span class="text-secondary"><%= task.trader&.name || "—" %></span></td>
+          <td><span class="text-secondary"><%= task.trader ? trader_link(task.trader, class: "link-secondary") : "—" %></span></td>
           <td><% if task.min_player_level.to_i.positive? %><span class="badge text-bg-danger"><%= task.min_player_level %>+</span><% end %></td>
           <td class="tk-mono"><% count = task.unlocks_count.to_i %><% if count.positive? %><span class="badge text-bg-primary"><%= count %> <%= "item".pluralize(count) %></span><% end %></td>
         </tr>
@@ -39,4 +54,7 @@
     </tbody>
   </table>
 </div>
-<%= render "shared/pagination", total: @total, per: 50, page: @page %>
+<% if @tasks.empty? %>
+  <p class="text-secondary">Nothing matches. Loosen the filters.</p>
+<% end %>
+<%= render "shared/pagination", total: @total, per: @per, page: @page %>

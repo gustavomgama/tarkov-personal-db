@@ -5,7 +5,7 @@ class UnlockStructureTest < ActiveSupport::TestCase
     Tarkov::Syncers::ItemSyncer.new(client: FakeTarkovClient.new(items: item_payload)).call
     Tarkov::Syncers::TraderSyncer.new(client: FakeTarkovClient.new(traders: trader_payload)).call
     Tarkov::Syncers::TaskSyncer.new(client: FakeTarkovClient.new(tasks: tasks_payload)).call
-    @item = Item.find_by!(tid: "item-1")
+    @item = Item.find_by!(tid: "item-1-default")
     @supplier = Task.find_by!(tid: "task-1")
     @follower = Task.find_by!(tid: "task-2")
     @trader = Trader.find_by!(tid: "trader-1")

@@ -1,6 +1,15 @@
 require "test_helper"
 
 class TarkovClientDefaultCtorTest < ActiveSupport::TestCase
+  setup do
+    @previous_dir = ENV["TARKOV_REFJSONS_DIR"]
+    ENV["TARKOV_REFJSONS_DIR"] = "/nonexistent-refjsons"
+  end
+
+  teardown do
+    ENV["TARKOV_REFJSONS_DIR"] = @previous_dir
+  end
+
   test "default constructor builds a connection" do
     client = Tarkov::Client.new
     assert_kind_of Faraday::Connection, client.instance_variable_get(:@connection)

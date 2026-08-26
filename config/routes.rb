@@ -5,14 +5,16 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
-
-  constraints ->(req) { req.remote_ip.in?([ "127.0.0.1", "::1" ]) } do
+  # Local-only reference DB: full access in dev/test, loopback-only elsewhere
+  # (a Kamal/proxied deploy would mask remote_ip, hence the env check).
+  constraints ->(req) { !Rails.env.production? || req.local? } do
     root "items#index"
-    resources :items, only: %i[index show]
+
+    resources :items, only: %i[index show], param: :slug
     resources :tasks, only: %i[index show]
     resources :traders, only: %i[index show]
+
+    get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+    get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   end
 end

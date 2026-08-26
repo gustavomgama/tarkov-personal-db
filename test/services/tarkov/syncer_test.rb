@@ -31,14 +31,14 @@ module Tarkov
         items: item_payload,
         tasks: tasks_payload,
         localizations: {
-          items: { "item-1 Name" => "Colt M4A1 5.56x45 assault rifle" },
+          items: { "item-1-default Name" => "Colt M4A1 5.56x45 assault rifle" },
           tasks: { "task-1 name" => "First in Line" }
         }
       )
 
       Syncer.new(client: client, logger: Logger.new(nil)).call
 
-      assert_equal "Colt M4A1 5.56x45 assault rifle", Item.find_by!(tid: "item-1").name
+      assert_equal "Colt M4A1 5.56x45 assault rifle", Item.find_by!(tid: "item-1-default").name
       assert_equal "First in Line", Task.find_by!(tid: "task-1").name
     end
   end

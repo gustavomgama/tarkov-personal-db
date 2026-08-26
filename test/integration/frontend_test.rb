@@ -11,7 +11,7 @@ class FrontendTest < ActionDispatch::IntegrationTest
     @prapor = Trader.find_by!(tid: "trader-1")
     @mechanic = Trader.create!(tid: "trader-empty", name: "Mechanic")
     @empty_trader = Trader.create!(tid: "trader-none", name: "Skier")
-    @m80 = Item.find_by!(tid: "item-1")
+    @m80 = Item.find_by!(tid: "item-1-default")
     @bare = Item.create!(tid: "item-bare", name: "Bare Thing")
     @ammo = Item.create!(tid: "item-2", name: "M855 Ammo")
 
@@ -46,7 +46,7 @@ class FrontendTest < ActionDispatch::IntegrationTest
     get items_path
     assert_response :success
     assert_match "records", response.body
-    assert_match "70 USD", response.body
+    assert_match 'title="Buyable from a trader"', response.body
     assert_match "task-gated", response.body
     assert_match "barter", response.body
   end
@@ -64,9 +64,11 @@ class FrontendTest < ActionDispatch::IntegrationTest
   end
 
   test "items index filters by currency and flags" do
+    Item.find_by!(tid: "item-1-default").update!(currency: "USD")
+
     get items_path, params: { currency: "USD" }
     assert_response :success
-    assert_match "70 USD", response.body
+    assert_match "Colt M4A1", response.body
 
     get items_path, params: { barter: "1" }
     assert_response :success
@@ -92,11 +94,7 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "items index sorts by name and price" do
-    get items_path, params: { sort: "price", dir: "asc" }
-    assert_response :success
-    assert_match "dir=desc&amp;sort=price", response.body
-
+  test "items index sorts by name" do
     get items_path, params: { sort: "name", dir: "desc" }
     assert_response :success
     assert_match "dir=asc", response.body
@@ -140,7 +138,7 @@ class FrontendTest < ActionDispatch::IntegrationTest
     # Route 1: chain root first, then the branch task, then the buy action.
     assert_match "1 Complete Wet Job - Part 1", flat
     assert_match "2 Complete Side Branch", flat
-    assert_match "Buy from Mechanic at loyalty level 3 .", flat
+    assert_match(/BUY Buy from M? ?Mechanic LL3/, flat)
 
     # Route 2: deepest prerequisite plays before nearer ones; unlock task last.
     assert_match "3 tasks to complete first.", flat
@@ -149,7 +147,9 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_not_nil p6
     assert_not_nil supplier
     assert_match "Given by unknown · requires player level 14+", flat
-    assert_match "Buy from Prapor at loyalty level 2 or Buy from Prapor at loyalty level 4 .", flat
+    assert_match(/BUY Buy from P? ?Prapor LL2/, flat)
+    assert_match(/BUY Buy from P? ?Prapor LL4/, flat)
+    assert_no_match "or Buy from", flat
     assert_match "Compatible ammunition", response.body
   end
 
@@ -165,11 +165,11 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "There is one way to get it.", response.body
     assert_match "No tasks required.", response.body
     flat = response.body.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
-    assert_match "Barter at Prapor at loyalty level 4 .", flat
+    assert_match(/BARTER Barter at P? ?Prapor LL4/, flat)
   end
 
   test "unknown item renders 404" do
-    get item_path(id: 0)
+    get "/items/nope-nope"
     assert_response :missing
   end
 
@@ -261,8 +261,147 @@ class FrontendTest < ActionDispatch::IntegrationTest
     assert_match "No open-sale items recorded.", response.body
   end
 
+  test "items index treats currency and category checks as any-of (OR)" do
+    Item.find_by!(tid: "item-1-default").update!(currency: "USD")
+
+    get items_path, params: { currency: %w[USD EUR] }
+    assert_response :success
+    assert_match "Colt M4A1", response.body # USD-priced fixture gun
+
+    get items_path, params: { categories: %w[gun containers] }
+    assert_response :success
+    assert_match "Colt M4A1", response.body
+  end
+
+  test "acquisition filters form one any-of group" do
+    # @m80 is USD-buyable (cheapest offer), @barter_item has no price but is barterable.
+    get items_path, params: { currency: [ "USD" ], barter: "1", per: 50 }
+    assert_response :success
+    assert_match "Colt M4A1", response.body   # matches via USD alone
+    assert_match "Intel", response.body       # matches via barter alone
+
+    # Category still narrows; a container with no acquisition route stays hidden.
+    @barter_item.update!(categories: [ "containers" ])
+    @bare.update!(categories: [ "containers" ])
+    get items_path, params: { categories: [ "containers" ], currency: [ "USD" ], barter: "1" }
+    assert_response :success
+    assert_match "Intel", response.body
+    assert_no_match "Bare Thing", response.body
+  end
+
+  test "item show renders barter recipe with ingredient images and dev links" do
+    @m80.update!(slug: "m80-762x51mm")
+    ItemUnlock.create!(item: @ammo, item_name: @ammo.name, trader: @prapor, trader_name: "Prapor",
+                       loyalty_level: 2, unlock_types: [ "barter" ], source: "dev",
+                       required_items: [ { "tid" => @m80.tid, "name" => @m80.name, "icon_link" => "",
+                                           "count" => 2 } ])
+
+    get item_path(@ammo)
+    assert_response :success
+    assert_match "BARTER", response.body
+    assert_match "× 2", response.body
+    assert_match item_path(@m80), response.body
+
+    get item_path(@m80)
+    assert_match "tarkov.dev/item/m80-762x51mm", response.body
+    assert_match "tarkov.dev ↗", response.body
+
+    get task_path(@final)
+    assert_match "tarkov.dev/task/", response.body
+  end
+
+  test "task and unlock trader names link to the trader page" do
+    get task_path(@final)
+    assert_response :success
+    assert_match trader_path(@prapor), response.body
+  end
+
   test "unknown trader renders 404" do
     get trader_path(id: 0)
     assert_response :missing
+  end
+
+  test "items index ignores an invalid trader filter instead of returning nothing" do
+    get items_path, params: { trader_id: "999999" }
+    assert_response :success
+    assert_match "Colt M4A1", response.body
+    assert_no_match "Nothing matches", response.body
+  end
+
+  test "items index renders removable filter chips" do
+    get items_path, params: { q: "colt", barter: "1", currency: [ "USD", "EUR" ], categories: [ "gun" ] }
+    assert_response :success
+    assert_match "Search: colt", response.body
+    assert_match "Barter ✕", response.body
+    assert_match "Gun ✕", response.body
+    assert_match "USD ✕", response.body
+
+    # Removing the EUR chip keeps USD and drops page state.
+    assert_match /href="[^"]*currency%5B%5D=USD[^"]*"/, response.body
+    assert_match "Clear all", response.body
+  end
+
+  test "items index clamps an out-of-range page to the last page" do
+    25.times { |i| Item.create!(tid: "clamp-#{i}", name: "Clamp Filler #{i}") }
+
+    get items_path, params: { per: "10", page: "9999" }
+    assert_response :success
+    assert_match %r{page 4 / 4}, response.body
+    assert_no_match "Nothing matches", response.body
+  end
+
+  test "pagination marks the current page for assistive tech" do
+    25.times { |i| Item.create!(tid: "aria-#{i}", name: "Aria Filler #{i}") }
+
+    get items_path, params: { per: "10", page: "2" }
+    assert_response :success
+    assert_match 'aria-current="page"', response.body
+    assert_match 'rel="next"', response.body
+    assert_match 'rel="prev"', response.body
+  end
+
+  test "items index exposes sort direction to assistive tech" do
+    get items_path, params: { sort: "name", dir: "desc" }
+    assert_response :success
+    assert_match 'aria-sort="descending"', response.body
+  end
+
+  test "tasks index filters by kappa and preserves sorting across a new search" do
+    @final.update!(kappa_required: true)
+
+    get tasks_path, params: { kappa: "1" }
+    assert_response :success
+    assert_match "Supplier", response.body
+    assert_no_match "Wet Job - Part 1</a>", response.body
+
+    get tasks_path, params: { sort: "level", dir: "desc", q: "supplier" }
+    assert_response :success
+    assert_match 'name="sort"', response.body
+    assert_match 'value="level"', response.body
+    assert_match 'name="dir"', response.body
+    assert_match 'value="desc"', response.body
+  end
+
+  test "task show renders chain position timelines" do
+    get task_path(@final)
+    assert_response :success
+    assert_match "Chain position", response.body
+    assert_match "requires first", response.body
+    flat = response.body.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
+    upstream = flat.index("Wet Job - Part 6")
+    root = flat.index("Wet Job - Part 1")
+    current = flat.rindex("Supplier")
+    assert_not_nil upstream
+    assert_not_nil root
+    assert_not_nil current
+    assert_operator upstream, :<, root
+    assert_operator root, :<, current
+  end
+
+  test "traders index shows gated item counts on cards" do
+    get traders_path
+    assert_response :success
+    assert_match "1 gated item", response.body
+    assert_match "0 gated items", response.body
   end
 end

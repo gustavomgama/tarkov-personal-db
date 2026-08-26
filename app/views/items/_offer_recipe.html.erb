@@ -1,0 +1,17 @@
+<span class="offer-recipe d-inline-flex align-items-center gap-1 flex-wrap">
+  <% offer[:required_items].each do |ingredient| %>
+    <% next if gp_coin?(ingredient) && offer[:required_items].size == 1 %>
+    <% ing_item = Item.find_by(tid: ingredient["tid"]) %>
+    <span class="ing-chip d-inline-flex align-items-center gap-1" title="<%= ingredient["name"] %>">
+      <%= ingredient_icon(ingredient) %>
+      <% unless gp_coin?(ingredient) %>
+        <span class="tk-mono small">× <%= ingredient["count"] %></span>
+      <% end %>
+      <% if ing_item %>
+        <%= link_to ingredient["name"], item_path(ing_item), class: "link-secondary small" %>
+      <% else %>
+        <span class="small"><%= ingredient["name"] %></span>
+      <% end %>
+    </span>
+  <% end %>
+</span>

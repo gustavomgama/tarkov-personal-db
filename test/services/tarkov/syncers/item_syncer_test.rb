@@ -7,7 +7,7 @@ module Tarkov
         count = ItemSyncer.new(client: fake_client).call
 
         assert_equal 4, count
-        item = Item.find_by!(tid: "item-1")
+        item = Item.find_by!(tid: "item-1-default")
         assert_equal "Colt M4A1", item.name
         assert_equal "https://assets.tarkov.dev/item-1-512.webp", item.icon_link
         assert_equal "https://assets.tarkov.dev/item-1-8x.webp", item.image_link

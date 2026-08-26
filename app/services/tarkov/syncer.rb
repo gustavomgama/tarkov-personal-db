@@ -7,8 +7,10 @@ module Tarkov
       task_chains: "Tarkov::Syncers::TaskChainSyncer",
       barters: "Tarkov::Syncers::BarterSyncer",
       crafts: "Tarkov::Syncers::CraftSyncer",
+      historical_purge: "Tarkov::Syncers::HistoricalPurge",
       trader_purge: "Tarkov::Syncers::TraderPurge",
       junk_purge: "Tarkov::Syncers::ItemPurge",
+      aliases: "Tarkov::Syncers::AliasHygiene",
       refresh_names: "Tarkov::Syncers::DenormalizedNamesRefresh"
     }.freeze
 

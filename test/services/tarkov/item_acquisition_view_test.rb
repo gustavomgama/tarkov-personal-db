@@ -8,7 +8,7 @@ module Tarkov
 
     test "gun exposes compatible ammunition" do
       ammo = Item.create!(tid: "item-2", name: "Some Ammo", categories: [ "ammo" ])
-      gun = Item.find_by!(tid: "item-1")
+      gun = Item.find_by!(tid: "item-1-default")
 
       groups = ItemAcquisitionView.new(gun).compatibilities
 
@@ -17,7 +17,7 @@ module Tarkov
     end
 
     test "ammo lists the guns that use it" do
-      gun = Item.find_by!(tid: "item-1")
+      gun = Item.find_by!(tid: "item-1-default")
       ammo = Item.create!(tid: "ammo-9", name: "M855", ammo: true, categories: [ "ammo" ])
       gun.update!(allowed_ammo: [ "ammo-9" ])
 

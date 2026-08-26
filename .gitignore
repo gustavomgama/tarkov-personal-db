@@ -49,3 +49,6 @@
 /node_modules/
 skill-observations/
 coverage/
+
+# Local API snapshots (large; tarkov-market dump contains an API key)
+/refjsons/*.json

@@ -1,5 +1,5 @@
+<% content_for :title, "Traders" %>
 <h1 class="h3 mb-1">Traders</h1>
-<div class="text-secondary mb-4">Nine people control everything worth owning.</div>
 <div class="row g-3">
   <% @traders.each do |trader| %>
     <div class="col-md-4">
@@ -7,11 +7,11 @@
         <div class="card bg-body-tertiary border-secondary h-100 trader-card">
           <div class="card-body d-flex align-items-center gap-3">
             <% if trader.image_url.present? %>
-              <%= image_tag trader.image_url, size: "56x56", class: "trader-portrait", alt: "#{trader.name} portrait" %>
+              <%= trader_avatar(trader, size: 56) %>
             <% end %>
             <div>
               <h5 class="card-title mb-0 text-uppercase"><%= trader.name %></h5>
-              <span class="tk-label mb-0">loyalty · gated items</span>
+              <span class="tk-label mb-0"><%= pluralize(@gated_counts.fetch(trader.id, 0), "gated item") %></span>
             </div>
           </div>
         </div>

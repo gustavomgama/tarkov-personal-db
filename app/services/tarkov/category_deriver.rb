@@ -22,13 +22,22 @@ module Tarkov
       categories << (armored_rig?(types, name) ? "armored rig" : "rig") if types.include?("rig")
       categories << "backpack" if types.include?("backpack")
       categories << "headset_earpiece" if types.include?("headphones")
+      categories << "medical" if (%w[meds injectors] & types).any?
+      categories << "grenades" if types.include?("grenade")
+      categories << "provisions" if types.include?("provisions")
       categories << "gun_parts" if (%w[mods pistolGrip suppressor] & types).any?
       categories << "wearable_parts" if plate_or_wearable?(types, categories)
-      categories << "containers" if types.include?("container")
+      categories << "containers" if types.include?("container") || secure_container?(name)
       categories.empty? ? [ "others" ] : categories.uniq
     end
 
     private
+
+    # Upstream types mark secure containers only as ["noFlea"]; the name is the
+    # reliable signal.
+    def secure_container?(normalized_name)
+      normalized_name.start_with?("secure-container-")
+    end
 
     def types_for(attrs)
       return attrs["types"].to_a unless attrs["types"].to_a.include?("preset")

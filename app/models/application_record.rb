@@ -5,7 +5,10 @@ class ApplicationRecord < ActiveRecord::Base
 
   # Every word in +query+ must appear in +attribute+ (case-insensitive, any order).
   def self.token_search(attribute, query)
-    query.to_s.split.reject(&:blank?)
-        .inject(all) { |scope, token| scope.where("LOWER(#{attribute}) LIKE ?", "%#{token.downcase}%") }
+    tokens = query.to_s.split.reject(&:blank?)
+    return all if tokens.empty?
+
+    where(Array.new(tokens.size, "LOWER(#{attribute}) LIKE ?").join(" AND "),
+          *tokens.map { |token| "%#{token.downcase}%" })
   end
 end

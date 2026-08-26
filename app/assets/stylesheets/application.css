@@ -68,7 +68,7 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
 .badge { letter-spacing: .04em; }
 .badge.text-bg-warning, .badge.text-bg-accent { color: #14120c !important; }
 
-/* timeline */
+/* timeline — task chain position on task pages */
 .timeline-step { position: relative; padding: 0 0 1.35rem 1.9rem; }
 .timeline-step::before {
   content: ""; position: absolute; left: .5rem; top: 1.45rem; bottom: -.1rem;
@@ -80,14 +80,6 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
   border-radius: 50%; border: 2px solid var(--tk-accent-dim); background: var(--tk-bg);
 }
 .timeline-step.final .timeline-marker { background: var(--tk-accent); box-shadow: 0 0 8px rgba(201,168,106,.5); }
-.step-number {
-  display: inline-block; min-width: 1.6em; color: var(--tk-accent);
-  font-family: ui-monospace, Menlo, monospace; font-size: .85em;
-}
-.condition-chip {
-  background: var(--tk-panel); border: 1px solid var(--tk-line);
-  border-left: 3px solid var(--tk-accent);
-}
 
 /* accent badge (bootstrap has no text-bg-accent) */
 .text-bg-accent {
@@ -98,7 +90,8 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
 .form-select, .form-control { background-color: var(--tk-panel); border-color: var(--tk-line); }
 @media (max-width: 768px) {
   h1, .h1 { font-size: 1.35rem; }
-  .condition-chip { font-size: .85rem; }
+  .navbar-nav { gap: 1rem !important; }
+  .nav-link { padding-left: .25rem; padding-right: .25rem; }
 }
 
 /* ============ UNLOCK ROUTES — the product centerpiece ============ */
@@ -153,3 +146,33 @@ h1, h2, h3, .h1, .h3 { text-transform: uppercase; letter-spacing: .05em; }
 
 /* compatibility groups */
 .compat-group { border: 1px solid var(--tk-line); background: var(--tk-panel); padding: .6rem .8rem; margin-bottom: .5rem; }
+
+/* ============ OFFER LINES — buy / barter / craft recipes ============ */
+.offer-line { border-top: 1px dashed var(--tk-line); padding-top: .55rem; }
+.route-steps .offer-line:first-child, .route-step-final:first-child { border-top: none; }
+.offer-type-badge { font-size: .66rem; letter-spacing: .12em; min-width: 4.2rem; text-align: center; }
+.offer-trader a { color: var(--tk-text); }
+.offer-trader a:hover { color: var(--tk-accent) !important; }
+
+.trader-avatar {
+  border-radius: 50%; object-fit: cover; border: 1px solid var(--tk-line);
+  background: var(--tk-bg);
+}
+.trader-avatar-fallback {
+  display: inline-block; text-align: center;
+  background: var(--tk-panel-2); color: var(--tk-accent);
+  font-family: ui-monospace, Menlo, monospace; font-size: .75rem;
+}
+.trader-chip {
+  display: inline-flex; align-items: center; gap: .4rem;
+  border: 1px solid var(--tk-line); background: var(--tk-panel);
+  padding: .15rem .6rem .15rem .2rem; border-radius: 999px;
+  color: var(--tk-text); text-decoration: none;
+}
+a.trader-chip:hover { border-color: var(--tk-accent); color: var(--tk-accent) !important; }
+
+.ing-icon { border: 1px solid var(--tk-line); background: var(--tk-bg); padding: 1px; }
+.ing-chip {
+  border: 1px solid var(--tk-line); background: var(--tk-panel-2);
+  padding: .1rem .5rem .1rem .15rem; border-radius: .35rem;
+}

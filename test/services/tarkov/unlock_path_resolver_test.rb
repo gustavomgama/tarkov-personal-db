@@ -10,7 +10,7 @@ class UnlockPathResolverTest < ActiveSupport::TestCase
     root = Task.create!(tid: "task-0", name: "Prelude", min_player_level: 2)
     gate.update!(previous_task_id: root.id)
 
-    entries = Tarkov::UnlockPathResolver.new(Item.find_by!(tid: "item-1")).resolve
+    entries = Tarkov::UnlockPathResolver.new(Item.find_by!(tid: "item-1-default")).resolve
 
     names = entries.flat_map { |entry| entry.prerequisites.map { |node| node[:task].name } }
     assert_includes names, "Prelude"

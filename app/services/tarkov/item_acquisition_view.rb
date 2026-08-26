@@ -1,36 +1,44 @@
 module Tarkov
-    # Presents one item's acquisition routes as ordered player instructions, plus
-    # slot compatibility relations. Extracted from ItemsController so the web
-    # layer only assigns what the templates render.
+  # Presents one item's acquisition routes as ordered player instructions, plus
+  # slot compatibility relations. Extracted from ItemsController so the web
+  # layer only assigns what the templates render.
   class ItemAcquisitionView
+    DEFAULT_SUFFIX = "-default"
+    KIND_RANK = { "money" => 0, "barter" => 1, "craft" => 2 }.freeze
+
     def initialize(item)
       @item = item
       @unlock_entries = UnlockPathResolver.new(item).resolve
     end
 
     # The product centerpiece: every way to get the item, expressed as ordered
-    # instructions. Routes with fewer tasks come first ("easiest"), ties broken
-    # by the lowest total player level gate.
+    # player instructions. Routes are grouped per task AND offer type. Ordering
+    # is didactic: buyable first, then barters, hideout crafts always last;
+    # within a kind, fewer tasks then lower level gates win.
     def routes
-      @unlock_entries.group_by { |entry| entry.task&.id }.map do |_task_id, entries|
+      @unlock_entries.group_by { |entry| [ entry.task&.id, primary_type(entry) ] }
+                     .map do |_key, entries|
         lead = entries.first
         # Deeper prerequisites come first: that is the order a player completes them.
         steps = lead.task ? lead.prerequisites.sort_by { |node| -node[:depth] }
                                              .map { |node| node[:task] } + [ lead.task ] : []
-        actions = entries.flat_map { |e| e.unlock.unlock_types }.uniq
-        traders = entries.filter_map do |e|
-          name = e.unlock.trader_name.presence || e.unlock.trader&.name
-          next if name.blank?
-
-          { name: name, loyalty: e.unlock.loyalty_level }
-        end.uniq { |t| [ t[:name], t[:loyalty] ] }.sort_by { |t| t[:loyalty].to_i }
+        offers = entries.map do |entry|
+          unlock = entry.unlock
+          { type: primary_type(entry), unlock: unlock,
+            loyalty: unlock.loyalty_level,
+            trader: trader_for(unlock),
+            required_items: Array(unlock.required_items),
+            station: unlock.station,
+            station_level: unlock.station_level,
+            gp_currency: unlock.currency == "GP" }
+        end.sort_by { |offer| offer[:loyalty].to_i }
         {
           tasks: steps,
-          actions: actions,
-          traders: traders,
+          kind: lead_type(entries),
+          offers: offers,
           required_level: entries.map(&:required_player_level).compact.max
         }
-      end.sort_by { |route| [ route[:tasks].size, route[:required_level].to_i ] }
+      end.sort_by { |route| [ KIND_RANK.fetch(route[:kind], 3), route[:tasks].size, route[:required_level].to_i ] }
     end
 
     def compatible_guns
@@ -53,12 +61,33 @@ module Tarkov
     def compatibilities
       groups = []
       groups << { label: "Used in guns", items: compatible_guns } if @item.ammo?
-      groups << { label: "Compatible ammunition", items: compatible_ammo } if @item.gun?
+      groups << { label: "Compatible ammunition", items: compatible_ammo, show_price: true } if @item.gun?
       groups.concat(slot_groups)
       groups
     end
 
     private
+
+    # Wiki-sourced rows carry only a denormalized trader_name; resolve once.
+    def trader_for(unlock)
+      return unlock.trader if unlock.trader
+
+      name = unlock.trader_name
+      return nil if name.blank?
+
+      @traders_by_name ||= {}
+      @traders_by_name[name] = Trader.find_by(name: name) unless @traders_by_name.key?(name)
+      @traders_by_name[name]
+    end
+
+    def primary_type(entry)
+      types = entry.unlock.unlock_types
+      %w[money reward barter craft].find { |t| types.include?(t) } || types.first || "money"
+    end
+
+    def lead_type(entries)
+      primary_type(entries.first)
+    end
 
     def slot_groups
       compat = @item.compat || {}

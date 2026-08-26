@@ -15,9 +15,32 @@ module Tarkov
         count = CraftSyncer.new(client: FakeTarkovClient.new(crafts: @craft_payload)).call
 
         assert_equal 1, count
-        row = Item.find_by!(tid: "item-1").item_unlocks.of_type("craft").sole
+        row = Item.find_by!(tid: "item-1-default").item_unlocks.of_type("craft").sole
         assert_equal "dev", row.source
-        assert_predicate Item.find_by!(tid: "item-1").reload, :craft?
+        assert_predicate Item.find_by!(tid: "item-1-default").reload, :craft?
+      end
+
+      test "stores station, level and consumed ingredients for the route card" do
+        payload = [
+          { "id" => "c-9", "station" => "st-med", "level" => 3,
+            "productItem" => { "item" => "item-1-default", "count" => 1 },
+            "requiredItems" => [
+              { "item" => "item-2", "count" => 4 },
+              { "item" => "item-5", "count" => 1, "attributes" => { "tool" => true } }
+            ] }
+        ]
+        client = FakeTarkovClient.new(
+          crafts: payload,
+          hideout: { "st-med" => { "id" => "st-med", "name" => "hideout_area_3_name",
+                                   "normalizedName" => "medstation" } },
+          hideout_en: { "hideout_area_3_name" => "Medstation" }
+        )
+        CraftSyncer.new(client: client).call
+
+        row = Item.find_by!(tid: "item-1-default").item_unlocks.of_type("craft").sole
+        assert_equal "Medstation", row.station
+        assert_equal 3, row.station_level
+        assert_equal [ "item-2" ], row.required_items.map { |i| i["tid"] } # tools excluded
       end
 
       test "is idempotent and cleans up stale craft rows" do

@@ -67,14 +67,48 @@ module Tarkov
       end
 
       test "syncs cash offers into money unlock rows with loyalty levels" do
-        Item.find_by!(tid: "item-1").item_unlocks.of_type("money").destroy_all
+        Item.find_by!(tid: "item-1-default").item_unlocks.of_type("money").destroy_all
         client = FakeTarkovClient.new(barters: [], items: item_payload)
         BarterSyncer.new(client: client).call
 
-        rows = Item.find_by!(tid: "item-1").item_unlocks.of_type("money").order(:loyalty_level)
+        rows = Item.find_by!(tid: "item-1-default").item_unlocks.of_type("money").order(:loyalty_level)
         assert_equal [ 2, 3 ], rows.map(&:loyalty_level)
         assert_equal [ "Prapor" ], rows.map(&:trader_name).uniq
-        assert_predicate Item.find_by!(tid: "item-1").reload, :require_unlock?
+        assert_predicate Item.find_by!(tid: "item-1-default").reload, :require_unlock?
+      end
+
+      test "records the source variant when an offer targets a folded preset" do
+        barters = [
+          { "id" => "barter-m4a1", "trader" => "trader-1", "minTraderLevel" => 3,
+            "requiredItems" => [ { "item" => "item-2", "count" => 5 } ],
+            "offeredItem" => { "item" => "item-1", "count" => 1 } }
+        ]
+        BarterSyncer.new(client: FakeTarkovClient.new(
+          items: item_payload, barters: barters,
+          localizations: { items: { "item-1 ShortName" => "M4A1" } }
+        )).call
+
+        keeper = Item.find_by!(tid: "item-1-default")
+        row = keeper.item_unlocks.of_type("barter").sole
+
+        assert_equal "M4A1", row.source_variant
+      end
+
+      test "GP-coin purchases become Ref-only money rows, not barters" do
+        GP_TID = "5d235b4d86f7742e017bc88a"
+        item = Item.create!(tid: "gp-item", name: "Ref Goodie")
+        Item.create!(tid: GP_TID, name: "GP coin")
+        barters = [
+          { "id" => "gp-barter", "trader" => "trader-1", "minTraderLevel" => 2,
+            "requiredItems" => [ { "item" => GP_TID, "count" => 10 } ],
+            "offeredItem" => { "item" => "gp-item", "count" => 1 } }
+        ]
+        BarterSyncer.new(client: FakeTarkovClient.new(items: item_payload, barters: barters)).call
+
+        row = Item.find_by!(tid: "gp-item").item_unlocks.sole
+        assert_equal [ "money" ], Array(row.unlock_types)
+        assert_equal "GP", row.currency
+        assert_predicate Item.find_by!(tid: "gp-item"), :ref_gp?
       end
 
       private

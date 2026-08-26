@@ -1,38 +1,43 @@
+<% content_for :title, "Items" %>
 <div class="d-flex justify-content-between align-items-end mb-1">
   <h1 class="h3 mb-0">Item Database</h1>
   <span class="tk-mono text-secondary"><%= @total %> records<%= " · #{@items.length} shown" %></span>
 </div>
-<div class="text-secondary mb-4">Search the arsenal. Click an item to see every way to get it.</div>
+<div class="text-secondary mb-4">Search and click an item to see how to get it.</div>
 
-<%= form_with url: items_path, method: :get, local: true, class: "row g-2 mb-4" do %>
+<%= form_with url: items_path, method: :get, data: { controller: "filter-form" }, class: "row g-2 mb-3" do %>
   <div class="col-md-5">
-    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Item name…", autofocus: true %>
+    <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Item name… (press Enter)" %>
   </div>
   <div class="col-md-3">
     <%= select_tag :trader_id,
           options_from_collection_for_select(Trader.order(:name), :id, :name, params[:trader_id]),
-          include_blank: "Any trader", class: "form-select", aria_label: "Filter by trader" %>
+          include_blank: "Any trader", class: "form-select", "aria-label": "Filter by trader",
+          data: { action: "change->filter-form#submit" } %>
   </div>
   <div class="col-md-2">
     <%= hidden_field_tag :sort, params[:sort] %>
     <%= hidden_field_tag :dir, params[:dir] %>
     <%= select_tag :per,
-          options_for_select([10, 25, 50, 100, 200], @per), class: "form-select", aria_label: "Items per page" %>
+          options_for_select(per_options, @per), class: "form-select", "aria-label": "Items per page",
+          data: { action: "change->filter-form#submit" } %>
   </div>
   <div class="col-md-5 d-flex gap-3 align-items-center flex-wrap">
-    <div class="form-check"><%= check_box_tag "currency[]", "RUB", selected_currencies.include?("RUB"), class: "form-check-input", id: "cur_rub" %> <%= label_tag :cur_rub, "RUB", class: "form-check-label" %></div>
-    <div class="form-check"><%= check_box_tag "currency[]", "USD", selected_currencies.include?("USD"), class: "form-check-input", id: "cur_usd" %> <%= label_tag :cur_usd, "USD", class: "form-check-label" %></div>
-    <div class="form-check"><%= check_box_tag "currency[]", "EUR", selected_currencies.include?("EUR"), class: "form-check-input", id: "cur_eur" %> <%= label_tag :cur_eur, "EUR", class: "form-check-label" %></div>
-    <div class="form-check"><%= check_box_tag :barter, "1", params[:barter] == "1", class: "form-check-input" %> <%= label_tag :barter, "Barter", class: "form-check-label" %></div>
-    <div class="form-check"><%= check_box_tag :craft, "1", params[:craft] == "1", class: "form-check-input" %> <%= label_tag :craft, "Craft", class: "form-check-label" %></div>
-    <div class="form-check"><%= check_box_tag :unlocked, "1", params[:unlocked] == "1", class: "form-check-input" %> <%= label_tag :unlocked, "Task-gated", class: "form-check-label" %></div>
+    <span class="tk-label mb-0" title="Items matching ANY checked acquisition route">Any of</span>
+    <div class="form-check"><%= check_box_tag "currency[]", "RUB", selected_currencies.include?("RUB"), class: "form-check-input", id: "cur_rub", data: { action: "change->filter-form#submit" } %> <%= label_tag :cur_rub, "RUB", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag "currency[]", "USD", selected_currencies.include?("USD"), class: "form-check-input", id: "cur_usd", data: { action: "change->filter-form#submit" } %> <%= label_tag :cur_usd, "USD", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag "currency[]", "EUR", selected_currencies.include?("EUR"), class: "form-check-input", id: "cur_eur", data: { action: "change->filter-form#submit" } %> <%= label_tag :cur_eur, "EUR", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag :gp, "1", params[:gp] == "1", class: "form-check-input", data: { action: "change->filter-form#submit" } %> <%= label_tag :gp, "GP", title: "Ref-only items purchasable with GP coins (Arena)", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag :barter, "1", params[:barter] == "1", class: "form-check-input", data: { action: "change->filter-form#submit" } %> <%= label_tag :barter, "Barter", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag :craft, "1", params[:craft] == "1", class: "form-check-input", data: { action: "change->filter-form#submit" } %> <%= label_tag :craft, "Craft", class: "form-check-label" %></div>
+    <div class="form-check"><%= check_box_tag :unlocked, "1", params[:unlocked] == "1", class: "form-check-input", data: { action: "change->filter-form#submit" } %> <%= label_tag :unlocked, "Task-gated", class: "form-check-label" %></div>
   </div>
 
   <div class="col-12 d-flex gap-3 align-items-center flex-wrap">
     <span class="tk-label mb-0">Type</span>
     <% category_options.each do |key, label| %>
       <div class="form-check">
-        <%= check_box_tag "categories[]", key, params[:categories]&.include?(key), class: "form-check-input", id: "cat_#{key}" %>
+        <%= check_box_tag "categories[]", key, params[:categories]&.include?(key), class: "form-check-input", id: "cat_#{key}", data: { action: "change->filter-form#submit" } %>
         <%= label_tag "cat_#{key}", label, class: "form-check-label" %>
       </div>
     <% end %>
@@ -43,12 +48,14 @@
   </div>
 <% end %>
 
+<%= filter_chips("q", "trader_id", "currency", "categories", "barter", "craft", "unlocked") %>
+
 <div class="table-responsive">
   <table class="table table-hover align-middle">
     <thead class="tk-label">
       <tr>
         <%= sortable_th "name", "Item" %>
-        <%= sortable_th "price", "Buy price" %>
+        <th>Category</th>
         <th>Acquisition</th>
       </tr>
     </thead>
@@ -57,17 +64,17 @@
         <tr>
           <td class="text-nowrap">
             <div class="d-flex align-items-center gap-2">
-              <% if item.icon_link.present? %>
-                <%= image_tag item.icon_link, class: "row-icon", alt: "" %>
-              <% end %>
+              <%= item_icon(item) %>
               <%= link_to item.name, item_path(item), class: "link-light text-decoration-none" %>
             </div>
           </td>
-          <td class="tk-mono">
-            <% price = tk_money(item) %>
-            <% if price %><span class="badge text-bg-success"><%= price %></span><% else %><span class="text-secondary">—</span><% end %>
+          <td>
+            <% cats = Array(item.categories).map { |c| Item::CATEGORIES.fetch(c, c) } %>
+            <% if cats.any? %><span class="text-secondary small"><%= cats.join(", ") %></span><% end %>
           </td>
           <td>
+            <% if item.price.present? %><span class="badge text-bg-success me-1" title="Buyable from a trader">buy</span><% end %>
+            <% if item.ref_gp? %><span class="badge text-bg-accent me-1" title="Purchasable from Ref with GP coins (Arena currency)">gp</span><% end %>
             <% if item.require_unlock? %><span class="badge text-bg-accent me-1">task-gated</span><% end %>
             <% if item.barter? %><span class="badge text-bg-info me-1">barter</span><% end %>
             <% if item.craft? %><span class="badge text-bg-primary">craft</span><% end %>

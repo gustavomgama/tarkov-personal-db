@@ -1,4 +1,13 @@
 namespace :tarkov do
+  desc "Full disaster recovery: recreate schema, re-sync all data from tarkov.dev and re-download images"
+  task restore: :environment do
+    Rake::Task["db:prepare"].invoke
+    ENV["FORCE"] = "1"
+    Rake::Task["tarkov:sync"].invoke
+    Rake::Task["tarkov:images"].invoke
+    Rake::Task["tarkov:sanity"].invoke
+  end
+
   SYNCERS = {
     "items" => "Tarkov::Syncers::ItemSyncer",
     "traders" => "Tarkov::Syncers::TraderSyncer",
@@ -8,7 +17,7 @@ namespace :tarkov do
 
   desc "Sync all reference data (skips unless the wiki Changelog shows a new game version; FORCE=1 overrides)"
   task sync: :environment do
-    live_version = fandom_client.latest_game_version
+    live_version = current_version
     last_version = SyncState.last_synced_version
 
     if last_version == live_version && ENV["FORCE"].blank?
@@ -120,11 +129,103 @@ namespace :tarkov do
     Tarkov::Client.new(game_mode: ENV.fetch("GAME_MODE", "regular"), lang: ENV.fetch("TARKOV_LANG", "en"))
   end
 
+  # Wiki version check when reachable; otherwise fall back to the local
+  # refjsons/ snapshots so syncs work fully offline.
+  def current_version
+    fandom_client.latest_game_version
+  rescue Tarkov::Fandom::Client::Error => e
+    raise e unless Tarkov::Client::REFJSONS_DIR.join("items.json").exist?
+
+    puts "Wiki unreachable (#{e.message}); using refjsons snapshots"
+    "refjsons-#{File.mtime(Tarkov::Client::REFJSONS_DIR.join('items.json')).to_i}"
+  end
+
   def fandom_client
     @fandom_client ||= Tarkov::Fandom::Client.new
   end
 
   def syncer
     Tarkov::Syncer.new(client: client)
+  end
+
+  # ---- offline assets & schema additions that predate a full resync ----
+
+  desc "Backfill slugs, barter ingredients and container categories from json.tarkov.dev (no full resync)"
+  task backfill: :environment do
+    c = client
+    names = c.localizations
+    items_payload = c.items.fetch("items", {})
+    deriver = Tarkov::CategoryDeriver.new(items_payload.values.group_by { |a| a["normalizedName"].to_s })
+
+    items_payload.each_value do |attrs|
+      item = Item.find_by(tid: attrs["id"])
+      next unless item
+
+      item.update_columns(
+        slug: attrs["normalizedName"],
+        name: names.item_name(attrs["id"]) || attrs["name"],
+        categories: deriver.derive(attrs)
+      )
+    end
+
+    c.tasks.fetch("tasks", {}).each_value do |attrs|
+      Task.find_by(tid: attrs["id"])&.update_column(:slug, attrs["normalizedName"])
+    end
+
+    c.traders.each_value do |attrs|
+      Trader.find_by(tid: attrs["id"])&.update_column(:slug, attrs["normalizedName"])
+    end
+
+    count = Tarkov::Syncers::BarterSyncer.new(client: c).call
+    puts "Backfilled slugs/categories; barters: #{count} rows"
+  rescue Tarkov::Client::Error => e
+    abort "Backfill failed: #{e.message}"
+  end
+
+  desc "Download every item/trader image into public/images so the app runs fully offline"
+  task images: :environment do
+    require "uri"
+
+    targets = []
+    Item.find_each do |item|
+      targets << [ "items", item.tid, "-icon", item.icon_link ]
+      targets << [ "items", item.tid, "", item.image_link || item.icon_link ]
+    end
+    Trader.find_each { |trader| targets << [ "traders", trader.tid, "", trader.image_url ] }
+    # Barter-only ingredients are absent from the items payload but the asset
+    # CDN still serves their icons by bare tid.
+    ItemUnlock.of_type("barter").pluck(:required_items).each do |ingredients|
+      Array(ingredients).each do |ingredient|
+        next unless ingredient["tid"]
+
+        targets << [ "items", ingredient["tid"], "-icon",
+                     "https://assets.tarkov.dev/#{ingredient["tid"]}-icon.webp" ]
+      end
+    end
+
+    connection = Faraday.new { |conn| conn.adapter Faraday.default_adapter }
+    ok = skipped = failed = 0
+
+    targets.each do |kind, tid, suffix, url|
+      next if url.blank?
+
+      dir = Rails.root.join("public/images/#{kind}")
+      next skipped += 1 unless Dir[dir.join("#{tid}#{suffix}.*")].empty?
+
+      begin
+        ext = File.extname(URI.parse(url).path).presence || ".png"
+        response = connection.get(url)
+        raise Tarkov::Client::Error, "status #{response.status}" unless response.success?
+
+        dir.mkpath
+        File.binwrite(dir.join("#{tid}#{suffix}#{ext}"), response.body)
+        ok += 1
+        print "." if (ok % 100).zero?
+      rescue StandardError => e
+        warn "\nFAIL #{url}: #{e.message}"
+        failed += 1
+      end
+    end
+    puts "\nimages: #{ok} downloaded, #{skipped} already present, #{failed} failed"
   end
 end

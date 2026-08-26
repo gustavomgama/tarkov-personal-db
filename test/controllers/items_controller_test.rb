@@ -3,7 +3,7 @@ require "test_helper"
 class ItemsControllerTest < ActionDispatch::IntegrationTest
   setup do
     sync_base_data
-    @item = Item.find_by!(tid: "item-1")
+    @item = Item.find_by!(tid: "item-1-default")
   end
 
   test "index lists items with price and badges" do
@@ -19,7 +19,7 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "index filters by currency and flags" do
-    Item.find_by!(tid: "item-1").update!(currency: "USD", barter: true)
+    Item.find_by!(tid: "item-1-default").update!(currency: "USD", barter: true)
     get items_path, params: { currency: "USD", barter: "1" }
     assert_response :success
     assert_match "Colt M4A1", response.body
@@ -60,6 +60,6 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
     Item.create!(tid: "item-2", name: "Dollars")
     12.times { |i| Item.create!(tid: "pad-#{i}", name: "Filler Item #{i}") }
     Item.create!(tid: "gun-77", name: "SA-58 Rifle", gun: true,
-                 allowed_ammo: [ Item.find_by!(tid: "item-1").tid ])
+                 allowed_ammo: [ Item.find_by!(tid: "item-1-default").tid ])
   end
 end

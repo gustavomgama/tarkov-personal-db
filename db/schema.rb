@@ -10,13 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_24_235615) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_25_050000) do
+  create_table "item_aliases", force: :cascade do |t|
+    t.string "canonical_tid", null: false
+    t.datetime "created_at", null: false
+    t.string "tid", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tid"], name: "index_item_aliases_on_tid", unique: true
+  end
+
   create_table "item_unlocks", force: :cascade do |t|
     t.datetime "created_at", null: false
+    t.string "currency"
     t.integer "item_id", null: false
     t.string "item_name", null: false
     t.integer "loyalty_level"
+    t.json "required_items", default: {}, null: false
     t.string "source", default: "wiki", null: false
+    t.string "source_variant"
+    t.string "station"
+    t.integer "station_level"
     t.integer "task_id"
     t.integer "trader_id"
     t.string "trader_name"
@@ -43,10 +56,17 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_24_235615) do
     t.string "image_link"
     t.string "name", null: false
     t.decimal "price", precision: 14, scale: 2
+    t.boolean "ref_gp", default: false, null: false
     t.boolean "require_unlock", default: false, null: false
+    t.string "slug"
     t.string "tid", null: false
     t.datetime "updated_at", null: false
     t.string "wiki_link"
+    t.index "LOWER(name)", name: "index_items_on_lower_name"
+    t.index ["currency"], name: "index_items_on_currency"
+    t.index ["price"], name: "index_items_on_price"
+    t.index ["ref_gp"], name: "index_items_on_ref_gp"
+    t.index ["slug"], name: "index_items_on_slug"
     t.index ["tid"], name: "index_items_on_tid", unique: true
   end
 
@@ -77,10 +97,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_24_235615) do
     t.string "next_task_name"
     t.integer "previous_task_id"
     t.string "previous_task_name"
+    t.string "slug"
     t.string "tid", null: false
     t.integer "trader_id"
     t.datetime "updated_at", null: false
     t.string "wiki_link"
+    t.index "LOWER(name)", name: "index_tasks_on_lower_name"
+    t.index ["min_player_level"], name: "index_tasks_on_min_player_level"
+    t.index ["slug"], name: "index_tasks_on_slug"
     t.index ["tid"], name: "index_tasks_on_tid", unique: true
     t.index ["trader_id"], name: "index_tasks_on_trader_id"
   end
@@ -101,6 +125,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_24_235615) do
     t.string "image_url"
     t.string "name", null: false
     t.datetime "reset_time"
+    t.string "slug"
     t.string "tid", null: false
     t.datetime "updated_at", null: false
     t.index ["tid"], name: "index_traders_on_tid", unique: true

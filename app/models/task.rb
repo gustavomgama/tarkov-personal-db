@@ -9,6 +9,7 @@
 #  name                 :string           not null
 #  next_task_name       :string
 #  previous_task_name   :string
+#  slug                 :string
 #  tid                  :string           not null
 #  wiki_link            :string
 #  created_at           :datetime         not null
@@ -19,8 +20,11 @@
 #
 # Indexes
 #
-#  index_tasks_on_tid        (tid) UNIQUE
-#  index_tasks_on_trader_id  (trader_id)
+#  index_tasks_on_lower_name        (LOWER(name))
+#  index_tasks_on_min_player_level  (min_player_level)
+#  index_tasks_on_slug              (slug)
+#  index_tasks_on_tid               (tid) UNIQUE
+#  index_tasks_on_trader_id         (trader_id)
 #
 # Foreign Keys
 #

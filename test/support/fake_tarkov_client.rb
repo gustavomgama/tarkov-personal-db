@@ -1,5 +1,5 @@
 class FakeTarkovClient
-  ENDPOINTS = %w[items tasks traders barters hideout crafts].freeze
+  ENDPOINTS = %w[items tasks traders barters hideout crafts hideout_en].freeze
 
   attr_reader :requested
 
@@ -8,11 +8,12 @@ class FakeTarkovClient
                  traders: {},
                  barters: [],
                  hideout: {},
+                 hideout_en: {},
                  crafts: [],
                  localizations: {})
     @payloads = {
       "items" => items, "tasks" => tasks, "traders" => traders,
-      "barters" => barters, "hideout" => hideout, "crafts" => crafts
+      "barters" => barters, "hideout" => hideout, "hideout_en" => hideout_en, "crafts" => crafts
     }
     @localizations = localizations
     @requested = []
@@ -39,22 +40,33 @@ module TarkovTestFixtures
           "id" => "item-1",
           "normalizedName" => "colt-m4a1",
           "name" => "Colt M4A1",
+          "types" => [ "gun" ],
+          "properties" => { "caliber" => "Caliber556x45NATO", "allowedAmmo" => [ "item-2" ] },
+          "wikiLink" => "https://escapefromtarkov.fandom.com/wiki/M4A1"
+        },
+        "item-1-default" => {
+          "id" => "item-1-default",
+          "normalizedName" => "colt-m4a1-default",
+          "name" => "Colt M4A1",
           "buyFromTrader" => [
             { "trader" => "trader-1", "price" => 6500, "priceRUB" => 6500, "currency" => "RUB", "minTraderLevel" => 2 },
             { "trader" => "trader-1", "price" => 70, "priceRUB" => 6300, "currency" => "USD", "minTraderLevel" => 3 }
           ],
           "shortName" => "M4A1",
           "description" => "Assault rifle",
-          "types" => [ "gun" ],
-          "properties" => { "caliber" => "Caliber556x45NATO", "allowedAmmo" => [ "item-2" ] },
-          "categories" => [ "cat-1", "cat-parent" ],
-          "weight" => 3.1,
-          "width" => 4,
-          "height" => 2,
+          "types" => [ "preset" ],
+          "properties" => { "ergonomics" => 42 },
           "iconLink" => "https://assets.tarkov.dev/item-1-icon.webp",
           "image512pxLink" => "https://assets.tarkov.dev/item-1-512.webp",
           "image8xLink" => "https://assets.tarkov.dev/item-1-8x.webp",
           "gridImageLink" => "https://assets.tarkov.dev/item-1-grid.webp",
+          "wikiLink" => "https://escapefromtarkov.fandom.com/wiki/M4A1"
+        },
+        "item-1-custom" => {
+          "id" => "item-1-custom",
+          "normalizedName" => "colt-m4a1-silenced-build",
+          "name" => "Colt M4A1 Silenced",
+          "types" => [ "preset" ],
           "wikiLink" => "https://escapefromtarkov.fandom.com/wiki/M4A1"
         },
         "item-3" => {
@@ -108,6 +120,7 @@ module TarkovTestFixtures
         "task-1" => {
           "id" => "task-1",
           "name" => "Supplier",
+          "normalizedName" => "supplier",
           "trader" => "trader-1",
           "minPlayerLevel" => 5,
           "kappaRequired" => true,
@@ -128,6 +141,7 @@ module TarkovTestFixtures
         "task-2" => {
           "id" => "task-2",
           "name" => "No trader task",
+          "normalizedName" => "no-trader-task",
           "trader" => nil,
           "minPlayerLevel" => 14,
           "kappaRequired" => false,

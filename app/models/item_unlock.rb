@@ -2,17 +2,22 @@
 #
 # Table name: item_unlocks
 #
-#  id            :integer          not null, primary key
-#  item_name     :string           not null
-#  loyalty_level :integer
-#  source        :string           default("wiki"), not null
-#  trader_name   :string
-#  unlock_types  :text             default("[]"), not null
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
-#  item_id       :integer          not null
-#  task_id       :integer
-#  trader_id     :integer
+#  id             :integer          not null, primary key
+#  currency       :string
+#  item_name      :string           not null
+#  loyalty_level  :integer
+#  required_items :json             not null
+#  source         :string           default("wiki"), not null
+#  source_variant :string
+#  station        :string
+#  station_level  :integer
+#  trader_name    :string
+#  unlock_types   :text             default("[]"), not null
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  item_id        :integer          not null
+#  task_id        :integer
+#  trader_id      :integer
 #
 # Indexes
 #

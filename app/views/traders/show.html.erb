@@ -1,12 +1,15 @@
 <%= link_to "← All traders", traders_path, class: "link-secondary small" %>
 
 <div class="d-flex align-items-center gap-3 my-3">
+  <%= trader_avatar(@trader, size: 48) %>
   <h1 class="h3 mb-0"><%= @trader.name %></h1>
-  <%= link_to "Wiki ↗", "https://escapefromtarkov.fandom.com/wiki/#{@trader.name.gsub(" ", "_")}", class: "btn btn-sm btn-outline-secondary", target: "_blank" %>
+  <span class="ms-auto d-flex gap-2">
+    <%= dev_trader_link(@trader) %>
+    <%= link_to "Wiki ↗", @trader.wiki_link, class: "btn btn-sm btn-outline-secondary", target: "_blank", rel: "noopener" %>
+  </span>
 </div>
 
-<span class="tk-label">Loyalty progression</span>
-<div class="card bg-body-tertiary border-secondary mb-4">
+<%= render layout: "shared/panel", locals: { label: "Loyalty progression" } do %>
   <table class="table table-sm mb-0 align-middle">
     <thead class="tk-label"><tr><th>Tier</th><th>Player level</th><th>Reputation</th></tr></thead>
     <tbody>
@@ -19,37 +22,56 @@
       <% end %>
     </tbody>
   </table>
-</div>
+<% end %>
 
-<span class="tk-label">Task-gated items — buy / barter / craft after completing a task</span>
-<div class="card bg-body-tertiary border-secondary mb-4">
-  <div class="card-body">
-    <% if @gated_items.empty? %>
-      <p class="text-secondary mb-0">None recorded.</p>
-    <% else %>
-      <ul class="list-unstyled mb-0">
-        <% @gated_items.each do |item| %>
-          <li class="mb-1">• <%= link_to item.name, item_path(item), class: "link-light" %></li>
-        <% end %>
-      </ul>
-    <% end %>
-  </div>
-</div>
+<%= render layout: "shared/panel", locals: { label: "Tasks" } do %>
+  <% if @tasks.empty? %>
+    <p class="text-secondary mb-0">No tasks recorded for this trader.</p>
+  <% else %>
+    <span class="text-secondary small d-block mb-2"><%= @tasks.size %> tasks</span>
+    <ul class="list-unstyled mb-0">
+      <% @tasks.each do |task| %>
+        <li class="mb-1 d-flex align-items-center gap-2">
+          <%= link_to task.name, task_path(task), class: "link-light" %>
+          <% if task.min_player_level.to_i.positive? %><span class="badge text-bg-danger">L<%= task.min_player_level %>+</span><% end %>
+          <% if task.kappa_required? %><span class="badge text-bg-info">Kappa</span><% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
 
-<span class="tk-label">Open stock — no task required</span>
-<div class="card bg-body-tertiary border-secondary">
-  <div class="card-body">
-    <% if @sold_items.empty? %>
-      <p class="text-secondary mb-0">No open-sale items recorded.</p>
-    <% else %>
-      <ul class="list-unstyled mb-0">
-        <% @sold_items.each do |item| %>
-          <li class="mb-1 d-flex justify-content-between">
+<%= render layout: "shared/panel", locals: { label: "Task-gated items — buy / barter / craft after completing a task" } do %>
+  <% if @gated_items.empty? %>
+    <p class="text-secondary mb-0">None recorded.</p>
+  <% else %>
+    <span class="text-secondary small d-block mb-2"><%= @gated_items.size %> items</span>
+    <ul class="list-unstyled mb-0">
+      <% @gated_items.each do |item| %>
+        <li class="mb-1 d-flex align-items-center gap-2">
+          <%= item_icon(item) %>
+          <%= link_to item.name, item_path(item), class: "link-light" %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+
+<%= render layout: "shared/panel", locals: { label: "Open stock — no task required" } do %>
+  <% if @sold_items.empty? %>
+    <p class="text-secondary mb-0">No open-sale items recorded.</p>
+  <% else %>
+    <span class="text-secondary small d-block mb-2"><%= @sold_items.size %> items, highest price first</span>
+    <ul class="list-unstyled mb-0">
+      <% @sold_items.each do |item| %>
+        <li class="mb-1 d-flex justify-content-between align-items-center gap-2">
+          <span class="d-flex align-items-center gap-2">
+            <%= item_icon(item) %>
             <%= link_to item.name, item_path(item), class: "link-light" %>
-            <span class="tk-mono text-success"><%= tk_money(item) %></span>
-          </li>
-        <% end %>
-      </ul>
-    <% end %>
-  </div>
-</div>
+          </span>
+          <span class="tk-mono text-success"><%= tk_money(item) || "—" %></span>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

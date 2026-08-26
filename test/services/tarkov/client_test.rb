@@ -1,7 +1,18 @@
 require "test_helper"
+require "json"
 
 module Tarkov
   class ClientTest < ActiveSupport::TestCase
+    setup do
+      # Network-path tests must not be intercepted by local snapshots.
+      @previous_dir = ENV["TARKOV_REFJSONS_DIR"]
+      ENV["TARKOV_REFJSONS_DIR"] = "/nonexistent-refjsons"
+    end
+
+    teardown do
+      ENV["TARKOV_REFJSONS_DIR"] = @previous_dir
+    end
+
     test "fetches and unwraps the data key" do
       client = client_with_stubs do |stub|
         stub.get("/regular/items") do
@@ -49,6 +60,32 @@ module Tarkov
       assert_equal "M4A1", names.item_short_name("i-1")
       assert_equal "First in Line", names.task_name("t-1")
       assert_equal "Prapor", names.trader_nickname("r-1")
+    end
+
+    test "local refjsons snapshots win over the network" do
+      dir = Dir.mktmpdir
+      ENV["TARKOV_REFJSONS_DIR"] = dir
+      File.write(File.join(dir, "barters.json"), JSON.generate({ "data" => [ { "id" => "local-1" } ] }))
+      client = client_with_stubs do |stub|
+        stub.get("/regular/barters") { [ 500, {}, "network must not be touched" ] }
+      end
+
+      assert_equal [ { "id" => "local-1" } ], client.barters
+    ensure
+      FileUtils.remove_entry(dir) if dir
+    end
+
+    test "a corrupt snapshot raises a descriptive client error" do
+      dir = Dir.mktmpdir
+      ENV["TARKOV_REFJSONS_DIR"] = dir
+      File.write(File.join(dir, "barters.json"), "{nope")
+      client = Client.new(connection: Faraday.new { |f| f.adapter Faraday.default_adapter })
+
+      error = assert_raises(Client::Error) { client.barters }
+
+      assert_match(/barters\.json/, error.message)
+    ensure
+      FileUtils.remove_entry(dir) if dir
     end
 
     private

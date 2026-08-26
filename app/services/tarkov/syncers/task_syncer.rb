@@ -3,10 +3,11 @@ module Tarkov
     class TaskSyncer < Base
       def call
         payload = client.tasks
-        tasks = (payload["tasks"] || {})
+        tasks = (payload["tasks"] || {}).reject { |_, attrs| historical?(attrs) }
         records = tasks.each_value.filter_map { |attrs| sync_task(attrs) }
         tasks.each_value { |attrs| sync_task_requirements(attrs) }
         sync_offer_unlocks(tasks)
+        sync_reward_items(tasks)
         records.size
       end
 
@@ -27,6 +28,7 @@ module Tarkov
       def task_attributes(attrs)
         {
           name: client.localizations.task_name(attrs.fetch("id")) || attrs["name"],
+          slug: attrs["normalizedName"],
           trader: attrs["trader"].present? ? Trader.find_by(tid: attrs["trader"]) : nil,
           min_player_level: attrs["minPlayerLevel"],
           kappa_required: attrs["kappaRequired"] || false,
@@ -49,7 +51,8 @@ module Tarkov
       end
 
       def sync_offer_unlock(task, offer)
-        item = Item.find_by(tid: extract_item_tid(offer["item"]))
+        raw_tid = extract_item_tid(offer["item"])
+        item = Item.find_canonical(raw_tid)
         return unless item
 
         trader = Trader.find_by(tid: offer["trader"])
@@ -58,10 +61,50 @@ module Tarkov
               ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
                             trader_id: trader&.id, source: "dev", unlock_types: [ "money" ])
         upsert!(row, { item_name: item.name, trader_name: trader&.name,
-                       loyalty_level: offer["level"] })
+                       loyalty_level: offer["level"],
+                       source_variant: variant_label_for(raw_tid, item) })
         item.update!(require_unlock: true)
       rescue ActiveRecord::RecordInvalid => e
         warn "offer unlock skipped for #{task.tid}: #{e.message}"
+      end
+
+      # offerUnlock may target a non-default weapon variant; keep its display
+      # name so the route can describe which build it unlocks.
+      def variant_label_for(raw_tid, canonical_item)
+        return nil if canonical_item.tid == raw_tid
+
+        names = client.localizations
+        names.item_short_name(raw_tid).presence || names.item_name(raw_tid).presence
+      end
+
+      def historical?(attrs)
+        name = client.localizations.task_name(attrs["id"]) || attrs["name"]
+        Tarkov::HistoricalContent.historical?(name)
+      end
+
+      # finishRewards.items = items handed to the player on completion
+      # (e.g. the Kappa secure container). Routes render these as rewards.
+      def sync_reward_items(tasks)
+        tasks.each_value do |attrs|
+          task = Task.find_by(tid: attrs["id"])
+          next unless task
+
+          Array(attrs.dig("finishRewards", "items")).each do |reward|
+            sync_reward_item(task, reward)
+          end
+        end
+      end
+
+      def sync_reward_item(task, reward)
+        raw_tid = reward.is_a?(Hash) ? extract_item_tid(reward["item"]) : nil
+        item = Item.find_canonical(raw_tid) if raw_tid
+        return unless item
+
+        row = ItemUnlock.where(item_id: item.id, task_id: task.id, source: "dev")
+                        .of_type("reward").first ||
+              ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
+                             source: "dev", unlock_types: [ "reward" ])
+        upsert!(row, { item_name: item.name })
       end
 
       def extract_item_tid(value)
