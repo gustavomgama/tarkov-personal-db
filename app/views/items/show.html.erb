@@ -10,6 +10,15 @@
       <% @item.categories&.each do |cat| %>
         <span class="badge text-bg-secondary"><%= Item::CATEGORIES.fetch(cat, cat) %></span>
       <% end %>
+      <% if @item.penetration_power.present? %>
+        <span class="badge text-bg-warning text-dark" title="Ammo penetration power">PP <%= @item.penetration_power %></span>
+      <% end %>
+      <% if @item.damage.present? %>
+        <span class="badge text-bg-danger" title="Ammo damage"><%= @item.damage %> DMG</span>
+      <% end %>
+      <% if @item.armor_class.present? %>
+        <span class="badge text-bg-info" title="Armor protection class">AC <%= @item.armor_class %></span>
+      <% end %>
     </div>
   </div>
   <div class="ms-auto flex-shrink-0 d-flex gap-2">

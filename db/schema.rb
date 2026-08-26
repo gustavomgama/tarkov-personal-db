@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_25_050000) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_26_020000) do
   create_table "item_aliases", force: :cascade do |t|
     t.string "canonical_tid", null: false
     t.datetime "created_at", null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_25_050000) do
   create_table "items", force: :cascade do |t|
     t.text "allowed_ammo", default: "[]", null: false
     t.boolean "ammo", default: false, null: false
+    t.integer "armor_class"
     t.boolean "barter", default: false, null: false
     t.string "caliber"
     t.text "categories"
@@ -51,10 +52,12 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_25_050000) do
     t.boolean "craft", default: false, null: false
     t.datetime "created_at", null: false
     t.string "currency"
+    t.integer "damage"
     t.boolean "gun", default: false, null: false
     t.string "icon_link"
     t.string "image_link"
     t.string "name", null: false
+    t.integer "penetration_power"
     t.decimal "price", precision: 14, scale: 2
     t.boolean "ref_gp", default: false, null: false
     t.boolean "require_unlock", default: false, null: false

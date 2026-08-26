@@ -15,7 +15,7 @@ module Tarkov
       results = Syncer.new(client: client, logger: Logger.new(nil), fandom_client: FakeFandomClient.new).call
 
       assert_equal %w[items traders tasks barters crafts], client.requested.uniq
-      assert_equal 4, results[:items]
+      assert_equal 6, results[:items]
       assert_equal 1, results[:traders]
       assert_equal 2, results[:tasks]
       assert_equal 2, results[:barters]

@@ -5,7 +5,8 @@ module Tarkov
   # type list does not distinguish them.
   class CategoryDeriver
     CANONICAL = %w[ammo gun helmet armor armored\ rig rig backpack
-                   headset_earpiece gun_parts wearable_parts containers others].freeze
+                   headset_earpiece medical grenades provisions
+                   gun_parts wearable_parts containers others].freeze
 
     def initialize(items_by_normalized_name)
       @by_name = items_by_normalized_name.transform_values { |v| v.is_a?(Array) ? v : [ v ] }
@@ -24,7 +25,7 @@ module Tarkov
       categories << "headset_earpiece" if types.include?("headphones")
       categories << "medical" if (%w[meds injectors] & types).any?
       categories << "grenades" if types.include?("grenade")
-      categories << "provisions" if types.include?("provisions")
+      categories << "provisions" if types.include?("provisions") && !types.include?("meds")
       categories << "gun_parts" if (%w[mods pistolGrip suppressor] & types).any?
       categories << "wearable_parts" if plate_or_wearable?(types, categories)
       categories << "containers" if types.include?("container") || secure_container?(name)

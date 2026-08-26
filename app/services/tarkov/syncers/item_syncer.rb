@@ -37,7 +37,10 @@ module Tarkov
           image_link: attrs["image8xLink"] || attrs["inspectImageLink"] || attrs["baseImageLink"],
           wiki_link: attrs["wikiLink"],
           categories: deriver.derive(attrs)
-        }.merge(trader_price_attributes(attrs)).merge(compatibility_attributes(attrs)).merge(compat_attributes(attrs))
+        }.merge(trader_price_attributes(attrs))
+         .merge(compatibility_attributes(attrs))
+         .merge(compat_attributes(attrs))
+         .merge(ballistics_attributes(attrs))
       end
 
       def compatibility_attributes(attrs)
@@ -73,6 +76,24 @@ module Tarkov
           price: offer["price"],
           currency: offer["currency"]
         }
+      end
+
+      # Ballistics data: penetration power and damage for ammo, armor class for armor/helmets.
+      def ballistics_attributes(attrs)
+        props = attrs["properties"] || {}
+        types = Array(attrs["types"])
+        result = {}
+
+        if types.include?("ammo")
+          result[:penetration_power] = props["penetrationPower"]
+          result[:damage] = props["damage"]
+        end
+
+        if (types.include?("armor") || types.include?("helmet")) && props["class"]
+          result[:armor_class] = props["class"]
+        end
+
+        result
       end
     end
   end

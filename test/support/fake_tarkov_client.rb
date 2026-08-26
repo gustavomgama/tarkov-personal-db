@@ -88,6 +88,20 @@ module TarkovTestFixtures
           "name" => "Ratnik Helmet",
           "types" => %w[helmet wearable],
           "properties" => { "blocksHeadset" => true, "armorSlots" => [ { "allowedPlates" => %w[item-3] } ] }
+        },
+        "ammo-m855" => {
+          "id" => "ammo-m855",
+          "normalizedName" => "556x45mm-m855",
+          "name" => "5.56x45mm M855",
+          "types" => [ "ammo" ],
+          "properties" => { "caliber" => "Caliber556x45NATO", "penetrationPower" => 37, "damage" => 42 }
+        },
+        "armor-class5" => {
+          "id" => "armor-class5",
+          "normalizedName" => "6b13-armor",
+          "name" => "6B13 Body Armor",
+          "types" => [ "armor", "wearable" ],
+          "properties" => { "class" => 5 }
         }
       },
       "itemCategories" => {
