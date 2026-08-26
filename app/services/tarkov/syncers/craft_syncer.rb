@@ -8,6 +8,7 @@ module Tarkov
         crafts = client.crafts
         return 0 if crafts.empty?
 
+        @items_by_tid = Item.all.index_by(&:tid)
         kept = crafts.filter_map { |craft| sync_craft(craft) }
 
         # Everything dev-crafted that this run cannot account for is stale.
@@ -56,9 +57,10 @@ module Tarkov
           next if req.dig("attributes", "tool")
 
           raw_tid = req["item"].to_s
-          ingredient = Item.find_by(tid: ItemAlias.resolve(raw_tid))
+          resolved_tid = ItemAlias.resolve(raw_tid)
+          ingredient = @items_by_tid[resolved_tid]
           {
-            "tid" => ItemAlias.resolve(raw_tid),
+            "tid" => resolved_tid,
             "name" => ingredient&.name || names.item_name(raw_tid) || raw_tid,
             "icon_link" => ingredient&.icon_link,
             "count" => req["count"] || 1

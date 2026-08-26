@@ -23,18 +23,43 @@ module Tarkov
     end
 
     def call
+      results = {}
+
+      # Core entities (items, traders, tasks) — must commit before derived steps
       ActiveRecord::Base.transaction do
-        STEPS.each_with_object({}) do |(step, klass), results|
-          log "syncing #{step}..."
-          results[step] = build_syncer(klass).call
-          log "#{step}: #{results[step]} records"
-        end
+        run_steps(results, :items, :traders, :tasks, :task_chains)
       end
+
+      # Derived unlocks (barters, crafts) — depend on core entities
+      ActiveRecord::Base.transaction do
+        run_steps(results, :barters, :crafts)
+      end
+
+      # Purge steps — remove stale data after unlocks are settled
+      ActiveRecord::Base.transaction do
+        run_steps(results, :historical_purge, :trader_purge, :junk_purge)
+      end
+
+      # Cleanup — alias hygiene and denormalized name refresh
+      ActiveRecord::Base.transaction do
+        run_steps(results, :aliases, :refresh_names)
+      end
+
+      results
     end
 
     private
 
     attr_reader :logger, :fandom_client
+
+    def run_steps(results, *step_keys)
+      step_keys.each do |step|
+        klass = STEPS.fetch(step)
+        log "syncing #{step}..."
+        results[step] = build_syncer(klass).call
+        log "#{step}: #{results[step]} records"
+      end
+    end
 
     def build_syncer(klass)
       args = { client: @client }

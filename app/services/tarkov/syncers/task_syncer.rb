@@ -4,6 +4,7 @@ module Tarkov
       def call
         payload = client.tasks
         tasks = (payload["tasks"] || {}).reject { |_, attrs| historical?(attrs) }
+        preload_lookups
         records = tasks.each_value.filter_map { |attrs| sync_task(attrs) }
         tasks.each_value { |attrs| sync_task_requirements(attrs) }
         sync_offer_unlocks(tasks)
@@ -13,6 +14,16 @@ module Tarkov
 
       private
 
+      def preload_lookups
+        @tasks_by_tid = Task.all.index_by(&:tid)
+        @traders_by_tid = Trader.all.index_by(&:tid)
+      end
+
+      def find_task(attrs)
+        tid = attrs.fetch("id")
+        @tasks_by_tid[tid] ||= Task.find_or_initialize_by(tid: tid)
+      end
+
       def sync_task(attrs)
         upsert!(find_task(attrs), task_attributes(attrs))
         true
@@ -21,15 +32,11 @@ module Tarkov
         nil
       end
 
-      def find_task(attrs)
-        Task.find_or_initialize_by(tid: attrs.fetch("id"))
-      end
-
       def task_attributes(attrs)
         {
           name: client.localizations.task_name(attrs.fetch("id")) || attrs["name"],
           slug: attrs["normalizedName"],
-          trader: attrs["trader"].present? ? Trader.find_by(tid: attrs["trader"]) : nil,
+          trader: attrs["trader"].present? ? @traders_by_tid[attrs["trader"]] : nil,
           min_player_level: attrs["minPlayerLevel"],
           kappa_required: attrs["kappaRequired"] || false,
           lightkeeper_required: attrs["lightkeeperRequired"] || false,
@@ -41,7 +48,7 @@ module Tarkov
       # structured money routes straight from the API.
       def sync_offer_unlocks(tasks)
         tasks.each_value do |attrs|
-          task = Task.find_by(tid: attrs["id"])
+          task = @tasks_by_tid[attrs["id"]]
           next unless task
 
           Array(attrs.dig("finishRewards", "offerUnlock")).each do |offer|
@@ -55,7 +62,7 @@ module Tarkov
         item = Item.find_canonical(raw_tid)
         return unless item
 
-        trader = Trader.find_by(tid: offer["trader"])
+        trader = @traders_by_tid[offer["trader"]]
         row = ItemUnlock.where(item_id: item.id, trader_id: trader&.id, task_id: task.id,
                               source: "dev").of_type("money").first ||
               ItemUnlock.new(item_id: item.id, item_name: item.name, task_id: task.id,
@@ -86,7 +93,7 @@ module Tarkov
       # (e.g. the Kappa secure container). Routes render these as rewards.
       def sync_reward_items(tasks)
         tasks.each_value do |attrs|
-          task = Task.find_by(tid: attrs["id"])
+          task = @tasks_by_tid[attrs["id"]]
           next unless task
 
           Array(attrs.dig("finishRewards", "items")).each do |reward|
@@ -114,11 +121,11 @@ module Tarkov
       end
 
       def sync_task_requirements(attrs)
-        task = Task.find_by(tid: attrs["id"])
+        task = @tasks_by_tid[attrs["id"]]
         return unless task
 
         kept = Array(attrs["taskRequirements"]).filter_map do |requirement|
-          required = Task.find_by(tid: requirement["task"])
+          required = @tasks_by_tid[requirement["task"]]
           next unless required
 
           TaskRequirement.find_or_create_by!(task: task, required_task: required)

@@ -174,9 +174,14 @@ module ApplicationHelper
 
   private
 
+  LOCAL_IMAGE_CACHE = {}
+
   def local_image(dir, tid, suffix = "")
+    key = "#{dir}/#{tid}#{suffix}"
+    return LOCAL_IMAGE_CACHE[key] if LOCAL_IMAGE_CACHE.key?(key)
+
     path = Dir[Rails.root.join("public/images/#{dir}/#{tid}#{suffix}.*")].first
-    "/images/#{dir}/#{File.basename(path)}" if path
+    LOCAL_IMAGE_CACHE[key] = path ? "/images/#{dir}/#{File.basename(path)}" : nil
   end
 
   def img_fallback_data

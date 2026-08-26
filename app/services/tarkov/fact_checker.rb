@@ -75,8 +75,9 @@ module Tarkov
     end
 
     def check_chain_gaps
+      required_ids = TaskRequirement.pluck(:required_task_id).to_set
       tasks = Task.where.not(wiki_link: [ nil, "" ])
-                  .reject { |task| task.unlocked_by_requirements.exists? }
+                  .reject { |task| required_ids.include?(task.id) }
                   .select { |task| title_from_link(task.wiki_link).present? }
       texts = fandom_client.raw_wikitext(tasks.map { |t| title_from_link(t.wiki_link) })
 

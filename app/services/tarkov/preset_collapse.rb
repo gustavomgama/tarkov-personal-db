@@ -241,7 +241,8 @@ module Tarkov
         [ row.item_id, row.trader_id, row.task_id, row.loyalty_level,
           Array(row.unlock_types).sort, row.source ]
       end
-      groups.each_value { |rows| rows.drop(1).each(&:delete) }
+      ids_to_delete = groups.each_value.flat_map { |rows| rows.drop(1).map(&:id) }
+      ItemUnlock.where(id: ids_to_delete).delete_all if ids_to_delete.any?
     end
   end
 end
