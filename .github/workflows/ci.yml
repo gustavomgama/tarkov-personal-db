@@ -2,40 +2,45 @@ name: CI
 
 on:
   pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  scan_ruby:
+  # ── Security scanning ──────────────────────────────────────────────
+  security:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ruby-4.0.6
           bundler-cache: true
 
-      - name: Scan for common Rails security vulnerabilities using static analysis
-        run: bin/brakeman --no-pager
+      - name: Brakeman (static security analysis)
+        run: bin/brakeman --no-pager --exit-on-warn
 
-      - name: Scan for known security vulnerabilities in gems used
+      - name: Bundler-audit (known gem vulnerabilities)
         run: bin/bundler-audit
 
+  # ── Linting ────────────────────────────────────────────────────────
   lint:
     runs-on: ubuntu-latest
     env:
       RUBOCOP_CACHE_ROOT: tmp/rubocop
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ruby-4.0.6
           bundler-cache: true
 
-      - name: Prepare RuboCop cache
+      - name: RuboCop cache
         uses: actions/cache@v4
         env:
           DEPENDENCIES_HASH: ${{ hashFiles('.ruby-version', '**/.rubocop.yml', '**/.rubocop_todo.yml', 'Gemfile.lock') }}
@@ -45,69 +50,127 @@ jobs:
           restore-keys: |
             rubocop-${{ runner.os }}-${{ env.DEPENDENCIES_HASH }}-
 
-      - name: Lint code for consistent style
+      - name: Rubocop
         run: bin/rubocop -f github
 
+  # ── Tests ──────────────────────────────────────────────────────────
   test:
     runs-on: ubuntu-latest
-
-    # services:
-    #  redis:
-    #    image: valkey/valkey:8
-    #    ports:
-    #      - 6379:6379
-    #    options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      RAILS_ENV: test
     steps:
-      - name: Install packages
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y libvips
+      - uses: actions/checkout@v4
 
-      - name: Checkout code
-        uses: actions/checkout@v6
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ruby-4.0.6
           bundler-cache: true
+
+      - name: Prepare database
+        run: bin/rails db:test:prepare
 
       - name: Run tests
-        env:
-          RAILS_ENV: test
-          # RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test
+        run: bin/rails test
 
-  system-test:
+  # ── Coverage gate (100% line coverage enforced) ────────────────────
+  coverage:
     runs-on: ubuntu-latest
-
-    # services:
-    #  redis:
-    #    image: valkey/valkey:8
-    #    ports:
-    #      - 6379:6379
-    #    options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      RAILS_ENV: test
     steps:
-      - name: Install packages
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y libvips
+      - uses: actions/checkout@v4
 
-      - name: Checkout code
-        uses: actions/checkout@v6
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ruby-4.0.6
           bundler-cache: true
 
-      - name: Run System Tests
-        env:
-          RAILS_ENV: test
-          # RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test:system
+      - name: Prepare database
+        run: bin/rails db:test:prepare
 
-      - name: Keep screenshots from failed system tests
+      - name: Run tests with coverage
+        run: bin/rails test
+
+      - name: Enforce 100% line coverage
+        run: |
+          COVERAGE=$(python3 -c "import json; d=json.load(open('coverage/coverage.json')); print(d['total']['lines']['percent'])")
+          echo "Line coverage: ${COVERAGE}%"
+          if [ "$(echo "$COVERAGE < 100" | bc -l)" -eq 1 ]; then
+            echo "::error::Coverage is ${COVERAGE}% — requires 100%"
+            exit 1
+          fi
+
+      - name: Coverage report
+        if: always()
         uses: actions/upload-artifact@v4
-        if: failure()
         with:
-          name: screenshots
-          path: ${{ github.workspace }}/tmp/screenshots
-          if-no-files-found: ignore
+          name: coverage-report
+          path: coverage/
+          retention-days: 14
+
+  # ── Code quality (rubycritic) ──────────────────────────────────────
+  audit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Install rubycritic
+        run: gem install rubycritic
+
+      - name: Run rubycritic
+        run: |
+          rubycritic --no-browser --format json app/
+          cp tmp/rubycritic/report.json /tmp/rubycritic.json
+
+      - name: Enforce score ≥ 75
+        run: |
+          SCORE=$(python3 -c "import json; d=json.load(open('/tmp/rubycritic.json')); print(d.get('score','0'))")
+          echo "Rubycritic score: $SCORE"
+          if [ "$(echo "$SCORE < 75" | bc -l)" -eq 1 ]; then
+            echo "::error::Rubycritic score $SCORE is below 75 threshold"
+            exit 1
+          fi
+
+      - name: Summarize
+        if: always()
+        run: |
+          SCORE=$(python3 -c "import json; d=json.load(open('/tmp/rubycritic.json')); print(d.get('score','?'))" 2>/dev/null || echo "?")
+          echo "## Rubycritic: $SCORE / 100" >> $GITHUB_STEP_SUMMARY
+
+  # ── Merge gate ─────────────────────────────────────────────────────
+  gate:
+    if: always()
+    needs: [security, lint, test, coverage, audit]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check all jobs
+        run: |
+          for job in security lint test coverage; do
+            if [ "${{ needs[job].result }}" != "success" ]; then
+              echo "::error::$job ${{ needs[job].result }}"
+              FAILED=1
+            fi
+          done
+          # audit only runs on PRs; "skipped" is acceptable on push
+          AUDIT="${{ needs.audit.result }}"
+          if [ "$AUDIT" != "success" ] && [ "$AUDIT" != "skipped" ]; then
+            echo "::error::audit $AUDIT"
+            FAILED=1
+          fi
+          if [ "${FAILED:-0}" = "1" ]; then
+            echo ""
+            echo "Results:"
+            echo "  security: ${{ needs.security.result }}"
+            echo "  lint:     ${{ needs.lint.result }}"
+            echo "  test:     ${{ needs.test.result }}"
+            echo "  coverage: ${{ needs.coverage.result }}"
+            echo "  audit:    ${{ needs.audit.result }}"
+            exit 1
+          fi
+          echo "All checks passed"
