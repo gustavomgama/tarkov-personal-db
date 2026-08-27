@@ -149,13 +149,21 @@ jobs:
     steps:
       - name: Check all jobs
         run: |
-          for job in security lint test coverage audit; do
-            if [ "${{ needs[job].result }}" != "success" ]; then
-              echo "::error::$job ${{ needs[job].result }}"
+          FAILED=0
+          for result in \
+            "security:${{ needs.security.result }}" \
+            "lint:${{ needs.lint.result }}" \
+            "test:${{ needs.test.result }}" \
+            "coverage:${{ needs.coverage.result }}" \
+            "audit:${{ needs.audit.result }}"; do
+            name="${result%%:*}"
+            status="${result#*:}"
+            if [ "$status" != "success" ]; then
+              echo "::error::$name $status"
               FAILED=1
             fi
           done
-          if [ "${FAILED:-0}" = "1" ]; then
+          if [ "$FAILED" = "1" ]; then
             echo ""
             echo "Results:"
             echo "  security: ${{ needs.security.result }}"
