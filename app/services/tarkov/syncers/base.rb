@@ -14,6 +14,12 @@ module Tarkov
         record.save!
         record
       end
+
+      def extract_item_tid(value)
+        return value unless value.is_a?(Hash)
+
+        value["id"] || value["item"]
+      end
     end
   end
 end

@@ -76,8 +76,7 @@ module Tarkov
       return nil if name.blank?
 
       @traders_by_name ||= {}
-      @traders_by_name[name] = Trader.find_by(name: name) unless @traders_by_name.key?(name)
-      @traders_by_name[name]
+      @traders_by_name[name] ||= Trader.find_by(name: name)
     end
 
     def primary_type(entry)

@@ -27,7 +27,8 @@ module Tarkov
     # Wiki canonical titles are truth; local display names come from the
     # json.tarkov.dev localization files and can drift from them.
     def check_names(label, scope)
-      records = scope.select { |record| title_from_link(record.wiki_link).present? }
+      records = scope.where.not(wiki_link: [ nil, "" ]).to_a
+      records.select! { |record| title_from_link(record.wiki_link).present? }
       return if records.empty?
 
       resolved = fandom_client.pages(records.map { |r| title_from_link(r.wiki_link) })

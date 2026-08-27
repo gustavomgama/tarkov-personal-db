@@ -146,7 +146,7 @@ module ApplicationHelper
     chips = []
     chips << filter_chip("Search: #{qp[:q]}", q: nil) if keys.delete("q") && qp[:q].present?
     if keys.delete("trader_id") && qp[:trader_id].present?
-      name = Trader.find_by(id: qp[:trader_id])&.name || "Trader ##{qp[:trader_id]}"
+      name = Trader.where(id: qp[:trader_id]).pick(:name) || "Trader ##{qp[:trader_id]}"
       chips << filter_chip(name, trader_id: nil)
     end
     if keys.delete("currency")

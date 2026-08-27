@@ -57,7 +57,9 @@ module Tarkov
       return cached if cached.present?
       return [] if task.previous_task_id.blank?
 
-      [ Task.find(task.previous_task_id) ]
+      @previous_tasks_cache ||= {}
+      @previous_tasks_cache[task.previous_task_id] ||= Task.find(task.previous_task_id)
+      [ @previous_tasks_cache[task.previous_task_id] ]
     end
 
     def entry_for(unlock)

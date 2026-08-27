@@ -8,6 +8,8 @@ module Tarkov
         @connection = connection || Faraday.new(url: BASE_URL) do |conn|
           conn.request :url_encoded
           conn.response :json, content_type: /\bjson$/
+          conn.options.timeout = 10
+          conn.options.open_timeout = 5
           conn.adapter Faraday.default_adapter
         end
       end
