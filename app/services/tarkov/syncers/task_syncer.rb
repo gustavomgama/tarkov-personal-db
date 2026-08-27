@@ -114,12 +114,6 @@ module Tarkov
         upsert!(row, { item_name: item.name })
       end
 
-      def extract_item_tid(value)
-        return value unless value.is_a?(Hash)
-
-        value["id"] || value["item"]
-      end
-
       def sync_task_requirements(attrs)
         task = @tasks_by_tid[attrs["id"]]
         return unless task
