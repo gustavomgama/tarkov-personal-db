@@ -1,0 +1,70 @@
+# == Schema Information
+#
+# Table name: tasks
+#
+#  id                   :bigint           not null, primary key
+#  bsg_id               :string           default(""), not null
+#  full_name            :string           not null
+#  name                 :string           default(""), not null
+#  wiki_link            :string           default(""), not null
+#  given_by             :string           not null
+#  kappa_required       :boolean          default(FALSE), not null
+#  lightkeeper_required :boolean          default(FALSE), not null
+#  leads_to             :jsonb            not null
+#  requirements         :jsonb            not null
+#  start_rewards        :jsonb            not null
+#  finish_rewards       :jsonb            not null
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+# Indexes
+#
+#  index_tasks_on_bsg_id                (bsg_id) UNIQUE WHERE ((bsg_id)::text <> ''::text)
+#  index_tasks_on_full_name             (full_name)
+#  index_tasks_on_given_by              (given_by)
+#  index_tasks_on_kappa_required        (kappa_required)
+#  index_tasks_on_lightkeeper_required  (lightkeeper_required)
+#  index_tasks_on_name                  (name) UNIQUE WHERE ((name)::text <> ''::text)
+#
+a_big_loss:
+  bsg_id: "5ae4493d86f7744b8e15aa8f"
+  name: "a-big-loss"
+  full_name: "A Big Loss"
+  wiki_link: "https://escapefromtarkov.fandom.com/wiki/A_Big_Loss"
+  given_by: "Ragman"
+  kappa_required: true
+  lightkeeper_required: false
+  leads_to: []
+  requirements:
+    - player_level: 0
+      trader_level: []
+      previous_tasks: []
+  start_rewards: []
+  finish_rewards:
+    - loose_items:
+        - item_id: "5449016a4bdc2d6f028b456f"
+          item_name: "Roubles"
+          count: "80000"
+      offer_unlocks: []
+      barter_unlocks: []
+      craft_unlocks: []
+
+anesthesia:
+  bsg_id: "5eda19f0edce541157209cee"
+  name: "anesthesia"
+  full_name: "Anesthesia"
+  wiki_link: "https://escapefromtarkov.fandom.com/wiki/Anesthesia"
+  given_by: "Prapor"
+  kappa_required: true
+  lightkeeper_required: false
+  leads_to:
+    - task_id: "5edabd13218d181e29451442"
+      task_name: "rigged-game"
+  requirements:
+    - player_level: 21
+      trader_level: []
+      previous_tasks:
+        - task_id: "5967725e86f774601a446662"
+          task_name: "shaking-up-the-teller"
+  start_rewards: []
+  finish_rewards: []
