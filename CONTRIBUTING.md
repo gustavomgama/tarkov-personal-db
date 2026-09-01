@@ -86,7 +86,6 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`
 Examples:
 ```
 feat(sync): add market price backfill for food items
-fix(neon): handle pooled connection search_path issue
 docs(readme): add deploy instructions for Render
 ```
 

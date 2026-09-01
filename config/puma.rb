@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Puma Configuration
-# Optimized for Render native runtime with Neon Postgres
+# Optimized for Render native runtime
 
 # Workers: number of processes (default: 2 for 1-2GB RAM)
 # Set WEB_CONCURRENCY=2 in Render env for production

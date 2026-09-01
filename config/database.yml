@@ -1,15 +1,12 @@
 # PostgreSQL Configuration
-# Optimized for Neon with PgBouncer pooler
 
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  # Prepared statements incompatible with PgBouncer transaction pooling
-  prepared_statements: false
-
   # Connection timeouts
+  prepared_statements: false
   connect_timeout: 5
   checkout_timeout: 5
   idle_timeout: 300
@@ -37,5 +34,4 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-  # Neon pooler requires prepared_statements: false
   prepared_statements: false

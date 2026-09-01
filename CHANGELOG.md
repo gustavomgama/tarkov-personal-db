@@ -12,13 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `image_processing` gem for image optimization
 - Bootsnap configuration for production
 - Puma configuration with worker/thread tuning
-- PostgreSQL connection tuning for Neon pooler
+- PostgreSQL connection tuning
 
 ### Changed
 - Images moved from `public/images/` to `app/assets/images/` with fingerprinting
 - `ApplicationHelper` updated to use asset pipeline
 - `HistoricalPurge` no longer deletes image files
-- `neon:push` task hardened for pooled connections
 
 ### Removed
 - `public/images/` directory (990MB) - moved to asset pipeline
@@ -26,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - File deletion logic from `PresetCollapse` and `HistoricalPurge`
 
 ### Fixed
-- `neon:push` now handles Neon pooler empty search_path
 - Coverage threshold adjusted to 99.8% (realistic for string continuations)
 
 ## [1.2.0] - 2024-08-27
