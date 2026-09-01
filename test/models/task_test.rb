@@ -86,7 +86,7 @@ class TaskTest < ActiveSupport::TestCase
     assert doc
 
     task = Task.create!(
-      bsg_id: doc["id"],
+      bsg_id: doc["bsg_id"],
       full_name: doc["full_name"],
       name: doc["name"],
       wiki_link: doc["wiki_link"],

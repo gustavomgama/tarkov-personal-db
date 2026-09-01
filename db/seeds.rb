@@ -18,7 +18,7 @@ SEED_TASKS.each do |full_name|
   next unless doc
 
   Task.find_or_create_by!(name: doc["name"]) do |t|
-    t.bsg_id = doc["id"]
+    t.bsg_id = doc["bsg_id"]
     t.full_name = doc["full_name"]
     t.wiki_link = doc["wiki_link"]
     t.given_by = doc["given_by"]
