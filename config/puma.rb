@@ -1,0 +1,60 @@
+# frozen_string_literal: true
+
+# Puma Configuration
+# Optimized for Render native runtime with Neon Postgres
+
+# Workers: number of processes (default: 2 for 1-2GB RAM)
+# Set WEB_CONCURRENCY=2 in Render env for production
+workers ENV.fetch("WEB_CONCURRENCY") { 2 }
+
+# Threads: per-worker thread pool (default: 5)
+# Set RAILS_MAX_THREADS=5 in Render env for production
+threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
+threads threads_count, threads_count
+
+# Preload application for Copy-on-Write (CoW) memory savings
+preload_app!
+
+# Port configuration
+port ENV.fetch("PORT") { 3000 }
+
+# Environment
+environment ENV.fetch("RAILS_ENV") { "development" }
+
+# PID file
+pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
+
+# Restart plugin for zero-downtime deployments
+plugin :tmp_restart
+
+# Solid Queue supervisor (if using)
+plugin :solid_queue if ENV["SOLID_QUEUE_IN_PUMA"]
+
+# PID file configuration
+pidfile ENV["PIDFILE"] if ENV["PIDFILE"]
+
+# Connection handling
+# Allow Puma to handle graceful shutdown
+on_worker_boot do
+  # Re-establish DB connections after fork
+  ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+end
+
+before_fork do
+  # Disconnect DB before fork to avoid connection issues
+  ActiveRecord::Base.connection_pool.disconnect! if defined?(ActiveRecord)
+end
+
+# Production optimizations
+if ENV["RAILS_ENV"] == "production"
+  # Worker timeout
+  worker_timeout 60
+
+  # Queue requests when all workers busy
+  queue_requests true
+
+  # Low-level socket options for performance
+  # SO_REUSEPORT for better load distribution (Linux 3.9+)
+  # Note: bind with options not supported in Puma 8.0, using default bind
+  bind "tcp://0.0.0.0:#{ENV.fetch('PORT') { 3000 }}"
+end

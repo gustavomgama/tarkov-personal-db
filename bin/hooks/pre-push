@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Run on `git push`: mirrors the local dev DB into Neon (neon:push) when master is pushed.
+# Reads NEON_PROD_URL from ~/.config/tarkov/neon.env (one `export NEON_PROD_URL=...` line).
+set -euo pipefail
+
+if [ -f "$HOME/.config/tarkov/neon.env" ]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$HOME/.config/tarkov/neon.env"
+  set +a
+  NEON_ENV=1
+fi
+
+while read -r local_ref local_oid remote_ref remote_oid; do
+  [ "$local_ref" = "refs/heads/master" ] || continue
+  if [ -z "${NEON_ENV:-}" ]; then
+    echo "neon:push skipped: $HOME/.config/tarkov/neon.env not found (no NEON_PROD_URL)"
+    exit 0
+  fi
+  bundle exec rails neon:push < /dev/null
+  echo "neon:push complete for $remote_ref"
+done

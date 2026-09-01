@@ -1,0 +1,41 @@
+# PostgreSQL Configuration
+# Optimized for Neon with PgBouncer pooler
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+  # Prepared statements incompatible with PgBouncer transaction pooling
+  prepared_statements: false
+
+  # Connection timeouts
+  connect_timeout: 5
+  checkout_timeout: 5
+  idle_timeout: 300
+  reaping_frequency: 60
+
+  # Statement timeouts (ms)
+  variables:
+    statement_timeout: 5000
+    idle_in_transaction_session_timeout: 10000
+    work_mem: "64MB"
+    maintenance_work_mem: "256MB"
+    effective_cache_size: "1GB"
+    random_page_cost: 1.1
+
+development:
+  <<: *default
+  database: tarkov_db_development
+  prepared_statements: true
+
+test:
+  <<: *default
+  database: tarkov_db_test
+  prepared_statements: true
+
+production:
+  <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
+  # Neon pooler requires prepared_statements: false
+  prepared_statements: false

@@ -1,0 +1,95 @@
+{
+  "id": "61958c366726521dd96828ec",
+  "name": "Gifts from Tarkov",
+  "normalized_name": "gifts-from-tarkov,",
+  "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Gifts_from_Tarkov",
+  "given_by": "Peacekeeper",
+  "kappa_required": true,
+  "lightkeeper_required": false,
+  "leads_to": [
+    {
+      "task": "639135534b15ca31f76bc317",
+      "task_name": "your-car-needs-a-service"
+    },
+    {
+      "task": "5c0bd01e86f7747cdd799e56",
+      "task_name": "insomnia"
+    },
+    {
+      "task": "6942b44f891369fc790e385a",
+      "task_name": "settings-priorities"
+    }
+  ],
+  "requirements": [
+    {
+      "player_level": 0,
+      "trader_level": [
+        {
+          "trader_name": "Peacekeeper",
+          "level": 3
+        }
+      ],
+      "previous_tasks": [
+        {}
+      ]
+    }
+  ],
+  "start_rewards": [
+    {
+      "loose_items": [
+        {}
+      ],
+      "offer_unlocks": [
+        {
+          "id": "6357c98711fb55120211f7e1",
+          "name": "M203 40mm underbarrel grenade launcher",
+          "trader_level": "3"
+        },
+        {
+          "id": "5ede475b549eed7c6d5c18fb",
+          "name": "40x46mm M386 (HE) grenade",
+          "trader_level": "3"
+        }
+      ],
+      "barter_unlocks": [
+        {}
+      ],
+      "craft_unlocks": [
+        {}
+      ]
+    }
+  ],
+  "finish_rewards": [
+    {
+      "loose_items": [
+        {
+          "id": "5696686a4bdc2da3298b456a",
+          "name": "Dollars",
+          "count": 800
+        },
+        {
+          "id": "57347c2e24597744902c94a1",
+          "name": "Power supply unit",
+          "count": 4
+        }
+      ],
+      "offer_unlocks": [
+        {
+          "id": "5ede475b549eed7c6d5c18fb",
+          "name": "40x46mm M386 (HE) grenade",
+          "trader_name": "Peacekeeper",
+          "level": 3
+        }
+      ],
+      "barter_unlocks": [
+        {
+          "id": "6357c98711fb55120211f7e1",
+          "name": "M203 40mm underbarrel grenade launcher",
+          "trader_name": "Peacekeeper",
+          "level": 3
+        }
+      ],
+      "craft_unlocks": []
+    }
+  ]
+}

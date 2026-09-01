@@ -1,0 +1,250 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Security scanning ──────────────────────────────────────────────
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Brakeman (static security analysis)
+        run: bin/brakeman --no-pager --exit-on-warn
+
+      - name: Bundler-audit (known gem vulnerabilities)
+        run: bin/bundler-audit
+
+  # ── Linting ────────────────────────────────────────────────────────
+  lint:
+    runs-on: ubuntu-latest
+    env:
+      RUBOCOP_CACHE_ROOT: tmp/rubocop
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: RuboCop cache
+        uses: actions/cache@v4
+        env:
+          DEPENDENCIES_HASH: ${{ hashFiles('.ruby-version', '**/.rubocop.yml', '**/.rubocop_todo.yml', 'Gemfile.lock') }}
+        with:
+          path: ${{ env.RUBOCOP_CACHE_ROOT }}
+          key: rubocop-${{ runner.os }}-${{ env.DEPENDENCIES_HASH }}-${{ github.ref_name == github.event.repository.default_branch && github.run_id || 'default' }}
+          restore-keys: |
+            rubocop-${{ runner.os }}-${{ env.DEPENDENCIES_HASH }}-
+
+      - name: Rubocop
+        run: bin/rubocop -f github
+
+      - name: Fasterer (performance idioms)
+        run: bundle exec fasterer
+
+  # ── Development boot check ─────────────────────────────────────────
+  development:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: development
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/tarkov_db_development
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: tarkov_db_development
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Prepare database
+        run: bin/rails db:prepare
+
+      - name: Boot app and verify routes
+        run: |
+          bin/rails runner "puts 'Rails booted OK: ' + Rails.env"
+          bin/rails routes >/dev/null
+
+      - name: Verify performance tooling (bullet + goldiloader)
+        run: |
+          bin/rails runner "Bullet.enable? && Goldiloader.enabled? ? (puts 'bullet + goldiloader active') : exit(1)"
+
+  # ── Tests ──────────────────────────────────────────────────────────
+  test:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/tarkov_db_test
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: tarkov_db_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Prepare database
+        run: bin/rails db:prepare
+
+      - name: Verify performance tooling (bullet + goldiloader)
+        run: |
+          bin/rails runner "Bullet.enable? && Goldiloader.enabled? ? (puts 'bullet + goldiloader active') : exit(1)"
+
+      - name: Run tests
+        run: bin/rails test
+
+  # ── Coverage gate (90% line coverage enforced) ──────────────────────
+  coverage:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/tarkov_db_coverage
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: tarkov_db_coverage
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Prepare database
+        run: bin/rails db:prepare
+
+      - name: Run tests with coverage
+        run: bin/rails test
+
+      - name: Enforce 90% line coverage
+        run: |
+          COVERAGE=$(python3 -c "import json; d=json.load(open('coverage/coverage.json')); print(d['total']['lines']['percent'])")
+          echo "Line coverage: ${COVERAGE}%"
+          if [ "$(echo "$COVERAGE < 90" | bc -l)" -eq 1 ]; then
+            echo "::error::Coverage is ${COVERAGE}% — requires 90%"
+            exit 1
+          fi
+
+      - name: Coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 14
+
+  # ── Code quality (rubycritic) ──────────────────────────────────────
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-4.0.6
+          bundler-cache: true
+
+      - name: Run rubycritic
+        run: bundle exec rubycritic --no-browser --format json app/
+
+      - name: Enforce score ≥ 75
+        run: |
+          SCORE=$(python3 -c "import json; d=json.load(open('tmp/rubycritic/report.json')); print(d.get('score','0'))")
+          echo "Rubycritic score: $SCORE"
+          if [ "$(echo "$SCORE < 75" | bc -l)" -eq 1 ]; then
+            echo "::error::Rubycritic score $SCORE is below 75 threshold"
+            exit 1
+          fi
+
+      - name: Summarize
+        if: always()
+        run: |
+          SCORE=$(python3 -c "import json; d=json.load(open('tmp/rubycritic/report.json')); print(d.get('score','?'))" 2>/dev/null || echo "?")
+          echo "## Rubycritic: $SCORE / 100" >> $GITHUB_STEP_SUMMARY
+
+  # ── Merge gate ─────────────────────────────────────────────────────
+  gate:
+    if: always()
+    needs: [security, lint, development, test, coverage, audit]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check all jobs
+        run: |
+          FAILED=0
+          for result in \
+            "security:${{ needs.security.result }}" \
+            "lint:${{ needs.lint.result }}" \
+            "development:${{ needs.development.result }}" \
+            "test:${{ needs.test.result }}" \
+            "coverage:${{ needs.coverage.result }}" \
+            "audit:${{ needs.audit.result }}"; do
+            name="${result%%:*}"
+            status="${result#*:}"
+            if [ "$status" != "success" ]; then
+              echo "::error::$name $status"
+              FAILED=1
+            fi
+          done
+          if [ "$FAILED" = "1" ]; then
+            echo ""
+            echo "Results:"
+            echo "  security:    ${{ needs.security.result }}"
+            echo "  lint:        ${{ needs.lint.result }}"
+            echo "  development: ${{ needs.development.result }}"
+            echo "  test:        ${{ needs.test.result }}"
+            echo "  coverage:    ${{ needs.coverage.result }}"
+            echo "  audit:       ${{ needs.audit.result }}"
+            exit 1
+          fi
+          echo "All checks passed"
