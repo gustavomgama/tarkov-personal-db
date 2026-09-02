@@ -1,0 +1,1907 @@
+[
+  {
+    "bsg_id": "5ac3475486f7741d6224abd3",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "573475fb24597737fb1379e1",
+                    "item_name": "Apollo Soyuz cigarettes",
+                    "count": "5"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "62a0a043cf4a99369e2624a5",
+                    "item_name": "Bottle of OLOLO Multivitamins"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "69ce213a298a6529b30d7134",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "69bb43df99f3fda8f1072483",
+                    "item_name": "Nooby Shield potassium iodide tablets",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "59fb016586f7746d0d4b423a",
+                    "item_name": "Money case"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "64ee99639878a0569d6ec8c9",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5fc64ea372b0dd78d51159dc",
+                    "item_name": "Cultist knife",
+                    "count": "10"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "63fc44e2429a8a166c7f61e6",
+                    "item_name": "Armasight Zeus-Pro 640 2-8x50 30Hz thermal scope"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0bbaa886f7746941031d82",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5aa2b986e5b5b00014028f4c",
+                    "item_name": "Dundukk sport sunglasses",
+                    "count": "10"
+                  },
+                  {
+                    "item_id": "62a091170b9d3c46de5b6cf2",
+                    "item_name": "Axel parrot figurine",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "66b37f114410565a8f6789e2",
+                    "item_name": "Inseq gas pipe wrench",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Skier",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "674fe9a75e51f1c47c04ec23",
+                    "item_name": "Saiga-12K 12ga automatic shotgun"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5f04886a3937dc337a6b8238",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "59faff1d86f7746c51718c9c",
+                    "item_name": "Physical Bitcoin",
+                    "count": "10"
+                  },
+                  {
+                    "item_id": "5d235a5986f77443f6329bc6",
+                    "item_name": "Gold skull ring",
+                    "count": "10"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5b6d9ce188a4501afc1b2b25",
+                    "item_name": "T H I C C Weapon case"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "671a59e43d73dac1360765cc",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "62a0a124de7ac81993580542",
+                    "item_name": "Topographic survey maps",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5d1c819a86f774771b0acd6c",
+                    "item_name": "Weapon parts",
+                    "count": "3"
+                  },
+                  {
+                    "item_id": "5d0376a486f7747d8050965c",
+                    "item_name": "Military circuit board",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Skier",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "67124dcfa3541f2a1f0e788b",
+                    "item_name": "MPS Auto Assault-12 Gen 2 12ga automatic shotgun"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "639670029113f06a7c3b2377",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d03784a86f774203e7e0c4d",
+                    "item_name": "Military gyrotachometer",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5d0375ff86f774186372f685",
+                    "item_name": "Military cable",
+                    "count": "10"
+                  },
+                  {
+                    "item_id": "5c052fb986f7746b2101e909",
+                    "item_name": "UHF RFID Reader",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5c052f6886f7746b1e3db148",
+                    "item_name": "Military COFDM Wireless Signal Transmitter",
+                    "count": "8"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c7f115805221fb410466",
+                    "item_name": "Far-forward GPS Signal Amplifier Unit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "69ce21e990144e437802b1e0",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "69bb424e99f3fda8f107247d",
+                    "item_name": "Memento Server RAM Module",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5f60c74e3b85f6263c145586",
+                    "item_name": "Rys-T bulletproof helmet (Black)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "61958c366726521dd96828ec",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c12613b86f7743bbe2c3f76",
+                    "item_name": "Intelligence folder",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "6389c70ca33d8c4cdf4932c6",
+                    "item_name": "Electronic components",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6357c98711fb55120211f7e1",
+                    "item_name": "M203 40mm underbarrel grenade launcher"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "68db9c7557bc51a8c804c14b",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c1267ee86f77416ec610f72",
+                    "item_name": "Chain with Prokill medallion",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6871284e9a353bb50606f3ed",
+                    "item_name": "AS VAL MOD.4 9x39 special assault rifle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac2428686f77412450b42bf",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d1b392c86f77425243e98fe",
+                    "item_name": "Light bulb",
+                    "count": "5"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5a7ae0c351dfba0017554310",
+                    "item_name": "Glock 17 9x19 pistol"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "64f83bd983cfca080a362c82",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d03794386f77420415576f5",
+                    "item_name": "6-STEN-140-M military battery",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5e2aee0a86f774755a234b62",
+                    "item_name": "Cyclon rechargeable battery",
+                    "count": "8"
+                  },
+                  {
+                    "item_id": "5c052fb986f7746b2101e909",
+                    "item_name": "UHF RFID Reader",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "",
+                    "item_name": "Secure magnetic tape cassette",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c1d0f4986f7744bb01837fa",
+                    "item_name": "TerraGroup Labs keycard (Black)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c8c5dbfd5e4b95197e6b",
+                    "item_name": "TerraGroup \"Blue Folders\" materials",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "64637076203536ad5600c990",
+                    "item_name": "Kalashnikov PKM 7.62x54R machine gun"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac244c486f77413e12cf945",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "",
+                    "item_name": "Golden rooster figurine",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5dfa3d2b0dee1b22f862eade",
+                    "item_name": "KAC PRS/QDC 7.62x51 sound suppressor"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5b47825886f77468074618d3",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d0377ce86f774186372f689",
+                    "item_name": "Iridium military thermal vision module",
+                    "count": "4"
+                  },
+                  {
+                    "item_id": "5d0376a486f7747d8050965c",
+                    "item_name": "Military circuit board",
+                    "count": "4"
+                  },
+                  {
+                    "item_id": "5d0378d486f77420421a5ff4",
+                    "item_name": "Military power filter",
+                    "count": "4"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5a1eaa87fcdbcb001865f75e",
+                    "item_name": "Trijicon REAP-IR thermal scope"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "57514643245977207f2c2d09",
+                    "item_name": "Can of TarCola soda",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "5d403f9186f7743cac3f229b",
+                    "item_name": "Bottle of Dan Jackiel whiskey",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "60926df0132d4d12c81fd9df",
+                    "item_name": "SilencerCo Saker ASR 556 5.56x45 sound suppressor"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a68665c86f774255929b4c7",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590a3efd86f77437d351a25b",
+                    "item_name": "Gas analyzer",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "590a3d9c86f774385926e510",
+                    "item_name": "Ultraviolet lamp",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "590c657e86f77412b013051d",
+                    "item_name": "Grizzly medical kit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "684009026ceedc792c09b2a7",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590a3efd86f77437d351a25b",
+                    "item_name": "Gas analyzer",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "67d41883f378a36c4706eeb7",
+                    "item_name": "AK-50 .50 BMG muzzle brake"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d1b327086f7742525194449",
+                    "item_name": "Pressure gauge",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "67d417c023ec241bb70d4896",
+                    "item_name": "AK-50 M-LOK handguard with gas tube"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590a386e86f77429692b27ab",
+                    "item_name": "Damaged hard drive",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "67d416e19bd76ef20f0e743b",
+                    "item_name": "AK-50 dust cover"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5b43575a86f77424f443fe62",
+                    "item_name": "Fuel conditioner",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "619cbfccbedcde2f5b3f7bdd",
+                    "item_name": "Pipe grip wrench",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "67d4178bffb910d21f04720a",
+                    "item_name": "AK-50 .50 BMG 24 inch barrel"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0bd01e86f7747cdd799e56",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590c37d286f77443be3d7827",
+                    "item_name": "SAS drive",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "655746010177119f4a097ff7",
+                    "item_name": "SAPI level III+ ballistic plate"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae4493486f7744efa289417",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590c651286f7741e566b6461",
+                    "item_name": "Slim diary",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "609e8540d5c319764c2bc2e9",
+                    "item_name": "NFM THOR Concealable Reinforced Vest body armor"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179afd0bca27a099552e040",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590a3efd86f77437d351a25b",
+                    "item_name": "Gas analyzer",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "590a3d9c86f774385926e510",
+                    "item_name": "Ultraviolet lamp",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "590c657e86f77412b013051d",
+                    "item_name": "Grizzly medical kit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5b478d0f86f7744d190d91b5",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "",
+                    "item_name": "Golden rooster figurine",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "64abd93857958b4249003418",
+                    "item_name": "Interceptor OTV body armor (UCP)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "63966fbeea19ac7ed845db2e",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c1265fc86f7743f896a21c2",
+                    "item_name": "Broken GPhone X smartphone",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5c05308086f7746b2101e90b",
+                    "item_name": "Virtex programmable processor",
+                    "count": "3"
+                  },
+                  {
+                    "item_id": "5c05300686f7746dce784e5d",
+                    "item_name": "VPX Flash Storage Module",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "57347ca924597744596b4e71",
+                    "item_name": "Graphics card",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c7750ef44505c87f5996",
+                    "item_name": "Microcontroller board"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "69ce1de03e15cd80bd06f6c9",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "699f09de81a6c812900a77b7",
+                    "item_name": "AMG-10 hydraulic fluid",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "689166b6c2d6fa42e7044756",
+                    "item_name": "Kalashnikov AK-308 7.62x51 assault rifle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae449c386f7744bde357697",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "59e3647686f774176a362507",
+                    "item_name": "Wooden clock",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "65573fa5655447403702a816",
+                    "item_name": "Granit Br4 ballistic plate"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0d4c12d09282029f539173",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "",
+                    "item_name": "Golden rooster figurine",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Skier",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "656fa8d700d62bcd2e024084",
+                    "item_name": "Cult Locust ballistic plate"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "675c3582f6ddc329a90f9c6d",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5aa2b986e5b5b00014028f4c",
+                    "item_name": "Dundukk sport sunglasses",
+                    "count": "10"
+                  },
+                  {
+                    "item_id": "62a091170b9d3c46de5b6cf2",
+                    "item_name": "Axel parrot figurine",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "66b37f114410565a8f6789e2",
+                    "item_name": "Inseq gas pipe wrench",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Skier",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "674fe9a75e51f1c47c04ec23",
+                    "item_name": "Saiga-12K 12ga automatic shotgun"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "626bd75c71bd851e971b82a5",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "62a09cfe4f842e1bd12da3e4",
+                    "item_name": "Golden egg",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "656f664200d62bcd2e024077",
+                    "item_name": "Korund-VM ballistic plates (Front)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae4496986f774459e77beb6",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5e2aee0a86f774755a234b62",
+                    "item_name": "Cyclon rechargeable battery",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "5d03784a86f774203e7e0c4d",
+                    "item_name": "Military gyrotachometer",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5df8a4d786f77412672a1e3b",
+                    "item_name": "6Sh118 raid backpack (EMR)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "63a9b36cc31b00242d28a99f",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c010e350db83400232feec7",
+                    "item_name": "SP-8 Survival Machete",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "5bffdc370db834001d23eca8",
+                    "item_name": "6Kh5 Bayonet",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "5bffe7930db834001b734a39",
+                    "item_name": "Crash Axe",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "63920105a83e15700a00f168",
+                    "item_name": "SOG Voodoo Hawk tactical tomahawk"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c10f94386f774227172c572",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "62a091170b9d3c46de5b6cf2",
+                    "item_name": "Axel parrot figurine",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c0e655586f774045612eeb2",
+                    "item_name": "HighCom Trooper TFO body armor (MultiCam)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71ce009d7c801eb0c0ec6",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c8c5dbfd5e4b95197e6b",
+                    "item_name": "TerraGroup \"Blue Folders\" materials",
+                    "count": "20"
+                  },
+                  {
+                    "item_id": "",
+                    "item_name": "Secure magnetic tape cassette",
+                    "count": "30"
+                  },
+                  {
+                    "item_id": "590c621186f774138d11ea29",
+                    "item_name": "Secure Flash drive",
+                    "count": "30"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c0a840b86f7742ffa4f2482",
+                    "item_name": "T H I C C item case"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "68ee1c18b4e5bc9a68018cd7",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c1267ee86f77416ec610f72",
+                    "item_name": "Chain with Prokill medallion",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "68aee763130c00663d08aea8",
+                    "item_name": "TKPD 9.3x64 carbine"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71d6d7fcf9c556f325055",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "60391a8b3364dc22b04d0ce5",
+                    "item_name": "Can of thermite",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "5d6fc78386f77449d825f9dc",
+                    "item_name": "Gunpowder \"Eagle\"",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5aafbde786f774389d0cbc0f",
+                    "item_name": "Ammunition case"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "64e7b971f9d6fa49d6769b44",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5fc64ea372b0dd78d51159dc",
+                    "item_name": "Cultist knife",
+                    "count": "10"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "63fc44e2429a8a166c7f61e6",
+                    "item_name": "Armasight Zeus-Pro 640 2-8x50 30Hz thermal scope"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "6a4532e48e82d8ffea0c3eae",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5bc9b9ecd4351e3bac122519",
+                    "item_name": "Deadlyslob's beard oil",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5bfea6e90db834001b7347f3",
+                    "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25e45e86f77408251c4bfa",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d1b2ffd86f77425243e8d17",
+                    "item_name": "NIXXOR lens",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "606f2696f2cb2e02a42aceb1",
+                    "item_name": "MP-155 Ultima thermal camera"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25e2e286f77444001e2e48",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d40407c86f774318526545a",
+                    "item_name": "Bottle of Tarkovskaya vodka",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "57347d7224597744596b4e72",
+                    "item_name": "Can of beef stew (Small)",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5beed0f50db834001c062b12",
+                    "item_name": "RPK-16 5.45x39 light machine gun"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25e2ee86f77443e35162ea",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5bc9b9ecd4351e3bac122519",
+                    "item_name": "Deadlyslob's beard oil",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5bfea6e90db834001b7347f3",
+                    "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "6745cbee909d2013670a4a55",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "619cbfccbedcde2f5b3f7bdd",
+                    "item_name": "Pipe grip wrench",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "66b37f114410565a8f6789e2",
+                    "item_name": "Inseq gas pipe wrench",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "66d98233302686954b0c6f81",
+                    "item_name": "RSP-30 reactive signal cartridge (Blue)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5733279d245977289b77ec24",
+                    "item_name": "Car battery",
+                    "count": "7"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "57347ca924597744596b4e71",
+                    "item_name": "Graphics card"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "59c50a9e86f7745fef66f4ff",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d40407c86f774318526545a",
+                    "item_name": "Bottle of Tarkovskaya vodka",
+                    "count": "2"
+                  },
+                  {
+                    "item_id": "57347d7224597744596b4e72",
+                    "item_name": "Can of beef stew (Small)",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5beed0f50db834001c062b12",
+                    "item_name": "RPK-16 5.45x39 light machine gun"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d1b32c186f774252167a530",
+                    "item_name": "Analog thermometer",
+                    "count": "1"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "55d482194bdc2d1d4e8b456b",
+                    "item_name": "AK-74 5.45x39 6L31 60-round magazine"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "69789418b2187365e70bb947",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "6656560053eaaa7a23349c86",
+                    "item_name": "Lega Medal",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Ref",
+                "trader_level": "LL2"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "664a5428d5e33a713b622379",
+                    "item_name": "APOK Tactical Wasteland Gladius"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "63967028c4a91c5cb76abd81",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c70ca33d8c4cdf4932c6",
+                    "item_name": "Electronic components",
+                    "count": "30"
+                  },
+                  {
+                    "item_id": "5d03775b86f774203e7e0c4b",
+                    "item_name": "Phased array element",
+                    "count": "10"
+                  },
+                  {
+                    "item_id": "590a386e86f77429692b27ab",
+                    "item_name": "Damaged hard drive",
+                    "count": "12"
+                  },
+                  {
+                    "item_id": "5c05308086f7746b2101e90b",
+                    "item_name": "Virtex programmable processor",
+                    "count": "16"
+                  },
+                  {
+                    "item_id": "5c05300686f7746dce784e5d",
+                    "item_name": "VPX Flash Storage Module",
+                    "count": "16"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6389c85357baa773a825b356",
+                    "item_name": "Advanced current converter"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27bbf886f774333a418eeb",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "590c595c86f7747884343ad7",
+                    "item_name": "Gas mask air filter",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "",
+                    "item_name": "AR-15 5.56x45 Magpul PMAG D-60 STANAG 60-round magazine"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27bc8586f7741b543d8ea4",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c05300686f7746dce784e5d",
+                    "item_name": "VPX Flash Storage Module",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "5d0376a486f7747d8050965c",
+                    "item_name": "Military circuit board",
+                    "count": "5"
+                  },
+                  {
+                    "item_id": "5d0375ff86f774186372f685",
+                    "item_name": "Military cable",
+                    "count": "5"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL4"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5e81ebcd8e146c7080625e15",
+                    "item_name": "FN40GL Mk2 40mm grenade launcher"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "69e5583240c3e6c8ba0edbd5",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "69bb41c03b5fb75517065960",
+                    "item_name": "Ultralink satellite communication module",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "69bb4203f94327bc0f0230cd",
+                    "item_name": "IBX Gigachad cryptographic processor",
+                    "count": "2"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL1"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "5d235bb686f77443f4331278",
+                    "item_name": "S I C C organizational pouch"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bsg_id": "63a9b229813bba58a50c9ee5",
+    "finish_rewards": [
+      {
+        "barter_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "item_id": "5c12613b86f7743bbe2c3f76",
+                    "item_name": "Intelligence folder",
+                    "count": "1"
+                  },
+                  {
+                    "item_id": "6389c70ca33d8c4cdf4932c6",
+                    "item_name": "Electronic components",
+                    "count": "3"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": "LL3"
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "item_id": "6357c98711fb55120211f7e1",
+                    "item_name": "M203 40mm underbarrel grenade launcher"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
