@@ -1,95 +1,87 @@
 {
-  "id": "61958c366726521dd96828ec",
-  "name": "Gifts from Tarkov",
-  "normalized_name": "gifts-from-tarkov,",
-  "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Gifts_from_Tarkov",
+  "bsg_id": "60e71ce009d7c801eb0c0ec6",
+  "full_name": "Special Equipment",
+  "name": "special-equipment",
+  "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Special_Equipment",
   "given_by": "Peacekeeper",
-  "kappa_required": true,
+  "kappa_required": false,
   "lightkeeper_required": false,
-  "leads_to": [
-    {
-      "task": "639135534b15ca31f76bc317",
-      "task_name": "your-car-needs-a-service"
-    },
-    {
-      "task": "5c0bd01e86f7747cdd799e56",
-      "task_name": "insomnia"
-    },
-    {
-      "task": "6942b44f891369fc790e385a",
-      "task_name": "settings-priorities"
-    }
-  ],
+  "leads_to": [],
   "requirements": [
     {
       "player_level": 0,
       "trader_level": [
         {
           "trader_name": "Peacekeeper",
-          "level": 3
+          "trader_level": 4
         }
       ],
-      "previous_tasks": [
-        {}
-      ]
+      "previous_tasks": []
     }
   ],
   "start_rewards": [
     {
-      "loose_items": [
-        {}
-      ],
-      "offer_unlocks": [
-        {
-          "id": "6357c98711fb55120211f7e1",
-          "name": "M203 40mm underbarrel grenade launcher",
-          "trader_level": "3"
-        },
-        {
-          "id": "5ede475b549eed7c6d5c18fb",
-          "name": "40x46mm M386 (HE) grenade",
-          "trader_level": "3"
-        }
-      ],
-      "barter_unlocks": [
-        {}
-      ],
-      "craft_unlocks": [
-        {}
-      ]
+      "loose_items": [],
+      "offer_unlocks": [],
+      "barter_unlocks": [],
+      "craft_unlocks": []
     }
   ],
   "finish_rewards": [
     {
       "loose_items": [
         {
-          "id": "5696686a4bdc2da3298b456a",
-          "name": "Dollars",
-          "count": 800
-        },
-        {
-          "id": "57347c2e24597744902c94a1",
-          "name": "Power supply unit",
-          "count": 4
+          "item_id": "5696686a4bdc2da3298b456a",
+          "item_name": "Dollars",
+          "count": "2750"
         }
       ],
-      "offer_unlocks": [
-        {
-          "id": "5ede475b549eed7c6d5c18fb",
-          "name": "40x46mm M386 (HE) grenade",
-          "trader_name": "Peacekeeper",
-          "level": 3
-        }
-      ],
+      "offer_unlocks": [],
       "barter_unlocks": [
         {
-          "id": "6357c98711fb55120211f7e1",
-          "name": "M203 40mm underbarrel grenade launcher",
-          "trader_name": "Peacekeeper",
-          "level": 3
+          "requirements": [
+            {
+              "items": [
+                {
+                  "item_id": "6389c8c5dbfd5e4b95197e6b",
+                  "item_name": "TerraGroup \"Blue Folders\" materials",
+                  "count": "20"
+                },
+                {
+                  "item_id": "",
+                  "item_name": "Secure magnetic tape cassette",
+                  "count": "30"
+                },
+                {
+                  "item_id": "590c621186f774138d11ea29",
+                  "item_name": "Secure Flash drive",
+                  "count": "30"
+                }
+              ],
+              "trader_name": "Peacekeeper",
+              "trader_level": "LL4"
+            }
+          ],
+          "result": [
+            {
+              "items": [
+                {
+                  "item_id": "5c0a840b86f7742ffa4f2482",
+                  "item_name": "T H I C C item case"
+                }
+              ]
+            }
+          ]
         }
       ],
-      "craft_unlocks": []
+      "craft_unlocks": [
+        {
+          "item_id": "54527ac44bdc2d36668b4567",
+          "item_name": "5.56x45mm M855A1",
+          "hideout_station": "Workbench",
+          "station_level": "3"
+        }
+      ]
     }
   ]
 }
