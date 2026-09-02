@@ -4,6 +4,6 @@
   "editor.stopRenderingLineAfter": -1,
   "[json]": {
     "editor.maxTokenizationLineLength": 500000,
-    "editor.stopRenderingLineAfter": 100000
+    "editor.stopRenderingLineAfter": 500000
   }
 }
