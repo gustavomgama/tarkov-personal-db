@@ -61,3 +61,5 @@ skills-lock.json
 /config/credentials/*.key
 
 /public/images/
+
+/offlinedata/tarkovmarket/*
