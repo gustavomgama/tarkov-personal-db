@@ -8,7 +8,7 @@
       {
         "item_id": "5648a69d4bdc2ded0b8b457b",
         "item_name": "BlackRock chest rig (Gray)",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -22,7 +22,7 @@
       {
         "item_id": "5c0e746986f7741453628fe5",
         "item_name": "WARTECH TV-110 plate carrier (Coyote)",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -36,7 +36,7 @@
       {
         "item_id": "5fc22d7c187fea44d52eda44",
         "item_name": "SWORD International Mk-18 .338 LM marksman rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "4"
       }
     ]
@@ -50,7 +50,7 @@
       {
         "item_id": "5e00903ae9dc277128008b87",
         "item_name": "B&T MP9 9x19 submachine gun",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -64,7 +64,7 @@
       {
         "item_id": "67124dcfa3541f2a1f0e788b",
         "item_name": "MPS Auto Assault-12 Gen 2 12ga automatic shotgun",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -78,7 +78,7 @@
       {
         "item_id": "60a3c70cde5f453f634816a3",
         "item_name": "CQC Osprey MK4A plate carrier (Assault, MTP)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "3"
       }
     ]
@@ -92,7 +92,7 @@
       {
         "item_id": "5c0e51be86f774598e797894",
         "item_name": "6B13 assault armor (Flora)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "2"
       }
     ]
@@ -106,7 +106,7 @@
       {
         "item_id": "5c0e446786f7742013381639",
         "item_name": "6B5-15 Zh-86 Uley armored rig (Flora)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "2"
       }
     ]
@@ -120,7 +120,7 @@
       {
         "item_id": "5cadfbf7ae92152ac412eeef",
         "item_name": "ASh-12 12.7x55 assault rifle",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -134,7 +134,7 @@
       {
         "item_id": "6130ca3fd92c473c77020dbd",
         "item_name": "AK CSS knurled charging handle",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       }
     ]
@@ -148,7 +148,7 @@
       {
         "item_id": "5751a25924597722c463c472",
         "item_name": "Army bandage",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "2"
       }
     ]
@@ -162,7 +162,7 @@
       {
         "item_id": "5ea2a8e200685063ec28c05a",
         "item_name": ".45 ACP RIP",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -176,7 +176,7 @@
       {
         "item_id": "61962b617c6c7b169525f168",
         "item_name": "5.45x39mm 7N40",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -190,7 +190,7 @@
       {
         "item_id": "57a0e5022459774d1673f889",
         "item_name": "9x39mm SP-6 gs",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -204,7 +204,7 @@
       {
         "item_id": "5a966f51a2750c00156aacf6",
         "item_name": "SOK-12 12ga SAI-02 10-round magazine",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       }
     ]
@@ -218,7 +218,7 @@
       {
         "item_id": "59c1383d86f774290a37e0ca",
         "item_name": "AR-15 5.56x45 Magpul PMAG D-60 STANAG 60-round magazine",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -232,7 +232,7 @@
       {
         "item_id": "673cab3e03c6a20581028bc1",
         "item_name": "Sako TRG M10 .338 LM bolt-action sniper rifle",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -246,13 +246,13 @@
       {
         "item_id": "5ac66d725acfc43b321d4b60",
         "item_name": "Kalashnikov AK-104 7.62x39 assault rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": "2"
       },
       {
         "item_id": "66bdc28a0b603c26902b2011",
         "item_name": "DevTac Ronin ballistic helmet",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "2"
       }
     ]
@@ -266,7 +266,7 @@
       {
         "item_id": "60098ad7c2240c0fe85c570a",
         "item_name": "AFAK tactical individual first aid kit",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -280,19 +280,19 @@
       {
         "item_id": "6184055050224f204c1da540",
         "item_name": "FN SCAR-L 5.56x45 assault rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": "5"
       },
       {
         "item_id": "59fb137a86f7740adb646af1",
         "item_name": "Tromix Monster Claw 12ga muzzle brake",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "656f611f94b480b8a500c0db",
         "item_name": "Granit 4 ballistic plate (Front)",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -306,7 +306,7 @@
       {
         "item_id": "62e14904c2699c0ec93adc47",
         "item_name": "SR-2M Veresk 9x21 submachine gun",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -320,7 +320,7 @@
       {
         "item_id": "666b11055a706400b717cfa5",
         "item_name": "Tripwire installation kit",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "1"
       }
     ]
@@ -334,7 +334,7 @@
       {
         "item_id": "6193a720f8ee7e52e42109ed",
         "item_name": "HK USP .45 ACP pistol",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       }
     ]
@@ -348,7 +348,7 @@
       {
         "item_id": "5fc3f2d5900b1d5091531e57",
         "item_name": "TDI KRISS Vector Gen.2 9x19 submachine gun",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       }
     ]
@@ -361,13 +361,13 @@
       {
         "item_id": "6357c98711fb55120211f7e1",
         "item_name": "M203 40mm underbarrel grenade launcher",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       },
       {
         "item_id": "5ede475b549eed7c6d5c18fb",
         "item_name": "40x46mm M386 (HE) grenade",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ],
@@ -375,7 +375,7 @@
       {
         "item_id": "5ede475b549eed7c6d5c18fb",
         "item_name": "40x46mm M386 (HE) grenade",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ]
@@ -389,7 +389,7 @@
       {
         "item_id": "5c0e534186f7747fa1419867",
         "item_name": "eTG-change regenerative stimulant injector",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -403,7 +403,7 @@
       {
         "item_id": "5b432b2f5acfc4771e1c6622",
         "item_name": "Shattered lightweight armored mask",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -417,19 +417,19 @@
       {
         "item_id": "65709d2d21b9f815e208ff95",
         "item_name": "Diamond Age NeoSteel High Cut helmet (Black)",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       },
       {
         "item_id": "5abcbc27d8ce8700182eceeb",
         "item_name": "Kalashnikov AKMSN 7.62x39 assault rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       },
       {
         "item_id": "5ab8dced86f774646209ec87",
         "item_name": "ANA Tactical M2 plate carrier (OD Green)",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -443,7 +443,7 @@
       {
         "item_id": "5ac66cb05acfc40198510a10",
         "item_name": "Kalashnikov AK-101 5.56x45 assault rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -457,7 +457,7 @@
       {
         "item_id": "5beed0f50db834001c062b12",
         "item_name": "RPK-16 5.45x39 light machine gun",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -471,7 +471,7 @@
       {
         "item_id": "55801eed4bdc2d89578b4588",
         "item_name": "SV-98 7.62x54R bolt-action sniper rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -485,7 +485,7 @@
       {
         "item_id": "58948c8e86f77409493f7266",
         "item_name": "SIG MPX 9x19 submachine gun",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -499,7 +499,7 @@
       {
         "item_id": "669fa39b48fc9f8db6035a0c",
         "item_name": "Magnum Research Desert Eagle L6 .50 AE pistol",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": "6"
       }
     ]
@@ -513,7 +513,7 @@
       {
         "item_id": "5aa2ba71e5b5b000137b758f",
         "item_name": "MSA Sordin Supreme PRO-X/L headset",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -527,7 +527,7 @@
       {
         "item_id": "60098ad7c2240c0fe85c570a",
         "item_name": "AFAK tactical individual first aid kit",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -541,7 +541,7 @@
       {
         "item_id": "63920105a83e15700a00f168",
         "item_name": "SOG Voodoo Hawk tactical tomahawk",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -555,7 +555,7 @@
       {
         "item_id": "5f60e784f2bcbb675b00dac7",
         "item_name": "Beret (Olive Drab)",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -569,7 +569,7 @@
       {
         "item_id": "5aafbde786f774389d0cbc0f",
         "item_name": "Ammunition case",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "2"
       }
     ]
@@ -583,7 +583,7 @@
       {
         "item_id": "5a0c59791526d8dba737bba7",
         "item_name": "AK GP-25 accessory kit recoil pad",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "2"
       }
     ]
@@ -597,7 +597,7 @@
       {
         "item_id": "5cbda392ae92155f3c17c39f",
         "item_name": "AK 100-series polymer handguard",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "1"
       }
     ]
@@ -611,7 +611,7 @@
       {
         "item_id": "59eb7ebe86f7740b373438ce",
         "item_name": "VSS/VAL TOZ 6P29M mount",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "3"
       }
     ]
@@ -625,7 +625,7 @@
       {
         "item_id": "56eabcd4d2720b66698b4574",
         "item_name": "AR-15 Daniel Defense MK12 Low Profile Gas Block",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "2"
       }
     ]
@@ -639,7 +639,7 @@
       {
         "item_id": "56ea8d2fd2720b7c698b4570",
         "item_name": "AR-15 Windham Weaponry Rail Gas Block",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "1"
       }
     ]
@@ -653,7 +653,7 @@
       {
         "item_id": "59984ab886f7743e98271174",
         "item_name": "PP-19-01 Vityaz 9x19 submachine gun",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": "1"
       }
     ]
@@ -667,13 +667,13 @@
       {
         "item_id": "5447a9cd4bdc2dbd208b4567",
         "item_name": "Colt M4A1 5.56x45 assault rifle",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "5cc86832d7f00c000d3a6e6c",
         "item_name": "5.7x28mm R37.F",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       }
     ]
@@ -687,7 +687,7 @@
       {
         "item_id": "5447a9cd4bdc2dbd208b4567",
         "item_name": "Colt M4A1 5.56x45 assault rifle",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": "2"
       }
     ]
@@ -701,7 +701,7 @@
       {
         "item_id": "5d44069ca4b9361ebd26fc37",
         "item_name": "AR-15 Magpul PRS GEN3 stock (Black)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ]
@@ -715,7 +715,7 @@
       {
         "item_id": "67600929bd0a0549d70993f6",
         "item_name": "Ballistic plate case",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "2"
       }
     ]
@@ -729,7 +729,7 @@
       {
         "item_id": "5d43021ca4b9362eab4b5e25",
         "item_name": "Lone Star TX-15 DML 5.56x45 carbine",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       }
     ]
@@ -743,25 +743,25 @@
       {
         "item_id": "588226ef24597767af46e39c",
         "item_name": "Magpul AFG tactical foregrip (Olive Drab)",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "5a33e75ac4a2826c6e06d759",
         "item_name": "AR-15 Hera Arms CQR pistol grip/buttstock",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       },
       {
         "item_id": "5e21ca18e4d47f0da15e77dd",
         "item_name": "AK CNC Warrior 5.56x45 muzzle device adapter",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "619b69037b9de8162902673e",
         "item_name": "AKM/AK-74 Hera Arms CQR47 pistol grip/buttstock",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -775,13 +775,13 @@
       {
         "item_id": "5b07dd285acfc4001754240d",
         "item_name": "Steiner LAS/TAC 2 tactical flashlight",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "615d8e9867085e45ef1409c6",
         "item_name": "AKM 7.62x39 Kiba Arms .308 muzzle device adapter",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       }
     ]
@@ -795,7 +795,7 @@
       {
         "item_id": "6087e663132d4d12c81fd96b",
         "item_name": "AK Custom Arms AGS-74 PRO + Sniper Kit pistol grip",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -809,13 +809,13 @@
       {
         "item_id": "6130c43c67085e45ef1405a1",
         "item_name": "AR-10 KAC QDC 7.62x51 Muzzle Brake Kit",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "3"
       },
       {
         "item_id": "58d2912286f7744e27117493",
         "item_name": "Magpul MOE Carbine rubber buttpad",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -829,13 +829,13 @@
       {
         "item_id": "5d025cc1d7ad1a53845279ef",
         "item_name": "AR-15 HK Ergo PSG-1 style pistol grip",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       },
       {
         "item_id": "5c793fb92e221644f31bfb64",
         "item_name": "AR-15 Strike Industries Advanced Receiver Extension",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -849,7 +849,7 @@
       {
         "item_id": "590c661e86f7741e566b646a",
         "item_name": "Car first aid kit",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "1"
       }
     ]
@@ -863,7 +863,7 @@
       {
         "item_id": "5af0454c86f7746bf20992e8",
         "item_name": "Aluminum splint",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "3"
       }
     ]
@@ -877,13 +877,13 @@
       {
         "item_id": "544fb3f34bdc2d03748b456a",
         "item_name": "Morphine injector",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "4"
       },
       {
         "item_id": "5c10c8fd86f7743d7d706df3",
         "item_name": "Adrenaline injector",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "4"
       }
     ]
@@ -897,7 +897,7 @@
       {
         "item_id": "5f60b34a41e30a4ab12a6947",
         "item_name": "Galvion Caiman Hybrid helmet (Grey)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "2"
       }
     ]
@@ -911,13 +911,13 @@
       {
         "item_id": "5c0d5ae286f7741e46554302",
         "item_name": "5.56x45mm Warmageddon",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "2"
       },
       {
         "item_id": "593d493f86f7745e6b2ceb22",
         "item_name": "AK-74 Hexagon 5.45x39 sound suppressor",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "2"
       }
     ]
@@ -931,7 +931,7 @@
       {
         "item_id": "627e14b21713922ded6f2c15",
         "item_name": "Accuracy International AXMC .338 LM bolt-action sniper rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "4"
       }
     ]
@@ -945,7 +945,7 @@
       {
         "item_id": "5d44069ca4b9361ebd26fc37",
         "item_name": "AR-15 Magpul PRS GEN3 stock (Black)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ]
@@ -959,7 +959,7 @@
       {
         "item_id": "5ba2678ad4351e44f824b344",
         "item_name": "4.6x30mm FMJ SX",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -973,13 +973,13 @@
       {
         "item_id": "6130ca3fd92c473c77020dbd",
         "item_name": "AK CSS knurled charging handle",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       },
       {
         "item_id": "5c1cd46f2e22164bef5cfedb",
         "item_name": "Zenit RK-1 tactical foregrip on B-25U mount",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -993,7 +993,7 @@
       {
         "item_id": "69413241b1ce1e5fbb09ed0a",
         "item_name": "CENS ProFlex DX5 tactical earplug",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1007,7 +1007,7 @@
       {
         "item_id": "66ffa9b66e19cc902401c5e8",
         "item_name": "MPS Auto Assault-12 Gen 1 12ga automatic shotgun",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -1021,7 +1021,7 @@
       {
         "item_id": "633ec7c2a6918cb895019c6c",
         "item_name": "RSh-12 12.7x55 revolver",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -1035,13 +1035,13 @@
       {
         "item_id": "689166b6c2d6fa42e7044756",
         "item_name": "Kalashnikov AK-308 7.62x51 assault rifle",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       },
       {
         "item_id": "68d56685f3d7cd248f0a06d9",
         "item_name": "AK-308 7.62x51 QD sound suppressor",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1055,7 +1055,7 @@
       {
         "item_id": "55801eed4bdc2d89578b4588",
         "item_name": "SV-98 7.62x54R bolt-action sniper rifle",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "2"
       }
     ]
@@ -1069,7 +1069,7 @@
       {
         "item_id": "588892092459774ac91d4b11",
         "item_name": "Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       }
     ]
@@ -1083,7 +1083,7 @@
       {
         "item_id": "5926bb2186f7744b1c6c6e60",
         "item_name": "HK MP5 9x19 submachine gun (Navy 3 Round Burst)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "2"
       }
     ]
@@ -1097,19 +1097,19 @@
       {
         "item_id": "56eabf3bd2720b75698b4569",
         "item_name": "AR-15 Magpul MOE Carbine stock (Black)",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       },
       {
         "item_id": "5649ae4a4bdc2d1b2b8b4588",
         "item_name": "AK Zenit RK-3 pistol grip",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       },
       {
         "item_id": "58d2912286f7744e27117493",
         "item_name": "Magpul MOE Carbine rubber buttpad",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -1123,13 +1123,13 @@
       {
         "item_id": "606587252535c57a13424cfd",
         "item_name": "CMMG Mk47 Mutant 7.62x39 assault rifle",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       },
       {
         "item_id": "58d2912286f7744e27117493",
         "item_name": "Magpul MOE Carbine rubber buttpad",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "4"
       }
     ]
@@ -1143,7 +1143,7 @@
       {
         "item_id": "5a26ac0ec4a28200741e1e18",
         "item_name": "9x21mm BT gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "3"
       }
     ]
@@ -1157,7 +1157,7 @@
       {
         "item_id": "58948c8e86f77409493f7266",
         "item_name": "SIG MPX 9x19 submachine gun",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "2"
       }
     ]
@@ -1171,7 +1171,7 @@
       {
         "item_id": "5e85a9f4add9fe03027d9bf1",
         "item_name": "23x75mm Zvezda flashbang round",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "3"
       }
     ]
@@ -1185,7 +1185,7 @@
       {
         "item_id": "5b40e2bc5acfc40016388216",
         "item_name": "HighCom Striker ULACH IIIA helmet (Desert Tan)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "4"
       }
     ]
@@ -1199,7 +1199,7 @@
       {
         "item_id": "5b4329f05acfc47a86086aa1",
         "item_name": "DevTac Ronin Respirator",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "4"
       }
     ]
@@ -1213,7 +1213,7 @@
       {
         "item_id": "5dcbd56fdbd3d91b3e5468d5",
         "item_name": "Desert Tech MDR 7.62x51 assault rifle",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1227,7 +1227,7 @@
       {
         "item_id": "544fb45d4bdc2dee738b4568",
         "item_name": "Salewa first aid kit",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "1"
       }
     ]
@@ -1241,7 +1241,7 @@
       {
         "item_id": "5a26ac0ec4a28200741e1e18",
         "item_name": "9x21mm BT gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "3"
       }
     ]
@@ -1255,7 +1255,7 @@
       {
         "item_id": "674d6121c09f69dfb201a888",
         "item_name": "Aklys Defense Velociraptor .300 Blackout assault rifle",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -1269,7 +1269,7 @@
       {
         "item_id": "5ba2678ad4351e44f824b344",
         "item_name": "4.6x30mm FMJ SX",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -1283,7 +1283,7 @@
       {
         "item_id": "5fb64bc92b1b027b1f50bcf2",
         "item_name": "TDI KRISS Vector Gen.2 .45 ACP submachine gun",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "3"
       }
     ]
@@ -1297,13 +1297,13 @@
       {
         "item_id": "5ac8d6885acfc400180ae7b0",
         "item_name": "Ops-Core FAST MT Super High Cut helmet (Urban Tan)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       },
       {
         "item_id": "5a16b7e1fcdbcb00165aa6c9",
         "item_name": "Ops-Core FAST multi-hit ballistic face shield",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1317,7 +1317,7 @@
       {
         "item_id": "5af0454c86f7746bf20992e8",
         "item_name": "Aluminum splint",
-        "trader_name": "Therapist",
+        "trader_name": "therapist",
         "trader_level": "3"
       }
     ]
@@ -1331,7 +1331,7 @@
       {
         "item_id": "67600929bd0a0549d70993f6",
         "item_name": "Ballistic plate case",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -1345,7 +1345,7 @@
       {
         "item_id": "5a26ac0ec4a28200741e1e18",
         "item_name": "9x21mm BT gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "3"
       }
     ]
@@ -1359,7 +1359,7 @@
       {
         "item_id": "5b6d9ce188a4501afc1b2b25",
         "item_name": "T H I C C Weapon case",
-        "trader_name": "Mechanic",
+        "trader_name": "mechanic",
         "trader_level": "4"
       }
     ]
@@ -1373,7 +1373,7 @@
       {
         "item_id": "657089638db3adca1009f4ca",
         "item_name": "Atomic Defense CQCM ballistic mask (Black)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "4"
       }
     ]
@@ -1387,7 +1387,7 @@
       {
         "item_id": "68bac6ca653ee6b1e406d978",
         "item_name": "9.3x64mm FMJ",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1401,7 +1401,7 @@
       {
         "item_id": "5bffe7930db834001b734a39",
         "item_name": "Crash Axe",
-        "trader_name": "Ref",
+        "trader_name": "ref",
         "trader_level": ""
       }
     ]
@@ -1415,19 +1415,19 @@
       {
         "item_id": "5ef1ba28c64c5d0dfc0571a5",
         "item_name": "Mesa Tactical Crosshair Hydraulic buffer tube",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       },
       {
         "item_id": "68bb2a3831ee03fbc00931e6",
         "item_name": "AR-15 Magpul ACS Carbine stock (FDE)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       },
       {
         "item_id": "68bb25270e48a3afd7071216",
         "item_name": "AR-15 Magpul ACS Carbine stock (Black)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1441,7 +1441,7 @@
       {
         "item_id": "5b44cf1486f77431723e3d05",
         "item_name": "IOTV Gen4 body armor (Assault Kit, MultiCam)",
-        "trader_name": "Ragman",
+        "trader_name": "ragman",
         "trader_level": "4"
       }
     ]
@@ -1455,7 +1455,7 @@
       {
         "item_id": "676bf44c5539167c3603e869",
         "item_name": "RShG-2 72.5mm rocket launcher",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1469,7 +1469,7 @@
       {
         "item_id": "58dd3ad986f77403051cba8f",
         "item_name": "7.62x51mm M80",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1483,7 +1483,7 @@
       {
         "item_id": "5a7828548dc32e5a9c28b516",
         "item_name": "Remington Model 870 12ga pump-action shotgun",
-        "trader_name": "Skier",
+        "trader_name": "skier",
         "trader_level": "1"
       }
     ]
@@ -1497,7 +1497,7 @@
       {
         "item_id": "5c0e66e2d174af02a96252f4",
         "item_name": "Velocity Systems SLAAP Plate (Tan)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1511,19 +1511,19 @@
       {
         "item_id": "5bfea6e90db834001b7347f3",
         "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "3"
       },
       {
         "item_id": "5bfea6e90db834001b7347f3",
         "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "3"
       },
       {
         "item_id": "5bfea6e90db834001b7347f3",
         "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "4"
       }
     ]
@@ -1537,7 +1537,7 @@
       {
         "item_id": "5656d7c34bdc2d9d198b4587",
         "item_name": "7.62x39mm PS gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "3"
       }
     ]
@@ -1551,13 +1551,13 @@
       {
         "item_id": "59e77a2386f7742ee578960a",
         "item_name": "7.62x54mm R PS gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       },
       {
         "item_id": "57a0e5022459774d1673f889",
         "item_name": "9x39mm SP-6 gs",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1571,13 +1571,13 @@
       {
         "item_id": "689166b6c2d6fa42e7044756",
         "item_name": "Kalashnikov AK-308 7.62x51 assault rifle",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       },
       {
         "item_id": "68d56685f3d7cd248f0a06d9",
         "item_name": "AK-308 7.62x51 QD sound suppressor",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1591,7 +1591,7 @@
       {
         "item_id": "651450ce0e00edc794068371",
         "item_name": "SR-3M 9x39 compact assault rifle",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "4"
       }
     ]
@@ -1605,7 +1605,7 @@
       {
         "item_id": "590c5d4b86f774784e1b9c45",
         "item_name": "Iskra ration pack",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       }
     ]
@@ -1619,7 +1619,7 @@
       {
         "item_id": "6259b864ebedf17603599e88",
         "item_name": "Benelli M3 Super 90 12ga dual-mode shotgun",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       }
     ]
@@ -1633,7 +1633,7 @@
       {
         "item_id": "5bc5a372d4351e44f824d17f",
         "item_name": "Mosin Rifle AIM Sports MNG rail mount",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "1"
       }
     ]
@@ -1647,13 +1647,13 @@
       {
         "item_id": "5bbdb83fd4351e44f824c44b",
         "item_name": "Mosin Rifle Tacfire Tanker Style 7.62x54R muzzle brake",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       },
       {
         "item_id": "5bbde409d4351e003562b036",
         "item_name": "Mosin Rifle AIM Sports Recoil Pad",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       }
     ]
@@ -1667,13 +1667,13 @@
       {
         "item_id": "5bbdb811d4351e45020113c7",
         "item_name": "Mosin Rifle AIM Sports Tri-Rail mount",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       },
       {
         "item_id": "5bbde41ed4351e003562b038",
         "item_name": "Mosin Rifle Tacfire pistol grip",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "2"
       }
     ]
@@ -1687,7 +1687,7 @@
       {
         "item_id": "5bbdb870d4351e00367fb67d",
         "item_name": "Mosin Rifle ATI Monte Carlo stock",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "3"
       }
     ]
@@ -1701,7 +1701,7 @@
       {
         "item_id": "5bc5a35cd4351e450201232f",
         "item_name": "Mosin Rifle Witt Machine 7.62x54R muzzle brake",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "3"
       }
     ]
@@ -1715,7 +1715,7 @@
       {
         "item_id": "5fc22d7c187fea44d52eda44",
         "item_name": "SWORD International Mk-18 .338 LM marksman rifle",
-        "trader_name": "Jaeger",
+        "trader_name": "jaeger",
         "trader_level": "4"
       }
     ]
@@ -1729,7 +1729,7 @@
       {
         "item_id": "5c17a7ed2e2216152142459c",
         "item_name": "Crye Precision AirFrame helmet (Tan)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1743,19 +1743,19 @@
       {
         "item_id": "65290f395ae2ae97b80fdf2d",
         "item_name": "SIG MCX-SPEAR 6.8x51 assault rifle",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       },
       {
         "item_id": "65293c7a17e14363030ad308",
         "item_name": "AR-10 7.62x51 Lancer L7AWM 25-round magazine",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "7"
       },
       {
         "item_id": "6529243824cbe3c74a05e5c1",
         "item_name": "6.8x51mm SIG Hybrid",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1769,7 +1769,7 @@
       {
         "item_id": "5bb2475ed4351e00853264e3",
         "item_name": "HK 416A5 5.56x45 assault rifle",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ]
@@ -1783,7 +1783,7 @@
       {
         "item_id": "5d5e7d28a4b936645d161203",
         "item_name": "MSA ACH TC-2001 MICH Series helmet (Olive Drab)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "2"
       }
     ]
@@ -1797,7 +1797,7 @@
       {
         "item_id": "5dcbd56fdbd3d91b3e5468d5",
         "item_name": "Desert Tech MDR 7.62x51 assault rifle",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1811,13 +1811,13 @@
       {
         "item_id": "5a367e5dc4a282000e49738f",
         "item_name": "Remington R11 RSASS 7.62x51 marksman rifle",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       },
       {
         "item_id": "60098ad7c2240c0fe85c570a",
         "item_name": "AFAK tactical individual first aid kit",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1831,13 +1831,13 @@
       {
         "item_id": "5ede475b549eed7c6d5c18fb",
         "item_name": "40x46mm M386 (HE) grenade",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       },
       {
         "item_id": "5e00c1ad86f774747333222c",
         "item_name": "Team Wendy EXFIL Ballistic Helmet (Black)",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "4"
       }
     ]
@@ -1851,7 +1851,7 @@
       {
         "item_id": "57372140245977611f70ee91",
         "item_name": "9x18mm PM SP7 gzh",
-        "trader_name": "Prapor",
+        "trader_name": "prapor",
         "trader_level": "2"
       }
     ]
@@ -1865,7 +1865,7 @@
       {
         "item_id": "58d3db5386f77426186285a0",
         "item_name": "M67 hand grenade",
-        "trader_name": "Peacekeeper",
+        "trader_name": "peacekeeper",
         "trader_level": "3"
       }
     ]

@@ -12,22 +12,22 @@
                 "items": [
                   {
                     "name": "UHF RFID Reader",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c052fb986f7746b2101e909"
                   },
                   {
                     "name": "Decrypted Sliderkey flash drive marked with A.P.",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "4053aef3-fad7-4b30-84a7-13340f81afa9"
                   },
                   {
                     "name": "TerraGroup Labs keycard (Green)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c1d0dc586f7744baf2e7b79"
                   },
                   {
                     "name": "TerraGroup \"Blue Folders\" materials",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "6389c8c5dbfd5e4b95197e6b"
                   }
                 ],
@@ -52,22 +52,22 @@
                 "items": [
                   {
                     "name": "UHF RFID Reader",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c052fb986f7746b2101e909"
                   },
                   {
                     "name": "Decrypted Sliderkey flash drive marked with A.P.",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "4053aef3-fad7-4b30-84a7-13340f81afa9"
                   },
                   {
                     "name": "TerraGroup Labs keycard (Blue)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "2102fe59-ad10-468b-9df2-2df7b140fe0c"
                   },
                   {
                     "name": "TerraGroup \"Blue Folders\" materials",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "6389c8c5dbfd5e4b95197e6b"
                   }
                 ],
@@ -92,22 +92,22 @@
                 "items": [
                   {
                     "name": "UHF RFID Reader",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c052fb986f7746b2101e909"
                   },
                   {
                     "name": "Decrypted Sliderkey flash drive marked with A.P.",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "4053aef3-fad7-4b30-84a7-13340f81afa9"
                   },
                   {
                     "name": "TerraGroup Labs keycard (Red)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c1d0efb86f7744baf2e7b7b"
                   },
                   {
                     "name": "TerraGroup \"Blue Folders\" materials",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "6389c8c5dbfd5e4b95197e6b"
                   }
                 ],
@@ -132,22 +132,22 @@
                 "items": [
                   {
                     "name": "Hard drive from Rzhevsky's car",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "c551dfec-fffe-481c-aefc-33de15cdd8d3"
                   },
                   {
                     "name": "Printer paper",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "601db28c-cda6-47ce-947e-f528aa9dfc20"
                   },
                   {
                     "name": "Printed circuit board",
-                    "quantity": 3,
+                    "quantity": "3",
                     "id": "590a3b0486f7743954552bdb"
                   },
                   {
                     "name": "PC CPU",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "b2758a6d-e5ee-47af-acb8-9c1e2b150ee6"
                   }
                 ],
@@ -172,22 +172,22 @@
                 "items": [
                   {
                     "name": "Sliderkey flash drive marked with A.P.",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "b757c909-45f6-4182-b6c6-66f408d70e84"
                   },
                   {
                     "name": "RAM stick",
-                    "quantity": 3,
+                    "quantity": "3",
                     "id": "da5c4c5a-59b9-4dbd-a78b-d888d3c880c7"
                   },
                   {
                     "name": "Virtex programmable processor",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c05308086f7746b2101e90b"
                   },
                   {
                     "name": "CPU fan",
-                    "quantity": 3,
+                    "quantity": "3",
                     "id": "614ee70f-b6d9-4c62-b3f7-a0248ae589e8"
                   }
                 ],
@@ -223,27 +223,27 @@
                 "items": [
                   {
                     "name": "SSD drive",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "33c15349-44e6-4553-9705-1b6417a1ad6a"
                   },
                   {
                     "name": "Folder with TerraGroup evidence (Staff)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "628319eb-79b7-4982-891e-7d91422cb51d"
                   },
                   {
                     "name": "Folder with TerraGroup evidence (Finances)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "f9124b13-3239-48b6-afdf-6d13bc687bc2"
                   },
                   {
                     "name": "Folder with TerraGroup Labs evidence (Reports)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "f4dbeb2d-64b3-411e-a408-4bca0366b9db"
                   },
                   {
                     "name": "Folder with TerraGroup Labs evidence (Developments)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "3dfd2b2c-b2e6-4634-8bb2-a5a1c3e71419"
                   }
                 ],
@@ -268,32 +268,32 @@
                 "items": [
                   {
                     "name": "Nature reserve topographic intel maps",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "9d306d85-bab9-48f0-9481-0c1997d5688b"
                   },
                   {
                     "name": "Customs topographic intel maps",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "ab7b2144-4c6f-4241-8db8-39a38ef654df"
                   },
                   {
                     "name": "City topographic intel maps",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "660d9405-b88f-4c69-a434-fc077db1af3d"
                   },
                   {
                     "name": "Factory plant topographic intel maps",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "c1fc8eca-7b8c-4856-bb78-e07521e4ab69"
                   },
                   {
                     "name": "Lighthouse topographic intel maps",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "74d39747-369f-4cad-ba9d-6621904ac60b"
                   },
                   {
                     "name": "Military flash drive",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "62a0a16d0b9d3c46de5b6e97"
                   }
                 ],
@@ -318,22 +318,22 @@
                 "items": [
                   {
                     "name": "RFID keycard encryption device",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "bf957347-c987-433e-b4f8-9a0bab9de578"
                   },
                   {
                     "name": "TerraGroup Labs master keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "3fa61364-5325-4b0e-9166-d73339b3badf"
                   },
                   {
                     "name": "Blank RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "7a83dde4-344c-4244-9d78-d500551f3e2b"
                   },
                   {
                     "name": "Kruglov's RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "86ccb88d-0e8e-4721-81c3-ba08536bc732"
                   }
                 ],
@@ -358,22 +358,22 @@
                 "items": [
                   {
                     "name": "RFID keycard encryption device",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "bf957347-c987-433e-b4f8-9a0bab9de578"
                   },
                   {
                     "name": "Activated Kruglov's RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "67bdf04d66ca1d79a2024637"
                   },
                   {
                     "name": "Flash drive with Mr. Kerman's hash codes",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "ad2e560c-084e-40fe-be48-00b131164964"
                   },
                   {
                     "name": "Blank RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "7a83dde4-344c-4244-9d78-d500551f3e2b"
                   }
                 ],
@@ -398,17 +398,17 @@
                 "items": [
                   {
                     "name": "Activated Kruglov's RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "67bdf04d66ca1d79a2024637"
                   },
                   {
                     "name": "Flash drive with Prapor's hash codes",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "9365786c-716b-47d2-931f-9bc324a94566"
                   },
                   {
                     "name": "Blank RFID keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "7a83dde4-344c-4244-9d78-d500551f3e2b"
                   }
                 ],
@@ -433,17 +433,17 @@
                 "items": [
                   {
                     "name": "Experimental signal jammer",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "563662ae-eeeb-47db-bbcc-9ec666af9a07"
                   },
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": "Armored case",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "68dfc07da7cfeed3e60204e7"
                   }
                 ],
@@ -479,22 +479,22 @@
                 "items": [
                   {
                     "name": "Station 14-4 KORD Arshavin K. pass (Damaged)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "dfa40075-8300-4ac0-8fff-7177753430b4"
                   },
                   {
                     "name": "Secure Flash drive",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c621186f774138d11ea29"
                   },
                   {
                     "name": "Military flash drive",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "62a0a16d0b9d3c46de5b6e97"
                   },
                   {
                     "name": "VPX Flash Storage Module",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "541c3bb6-e792-4434-b55b-42a94097e8b0"
                   }
                 ],
@@ -528,22 +528,22 @@
                 "items": [
                   {
                     "name": "Screwdriver",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "b14fb74e-f7f2-44c4-83a4-5a1ee930c68a"
                   },
                   {
                     "name": "Secure Flash drive V3",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "b80c997e-777f-4e64-813d-9c91127b17d0"
                   },
                   {
                     "name": "Digital secure DSP radio transmitter",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "62e910aaf957f2915e0a5e36"
                   },
                   {
                     "name": "Electronic components",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
                   }
                 ],
@@ -580,22 +580,22 @@
                 "items": [
                   {
                     "name": "Advanced Electronic Materials textbook",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d45f08bb-6292-4a90-8943-8e21e92dd5db"
                   },
                   {
                     "name": "Secure Flash drive",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c621186f774138d11ea29"
                   },
                   {
                     "name": "TerraGroup Labs access keycard",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c94bbff86f7747ee735c08f"
                   },
                   {
                     "name": "VPX Flash Storage Module",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "541c3bb6-e792-4434-b55b-42a94097e8b0"
                   }
                 ],
@@ -631,22 +631,22 @@
                 "items": [
                   {
                     "name": "6B33 ballistic plate (Front)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "656f603f94b480b8a500c0d6"
                   },
                   {
                     "name": "Cordura polyamide fabric",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e2af41e86f774755a234b67"
                   },
                   {
                     "name": "Ox bleach",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "59e3556c86f7741776641ac2"
                   },
                   {
                     "name": "Aramid fiber fabric",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e2af4d286f7746d4159f07a"
                   }
                 ],
@@ -682,27 +682,27 @@
                 "items": [
                   {
                     "name": "Metal cutting scissors",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d51aa682-63ad-437f-97d2-e3323340ad2e"
                   },
                   {
                     "name": "Ripstop fabric",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e2af4a786f7746d3f3c3400"
                   },
                   {
                     "name": "Aramid fiber fabric",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e2af4d286f7746d4159f07a"
                   },
                   {
                     "name": "Cordura polyamide fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af41e86f774755a234b67"
                   },
                   {
                     "name": "NewSphereTech level III ballistic plate",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "656fb21fa0dce000a2020f7c"
                   }
                 ],
@@ -737,17 +737,17 @@
                 "items": [
                   {
                     "name": "Flat screwdriver (Long)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "a0bf67cf-6c0b-4344-b740-9c2ef9043a37"
                   },
                   {
                     "name": "AK-74 5.45x39 6L23 30-round magazine",
-                    "quantity": 4,
+                    "quantity": "4",
                     "id": "55d480c04bdc2d1d4e8b456a"
                   },
                   {
                     "name": "KEKTAPE duct tape",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e2af29386f7746d4159f077"
                   }
                 ],
@@ -784,32 +784,32 @@
                 "items": [
                   {
                     "name": "Fierce Blow sledgehammer",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "1c8c9bf7-42d7-491d-b556-1af9ca31635e"
                   },
                   {
                     "name": "Bottle of Tarkovskaya vodka",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d40407c86f774318526545a"
                   },
                   {
                     "name": "Altyn bulletproof helmet (Olive Drab)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5aa7e276e5b5b000171d0647"
                   },
                   {
                     "name": "Ripstop fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af4a786f7746d3f3c3400"
                   },
                   {
                     "name": "Aramid fiber fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af4d286f7746d4159f07a"
                   },
                   {
                     "name": "Fleece fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af47786f7746d404f3aaa"
                   }
                 ],
@@ -845,27 +845,27 @@
                 "items": [
                   {
                     "name": "Sewing kit",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "38d8baf4-1d00-4b87-879d-9a186f752aee"
                   },
                   {
                     "name": "Metal cutting scissors",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d51aa682-63ad-437f-97d2-e3323340ad2e"
                   },
                   {
                     "name": "GAC 3s15m ballistic plate",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "939c1cb4-09a0-429c-8185-77054ec68d3c"
                   },
                   {
                     "name": "Ripstop fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af4a786f7746d3f3c3400"
                   },
                   {
                     "name": "Aramid fiber fabric",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5e2af4d286f7746d4159f07a"
                   }
                 ],
@@ -901,17 +901,17 @@
                 "items": [
                   {
                     "name": "Adrenaline injector",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c10c8fd86f7743d7d706df3"
                   },
                   {
                     "name": "AI-2 medkit",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5755356824597772cb798962"
                   },
                   {
                     "name": "Pile of meds",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b3a5d86f774252167ba22"
                   }
                 ],
@@ -947,22 +947,22 @@
                 "items": [
                   {
                     "name": "Adrenaline injector",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c10c8fd86f7743d7d706df3"
                   },
                   {
                     "name": "Bottle of OLOLO Multivitamins",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "62a0a043cf4a99369e2624a5"
                   },
                   {
                     "name": "Medical tools",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "09de1923-751a-47ae-bd7c-031709cd976f"
                   },
                   {
                     "name": "Bottle of saline solution",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "71a6b6db-d0d2-44e0-a5f7-683ad4bb1ff8"
                   }
                 ],
@@ -998,22 +998,22 @@
                 "items": [
                   {
                     "name": "Pile of meds",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b3a5d86f774252167ba22"
                   },
                   {
                     "name": "Disposable syringe",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b3f2d86f774253763b735"
                   },
                   {
                     "name": "Propital regenerative stimulant injector",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5c0e530286f7747fa1419862"
                   },
                   {
                     "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5e8f3423fd7471236e6e3b64"
                   }
                 ],
@@ -1049,22 +1049,22 @@
                 "items": [
                   {
                     "name": "Zagustin hemostatic drug injector",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5c0e533786f7747fa23f4d47"
                   },
                   {
                     "name": "Morphine injector",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "544fb3f34bdc2d03748b456a"
                   },
                   {
                     "name": "Can of Max Energy energy drink",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5751435d24597720a27126d1"
                   },
                   {
                     "name": "Pile of meds",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b3a5d86f774252167ba22"
                   }
                 ],
@@ -1099,32 +1099,32 @@
                 "items": [
                   {
                     "name": "Pliers Elite",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5af04b6486f774195a3ebb49"
                   },
                   {
                     "name": "Screwdriver",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "b14fb74e-f7f2-44c4-83a4-5a1ee930c68a"
                   },
                   {
                     "name": "Electronic components",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
                   },
                   {
                     "name": "Military COFDM Wireless Signal Transmitter",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "8a1bb9dd-f6e3-4890-965f-6910f5bbb5d7"
                   },
                   {
                     "name": "Gas analyzer",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590a3efd86f77437d351a25b"
                   },
                   {
                     "name": "Broken GPhone smartphone",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "56742c324bdc2d150f8b456d"
                   }
                 ],
@@ -1161,17 +1161,17 @@
                 "items": [
                   {
                     "name": "Pliers",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "db32e698-23f7-4835-a62c-2eacdb0b84cb"
                   },
                   {
                     "name": "Gunpowder \"Hawk\"",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d6fc87386f77449db3db94e"
                   },
                   {
                     "name": "7.62x39mm PS gzh",
-                    "quantity": 100,
+                    "quantity": "100",
                     "id": "5656d7c34bdc2d9d198b4587"
                   }
                 ],
@@ -1208,22 +1208,22 @@
                 "items": [
                   {
                     "name": "Moreman's phone",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d24351d9-a0d7-4f0e-a4af-094e71296154"
                   },
                   {
                     "name": "AA Battery",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "8e915201-e9b2-4d30-ac63-4225298efdc6"
                   },
                   {
                     "name": "RAM stick",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "da5c4c5a-59b9-4dbd-a78b-d888d3c880c7"
                   },
                   {
                     "name": "Broken GPhone smartphone",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "56742c324bdc2d150f8b456d"
                   }
                 ],
@@ -1248,22 +1248,22 @@
                 "items": [
                   {
                     "name": "Moreman's phone",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d24351d9-a0d7-4f0e-a4af-094e71296154"
                   },
                   {
                     "name": "Capacitors",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c06782b86f77426df5407d2"
                   },
                   {
                     "name": "RAM stick",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "da5c4c5a-59b9-4dbd-a78b-d888d3c880c7"
                   },
                   {
                     "name": "Bundle of wires",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c06779c86f77426e00dd782"
                   }
                 ],
@@ -1298,22 +1298,22 @@
                 "items": [
                   {
                     "name": "Car battery",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5733279d245977289b77ec24"
                   },
                   {
                     "name": "Canister with purified water",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d1b33a686f7742523398398"
                   },
                   {
                     "name": "Clin window cleaner",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "59e358a886f7741776641ac3"
                   },
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   }
                 ],
@@ -1349,17 +1349,17 @@
                 "items": [
                   {
                     "name": "Leatherman Multitool",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "544fb5454bdc2df8738b456a"
                   },
                   {
                     "name": "UZRGM grenade fuze",
-                    "quantity": 5,
+                    "quantity": "5",
                     "id": "755e0a03-3765-4cc6-b57b-a615a82db9d3"
                   },
                   {
                     "name": "40mm VOG-25 grenade",
-                    "quantity": 5,
+                    "quantity": "5",
                     "id": "5656eb674bdc2d35148b457c"
                   }
                 ],
@@ -1395,17 +1395,17 @@
                 "items": [
                   {
                     "name": "Nippers",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "57d44fc6-ce7b-427c-9a74-9145343d5859"
                   },
                   {
                     "name": "5.45x39mm PS gs",
-                    "quantity": 180,
+                    "quantity": "180",
                     "id": "56dff3afd2720bba668b4567"
                   },
                   {
                     "name": "Gunpowder \"Kite\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c5a7286f7747884343aea"
                   }
                 ],
@@ -1440,12 +1440,12 @@
                 "items": [
                   {
                     "name": "Pipe grip wrench",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "8caa5b62-1209-49b2-b8bd-18a111a3523e"
                   },
                   {
                     "name": "6-STEN-140-M military battery",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d03794386f77420415576f5"
                   }
                 ],
@@ -1482,22 +1482,22 @@
                 "items": [
                   {
                     "name": "Leatherman Multitool",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "544fb5454bdc2df8738b456a"
                   },
                   {
                     "name": "7.62x51mm M80",
-                    "quantity": 80,
+                    "quantity": "80",
                     "id": "58dd3ad986f77403051cba8f"
                   },
                   {
                     "name": "Gunpowder \"Hawk\"",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d6fc87386f77449db3db94e"
                   },
                   {
                     "name": "Radiator helix",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "090b69eb-01e2-44e6-8479-73398606c653"
                   }
                 ],
@@ -1533,22 +1533,22 @@
                 "items": [
                   {
                     "name": "Hand drill",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d1b317c86f7742523398392"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 3,
+                    "quantity": "3",
                     "id": "5d6fc78386f77449d825f9dc"
                   },
                   {
                     "name": "12/70 7mm buckshot",
-                    "quantity": 50,
+                    "quantity": "50",
                     "id": "560d5e524bdc2d25448b4571"
                   },
                   {
                     "name": "WD-40 (400ml)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "57a24076-8fb1-4783-81c9-8269aaf7d748"
                   }
                 ],
@@ -1584,22 +1584,22 @@
                 "items": [
                   {
                     "name": "Leatherman Multitool",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "544fb5454bdc2df8738b456a"
                   },
                   {
                     "name": "5.56x45mm M855",
-                    "quantity": 180,
+                    "quantity": "180",
                     "id": "54527a984bdc2d4e668b4567"
                   },
                   {
                     "name": "Gunpowder \"Kite\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c5a7286f7747884343aea"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d6fc78386f77449d825f9dc"
                   }
                 ],
@@ -1635,27 +1635,27 @@
                 "items": [
                   {
                     "name": "Electric drill",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "96320710-58d0-4135-816b-c29446c96dce"
                   },
                   {
                     "name": "Pipe grip wrench",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "8caa5b62-1209-49b2-b8bd-18a111a3523e"
                   },
                   {
                     "name": "7.62x39mm PP gzh",
-                    "quantity": 90,
+                    "quantity": "90",
                     "id": "64b7af434b75259c590fa893"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d6fc78386f77449d825f9dc"
                   },
                   {
                     "name": "Can of Hot Rod energy drink",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5751496424597720a27126da"
                   }
                 ],
@@ -1691,22 +1691,22 @@
                 "items": [
                   {
                     "name": "Set of files \"Master\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "684c8a74-f68c-4ab8-a11c-bf8bdae28344"
                   },
                   {
                     "name": "7.62x54mm R PS gzh",
-                    "quantity": 50,
+                    "quantity": "50",
                     "id": "59e77a2386f7742ee578960a"
                   },
                   {
                     "name": "Can of thermite",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "60391a8b3364dc22b04d0ce5"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d6fc78386f77449d825f9dc"
                   }
                 ],
@@ -1742,27 +1742,27 @@
                 "items": [
                   {
                     "name": "Ultraviolet lamp",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "7c5884a3-0de6-4254-add6-4a74bae9f8ec"
                   },
                   {
                     "name": "Pliers Elite",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5af04b6486f774195a3ebb49"
                   },
                   {
                     "name": "4.6x30mm FMJ SX",
-                    "quantity": 120,
+                    "quantity": "120",
                     "id": "5ba2678ad4351e44f824b344"
                   },
                   {
                     "name": "Capacitors",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c06782b86f77426df5407d2"
                   },
                   {
                     "name": "Metal spare parts",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "14c2ef8c-d6b3-459c-b59f-39722a064981"
                   }
                 ],
@@ -1798,17 +1798,17 @@
                 "items": [
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": ".300 Blackout CBJ",
-                    "quantity": 90,
+                    "quantity": "90",
                     "id": "64b8725c4b75259c590fa899"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d6fc78386f77449d825f9dc"
                   }
                 ],
@@ -1844,37 +1844,37 @@
                 "items": [
                   {
                     "name": "Advanced Electronic Materials textbook",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "d45f08bb-6292-4a90-8943-8e21e92dd5db"
                   },
                   {
                     "name": "Silicon Optoelectronic Integrated Circuits textbook",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "774bceae-3555-41b5-8532-1304e0b58898"
                   },
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": "Iridium military thermal vision module",
-                    "quantity": 4,
+                    "quantity": "4",
                     "id": "9ddc82ba-354d-4e6d-982b-1006fdde0cc7"
                   },
                   {
                     "name": "NIXXOR lens",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b2ffd86f77425243e8d17"
                   },
                   {
                     "name": "Microcontroller board",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "6389c7750ef44505c87f5996"
                   },
                   {
                     "name": "Virtex programmable processor",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5c05308086f7746b2101e90b"
                   }
                 ],
@@ -1910,17 +1910,17 @@
                 "items": [
                   {
                     "name": "SurvL Survivor Lighter",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "8015f239-63a8-4000-b1a5-861c3ad49958"
                   },
                   {
                     "name": "5.56x45mm M856",
-                    "quantity": 120,
+                    "quantity": "120",
                     "id": "59e68f6f86f7746c9f75e846"
                   },
                   {
                     "name": "Dry fuel",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "0850ec42-4a23-4b32-a87c-2f706fd289a4"
                   }
                 ],
@@ -1956,37 +1956,37 @@
                 "items": [
                   {
                     "name": "Silicon Optoelectronic Integrated Circuits textbook",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "774bceae-3555-41b5-8532-1304e0b58898"
                   },
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": "NIXXOR lens",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d1b2ffd86f77425243e8d17"
                   },
                   {
                     "name": "Iridium military thermal vision module",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "9ddc82ba-354d-4e6d-982b-1006fdde0cc7"
                   },
                   {
                     "name": "Virtex programmable processor",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5c05308086f7746b2101e90b"
                   },
                   {
                     "name": "Military circuit board",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "5d0376a486f7747d8050965c"
                   },
                   {
                     "name": "Electronic components",
-                    "quantity": 5,
+                    "quantity": "5",
                     "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
                   }
                 ],
@@ -2022,17 +2022,17 @@
                 "items": [
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": "5.45x39mm PS gs",
-                    "quantity": 180,
+                    "quantity": "180",
                     "id": "56dff3afd2720bba668b4567"
                   },
                   {
                     "name": "Gunpowder \"Eagle\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5d6fc78386f77449d825f9dc"
                   }
                 ],
@@ -2068,22 +2068,22 @@
                 "items": [
                   {
                     "name": "Silicon Optoelectronic Integrated Circuits textbook",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "774bceae-3555-41b5-8532-1304e0b58898"
                   },
                   {
                     "name": "Flat screwdriver (Long)",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "a0bf67cf-6c0b-4344-b740-9c2ef9043a37"
                   },
                   {
                     "name": "Pliers Elite",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "5af04b6486f774195a3ebb49"
                   },
                   {
                     "name": "Far-forward GPS Signal Amplifier Unit",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "6389c7f115805221fb410466"
                   }
                 ],
@@ -2118,37 +2118,37 @@
                 "items": [
                   {
                     "name": "Set of files \"Master\"",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "684c8a74-f68c-4ab8-a11c-bf8bdae28344"
                   },
                   {
                     "name": "Toolset",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "590c2e1186f77425357b6124"
                   },
                   {
                     "name": "RPK-16 5.45x39 light machine gun",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "bf9ee7da-e50e-40bf-a060-61cbaca5e1bb"
                   },
                   {
                     "name": "Metal spare parts",
-                    "quantity": 5,
+                    "quantity": "5",
                     "id": "14c2ef8c-d6b3-459c-b59f-39722a064981"
                   },
                   {
                     "name": "Weapon parts",
-                    "quantity": 10,
+                    "quantity": "10",
                     "id": "5d1c819a86f774771b0acd6c"
                   },
                   {
                     "name": "Tube of Poxeram cold welding",
-                    "quantity": 2,
+                    "quantity": "2",
                     "id": "a0af7bca-f166-4121-868c-0330c2464f9b"
                   },
                   {
                     "name": "Insulating tape",
-                    "quantity": 1,
+                    "quantity": "1",
                     "id": "8cb829b2-2a5d-43c2-a86d-a372ed8d917f"
                   }
                 ],

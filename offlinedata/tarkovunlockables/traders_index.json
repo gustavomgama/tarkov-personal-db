@@ -1,0 +1,64 @@
+{
+  "traders": {
+    "prapor": {
+      "id": "54cb50c76803fa8b248b4571",
+      "name": "Prapor",
+      "normalizedName": "prapor",
+      "imageLink": "https://assets.tarkov.dev/54cb50c76803fa8b248b4571.webp"
+    },
+    "therapist": {
+      "id": "54cb57776803fa99248b456e",
+      "name": "Therapist",
+      "normalizedName": "therapist",
+      "imageLink": "https://assets.tarkov.dev/54cb57776803fa99248b456e.webp"
+    },
+    "fence": {
+      "id": "579dc571d53a0658a154fbec",
+      "name": "Fence",
+      "normalizedName": "fence",
+      "imageLink": "https://assets.tarkov.dev/579dc571d53a0658a154fbec.webp"
+    },
+    "skier": {
+      "id": "58330581ace78e27b8b10cee",
+      "name": "Skier",
+      "normalizedName": "skier",
+      "imageLink": "https://assets.tarkov.dev/58330581ace78e27b8b10cee.webp"
+    },
+    "peacekeeper": {
+      "id": "5935c25fb3acc3127c3d8cd9",
+      "name": "Peacekeeper",
+      "normalizedName": "peacekeeper",
+      "imageLink": "https://assets.tarkov.dev/5935c25fb3acc3127c3d8cd9.webp"
+    },
+    "mechanic": {
+      "id": "5a7c2eca46aef81a7ca2145d",
+      "name": "Mechanic",
+      "normalizedName": "mechanic",
+      "imageLink": "https://assets.tarkov.dev/5a7c2eca46aef81a7ca2145d.webp"
+    },
+    "ragman": {
+      "id": "5ac3b934156ae10c4430e83c",
+      "name": "Ragman",
+      "normalizedName": "ragman",
+      "imageLink": "https://assets.tarkov.dev/5ac3b934156ae10c4430e83c.webp"
+    },
+    "jaeger": {
+      "id": "5c0647fdd443bc2504c2d371",
+      "name": "Jaeger",
+      "normalizedName": "jaeger",
+      "imageLink": "https://assets.tarkov.dev/5c0647fdd443bc2504c2d371.webp"
+    },
+    "lightkeeper": {
+      "id": "638f541a29ffd1183d187f57",
+      "name": "Lightkeeper",
+      "normalizedName": "lightkeeper",
+      "imageLink": "https://assets.tarkov.dev/638f541a29ffd1183d187f57.webp"
+    },
+    "ref": {
+      "id": "6617beeaa9cfa777ca915b7c",
+      "name": "Ref",
+      "normalizedName": "ref",
+      "imageLink": "https://assets.tarkov.dev/6617beeaa9cfa777ca915b7c.webp"
+    }
+  }
+}
