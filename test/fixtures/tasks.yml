@@ -3,9 +3,9 @@
 # Table name: tasks
 #
 #  id                   :bigint           not null, primary key
-#  bsg_id               :string           default(""), not null
+#  bsg_id               :string           not null
+#  name                 :string           not null
 #  full_name            :string           not null
-#  name                 :string           default(""), not null
 #  wiki_link            :string           default(""), not null
 #  given_by             :string           not null
 #  kappa_required       :boolean          default(FALSE), not null
@@ -19,27 +19,28 @@
 #
 # Indexes
 #
-#  index_tasks_on_bsg_id                (bsg_id) UNIQUE WHERE ((bsg_id)::text <> ''::text)
-#  index_tasks_on_full_name             (full_name)
-#  index_tasks_on_given_by              (given_by)
-#  index_tasks_on_kappa_required        (kappa_required)
-#  index_tasks_on_lightkeeper_required  (lightkeeper_required)
-#  index_tasks_on_name                  (name) UNIQUE WHERE ((name)::text <> ''::text)
+#  index_tasks_on_bsg_id    (bsg_id) UNIQUE
+#  index_tasks_on_given_by  (given_by)
+#  index_tasks_on_name      (name) UNIQUE
 #
 a_big_loss:
   bsg_id: "5ae4493d86f7744b8e15aa8f"
   name: "a-big-loss"
   full_name: "A Big Loss"
   wiki_link: "https://escapefromtarkov.fandom.com/wiki/A_Big_Loss"
-  given_by: "Ragman"
+  given_by: "ragman"
   kappa_required: true
   lightkeeper_required: false
   leads_to: []
   requirements:
-    - player_level: 0
+    - player_level: "0"
       trader_level: []
       previous_tasks: []
-  start_rewards: []
+  start_rewards:
+    - loose_items: []
+      offer_unlocks: []
+      barter_unlocks: []
+      craft_unlocks: []
   finish_rewards:
     - loose_items:
         - item_id: "5449016a4bdc2d6f028b456f"
@@ -54,14 +55,14 @@ anesthesia:
   name: "anesthesia"
   full_name: "Anesthesia"
   wiki_link: "https://escapefromtarkov.fandom.com/wiki/Anesthesia"
-  given_by: "Prapor"
-  kappa_required: true
-  lightkeeper_required: false
+  given_by: "prapor"
+  kappa_required: "true"
+  lightkeeper_required: "false"
   leads_to:
     - task_id: "5edabd13218d181e29451442"
       task_name: "rigged-game"
   requirements:
-    - player_level: 21
+    - player_level: "21"
       trader_level: []
       previous_tasks:
         - task_id: "5967725e86f774601a446662"

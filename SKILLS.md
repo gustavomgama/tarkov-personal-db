@@ -3,6 +3,39 @@
 All **45** AI skills installed in `~/.opencode/skills/`, with trigger phrases/commands
 and full descriptions.
 
+## Quick Access — `Ctrl+P` then type `>skills`
+
+```
+>skills task-observer      → Monitors task execution, skill improvement opportunities
+>skills ponytail           → Anti-over-engineering, laziest solution
+>skills ponytail-review    → Code review for over-engineering
+>skills ponytail-audit     → Whole-repo over-engineering audit
+>skills ponytail-debt      → List deferred ponytail shortcuts
+>skills ponytail-gain      → Ponytail impact scoreboard
+>skills ponytail-help      → Ponytail quick reference
+>skills clean-code         → Clean Code rules (Uncle Bob)
+>skills refactoring       → Refactoring rules (Fowler)
+>skills refactoring-guru  → Refactoring patterns
+>skills clean-architecture → Clean Architecture boundaries
+>skills domain-driven-design → DDD aggregates, ubiquitous language
+>skills nuke-on-rails     → Rails health & security audit
+>skills ui-styling        → shadcn/ui, Tailwind, accessible components
+>skills design-system      → Token architecture, component specs
+>skills design            → Brand, logo, banner, icon generation
+>skills ruby-version-manager → Detect Ruby version manager first
+>skills ruby-resource-map  → Ruby docs, typing, tooling sources
+>skills ruby-test-frameworks → minitest vs test-unit gotchas
+>skills rubyn-rails        → Rails patterns and gotchas
+>skills rubyn-rspec        → RSpec patterns
+>skills rubyn-minitest     → Minitest patterns
+>skills rubyn-ruby         → Ruby language deep cuts
+>skills rubyn-gems         → Gem guidance (devise, sidekiq, etc.)
+```
+
+Type `>skills` followed by any skill name above to activate it instantly.
+
+---
+
 ## How activation works
 
 - Skills load **at session start** — after installing/removing one, restart opencode.

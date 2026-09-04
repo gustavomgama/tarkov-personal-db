@@ -13,7 +13,7 @@ class SchemaDumpOrderTest < ActiveSupport::TestCase
     columns.reject! { |name| name == "id" }
 
     expected = %w[
-      bsg_id full_name name wiki_link given_by
+      bsg_id name full_name wiki_link given_by
       kappa_required lightkeeper_required
       leads_to requirements start_rewards finish_rewards
       created_at updated_at

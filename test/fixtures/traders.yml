@@ -1,0 +1,53 @@
+# == Schema Information
+#
+# Table name: traders
+#
+#  id              :bigint           not null, primary key
+#  bsg_id          :string           not null
+#  name            :string           not null
+#  normalized_name :string           not null
+#  image_link      :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  buyables        :jsonb            not null
+#  barteables      :jsonb            not null
+#
+# Indexes
+#
+#  index_traders_on_bsg_id           (bsg_id) UNIQUE
+#  index_traders_on_normalized_name  (normalized_name) UNIQUE
+#
+
+ragman:
+  bsg_id: "5ac3b934156ae10c4430e83c"
+  name: "Ragman"
+  normalized_name: "ragman"
+  image_link: "https://assets.tarkov.dev/5ac3b934156ae10c4430e83c.webp"
+  buyables: []
+  barteables: []
+
+prapor:
+  bsg_id: "54cb50c76803fa8b248b4571"
+  name: "Prapor"
+  normalized_name: "prapor"
+  image_link: "https://assets.tarkov.dev/54cb50c76803fa8b248b4571.webp"
+  buyables:
+    - item_id: "5448be9a4bdc2dfd2f8b456a"
+      item_name: "RGD-5 hand grenade"
+      trader_name: "prapor"
+      trader_level: "LL3"
+      currency: "RUB"
+  barteables:
+    - requirements:
+        - items:
+            - id: "573475fb24597737fb1379e1"
+              name: "Apollo Soyuz cigarettes"
+              count: "2"
+          task_id: ""
+          task_name: ""
+          trader_name: "prapor"
+          trader_level: "LL1"
+      result:
+        - items:
+            - id: "67506ca81f18589016006aa6"
+              name: "PNV-57E night vision goggles"

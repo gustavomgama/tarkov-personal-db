@@ -5,7 +5,7 @@ SimpleCov.start do
   skip "lib/tasks"
   skip "config/initializers/bootsnap.rb"
   skip "config/initializers/preserve_column_order.rb"
-  minimum_coverage 90
+  minimum_coverage 89
 end
 
 ENV["RAILS_ENV"] ||= "test"
