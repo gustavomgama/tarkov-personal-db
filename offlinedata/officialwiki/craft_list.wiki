@@ -1,19 +1,10 @@
-'''{{PAGENAME}}''' in ''[[Escape from Tarkov]]'' allows you to produce many items. It is done through various [[hideout]] modules such as the [[Hideout#Modules|booze generator]], [[Hideout#Modules|lavatory]], [[Hideout#Modules|medstation]], [[Hideout#Modules|nutrition unit]], [[Hideout#Modules|water collector]] and [[Hideout#Modules|workbench]]. Every item crafted in the hideout will have the "[[Found in raid|found in raid]]" status. Below is a complete list of these crafts. Item craft time is affected by the [[Crafting]] skill.
-
-Items that have a blue wrench [[File:Returnable mark.png]] in their icon will be used as auxiliary tool, meaning that they will return to your stash once production is complete. 
-
-If you see a craft missing from the list, please join our [https://discord.gg/7ZeEyfU Discord] or note it [[Talk:Crafts|here]]. 
-
-To search the list use <code>Ctrl+F</code>.
-
 ==List of crafts==
-{{Seasonal change|all crafting times are halved.}}
 ===Bitcoin farm===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module
+!|Produced items
 |-
 ![[File:Gpu tool.png|link=Graphics card]]
 !<big>→</big>
@@ -23,11 +14,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Booze generator===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:Purified water icon.png|link=Canister with purified water]] x1<br/>[[Canister with purified water]]<br/>+<br/>[[File:Sugar icon.png|link=Pack of sugar]] x2<br/>[[Pack of sugar]]
 !<big>→</big>
@@ -37,11 +28,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Intelligence center===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:Secure Flash drive Icon.png|link=Secure Flash drive]] x1<br/>[[Secure Flash drive]]<br/>+<br/>[[File:SlimDiaryIcon.png|link=Slim diary]] x1<br/>[[Slim diary]]<br/>+<br/>[[File:Diary Icon1.png|link=Diary]] x1<br/>[[Diary]]
 !<big>→</big>
@@ -207,11 +198,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Lavatory===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:Screwdriver tool.png|link=Screwdriver]] x1<br/>[[Screwdriver]]<br/>+<br/>[[File:GP-7gasmaskicon.png|link=GP-7 gas mask]] x1<br/>[[GP-7 gas mask]]
 !<big>→</big>
@@ -461,11 +452,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Medstation===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:Pile of meds icon.png|link=Pile of meds]] x1<br/>[[Pile of meds]]
 !<big>→</big>
@@ -551,7 +542,7 @@ To search the list use <code>Ctrl+F</code>.
 !<big>→</big>
 ![[File:EFT Morphine Icon.png|link=Morphine injector]] x1<br/>[[Morphine injector]]
 |-
-! colspan="5" |"Edge of Darkness" game edition buyers do not need to unlock this craft.
+! |"Edge of Darkness" game edition buyers do not need to unlock this craft.
 |-
 ![[File:Adrenaline Icon.png|link=Adrenaline injector]] x1<br/>[[Adrenaline injector]]<br/>+<br/>[[File:Ololo icon.png|link=Bottle of OLOLO Multivitamins]] x1<br/>[[Bottle of OLOLO Multivitamins]]<br/>+<br/>[[File:Medical tools.png|link=Medical tools]] x1<br/>[[Medical tools]]<br/>+<br/>[[File:Saline Solution icon.png|link=Bottle of saline solution]] x1<br/>[[Bottle of saline solution]]
 !<big>→</big>
@@ -633,11 +624,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Nutrition unit===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:gmcount tool.png|link=Geiger-Muller counter]] x1<br/>[[Geiger-Muller counter]]<br/>+<br/>[[File:Can of salt icon.png|link=Can of white salt]] x1<br/>[[Can of white salt]]<br/>+<br/>[[File:Can of beef stew Icon.png|link=Can of beef stew (Small)]] x1<br/>[[Can of beef stew (Small)]]<br/>+<br/>[[File:Toilet paper icon.png|link=Toilet paper]] x1<br/>[[Toilet paper]]
 !<big>→</big>
@@ -689,7 +680,7 @@ To search the list use <code>Ctrl+F</code>.
 |-
 ![[File:Gunpowder Icon.png|link=Gunpowder "Kite"]] x1<br/>[[Gunpowder "Kite"]]<br/>+<br/>[[File:Lupo Icon.png|link=Can of Dr. Lupo's coffee beans]] x1<br/>[[Can of Dr. Lupo's coffee beans]]
 !<big>→</big>
-!<big>[[Hideout#Modules|Nutrition unit level 2]]</big><br/>45 minutes 
+!<big>[[Hideout#Modules|Nutrition unit level 2]]</big><br/>45 minutes
 !<big>→</big>
 ![[File:Coffeicon.png|link=Can of Majaica coffee beans]] x2<br/>[[Can of Majaica coffee beans]]
 |-
@@ -755,11 +746,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Water collector===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:WaterBottleAlmostEmpty.png|link=Bottle of water (0.6L)]] x1<br/>[[Bottle of water (0.6L)|Bottle of water (1/60 HP)]]
 !<big>→</big>
@@ -787,11 +778,11 @@ To search the list use <code>Ctrl+F</code>.
 |}
 
 ===Workbench===
-{| class="wikitable mw-collapsible" style="text-align: center;" sortable" width: auto;"
-|+ class="nowrap" | 
-!style="width:Auto;"|Needed items
-!colspan =3 style="width:Auto;"|Module and time
-!style="width:Auto;"|Produced items
+{|
+|+
+!|Needed items
+! |Module and time
+!|Produced items
 |-
 ![[File:Handdrill tool.png|link=Hand drill]] x1<br/>[[Hand drill]]<br/>+<br/>[[File:Weapons crate Rare Icon.png|Locked Weapon crate (Rare)|link=Weapon crate (Rare)]] x1<br/>[[Weapon crate (Rare)|<font color="red">Locked</font> Weapon crate (Rare)]]
 !<big>→</big>
@@ -883,7 +874,7 @@ To search the list use <code>Ctrl+F</code>.
 !<big>→</big>
 ![[File:PP-9 Klin icon.png|link=PP-9 Klin 9x18PMM submachine gun]] x1<br/>[[PP-9 Klin 9x18PMM submachine gun]]
 |-
-! colspan="5" |Only available to players who preordered the "The Unheard" or "Edge of Darkness" edition of the game.
+! |Only available to players who preordered the "The Unheard" or "Edge of Darkness" edition of the game.
 |-
 ![[File:Secure container Gamma EOD Icon.png|link=Secure container Gamma]] x1<br/>[[Secure container Gamma]]<br/>+<br/>[[File:Flat Screwdriver Icon.PNG|link=Flat screwdriver]] x1<br/>[[Flat screwdriver]]<br/>+<br/>[[File:Insulating tape Icon.png|link=Insulating tape]] x1<br/>[[Insulating tape]]
 !<big>→</big>
@@ -1079,7 +1070,7 @@ To search the list use <code>Ctrl+F</code>.
 |-
 ![[File:Toolset tool.png|link=Toolset]] x1<br/>[[Toolset]]<br/>+<br/>[[File:Lcd-icon.PNG|link=Broken LCD]] x1<br/>[[Broken LCD]]<br/>+<br/>[[File:Capacitorsicon.png|link=Capacitors]] x1<br/>[[Capacitors]]<br/>+<br/>[[File:ElectronicComponents icon.png|link=Electronic components]] x1<br/>[[Electronic components]]
 !<big>→</big>
-!<big>[[Hideout#Modules|Workbench level 2]]</big><br/>31 min 27 sec 
+!<big>[[Hideout#Modules|Workbench level 2]]</big><br/>31 min 27 sec
 !<big>→</big>
 ![[File:Working LCD Icon.png|link=Working LCD]] x1<br/>[[Working LCD]]
 |-

@@ -1,0 +1,613 @@
+This is an auto-generated list of wiki items that have trader data but do not exist in items_index.
+
+Total count: 152
+
+-
+
+== 5c0e5bab86f77461f55ed1f3 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ragman]] LL2
+
+== 5c0e51be86f774598e797894 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ragman]] LL2 after completing his task [[Sew it Good - Part 1]]
+
+== 5c07c60e0db834002330051f ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL1
+
+== 5df8e053bb49d91fb446d6a6 ==
+* Type: [[Weapon mods#Gear Mods|Charging handle]]
+* Trader: [[Peacekeeper]] LL3: Taupe
+
+== 5df8e053bb49d91fb446d6a6 ==
+* Type: [[Weapon mods#Gear Mods|Charging handle]]
+* Trader: [[Peacekeeper]] LL3: Taupe
+
+== 57c44b372459772d2b39b8ce ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL4<br/>[[Prapor]] LL4
+
+== 5cadfbf7ae92152ac412eeef ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL4<br/>[[Prapor]] LL4 after completing his task [[Best Job in the World]].
+
+== 627e14b21713922ded6f2c15 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Jaeger]] LL4 after completing his task [[Hunting Trip]]
+
+== 674d6121c09f69dfb201a888 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Mechanic]] LL4 after completing the [[BTR Driver]]'s task [[Protect the Sky]]
+
+== 5b44d22286f774172b0c9de8 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ragman]] LL2
+
+== 5cadc190ae921500103bb3b6 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL1
+
+== 6259b864ebedf17603599e88 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL2, after completing his quest [[The Survivalist Path - Wounded Beast]]
+
+== 60a3c70cde5f453f634816a3 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ref]] LL3<br/>[[Ragman]] LL3, after completing his task [[Audiophile]]
+
+== 606587252535c57a13424cfd ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL3<br/>[[Skier]] LL4 after completing his task [[Night Sweep]]
+
+== 624c2e8614da335f1e034d8c ==
+* Type: [[Weapons#Revolvers|Revolver]]
+* Trader: [[Jaeger]] LL1
+
+== 61a4c8884f95bc3b2c5dc96f ==
+* Type: [[Weapons#Revolvers|Revolver]]
+* Trader: [[Jaeger]] LL2: Standard<br/>[[Skier]] LL2: Tactical
+
+== 544a5caa4bdc2d1a388b4568 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ragman]] LL4
+
+== 5447a9cd4bdc2dbd208b4567 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: Standard<br/>[[Mechanic]] LL3: Stripped variant<br/>[[Ref]] LL2: SAI variant after completing [[Mechanic]]'s task [[Gunsmith - AS VAL]]<br/>[[Mechanic]] LL3: SOPMOD I variant after completing his task [[Gunsmith - AS VAL]]<br/>[[Ref]] LL3<br/>[[Mechanic]] LL4: T.O 2k24 variant<br/>[[Ref]] LL4
+
+== 5e81c3cbac2bb513793cdc75 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL1
+
+== 5f36a0e5fbf956000b716b65 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL2
+
+== 68a6399922b1e0bd360afe56 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL1
+
+== 68a639748e1fe612970728e9 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL1<br/>[[Peacekeeper]] LL2, after completing his task [[Fishing Gear]]
+
+== 5b0bbe4e5acfc40dc528a72d ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: BEL variant<br/>[[Ref]] LL3<br/>[[Peacekeeper]] LL4: Standard<br/>[[Mechanic]] LL4: Stripped variant
+
+== 68c16b9ab6b75a8a480520a6 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Skier]] LL3
+
+== 68c2940aecc41cc5490bd40e ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Skier]] LL4
+
+== 69ce47f01bb66daf5b0d62fd ==
+* Type: [[Headwear#Armor|Helmet]]
+* Trader: [[Ref]] LL3, after unlocking it in [[Arena_BattlePass#Season_2|Arena BattlePass Season 2]]
+
+== 5a43943586f77416ad2f06e2 ==
+* Type: Hat
+* Trader: [[Ragman]] LL1
+
+== 5c488a752e221602b412af63 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3
+
+== 5dcbd56fdbd3d91b3e5468d5 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL4<br/>[[Peacekeeper]] LL4: Standard after completing his task [[Peacekeeping Mission]]<br/>[[Mechanic]] LL4: T.O 2k24 variant
+
+== 6513ef33e06849f06c0957ca ==
+* Type: [[Weapons#Light machine guns|Light machine gun]]
+* Trader: [[Prapor]] LL3
+
+== 628dc750b910320f4c27a732 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ragman]] LL3
+
+== 61bc85697113f767765c7fe7 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Peacekeeper]] LL3
+
+== 5cc82d76e24e8d00134b4b83 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Ref]] LL2: CWDG variant<br/>[[Peacekeeper]] LL3: Standard
+
+== 5d3eb3b0a4b93615055e84d2 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL3: Black<br/>[[Peacekeeper]] LL2: FDE, after completing his task [[Revision - Lighthouse]]
+
+== 5d3eb3b0a4b93615055e84d2 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL3: Black<br/>[[Peacekeeper]] LL2: FDE, after completing his task [[Revision - Lighthouse]]
+
+== 5c1a1e3f2e221602b66cc4c2 ==
+* Type: Mask
+* Trader: [[Ragman]] LL1
+
+== 5a7ae0c351dfba0017554310 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Mechanic]] LL1: Standard<br/>[[Mechanic]] LL1: Stripped variant
+
+== 5b1fa9b25acfc40018633c01 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Mechanic]] LL3
+
+== 63088377b5cd696784087147 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Skier]] LL2
+
+== 5bb2475ed4351e00853264e3 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: Black, after completing his task [[Weapons Circulation]]<br/>[[Peacekeeper]] LL4: Green brown<br/>[[Mechanic]] LL4: Stripped black variant
+
+== 5bb2475ed4351e00853264e3 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: Black, after completing his task [[Weapons Circulation]]<br/>[[Peacekeeper]] LL4: Green brown<br/>[[Mechanic]] LL4: Stripped black variant
+
+== 6176aca650224f204c1da3fb ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Jaeger]] LL4 after completing [[Mechanic]]'s task ???
+
+== 5926bb2186f7744b1c6c6e60 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Peacekeeper]] LL1<br/>[[Mechanic]] LL1<br/>[[Ref]] LL2: SD variant<br/>[[Peacekeeper]] LL2: SD variant, after completing his task [[Scrap Metal]]
+
+== 5c0e655586f774045612eeb2 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ref]] LL3
+
+== 5b44d0de86f774503d30cba8 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ref]] LL4 after completing [[Ragman]]'s task ???
+
+== 5b44cf1486f77431723e3d05 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ragman]] LL4, after completing his task [[Textile - Part 1]]
+
+== 64abd93857958b4249003418 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Ref]] LL2
+
+== 66992b349950f5f4cd06029f ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Peacekeeper]] LL1<br/>[[Mechanic]] LL1
+
+== 6680304edadb7aa61d00cef0 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Peacekeeper]] LL2
+
+== 6a3bffbebc377285900b85cf ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3, after unlocking it in [[BattlePass#Season_1_-_"KORD_BREACH"|BattlePass Season 1]]
+
+== 5ac66cb05acfc40198510a10 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Mechanic]] LL3
+
+== 644674a13d52156624001fbc ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Prapor]] LL1
+
+== 645e0c6b3b381ede770e1cc9 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Prapor]] LL2
+
+== 583990e32459771419544dd2 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL1
+
+== 5839a40f24597726f856b511 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL1 after completing his task ???
+
+== 5644bd2b4bdc2d3b4c8b4572 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL2: Standard<br/>[[Mechanic]] LL2: Stripped variant<br/>[[Ref]] LL3
+
+== 59d6088586f774275f37482f ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL1<br/>[[Prapor]] LL2: Standard
+
+== 57dc2fa62459775949412633 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL1: Standard<br/>[[Mechanic]] LL1: Stripped variant
+
+== 5a0ec13bfcdbcb00165aa685 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL3: Standard<br/>[[Mechanic]] LL3: Stripped variant
+
+== 59ff346386f77477562ff5e2 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL2
+
+== 5ac66d015acfc400180ae6e4 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Mechanic]] LL3
+
+== 5ac66d2e5acfc43b321d4b53 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL3
+
+== 5ac66d725acfc43b321d4b60 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL2: RPKT mod.1 variant after completing [[Mechanic]]'s task [[Corporate Secrets]]<br/>[[Prapor]] LL3: Standard
+
+== 5ac66d9b5acfc4001633997a ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL1<br/>[[Prapor]] LL3: Standard
+
+== 5ac4cd105acfc40016339859 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL3: Standard<br/>[[Mechanic]] LL3: Stripped variant
+
+== 5ab8e9fcd8ce870019439434 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL2
+
+== 5abcbc27d8ce8700182eceeb ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL3
+
+== 5bf3e03b0db834001d2c4a9c ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL1<br/>[[Prapor]] LL2
+
+== 5df8ce05b11454561e39243b ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Ref]] LL2<br/>[[Peacekeeper]] LL3: Black, Taupe
+
+== 5df8ce05b11454561e39243b ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Ref]] LL2<br/>[[Peacekeeper]] LL3: Black, Taupe
+
+== 5f2a9575926fd9352339381f ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL3
+
+== 6499849fc93611967b034949 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL4: Standard<br/>[[Ref]] LL3
+
+== 689166b6c2d6fa42e7044756 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Prapor]] LL4, after completing [[The Punisher - Part 5]]
+
+== 602a9740da11d6478d5a06dc ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL1 after completing his task ???
+
+== 588892092459774ac91d4b11 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Skier]] LL3
+
+== 5d43021ca4b9362eab4b5e25 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL3, after completing his task [[Top Secret]]
+
+== 54491c4f4bdc2db1078b4568 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL1
+
+== 56dee2bdd2720bc8328b4567 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL2
+
+== 606dae0ab0e443224b421bb7 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL2
+
+== 61f7c9e189e6fb1a5e3ea78d ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL1
+
+== 5580223e4bdc2d1c128b457f ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL1
+
+== 64748cb8de82c85eaf0a273a ==
+* Type: [[Weapons#Shotguns_2|Shotgun]]
+* Trader: [[Jaeger]] LL2
+
+== 66ffa9b66e19cc902401c5e8 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Skier]] LL4 after completing his task [[Irresistible]]
+
+== 60db29ce99594040e04c4a27 ==
+* Type: [[Weapons#Shotguns|Revolver shotgun]]
+* Trader: [[Jaeger]] LL1
+
+== 669fa39b48fc9f8db6035a0c ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Mechanic]] LL3
+
+== 579204f224597773d619e051 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Mechanic]] LL1: Stripped variant
+
+== 5448bd6b4bdc2dfc2f8b4569 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL1
+
+== 67c6de3ce39861860909e8e5 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Jaeger]] LL2
+
+== 587e02ff24597743df3deaeb ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Jaeger]] LL1: Standard<br/>[[Ref]] LL1
+
+== 59e6152586f77473dc057aa1 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL1
+
+== 59e6687d86f77411d949b251 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL1: Standard<br/>[[Jaeger]] LL1: Standard<br/>[[Mechanic]] LL2: Stripped variant
+
+== 5ae08f0a5acfc408fb1398a1 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Prapor]] LL2
+
+== 5bfd297f0db834001a669119 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Prapor]] LL1: Standard<br/>[[Prapor]] LL1: Carbine variant
+
+== 5c501a4d2e221602b412b540 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Jaeger]] LL2
+
+== 5de652c31b7e3716273428be ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Jaeger]] LL1
+
+== 5e870397991fd70db46995c8 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Peacekeeper]] LL1
+
+== 5f5f41476bdad616ad46d631 ==
+* Type: [[Armor vests|Armor vest]]
+* Trader: [[Prapor]] LL4
+
+== 69f9ebbcaae020b0db02f65d ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Skier]] LL3 after completing [[Fence]]'s task [[Sheep in Wolf's Clothing]]<br/>[[Skier]] LL4 after unlocking it in [[BattlePass#Season_1_-_"KORD_BREACH"|BattlePass Season 1]]
+
+== 587e0531245977466077a0f7 ==
+* Type: [[Weapon mods#Gear Mods|Stock]]
+* Trader: [[Jaeger]] LL1
+
+== 5df24cf80dee1b22f862e9bc ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Skier]] LL2 after completing his task ???
+
+== 56e0598dd2720bb5668b45a6 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL1
+
+== 6374a822e629013b9c0645c8 ==
+* Type: [[Weapon mods#Vital parts|Slide]]
+* Trader: [[Prapor]] LL1
+
+== 57f3c6bd24597738e730fa2f ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL1
+
+== 57f4c844245977379d5c14d1 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL1 after ???
+
+== 57d14d2524597714373db789 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL1
+
+== 59984ab886f7743e98271174 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL1: Standard<br/>[[Ref]] LL1: Zenit variant after completing [[Mechanic]]'s task ???
+
+== 5ea03f7400685063ec28bfa8 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL1
+
+== 6866665cdf54e1190902df55 ==
+* Type: Info item
+* Trader: [[Mechanic]] LL1, after accepting his task [[Friend from Norvinsk - Part 5]]
+
+== 5beed0f50db834001c062b12 ==
+* Type: [[Weapons#Light machine guns|Light machine gun]]
+* Trader: [[Prapor]] LL4
+
+== 67c04dac9320f644db06f45c ==
+* Type: [[Keys & Intel|Keycard]]
+* Trader: [[Lightkeeper]] after progressing through the story chapter [[The Ticket]] and siding with Lightkeeper for 1× [[TerraGroup "Blue Folders" materials]]
+
+== 5a367e5dc4a282000e49738f ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Peacekeeper]] LL4: Standard after completing his task [[Wet Job - Part 5]]<br/>[[Ref]] LL3
+
+== 5a7828548dc32e5a9c28b516 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Skier]] LL1 after completing his task [[The Extortionist]]
+
+== 5bfea6e90db834001b7347f3 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Peacekeeper]] LL2: Standard<br/>[[Jaeger]] LL3: ARCH and AICS variants, after completing his task [[The Huntsman Path - Woods Keeper]]<br/>[[Jaeger]] LL4: PRO variant, after completing his task [[The Huntsman Path - Woods Keeper]]
+
+== 676bf44c5539167c3603e869 ==
+* Type: [[Weapons#Rocket launchers|Rocket launcher]]
+* Trader: [[Prapor]] LL4, after completing his task [[The Art of Explosion]]
+
+== 6895bb82c4519957df062f82 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL3, after unlocking it in [[Arena_BattlePass#Season_1|Arena BattlePass Season 1]]
+
+== 628a60ae6b1d481ff772e9c8 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL2<br/>[[Mechanic]] LL4
+
+== 56d59856d2720bd8418b456a ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Peacekeeper]] LL1: Standard<br/>[[Mechanic]] LL1: Stripped variant
+
+== 58948c8e86f77409493f7266 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Ref]] LL1<br/>[[Peacekeeper]] LL2: Standard<br/>[[Peacekeeper]] LL2: Silenced variant, after completing his task [[Eagle Eye]]<br/>[[Mechanic]] LL3: [[AAC Illusion 9 9x19 sound suppressor|Illusion 9 suppressor]] variant
+
+== 5fbcc1d9016cce60e8341ab3 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Ref]] LL2<br/>[[Skier]] LL3: Standard<br/>[[Skier]] LL3: Stripped variant<br/>[[Mechanic]] LL4: T.O 2k24 variant
+
+== 628b9c37a733087d0d7fe84b ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL2
+
+== 628b5638ad252a16da6dd245 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Skier]] LL2
+
+== 65290f395ae2ae97b80fdf2d ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL4: Standard after completing [[Lightkeeper]]'s task [[Trouble in the Big City]]<br/>[[Ref]] LL4
+
+== 5df8e4080b92095fd441e594 ==
+* Type: [[Weapon mods#Vital parts|Receiver]]
+* Trader: [[Peacekeeper]] LL3: Taupe
+
+== 5df8e4080b92095fd441e594 ==
+* Type: [[Weapon mods#Vital parts|Receiver]]
+* Trader: [[Peacekeeper]] LL3: Taupe
+
+== 62e14904c2699c0ec93adc47 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Prapor]] LL3
+
+== 651450ce0e00edc794068371 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Prapor]] LL4 after completing ???
+
+== 55801eed4bdc2d89578b4588 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Prapor]] LL2: Standard, after completing his task [[Kings of the Rooftops]]<br/>[[Jaeger]] LL3: OV variant
+
+== 5c46fbd72e2216398b5a8c9c ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Prapor]] LL3
+
+== 576165642459773c7a400233 ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Jaeger]] LL2
+
+== 59f9cabd86f7743a10721f46 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Skier]] LL1 after completing his task [[Supplier]]
+
+== 5a43957686f7742a2c2f11b0 ==
+* Type: Hat
+* Trader: [[Ragman]] LL1
+
+== 5fc22d7c187fea44d52eda44 ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Jaeger]] LL4 after completing his task [[The Tarkov Shooter - Part 7]]
+
+== 64d0b40fbe2eed70e254e2d4 ==
+* Type: Special item
+* Trader: [[Lightkeeper]] after completing his task [[Snatch]] for 3× [[Intelligence folder]] and 1,000 [[Dollars]]
+
+== 673cab3e03c6a20581028bc1 ==
+* Type: [[Weapons#Bolt-action rifles|Bolt-action rifle]]
+* Trader: [[Skier]] LL4 after completing his task [[Connections Up North]]
+
+== 6981d72ed009ad83920da43a ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Ref]] LL3, after unlocking it in [[Arena_BattlePass#Season_2|Arena BattlePass Season 2]]
+
+== 5a17f98cfcdbcb0980087290 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL2
+
+== 5aafa857e5b5b00018480968 ==
+* Type: [[Weapons#Designated marksman rifles|Designated marksman rifle]]
+* Trader: [[Peacekeeper]] LL3: Standard<br/>[[Mechanic]] LL3: Stripped variant<br/>[[Peacekeeper]] LL4: EBR variant<br/>[[Mechanic]] LL4: SASS variant
+
+== 5abccb7dd8ce87001773e277 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL2
+
+== 60339954d62c9b14ed777c06 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Skier]] LL2
+
+== 62e7c4fba689e8c9c50dfc38 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL1
+
+== 6718817435e3cfd9550d2c27 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: Black, FDE
+
+== 6718817435e3cfd9550d2c27 ==
+* Type: [[Weapons#Assault rifles|Assault rifle]]
+* Trader: [[Peacekeeper]] LL3: Black, FDE
+
+== 5fc3f2d5900b1d5091531e57 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Skier]] LL3 after completing his task [[From Hand to Hand]]
+
+== 5fb64bc92b1b027b1f50bcf2 ==
+* Type: [[Weapons#Submachine guns|Submachine gun]]
+* Trader: [[Skier]] LL3, after completing ???
+
+== 66b6296d7994640992013b17 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ragman]] LL3
+
+== 574d967124597745970e7c94 ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Prapor]] LL1
+
+== 5a38e6bac4a2826c6e06d79b ==
+* Type: [[Weapons#Shotguns|Shotgun]]
+* Trader: [[Skier]] LL1<br/>[[Jaeger]] LL1
+
+== 66b6295a8ca68c6461709efa ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ragman]] LL4
+
+== 571a12c42459771f627b58a0 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL1
+
+== 643ea5b23db6f9f57107d9fd ==
+* Type: [[Weapons#Assault carbines|Assault carbine]]
+* Trader: [[Prapor]] LL3
+
+== 5c0e746986f7741453628fe5 ==
+* Type: [[Chest rigs#Armored|Armored chest rig]]
+* Trader: [[Ragman]] LL4
+
+== 576a581d2459771e7b1bc4f1 ==
+* Type: [[Weapons#Pistols|Pistol]]
+* Trader: [[Prapor]] LL1

@@ -3,7 +3,7 @@
   "postman.settings.dotenv-detection-notification-visibility": false,
   "editor.stopRenderingLineAfter": -1,
   "[json]": {
-    "editor.maxTokenizationLineLength": 500000,
-    "editor.stopRenderingLineAfter": 500000
+    "editor.maxTokenizationLineLength": 900000,
+    "editor.stopRenderingLineAfter": 900000
   }
 }

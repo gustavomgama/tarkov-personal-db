@@ -1,0 +1,5842 @@
+{
+  "Bitcoin farm": [
+    {
+      "input_items": [
+        {
+          "name": "Graphics card",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Physical Bitcoin",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Bitcoin farm",
+      "station_level": null
+    }
+  ],
+  "Booze generator": [
+    {
+      "input_items": [
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of sugar",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of Fierce Hatchling moonshine",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Booze generator",
+      "station_level": 1
+    }
+  ],
+  "Intelligence center": [
+    {
+      "input_items": [
+        {
+          "name": "Secure Flash drive",
+          "quantity": 1
+        },
+        {
+          "name": "Slim diary",
+          "quantity": 1
+        },
+        {
+          "name": "Diary",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Topographic survey maps",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Damaged hard drive",
+          "quantity": 3
+        },
+        {
+          "name": "Magnet",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "SAS drive",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Magnet",
+          "quantity": 3
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        },
+        {
+          "name": "Printed circuit board",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Secure magnetic tape cassette",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Decrypted Sliderkey flash drive marked with A.P.",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs keycard (Green)",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Reprogrammed keycard for A.P.'s apartment lock (Green)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Unheard"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Decrypted Sliderkey flash drive marked with A.P.",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs keycard (Blue)",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Reprogrammed keycard for A.P.'s apartment lock (Blue)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Unheard"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Decrypted Sliderkey flash drive marked with A.P.",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs keycard (Red)",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Reprogrammed keycard for A.P.'s apartment lock (Red)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Unheard"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "SSD drive",
+          "quantity": 1
+        },
+        {
+          "name": "Folder with TerraGroup evidence (Staff)",
+          "quantity": 1
+        },
+        {
+          "name": "Folder with TerraGroup evidence (Finances)",
+          "quantity": 1
+        },
+        {
+          "name": "Folder with TerraGroup Labs evidence (Reports)",
+          "quantity": 1
+        },
+        {
+          "name": "Folder with TerraGroup Labs evidence (Developments)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "SSD with TerraGroup evidence",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Station 14-4 KORD Arshavin K. pass (Damaged)",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive",
+          "quantity": 1
+        },
+        {
+          "name": "Military flash drive",
+          "quantity": 1
+        },
+        {
+          "name": "VPX Flash Storage Module",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Station 14-4 KORD Arshavin K. pass (Restored)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "They Are Already Here"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Nature reserve topographic intel maps",
+          "quantity": 1
+        },
+        {
+          "name": "Customs topographic intel maps",
+          "quantity": 1
+        },
+        {
+          "name": "City topographic intel maps",
+          "quantity": 1
+        },
+        {
+          "name": "Factory plant topographic intel maps",
+          "quantity": 1
+        },
+        {
+          "name": "Lighthouse topographic intel maps",
+          "quantity": 1
+        },
+        {
+          "name": "Military flash drive",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Military flash drive with topographic intel",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        },
+        {
+          "name": "Broken GPhone X smartphone",
+          "quantity": 1
+        },
+        {
+          "name": "SSD drive",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Secure Flash drive",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hard drive from Rzhevsky's car",
+          "quantity": 1
+        },
+        {
+          "name": "Printer paper",
+          "quantity": 1
+        },
+        {
+          "name": "Printed circuit board",
+          "quantity": 3
+        },
+        {
+          "name": "PC CPU",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Hard drive printout",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Unheard"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sliderkey flash drive marked with A.P.",
+          "quantity": 1
+        },
+        {
+          "name": "RAM stick",
+          "quantity": 3
+        },
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 1
+        },
+        {
+          "name": "CPU fan",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Decrypted Sliderkey flash drive marked with A.P.",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Unheard"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "RFID keycard encryption device",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs master keycard",
+          "quantity": 1
+        },
+        {
+          "name": "Blank RFID keycard",
+          "quantity": 1
+        },
+        {
+          "name": "Kruglov's RFID keycard",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Activated Kruglov's RFID keycard",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "RFID keycard encryption device",
+          "quantity": 1
+        },
+        {
+          "name": "Activated Kruglov's RFID keycard",
+          "quantity": 1
+        },
+        {
+          "name": "Flash drive with Mr. Kerman's hash codes",
+          "quantity": 1
+        },
+        {
+          "name": "Blank RFID keycard",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Reprogrammed RFID keycard with Mr. Kerman's hash codes",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Activated Kruglov's RFID keycard",
+          "quantity": 1
+        },
+        {
+          "name": "Flash drive with Prapor's hash codes",
+          "quantity": 1
+        },
+        {
+          "name": "Blank RFID keycard",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Reprogrammed RFID keycard with Prapor's hash codes",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Intelligence Center",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Intelligence folder",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TerraGroup Labs access keycard",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive V3",
+          "quantity": 1
+        },
+        {
+          "name": "Digital secure DSP radio transmitter",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Digital secure DSP radio transmitter",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "accepting",
+        "quest_giver": "Mechanic",
+        "quest_name": "Getting Acquainted"
+      },
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive",
+          "quantity": 2
+        },
+        {
+          "name": "Military flash drive",
+          "quantity": 1
+        },
+        {
+          "name": "Intelligence folder",
+          "quantity": 2
+        },
+        {
+          "name": "Secure magnetic tape cassette",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Advanced Electronic Materials textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs access keycard",
+          "quantity": 1
+        },
+        {
+          "name": "VPX Flash Storage Module",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Lightkeeper",
+        "quest_name": "Snatch"
+      },
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Electronic components",
+          "quantity": 2
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 2
+        },
+        {
+          "name": "Military circuit board",
+          "quantity": 2
+        },
+        {
+          "name": "PC CPU",
+          "quantity": 2
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "VPX Flash Storage Module",
+          "quantity": 1
+        },
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive",
+          "quantity": 5
+        },
+        {
+          "name": "Object 21WS keycard",
+          "quantity": 1
+        },
+        {
+          "name": "Secure magnetic tape cassette",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Object 11SR keycard",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 1
+        },
+        {
+          "name": "Secure Flash drive",
+          "quantity": 2
+        },
+        {
+          "name": "Topographic survey maps",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Military flash drive",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Advanced Electronic Materials textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Printed circuit board",
+          "quantity": 2
+        },
+        {
+          "name": "PC CPU",
+          "quantity": 2
+        },
+        {
+          "name": "CPU fan",
+          "quantity": 2
+        },
+        {
+          "name": "VPX Flash Storage Module",
+          "quantity": 1
+        },
+        {
+          "name": "RAM stick",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Graphics card",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs access keycard",
+          "quantity": 10
+        },
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 5
+        },
+        {
+          "name": "Intelligence folder",
+          "quantity": 3
+        },
+        {
+          "name": "Military flash drive",
+          "quantity": 5
+        },
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TerraGroup Labs keycard (Green)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs access keycard",
+          "quantity": 10
+        },
+        {
+          "name": "TerraGroup \"Blue Folders\" materials",
+          "quantity": 5
+        },
+        {
+          "name": "Intelligence folder",
+          "quantity": 3
+        },
+        {
+          "name": "VPX Flash Storage Module",
+          "quantity": 3
+        },
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 2
+        },
+        {
+          "name": "Secure magnetic tape cassette",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TerraGroup Labs keycard (Red)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Printer paper",
+          "quantity": 1
+        },
+        {
+          "name": "Military flash drive",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Intelligence folder",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 1
+        },
+        {
+          "name": "TerraGroup Labs access keycard",
+          "quantity": 10
+        },
+        {
+          "name": "TerraGroup Labs keycard (Yellow)",
+          "quantity": 1
+        },
+        {
+          "name": "Intelligence folder",
+          "quantity": 4
+        },
+        {
+          "name": "Secure magnetic tape cassette",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TerraGroup Labs keycard (Violet)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Intelligence Center",
+      "station_level": 3
+    }
+  ],
+  "Lavatory": [
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "GP-7 gas mask",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gas mask air filter",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 1
+        },
+        {
+          "name": "Aseptic bandage",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Army bandage",
+          "quantity": 10
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Duct tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "6B47 Ratnik-BSh helmet (EMR cover)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Insulating tape",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Scav backpack",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Printer paper",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Toilet paper",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Fleece fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Aseptic bandage",
+          "quantity": 6
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "PACA Soft Armor",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bottle of Pevko Light beer",
+          "quantity": 1
+        },
+        {
+          "name": "Soap",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Schaman shampoo",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Scav Vest",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Tactical sling bag (Khaki)",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Alkaline cleaner for heat exchangers",
+          "quantity": 1
+        },
+        {
+          "name": "Can of white salt",
+          "quantity": 1
+        },
+        {
+          "name": "Salty Dog beef sausage",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Soap",
+          "quantity": 6
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "BNTI Module-3M body armor",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pack of chlorine",
+          "quantity": 1
+        },
+        {
+          "name": "Hunting matches",
+          "quantity": 1
+        },
+        {
+          "name": "Duct tape",
+          "quantity": 1
+        },
+        {
+          "name": "Toilet paper",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "RDG-2B smoke grenade",
+          "quantity": 6
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "6B33 ballistic plate (Front)",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ox bleach",
+          "quantity": 1
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "6B23-2 body armor (Mountain Flora)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Ragman",
+        "quest_name": "Sew it Good - Part 1"
+      },
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Zhuk-3 ballistic plate (Front)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "BNTI Zhuk body armor (Press)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 3
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Corrugated hose",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Electric drill",
+          "quantity": 1
+        },
+        {
+          "name": "Fierce Blow sledgehammer",
+          "quantity": 1
+        },
+        {
+          "name": "6B23-2 ballistic plate (Back)",
+          "quantity": 1
+        },
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 1
+        },
+        {
+          "name": "Duct tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "6B13 custom ballistic plates (Back)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 2
+        },
+        {
+          "name": "NewSphereTech level III ballistic plate",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "First Spear Strandhogg plate carrier (Ranger Green)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Ragman",
+        "quest_name": "Minibus"
+      },
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Soap",
+          "quantity": 1
+        },
+        {
+          "name": "Alkaline cleaner for heat exchangers",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of sodium bicarbonate",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Ox bleach",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 1
+        },
+        {
+          "name": "Schaman shampoo",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Clin window cleaner",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Ox bleach",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Eberlestock F5 Switchblade backpack (Dry Earth)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "UX PRO beanie",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Fleece fabric",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Awl",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "BlackHawk! Commando chest harness (Black)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Splav Tarzan M22 chest rig (Smog)",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "BlackRock chest rig (Gray)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Zibbo lighter",
+          "quantity": 2
+        },
+        {
+          "name": "Crickent lighter",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Expeditionary fuel tank",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Duct tape",
+          "quantity": 2
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "MSA ACH TC-2002 MICH Series helmet (Olive Drab)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Crickent lighter",
+          "quantity": 1
+        },
+        {
+          "name": "Duct tape",
+          "quantity": 2
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 2
+        },
+        {
+          "name": "Clin window cleaner",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "KEKTAPE duct tape",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        },
+        {
+          "name": "AK-74 5.45x39 6L23 30-round magazine",
+          "quantity": 4
+        },
+        {
+          "name": "KEKTAPE duct tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "AK-74 5.45x39 6L31 60-round magazine",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "accepting",
+        "quest_giver": "Prapor",
+        "quest_name": "Ice Cream Cones"
+      },
+      "station": "Lavatory",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Gas mask air filter",
+          "quantity": 10
+        },
+        {
+          "name": "Printer paper",
+          "quantity": 5
+        },
+        {
+          "name": "Expeditionary fuel tank",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Water filter",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "WD-40 (400ml)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "WD-40 (100ml)",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 3
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "SPRTN Omega ballistic plate",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Ars Arma A18 Skanda plate carrier (MultiCam)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Ragman",
+        "quest_name": "???"
+      },
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Expeditionary fuel tank",
+          "quantity": 2
+        },
+        {
+          "name": "Bolts",
+          "quantity": 4
+        },
+        {
+          "name": "Screw nuts",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Magazine case",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        },
+        {
+          "name": "Duffle bag",
+          "quantity": 2
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Paracord",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Magazine case",
+          "quantity": 3
+        },
+        {
+          "name": "Bolts",
+          "quantity": 6
+        },
+        {
+          "name": "KEKTAPE duct tape",
+          "quantity": 3
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Lucky Scav Junk box",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Metal fuel tank",
+          "quantity": 2
+        },
+        {
+          "name": "Screw nuts",
+          "quantity": 5
+        },
+        {
+          "name": "Bolts",
+          "quantity": 5
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Grenade case",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Construction measuring tape",
+          "quantity": 1
+        },
+        {
+          "name": "LolKek 3F Transfer tourist backpack",
+          "quantity": 2
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Pilgrim tourist backpack",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Fierce Blow sledgehammer",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 1
+        },
+        {
+          "name": "Altyn bulletproof helmet (Olive Drab)",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Fleece fabric",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Rys-T bulletproof helmet (Black)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "Escort"
+      },
+      "station": "Lavatory",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Ox bleach",
+          "quantity": 1
+        },
+        {
+          "name": "Alkaline cleaner for heat exchangers",
+          "quantity": 1
+        },
+        {
+          "name": "Kiba Arms Titan ballistic plate",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "ANA Tactical M2 plate carrier (OD Green)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Fierce Blow sledgehammer",
+          "quantity": 1
+        },
+        {
+          "name": "Granit Br4 ballistic plate",
+          "quantity": 2
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "NPP KlASS Bagariy plate carrier (EMR)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Ragman",
+        "quest_name": "???"
+      },
+      "station": "Lavatory",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Nippers",
+          "quantity": 1
+        },
+        {
+          "name": "Gas mask air filter",
+          "quantity": 3
+        },
+        {
+          "name": "Water filter",
+          "quantity": 3
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "FP-100 filter absorber",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Lavatory",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        },
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "GAC 3s15m ballistic plate",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 2
+        },
+        {
+          "name": "Aramid fiber fabric",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.11 Tactical TacTec plate carrier (Ranger Green)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Ragman",
+        "quest_name": "Sew it Good - Part 4"
+      },
+      "station": "Lavatory",
+      "station_level": 3
+    }
+  ],
+  "Medstation": [
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "AI-2 medkit",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 1
+        },
+        {
+          "name": "CALOK-B hemostatic applicator",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "CALOK-B hemostatic applicator",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Esmarch tourniquet",
+          "quantity": 2
+        },
+        {
+          "name": "Car first aid kit",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Salewa first aid kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Car first aid kit",
+          "quantity": 1
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        },
+        {
+          "name": "Aluminum splint",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "CMS surgical kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        },
+        {
+          "name": "AI-2 medkit",
+          "quantity": 4
+        },
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of hydrogen peroxide",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Disposable syringe",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Disposable syringe",
+          "quantity": 1
+        },
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Medical bloodset",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 5
+        },
+        {
+          "name": "Disposable syringe",
+          "quantity": 2
+        },
+        {
+          "name": "CALOK-B hemostatic applicator",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "AHF1-M stimulant injector",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "AI-2 medkit",
+          "quantity": 1
+        },
+        {
+          "name": "Aseptic bandage",
+          "quantity": 1
+        },
+        {
+          "name": "Augmentin antibiotic pills",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        },
+        {
+          "name": "Army bandage",
+          "quantity": 2
+        },
+        {
+          "name": "Esmarch tourniquet",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "IFAK individual first aid kit",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Immobilizing splint",
+          "quantity": 5
+        },
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Aluminum splint",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Soap",
+          "quantity": 3
+        },
+        {
+          "name": "Schaman shampoo",
+          "quantity": 2
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Vaseline balm",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "AFAK tactical individual first aid kit",
+          "quantity": 2
+        },
+        {
+          "name": "Disposable syringe",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of hydrogen peroxide",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of saline solution",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "PNB (Product 16) stimulant injector",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Adrenaline injector",
+          "quantity": 1
+        },
+        {
+          "name": "AI-2 medkit",
+          "quantity": 2
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "xTG-12 antidote injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Skier",
+        "quest_name": "Night Sweep"
+      },
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 1
+        },
+        {
+          "name": "Analgin painkillers",
+          "quantity": 1
+        },
+        {
+          "name": "Disposable syringe",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Morphine injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Adrenaline injector",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of OLOLO Multivitamins",
+          "quantity": 1
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of saline solution",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "2A2-(b-TG) stimulant injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Therapist",
+        "quest_name": "Thirsty - Secrets"
+      },
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        },
+        {
+          "name": "Disposable syringe",
+          "quantity": 2
+        },
+        {
+          "name": "Propital regenerative stimulant injector",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "ETG-change regenerative stimulant injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Therapist",
+        "quest_name": "Crisis"
+      },
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 7
+        },
+        {
+          "name": "Bottle of saline solution",
+          "quantity": 2
+        },
+        {
+          "name": "Propital regenerative stimulant injector",
+          "quantity": 3
+        },
+        {
+          "name": "Morphine injector",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "SJ1 TGLabs combat stimulant injector",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Zagustin hemostatic drug injector",
+          "quantity": 2
+        },
+        {
+          "name": "Morphine injector",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Max Energy energy drink",
+          "quantity": 2
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "M.U.L.E. stimulant injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Therapist",
+        "quest_name": "Decontamination Service"
+      },
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Magnet",
+          "quantity": 2
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 3
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 4
+        },
+        {
+          "name": "Portable Powerbank",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Portable defibrillator",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "IFAK individual first aid kit",
+          "quantity": 2
+        },
+        {
+          "name": "Army bandage",
+          "quantity": 1
+        },
+        {
+          "name": "CAT hemostatic tourniquet",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "AFAK tactical individual first aid kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of hydrogen peroxide",
+          "quantity": 1
+        },
+        {
+          "name": "Augmentin antibiotic pills",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Perfotoran (Blue Blood) stimulant injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 4
+        },
+        {
+          "name": "CAT hemostatic tourniquet",
+          "quantity": 2
+        },
+        {
+          "name": "Aluminum splint",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Grizzly medical kit",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pile of meds",
+          "quantity": 3
+        },
+        {
+          "name": "Medical tools",
+          "quantity": 1
+        },
+        {
+          "name": "Aluminum splint",
+          "quantity": 1
+        },
+        {
+          "name": "CMS surgical kit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Surv12 field surgical kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "SJ1 TGLabs combat stimulant injector",
+          "quantity": 1
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of saline solution",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of OLOLO Multivitamins",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "SJ6 TGLabs combat stimulant injector",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "CALOK-B hemostatic applicator",
+          "quantity": 1
+        },
+        {
+          "name": "Grizzly medical kit",
+          "quantity": 1
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Zagustin hemostatic drug injector",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Ibuprofen painkillers",
+          "quantity": 1
+        },
+        {
+          "name": "Golden Star balm",
+          "quantity": 1
+        },
+        {
+          "name": "Pile of meds",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Propital regenerative stimulant injector",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicon Optoelectronic Integrated Circuits textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Ophthalmoscope",
+          "quantity": 2
+        },
+        {
+          "name": "Magnet",
+          "quantity": 3
+        },
+        {
+          "name": "UHF RFID Reader",
+          "quantity": 3
+        },
+        {
+          "name": "Portable Powerbank",
+          "quantity": 3
+        },
+        {
+          "name": "Microcontroller board",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "LEDX Skin Transilluminator",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Medstation",
+      "station_level": 3
+    }
+  ],
+  "Nutrition unit": [
+    {
+      "input_items": [
+        {
+          "name": "Geiger-Muller counter",
+          "quantity": 1
+        },
+        {
+          "name": "Can of white salt",
+          "quantity": 1
+        },
+        {
+          "name": "Can of beef stew (Small)",
+          "quantity": 1
+        },
+        {
+          "name": "Toilet paper",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Salty Dog beef sausage",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Can of beef stew (Large)",
+          "quantity": 1
+        },
+        {
+          "name": "Army crackers",
+          "quantity": 2
+        },
+        {
+          "name": "Slickers chocolate bar",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "MRE ration pack",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Army crackers",
+          "quantity": 2
+        },
+        {
+          "name": "Can of beef stew (Small)",
+          "quantity": 1
+        },
+        {
+          "name": "Can of squash spread",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Iskra ration pack",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Emelya rye croutons",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 1
+        },
+        {
+          "name": "KEKTAPE duct tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Emergency Water Ration",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Can of beef stew (Large)",
+          "quantity": 1
+        },
+        {
+          "name": "Can of squash spread",
+          "quantity": 1
+        },
+        {
+          "name": "Rye croutons",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of beef stew (Small)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "BakeEzy cook book",
+          "quantity": 1
+        },
+        {
+          "name": "Can of TarCola soda",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Majaica coffee beans",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of Max Energy energy drink",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Alyonka chocolate bar",
+          "quantity": 1
+        },
+        {
+          "name": "Army crackers",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Slickers chocolate bar",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Dr. Lupo's coffee beans",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of Majaica coffee beans",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pack of milk",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of sugar",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of condensed milk",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Alyonka chocolate bar",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Pack of sugar",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Apollo Soyuz cigarettes",
+          "quantity": 5
+        },
+        {
+          "name": "42 Signature Blend English Tea",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Wilston cigarettes",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Rye croutons",
+          "quantity": 2
+        },
+        {
+          "name": "Can of beef stew (Small)",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of beef stew (Large)",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Water filter",
+          "quantity": 1
+        },
+        {
+          "name": "Gas mask air filter",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 5
+        },
+        {
+          "name": "Bottle of OLOLO Multivitamins",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Aquamari water bottle with filter",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 5
+        },
+        {
+          "name": "Bottle of Fierce Hatchling moonshine",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 10
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Water filter",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 2
+        },
+        {
+          "name": "Bottle of Tarkovskaya vodka",
+          "quantity": 2
+        },
+        {
+          "name": "Alyonka chocolate bar",
+          "quantity": 1
+        },
+        {
+          "name": "42 Signature Blend English Tea",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of Dan Jackiel whiskey",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 10
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Rye croutons",
+          "quantity": 5
+        },
+        {
+          "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)",
+          "quantity": 3
+        },
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of Pevko Light beer",
+          "quantity": 10
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "BakeEzy cook book",
+          "quantity": 1
+        },
+        {
+          "name": "Water filter",
+          "quantity": 1
+        },
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of sugar",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Majaica coffee beans",
+          "quantity": 1
+        },
+        {
+          "name": "42 Signature Blend English Tea",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of Hot Rod energy drink",
+          "quantity": 20
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Nutrition unit",
+      "station_level": 3
+    }
+  ],
+  "Water collector": [
+    {
+      "input_items": [
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Water collector",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicone tube",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of Grand juice",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Emergency Water Ration",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Water collector",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Aquapeps water purification tablets",
+          "quantity": 1
+        },
+        {
+          "name": "Bottle of water (0.6L)",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Aquamari water bottle with filter",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Water collector",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Water filter",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Water collector",
+      "station_level": 3
+    }
+  ],
+  "Workbench": [
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Weapon crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Weapon crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Valuables crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Valuables crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Supply crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Supply crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Equipment crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Equipment crate (Rare)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Equipment crate (BattlePass 0)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Equipment crate (BattlePass 0)",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Kalashnikov AKM 7.62x39 assault rifle",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Wrench",
+          "quantity": 1
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 1
+        },
+        {
+          "name": "Construction measuring tape",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "NKVD Finka knife",
+          "quantity": 1
+        },
+        {
+          "name": "Physical Bitcoin",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Left half of a Physical Bitcoin",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "Pliers",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Round pliers",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "5.45x39mm HP",
+          "quantity": 120
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "PPSh-41 7.62x25 71-round drum magazine",
+          "quantity": 1
+        },
+        {
+          "name": "PM 9x18PM 90-93 8-round magazine",
+          "quantity": 1
+        },
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "PM 9x18PM 84-round makeshift drum magazine",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Working LCD",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Broken LCD",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "PC CPU",
+          "quantity": 1
+        },
+        {
+          "name": "Printed circuit board",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Broken GPhone smartphone",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 1
+        },
+        {
+          "name": "Broken LCD",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Piece of plexiglass",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "PP-91 Kedr 9x18PM submachine gun",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "PP-9 Klin 9x18PMM submachine gun",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Secure container Gamma",
+          "quantity": 1
+        },
+        {
+          "name": "Flat screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Secure container Gamma",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Secure container Gamma",
+          "quantity": 1
+        },
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Secure container Gamma",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "DVD drive",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Printed circuit board",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "T-Shaped plug",
+          "quantity": 2
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 2
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Power cord",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "Classic matches",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Damaged hard drive",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Magnet",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Gas analyzer",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Printed circuit board",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Fierce Blow sledgehammer",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 2
+        },
+        {
+          "name": "Pack of nails",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "12/70 flechette",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Skier",
+        "quest_name": "???"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "TOZ Simonov SKS 7.62x39 carbine",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Weapon parts",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bundle of wires",
+          "quantity": 1
+        },
+        {
+          "name": "9x18mm PM RG028 gzh",
+          "quantity": 150
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x18mm PM SP8 gzh",
+          "quantity": 150
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Power cord",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of nails",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "T-Shaped plug",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Majaica coffee beans",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Nut can",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bundle of wires",
+          "quantity": 2
+        },
+        {
+          "name": "Pack of nails",
+          "quantity": 1
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Light bulb",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Awl",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x39mm FMJ",
+          "quantity": 200
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UZRGM grenade fuze",
+          "quantity": 5
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Zarya stun grenade",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "Kalashnikov AKM 7.62x39 assault rifle",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Weapon parts",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "Weapon parts",
+          "quantity": 1
+        },
+        {
+          "name": "AK-74 wooden handguard",
+          "quantity": 1
+        },
+        {
+          "name": "AK-74 wooden stock",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Kalashnikov AK-74N 5.45x39 assault rifle",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of nails",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "12/70 Piranha",
+          "quantity": 120
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x21mm P gzh",
+          "quantity": 150
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        },
+        {
+          "name": "Military COFDM Wireless Signal Transmitter",
+          "quantity": 1
+        },
+        {
+          "name": "Gas analyzer",
+          "quantity": 1
+        },
+        {
+          "name": "Broken GPhone smartphone",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Radio repeater",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "accepting",
+        "quest_giver": "Mechanic",
+        "quest_name": "Network Provider - Part 2"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x18mm PMM PstM gzh",
+          "quantity": 140
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "AA Battery",
+          "quantity": 2
+        },
+        {
+          "name": "Geiger-Muller counter",
+          "quantity": 1
+        },
+        {
+          "name": "Magnet",
+          "quantity": 1
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gas analyzer",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Power cord",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bundle of wires",
+          "quantity": 8
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Power supply unit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Capacitors",
+          "quantity": 6
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 2
+        },
+        {
+          "name": "7.62x39mm PS gzh",
+          "quantity": 100
+        }
+      ],
+      "output_items": [
+        {
+          "name": ".366 TKM AP-M",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Jaeger",
+        "quest_name": "The Tarkov Shooter - Part 3"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screw nuts",
+          "quantity": 1
+        },
+        {
+          "name": "Bolts",
+          "quantity": 1
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "UZRGM grenade fuze",
+          "quantity": 3
+        },
+        {
+          "name": "TP-200 TNT brick",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "RGD-5 hand grenade",
+          "quantity": 6
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Moreman's phone",
+          "quantity": 1
+        },
+        {
+          "name": "AA Battery",
+          "quantity": 2
+        },
+        {
+          "name": "RAM stick",
+          "quantity": 1
+        },
+        {
+          "name": "Broken GPhone smartphone",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Moreman's audio tape 1",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "Batya"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Moreman's phone",
+          "quantity": 1
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 1
+        },
+        {
+          "name": "RAM stick",
+          "quantity": 1
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Moreman's audio tape 2",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "Batya"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Car battery",
+          "quantity": 2
+        },
+        {
+          "name": "Canister with purified water",
+          "quantity": 1
+        },
+        {
+          "name": "Clin window cleaner",
+          "quantity": 2
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "6-STEN-140-M military battery",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "Regulated Materials"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Icebreaker model kit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Icebreaker model",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Experimental signal jammer",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Armored case",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Armored case",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "progressing_through",
+        "quest_giver": null,
+        "quest_name": "The Ticket"
+      },
+      "station": "Workbench",
+      "station_level": 1
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Broken LCD",
+          "quantity": 1
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Working LCD",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.7x28mm L191",
+          "quantity": 150
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "12/70 7mm buckshot",
+          "quantity": 60
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 1
+        },
+        {
+          "name": "WD-40 (100ml)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "12/70 makeshift .50 BMG slug",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Flat screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Portable Powerbank",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Rechargeable battery",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Bundle of wires",
+          "quantity": 2
+        },
+        {
+          "name": "Magnet",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 1
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Electric motor",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Awl",
+          "quantity": 1
+        },
+        {
+          "name": "UZRGM grenade fuze",
+          "quantity": 5
+        },
+        {
+          "name": "TP-200 TNT brick",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "VOG-17 Khattabka improvised hand grenade",
+          "quantity": 8
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Weapon parts",
+          "quantity": 1
+        },
+        {
+          "name": "AK-74M polymer handguard",
+          "quantity": 1
+        },
+        {
+          "name": "AK-74M polymer stock",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Kalashnikov AK-74M 5.45x39 assault rifle",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Gas analyzer",
+          "quantity": 1
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 1
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 1
+        },
+        {
+          "name": "AA Battery",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Geiger-Muller counter",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "9x19mm FMJ M882",
+          "quantity": 180
+        },
+        {
+          "name": "Radiator helix",
+          "quantity": 1
+        },
+        {
+          "name": "Bundle of wires",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x19mm Luger CCI",
+          "quantity": 180
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "M67 hand grenade",
+          "quantity": 2
+        },
+        {
+          "name": "M18 smoke grenade (Green)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x51mm BCP FMJ",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "UZRGM grenade fuze",
+          "quantity": 5
+        },
+        {
+          "name": "40mm VOG-25 grenade",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "VOG-25 Khattabka improvised hand grenade",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "Grenadier"
+      },
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 4
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.56x45mm MK 318 Mod 0 (SOST)",
+          "quantity": 90
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Ratchet wrench",
+          "quantity": 1
+        },
+        {
+          "name": "OFZ 30x165mm shell",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 3
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers",
+          "quantity": 1
+        },
+        {
+          "name": "Screw nuts",
+          "quantity": 1
+        },
+        {
+          "name": "Bolts",
+          "quantity": 2
+        },
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Spark plug",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 3
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x39mm PAB-9 gs",
+          "quantity": 100
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "???"
+      },
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Screwdriver",
+          "quantity": 1
+        },
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        },
+        {
+          "name": "Military COFDM Wireless Signal Transmitter",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Military circuit board",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Nippers",
+          "quantity": 1
+        },
+        {
+          "name": "5.45x39mm PS gs",
+          "quantity": 180
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.45x39mm PP gs",
+          "quantity": 120
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "The Punisher - Part 1"
+      },
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Rechargeable battery",
+          "quantity": 1
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 2
+        },
+        {
+          "name": "Portable Powerbank",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "GreenBat lithium battery",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Tech manual",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "WI-FI Camera",
+          "quantity": 1
+        },
+        {
+          "name": "Piece of plexiglass",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "NIXXOR lens",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pipe grip wrench",
+          "quantity": 1
+        },
+        {
+          "name": "6-STEN-140-M military battery",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Car battery",
+          "quantity": 5
+        }
+      ],
+      "quest_requirement": {
+        "action": "accepting",
+        "quest_giver": "Therapist",
+        "quest_name": "Car Repair"
+      },
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Metal cutting scissors",
+          "quantity": 1
+        },
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "Dorm room 308 key",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Can of thermite",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "7.62x54mm R FMJ",
+          "quantity": 70
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x54mm R LPS gzh",
+          "quantity": 50
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Nippers",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "WD-40 (100ml)",
+          "quantity": 2
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 5
+        },
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Bulbex cable cutter",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 2
+    },
+    {
+      "input_items": [
+        {
+          "name": "Body armor repair kit",
+          "quantity": 1
+        },
+        {
+          "name": "Cordura polyamide fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Ripstop fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Fleece fabric",
+          "quantity": 1
+        },
+        {
+          "name": "Sewing kit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Body armor repair kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Weapon repair kit",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "FireKlean gun lube",
+          "quantity": 1
+        },
+        {
+          "name": "Weapon parts",
+          "quantity": 3
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Weapon repair kit",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "9x19mm FMJ M882",
+          "quantity": 150
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "9x19mm AP 6.3",
+          "quantity": 150
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "7.62x51mm M80",
+          "quantity": 80
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 2
+        },
+        {
+          "name": "Radiator helix",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x51mm M80A1",
+          "quantity": 40
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Peacekeeper",
+        "quest_name": "Wet Job - Part 6"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Hand drill",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 3
+        },
+        {
+          "name": "12/70 7mm buckshot",
+          "quantity": 50
+        },
+        {
+          "name": "WD-40 (400ml)",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "12/70 AP-20 armor-piercing slug",
+          "quantity": 50
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Jaeger",
+        "quest_name": "The Huntsman Path - Outcasts"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "5.56x45mm M855",
+          "quantity": 180
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.56x45mm M855A1",
+          "quantity": 90
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Peacekeeper",
+        "quest_name": "Special Equipment"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "5.7x28mm SS198LF",
+          "quantity": 100
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 4
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.7x28mm SS190",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Electric drill",
+          "quantity": 1
+        },
+        {
+          "name": "Pipe grip wrench",
+          "quantity": 1
+        },
+        {
+          "name": "7.62x39mm PP gzh",
+          "quantity": 90
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "Can of Hot Rod energy drink",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x39mm BP gzh",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "Intimidator"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "7.62x54mm R PS gzh",
+          "quantity": 50
+        },
+        {
+          "name": "Can of thermite",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "7.62x54mm R BT gzh",
+          "quantity": 30
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Jaeger",
+        "quest_name": "The Tarkov Shooter - Part 7"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Ultraviolet lamp",
+          "quantity": 1
+        },
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "4.6x30mm FMJ SX",
+          "quantity": 120
+        },
+        {
+          "name": "Capacitors",
+          "quantity": 1
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "4.6x30mm AP SX",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Peacekeeper",
+        "quest_name": "The Guide"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": ".45 ACP Lasermatch FMJ",
+          "quantity": 150
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "Pack of nails",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": ".45 ACP AP",
+          "quantity": 100
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": ".300 Blackout CBJ",
+          "quantity": 90
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": ".300 Blackout AP",
+          "quantity": 50
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Peacekeeper",
+        "quest_name": "Worst Job in the World"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": ".338 Lapua Magnum UCW",
+          "quantity": 50
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": ".338 Lapua Magnum FMJ",
+          "quantity": 30
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Leatherman Multitool",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 5
+        },
+        {
+          "name": "Gunpowder \"Kite\"",
+          "quantity": 1
+        },
+        {
+          "name": "Zarya stun grenade",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "23x75mm Zvezda flashbang round",
+          "quantity": 7
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Advanced Electronic Materials textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Silicon Optoelectronic Integrated Circuits textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "Iridium military thermal vision module",
+          "quantity": 4
+        },
+        {
+          "name": "NIXXOR lens",
+          "quantity": 2
+        },
+        {
+          "name": "Microcontroller board",
+          "quantity": 1
+        },
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 2
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Trijicon REAP-IR thermal scope",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Mechanic",
+        "quest_name": "Gunsmith Master - Part 11"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "SurvL Survivor Lighter",
+          "quantity": 1
+        },
+        {
+          "name": "5.56x45mm M856",
+          "quantity": 120
+        },
+        {
+          "name": "Dry fuel",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": ".300 Blackout M62 Tracer",
+          "quantity": 100
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Peacekeeper",
+        "quest_name": "Wet Job - Part 1"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicon Optoelectronic Integrated Circuits textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "NIXXOR lens",
+          "quantity": 2
+        },
+        {
+          "name": "Iridium military thermal vision module",
+          "quantity": 2
+        },
+        {
+          "name": "Virtex programmable processor",
+          "quantity": 1
+        },
+        {
+          "name": "Military circuit board",
+          "quantity": 2
+        },
+        {
+          "name": "Electronic components",
+          "quantity": 5
+        }
+      ],
+      "output_items": [
+        {
+          "name": "FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Lightkeeper",
+        "quest_name": "Provocation"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "5.45x39mm PS gs",
+          "quantity": 180
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "5.45x39mm BP gs",
+          "quantity": 60
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Prapor",
+        "quest_name": "Unique Experience"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Gunpowder \"Hawk\"",
+          "quantity": 2
+        },
+        {
+          "name": "Gunpowder \"Eagle\"",
+          "quantity": 1
+        },
+        {
+          "name": "TP-200 TNT brick",
+          "quantity": 2
+        },
+        {
+          "name": "Can of thermite",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "OFZ 30x165mm shell",
+          "quantity": 2
+        }
+      ],
+      "quest_requirement": null,
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Silicon Optoelectronic Integrated Circuits textbook",
+          "quantity": 1
+        },
+        {
+          "name": "Flat screwdriver (Long)",
+          "quantity": 1
+        },
+        {
+          "name": "Pliers Elite",
+          "quantity": 1
+        },
+        {
+          "name": "Far-forward GPS Signal Amplifier Unit",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "Microcontroller board",
+          "quantity": 4
+        }
+      ],
+      "quest_requirement": {
+        "action": "completing",
+        "quest_giver": "Lightkeeper",
+        "quest_name": "Spotter"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    },
+    {
+      "input_items": [
+        {
+          "name": "Set of files \"Master\"",
+          "quantity": 1
+        },
+        {
+          "name": "Toolset",
+          "quantity": 1
+        },
+        {
+          "name": "RPK-16 5.45x39 light machine gun",
+          "quantity": 1
+        },
+        {
+          "name": "Metal spare parts",
+          "quantity": 5
+        },
+        {
+          "name": "Weapon parts",
+          "quantity": 10
+        },
+        {
+          "name": "Tube of Poxeram cold welding",
+          "quantity": 2
+        },
+        {
+          "name": "Insulating tape",
+          "quantity": 1
+        }
+      ],
+      "output_items": [
+        {
+          "name": "TheAKGuy AK-50 .50 BMG anti-materiel rifle",
+          "quantity": 1
+        },
+        {
+          "name": "TheAKGuy AK-50 .50 BMG anti-materiel rifle",
+          "quantity": 1
+        }
+      ],
+      "quest_requirement": {
+        "action": "accepting",
+        "quest_giver": "Mechanic",
+        "quest_name": "Hobby Club"
+      },
+      "station": "Workbench",
+      "station_level": 3
+    }
+  ]
+}

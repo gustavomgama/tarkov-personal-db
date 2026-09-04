@@ -1,0 +1,9332 @@
+[
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PNV-57E night vision goggles"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Energy-saving lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "F-1 hand grenade"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Xenomorph sealing foam"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6L18 45-round 5.45x39 magazine for AK-74"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pliers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK 7.62x39 30-round magazine (issued '55 or later)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PPSh-41 7.62x25 71-round drum magazine"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Spark plug"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "BelOMO PSO-1M2-1 4x24 scope"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Screw nuts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Makarov PM 9x18PM pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "PC CPU"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Yarygin MP-443 Grach 9x19 pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bolts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Stechkin APS 9x18PM machine pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "USB Adapter"
+      },
+      {
+        "quantity": 1,
+        "name": "Malboro Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AKS-74UB 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Lebedev PL-15 9x19 pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Can of beef stew (Small)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AKM 7.62x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Clin window cleaner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PP-91-01 Kedr-B 9x18PM submachine gun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "T-Shaped plug"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PP-19-01 Vityaz 9x19 submachine gun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "D Size battery"
+      },
+      {
+        "quantity": 2,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Mosin 7.62x54R bolt-action rifle (Sniper)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Grand juice"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Zhuk-3 ballistic plate (Front)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Propane tank (5L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B23-1 body armor (EMR)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of milk"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "UMTBS 6Sh112 Scout-Sniper chest rig (EMR)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Oil Change",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "AMG-10 hydraulic fluid"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-308 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Punisher - Part 2",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bottle of Tarkovskaya vodka"
+      },
+      {
+        "quantity": 3,
+        "name": "Can of beef stew (Small)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RPK-16 5.45x39 light machine gun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Malboro Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "7.62x39mm PS gzh ammo pack (20 pcs)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Zibbo lighter"
+      },
+      {
+        "quantity": 2,
+        "name": "D Size battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 303 key"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of beef stew (Large)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "5.45x39mm BT gs ammo pack (30 pcs)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Energy-saving lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RGD-5 hand grenade"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Punisher - Part 2",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Analog thermometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-74 5.45x39 6L31 60-round magazine"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Tech manual"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "VSS/VAL 9x39 6L25 20-round magazine (Plum)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Gunpowder \"Kite\""
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Serdyukov SR-1MP Gyurza 9x21 pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Aquamari water bottle with filter"
+      },
+      {
+        "quantity": 1,
+        "name": "Gas mask air filter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6Kh5 Bayonet"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-74M 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Toilet paper"
+      },
+      {
+        "quantity": 2,
+        "name": "Toothpaste"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-74 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Apollo Soyuz cigarettes"
+      },
+      {
+        "quantity": 2,
+        "name": "Malboro Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SV-98 7.62x54R bolt-action sniper rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Pompon hat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MPL-50 entrenching tool"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Propane tank (5L)"
+      },
+      {
+        "quantity": 2,
+        "name": "Fuel conditioner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Metal fuel tank"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Smoked Chimney drain cleaner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-12 5.45x39 sound suppressor"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Valday PS-320 1/6x scope"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Secure Flash drive"
+      },
+      {
+        "quantity": 2,
+        "name": "Topographic survey maps"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Cyclone Shakhin 3.7x thermal scope"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Insulating tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "9x39mm SPP gs ammo pack (8 pcs)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military corrugated tube"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SVD SAG MK1 chassis"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Ratchet wrench"
+      },
+      {
+        "quantity": 1,
+        "name": "Gunpowder \"Kite\""
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "VSS Vintorez 9x39 special sniper rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Phase control relay"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SVDS custom cut dust cover"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Schaman shampoo"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SVDS Lynx Arms AK-series pistol grip adapter"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Antique teapot"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tokarev AVT-40 7.62x54R automatic rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Gunpowder \"Eagle\""
+      },
+      {
+        "quantity": 4,
+        "name": "Metal spare parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-12 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Pliers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "VSS/VAL 9x39 SR3M.130 30-round magazine"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Alkaline cleaner for heat exchangers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "95-round 5.45x39 magazine for RPK-16"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "GreenBat lithium battery"
+      },
+      {
+        "quantity": 2,
+        "name": "Rechargeable battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tokarev SVT-40 7.62x54R rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": {
+      "action": "accepting",
+      "task": "Our Own Land",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Intelligence folder"
+      },
+      {
+        "quantity": 2,
+        "name": "OFZ 30x165mm shell"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "GP-25 Kostyor 40mm underbarrel grenade launcher"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military cable"
+      },
+      {
+        "quantity": 5,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RSh-12 12.7x55 revolver"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Slim diary"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "NPP KlASS Condor glasses"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Gunpowder \"Kite\""
+      },
+      {
+        "quantity": 3,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RPK-16 5.45x39 light machine gun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Construction measuring tape"
+      },
+      {
+        "quantity": 5,
+        "name": "T-Shaped plug"
+      },
+      {
+        "quantity": 5,
+        "name": "USB Adapter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "TOZ KS-23M 23x75mm pump-action shotgun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Reconnaissance",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden egg"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Korund-VM ballistic plates (Front)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bulbex cable cutter"
+      },
+      {
+        "quantity": 1,
+        "name": "Pipe grip wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SR-2M Veresk 9x21 submachine gun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK AK-EVO stock"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Pack of Arseniy buckwheat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Serdyukov SR-1MP Gyurza 9x21 pistol"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Golden rooster figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-12 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Propane tank (5L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Maska-1SCh face shield (Olive Drab)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Regulated Materials",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ASh-12 12.7x55 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military circuit board"
+      },
+      {
+        "quantity": 1,
+        "name": "Bundle of wires"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ASh-12 12.7x55 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Corrugated hose"
+      },
+      {
+        "quantity": 1,
+        "name": "Military corrugated tube"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "TOZ KS-23M 23x75mm pump-action shotgun"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Topographic survey maps"
+      },
+      {
+        "quantity": 1,
+        "name": "Phase control relay"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B43 Zabralo-Sh body armor (EMR) (Without plates)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military COFDM Wireless Signal Transmitter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AKS-74U 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Ragman",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Cyclon rechargeable battery"
+      },
+      {
+        "quantity": 2,
+        "name": "Military gyrotachometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6Sh118 raid backpack (EMR)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Dogtag \u2265 Lvl 30, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SR-3M 9x39 compact assault rifle"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Dogtag \u2265 Lvl 40, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B45 body armor (EMR)"
+      }
+    ],
+    "section": "Prapor"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Gingy keychain"
+      },
+      {
+        "quantity": 2,
+        "name": "WZ Wallet"
+      },
+      {
+        "quantity": 1,
+        "name": "6-STEN-140-M military battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Key case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Emergency Water Ration"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Salewa first aid kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "PAID AntiRoach spray"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Salewa first aid kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Can of humpback salmon"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Car first aid kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Classic matches"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Analgin painkillers"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Pack of screws"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "CALOK-B hemostatic applicator"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Ortodontox toothpaste"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Toothpaste"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Crickent lighter"
+      },
+      {
+        "quantity": 2,
+        "name": "Classic matches"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Pile of meds"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Mechanic",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of OLOLO Multivitamins"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Can of Ice Green tea"
+      },
+      {
+        "quantity": 2,
+        "name": "Army crackers"
+      },
+      {
+        "quantity": 1,
+        "name": "Can of squash spread"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tarcone Director's office key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Vita juice"
+      },
+      {
+        "quantity": 1,
+        "name": "Pack of milk"
+      },
+      {
+        "quantity": 1,
+        "name": "Toilet paper"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Portable bunkhouse key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 7,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 206 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 7,
+        "name": "T-Shaped plug"
+      },
+      {
+        "quantity": 3,
+        "name": "Insulating tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 303 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Army crackers"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Vita juice"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Slickers chocolate bar"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Classic matches"
+      },
+      {
+        "quantity": 1,
+        "name": "Crickent lighter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Can of pacific saury"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Toothpaste"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Can of humpback salmon"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Biochemistry",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Nooby Shield potassium iodide tablets"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Money case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Disposable syringe"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Iskra ration pack"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of hydrogen peroxide"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of water (0.6L)"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Health Care Privacy - Part 3",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Gas analyzer"
+      },
+      {
+        "quantity": 1,
+        "name": "Ultraviolet lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Grizzly medical kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of hydrogen peroxide"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of saline solution"
+      },
+      {
+        "quantity": 1,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 114 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of sodium bicarbonate"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "IFAK individual first aid kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Health Care Privacy - Part 2",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Pack of apple juice"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Propital regenerative stimulant injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Classic matches"
+      },
+      {
+        "quantity": 1,
+        "name": "Ultraviolet lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Adrenaline injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Disposable syringe"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Aluminum splint"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Repellent"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "CMS surgical kit"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Disposable syringe"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Can of Ice Green tea"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "42 Signature Blend English Tea"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Emelya rye croutons"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Rye croutons"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Arseniy buckwheat"
+      },
+      {
+        "quantity": 1,
+        "name": "Aquapeps water purification tablets"
+      },
+      {
+        "quantity": 5,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 220 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Golden neck chain"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tarcone Director's office key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Pack of chlorine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Health Resort west wing room 221 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Pack of Arseniy buckwheat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Expeditionary fuel tank"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "Pile of meds"
+      },
+      {
+        "quantity": 4,
+        "name": "Disposable syringe"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Pistol case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Cat figurine"
+      },
+      {
+        "quantity": 1,
+        "name": "Bronze lion figurine"
+      },
+      {
+        "quantity": 4,
+        "name": "Horse figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Documents case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Bottle of hydrogen peroxide"
+      },
+      {
+        "quantity": 10,
+        "name": "Bottle of saline solution"
+      },
+      {
+        "quantity": 10,
+        "name": "Pack of chlorine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Key tool"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Medical bloodset"
+      },
+      {
+        "quantity": 10,
+        "name": "Disposable syringe"
+      },
+      {
+        "quantity": 10,
+        "name": "Medical tools"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Medicine case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 40,
+        "name": "Dogtag \u2265 Lvl 15"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Lucky Scav Junk box"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Wooden clock"
+      },
+      {
+        "quantity": 2,
+        "name": "Antique teapot"
+      },
+      {
+        "quantity": 1,
+        "name": "Antique vase"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Poster tube"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Health Resort west wing office room 112 key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Disposable syringe"
+      },
+      {
+        "quantity": 3,
+        "name": "Iskra ration pack"
+      },
+      {
+        "quantity": 1,
+        "name": "Ophthalmoscope"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "EMERCOM medical unit key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bottle of OLOLO Multivitamins"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Propital regenerative stimulant injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Disposable syringe"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of hydrogen peroxide"
+      },
+      {
+        "quantity": 1,
+        "name": "Pack of sodium bicarbonate"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SJ1 TGLabs combat stimulant injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Schaman shampoo"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "eTG-change regenerative stimulant injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 20,
+        "name": "Dogtag \u2265 Lvl 39"
+      },
+      {
+        "quantity": 140,
+        "name": "Dogtag \u2265 Lvl 10, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LEDX Skin Transilluminator"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Canister with purified water"
+      },
+      {
+        "quantity": 2,
+        "name": "Water filter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RB-AK key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Ophthalmoscope"
+      },
+      {
+        "quantity": 25,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Item case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 80,
+        "name": "Dogtag \u2265 Lvl 15"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Item case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Augmentin antibiotic pills"
+      },
+      {
+        "quantity": 2,
+        "name": "Vaseline balm"
+      },
+      {
+        "quantity": 2,
+        "name": "Surv12 field surgical kit"
+      },
+      {
+        "quantity": 3,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LBT-2670 Slim Field Med Pack (Black)"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bottle of saline solution"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of hydrogen peroxide"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SJ6 TGLabs combat stimulant injector"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Medical bloodset"
+      },
+      {
+        "quantity": 3,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Ibuprofen painkillers"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "Pile of meds"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of sugar"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 60,
+        "name": "Can of condensed milk"
+      },
+      {
+        "quantity": 10,
+        "name": "Pack of oat flakes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kiba Arms outer door key"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Golden neck chain"
+      },
+      {
+        "quantity": 2,
+        "name": "Roler Submariner gold wrist watch"
+      },
+      {
+        "quantity": 2,
+        "name": "Gold skull ring"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Money case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 20,
+        "name": "Medical tools"
+      },
+      {
+        "quantity": 15,
+        "name": "Disposable syringe"
+      },
+      {
+        "quantity": 12,
+        "name": "Bottle of hydrogen peroxide"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Injector case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 15,
+        "name": "Portable defibrillator"
+      },
+      {
+        "quantity": 15,
+        "name": "LEDX Skin Transilluminator"
+      },
+      {
+        "quantity": 15,
+        "name": "Ibuprofen painkillers"
+      },
+      {
+        "quantity": 15,
+        "name": "Toothpaste"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C item case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Therapist",
+    "trader_level": "Therapist LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 50,
+        "name": "Bottle of Fierce Hatchling moonshine"
+      },
+      {
+        "quantity": 50,
+        "name": "Bottle of Tarkovskaya vodka"
+      },
+      {
+        "quantity": 30,
+        "name": "Bottle of Dan Jackiel whiskey"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C item case"
+      }
+    ],
+    "section": "Therapist"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Chainlet"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SKS 7.62x39 TAPCO 6610 20-round magazine"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Salty Dog beef sausage"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Molot Arms VPO-136 Vepr-KM 7.62x39 carbine"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Horse figurine"
+      },
+      {
+        "quantity": 1,
+        "name": "Pompon hat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "BNTI Zhuk body armor (Press)"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "T-Shaped plug"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "12/70 RIP ammo pack (5 pcs)"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Strike Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock .45 ACP KRISS G30 MagEx 30-round magazine"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Video cassette with the Cyborg Killer movie"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SureFire SOCOM556-MINI MONSTER 5.56x45 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Dogtag \u2265 Lvl 20, BEAR"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-74 TGP-A 5.45x39 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Wooden clock"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Hexagon 12K 12ga sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Can of Majaica coffee beans"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Rotor 43 9x19 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Pack of oat flakes"
+      },
+      {
+        "quantity": 2,
+        "name": "Can of RatCola soda"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kel-Tec RFB 7.62x51 rifle"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Broken GPhone X smartphone"
+      },
+      {
+        "quantity": 1,
+        "name": "Golden 1GPhone smartphone"
+      },
+      {
+        "quantity": 2,
+        "name": "Broken GPhone smartphone"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SIG MCX .300 Blackout assault rifle"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Chainlet"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "KRISS Vector 9x19 6 inch barrel"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "DVD drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "KRISS Vector non-folding stock adapter"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Horse figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "KRISS Vector Mk.5 modular rail"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Gas analyzer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kel-Tec RFB 7.62x51 rifle"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "BOSS cap"
+      },
+      {
+        "quantity": 2,
+        "name": "Leather cap"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Thunder Beast Arms Ultra 5 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "NIXXOR lens"
+      },
+      {
+        "quantity": 1,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "VPO-101 Rotor 43 7.62x51 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Raven figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SIG Sauer SRD762-QD 7.62x51 sound suppressor"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Dogtag \u2265 Lvl 20, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Hensoldt FF 4-16x56 34mm riflescope"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Horse figurine"
+      },
+      {
+        "quantity": 1,
+        "name": "Antique teapot"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Strike Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kiba Arms Titan ballistic plate"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "Bottle of Pevko Light beer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Metal fuel tank"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Golden neck chain"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": ".338 Lapua Magnum FMJ ammo pack (20 pcs)"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Bullshit",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Dundukk sport sunglasses"
+      },
+      {
+        "quantity": 1,
+        "name": "Axel parrot figurine"
+      },
+      {
+        "quantity": 1,
+        "name": "Inseq gas pipe wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Saiga-12K 12ga automatic shotgun"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Broken GPhone X smartphone"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "EOTech Vudu 1-6x24 30mm riflescope"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Wooden clock"
+      },
+      {
+        "quantity": 6,
+        "name": "Roler Submariner gold wrist watch"
+      },
+      {
+        "quantity": 6,
+        "name": "Gold skull ring"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Trijicon REAP-IR thermal scope"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Dangerous Props",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Topographic survey maps"
+      },
+      {
+        "quantity": 3,
+        "name": "Weapon parts"
+      },
+      {
+        "quantity": 1,
+        "name": "Military circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MPS Auto Assault-12 Gen 2 12ga automatic shotgun"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "UHF RFID Reader"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "L3Harris GPNVG-18 night vision goggles"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Metal spare parts"
+      },
+      {
+        "quantity": 2,
+        "name": "Can of thermite"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Military COFDM Wireless Signal Transmitter"
+      },
+      {
+        "quantity": 1,
+        "name": "Military checkpoint key"
+      },
+      {
+        "quantity": 2,
+        "name": "Chain with Prokill medallion"
+      },
+      {
+        "quantity": 2,
+        "name": "Phased array element"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Miller Bros. Blades M-2 Tactical Sword"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Peacekeeper",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden rooster figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Cult Locust ballistic plate"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Skier",
+    "trader_level": "Skier LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Bottle of Fierce Hatchling moonshine"
+      },
+      {
+        "quantity": 10,
+        "name": "Bottle of Tarkovskaya vodka"
+      },
+      {
+        "quantity": 5,
+        "name": "Slickers chocolate bar"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon case"
+      }
+    ],
+    "section": "Skier"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Gas analyzer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP9 9x19 30-round magazine"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Emergency Water Ration"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 Daniel Defense RIS II 9.5 handguard"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Dogtag \u2265 Lvl 8"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SIG MPX 9x19 submachine gun"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Bars A-2607 95Kh18 knife"
+      },
+      {
+        "quantity": 1,
+        "name": "ER FULCRUM BAYONET"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP5 9x19 submachine gun (Navy 3 Round Burst)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Bars A-2607 95Kh18 knife"
+      },
+      {
+        "quantity": 1,
+        "name": "ER FULCRUM BAYONET"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK UMP .45 ACP submachine gun"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Damaged hard drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Flyye MBSS backpack (UCP)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Wiring the Vessel",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Ultralink satellite communication module"
+      },
+      {
+        "quantity": 2,
+        "name": "IBX Gigachad cryptographic processor"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "S I C C organizational pouch"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "SAS drive"
+      },
+      {
+        "quantity": 3,
+        "name": "Morphine injector"
+      },
+      {
+        "quantity": 1,
+        "name": "Diary"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Health Resort east wing room 306 key"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Cyclon rechargeable battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Knight's Armament Company SR-25 7.62x51 marksman rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "PC CPU"
+      },
+      {
+        "quantity": 1,
+        "name": "CPU fan"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Colt M4A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Freeman crowbar"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ELCAN SpecterDR 1x/4x scope (FDE)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Zibbo lighter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M67 hand grenade"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Fuel conditioner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP5 9x19 X Products X-5 50-round drum magazine"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "USB Adapter"
+      },
+      {
+        "quantity": 1,
+        "name": "Construction measuring tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 KAC QDC 5.56x45 Flash Suppressor Kit"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of Dan Jackiel whiskey"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SIG Sauer BRAVO4 4x30 scope"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon parts"
+      },
+      {
+        "quantity": 1,
+        "name": "WD-40 (100ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M14 Leapers UTG 4-Point Locking Deluxe mount"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Broken LCD"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 5.56x45 10.3 inch barrel"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pestily plague mask"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN Five-seveN MK2 5.7x28 pistol"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Overpopulation",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "RAM stick"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "DS Arms SA58 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Fishing Gear",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "USB Adapter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Springfield Armory M1A 7.62x51 rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Topographic survey maps"
+      },
+      {
+        "quantity": 1,
+        "name": "Damaged hard drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MSA Gallet TC 800 High Cut combat helmet (Black)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Propane tank (5L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK 416 Midwest Industries 9 inch M-LOK handguard"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Alkaline cleaner for heat exchangers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SLR-106/AK 5.56x45 Circle 10 30-round magazine"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Corrugated hose"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK 416 5.56x45 11 inch barrel"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Military cable"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN P90 5.7x28 submachine gun"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "6-STEN-140-M military battery"
+      },
+      {
+        "quantity": 3,
+        "name": "Iridium military thermal vision module"
+      },
+      {
+        "quantity": 3,
+        "name": "Virtex programmable processor"
+      },
+      {
+        "quantity": 5,
+        "name": "Military cable"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Secure container Beta"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Damaged hard drive"
+      },
+      {
+        "quantity": 1,
+        "name": "DVD drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LBT-8005A Day Pack backpack (MultiCam Black)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Can of humpback salmon"
+      },
+      {
+        "quantity": 1,
+        "name": "Can of condensed milk"
+      },
+      {
+        "quantity": 1,
+        "name": "Toilet paper"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "KAC QDSS NT4 5.56x45 sound suppressor (Black)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden rooster figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "KAC PRS/QDC 7.62x51 sound suppressor"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Printed circuit board"
+      },
+      {
+        "quantity": 1,
+        "name": "Geiger-Muller counter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 5.56x45 SureFire MAG5-60 STANAG 60-round magazine"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of Fierce Hatchling moonshine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "L3Harris GPNVG-18 night vision goggles"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 9,
+        "name": "Dogtag \u2265 Lvl 25, BEAR"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "L3Harris GPNVG-18 night vision goggles"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "WD-40 (400ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Ferfrans CRD 5.56x45 Concussion Reduction Device"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "WD-40 (100ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 Ferfrans CQB 5.56x45 muzzle brake"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": {
+      "action": "accepting",
+      "task": "Gifts from Tarkov",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Intelligence folder"
+      },
+      {
+        "quantity": 3,
+        "name": "Electronic components"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M203 40mm underbarrel grenade launcher"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Diary"
+      },
+      {
+        "quantity": 4,
+        "name": "Slim diary"
+      },
+      {
+        "quantity": 1,
+        "name": "Topographic survey maps"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Intelligence folder"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Dogtag \u2265 Lvl 15, Bear"
+      },
+      {
+        "quantity": 8,
+        "name": "Dogtag \u2265 Lvl 15, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington R11 RSASS 7.62x51 marksman rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Press pass (issued for NoiceGuy)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Monoclete level III PE ballistic plate"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "TerraGroup Labs access keycard"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK G28 7.62x51 marksman rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "BakeEzy cook book"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "IWI UZI PRO Pistol 9x19 submachine gun"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Confidential Info",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Gas mask air filter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 5.56x45 Magpul PMAG D-60 STANAG 60-round magazine"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Bottle of Dan Jackiel whiskey"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Colt M4A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Wet Job - Part 6",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "VPX Flash Storage Module"
+      },
+      {
+        "quantity": 5,
+        "name": "Military circuit board"
+      },
+      {
+        "quantity": 5,
+        "name": "Military cable"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN40GL Mk2 40mm grenade launcher"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Mechanic",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of TarCola soda"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of Dan Jackiel whiskey"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SilencerCo Saker ASR 556 5.56x45 sound suppressor"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "WD-40 (400ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Steyr AUG Ase Utra S Series SL7i 5.56x45 sound suppressor"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Broken GPhone X smartphone"
+      },
+      {
+        "quantity": 1,
+        "name": "Portable Powerbank"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP7A2 4.6x30 submachine gun"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Microcontroller board"
+      },
+      {
+        "quantity": 3,
+        "name": "Military circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN SCAR-H 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "VPX Flash Storage Module"
+      },
+      {
+        "quantity": 1,
+        "name": "Analog thermometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Desert Tech MDR 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "LEDX Skin Transilluminator"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Colt M4A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military COFDM Wireless Signal Transmitter"
+      },
+      {
+        "quantity": 1,
+        "name": "Military gyrotachometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Ops-Core FAST MT Super High Cut helmet (Black)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Insomnia",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "SAS drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SAPI level III+ ballistic plate"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "SAS drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "CQC Osprey MK4A plate carrier (Protection, MTP)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "SAS drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "NFM THOR Integrated Carrier body armor (Without plates)"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Peacekeeper",
+    "trader_level": "Peacekeeper LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Special Equipment",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 20,
+        "name": "TerraGroup \"Blue Folders\" materials"
+      },
+      {
+        "quantity": 30,
+        "name": "Secure magnetic tape cassette"
+      },
+      {
+        "quantity": 30,
+        "name": "Secure Flash drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C item case"
+      }
+    ],
+    "section": "Peacekeeper"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Roler Submariner gold wrist watch"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PP-19-01 Vityaz 9x19 submachine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Wilston cigarettes"
+      },
+      {
+        "quantity": 2,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Local network hacking device"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Capacitors"
+      },
+      {
+        "quantity": 1,
+        "name": "Magnet"
+      },
+      {
+        "quantity": 1,
+        "name": "Printed circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Audio recorder"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "D Size battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Magpul M-LOK 4.1 inch rail"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Strike Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "P226 Stainless Elite Wooden pistol grip"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "USB Adapter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M1911A1 NcSTAR trigger guard mount"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Screw nuts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SilencerCo Hybrid 46 Direct Thread Mount adapter"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pliers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "P226 Stainless Elite pistol slide"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Tetriz portable game console"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "20x1mm toy gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Malboro Cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "P226 9x19 20-round extended magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Electric drill"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SilencerCo Osprey 9 9x19 sound suppressor"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of white salt"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Alpha Dog Alpha 9 9x19 sound suppressor"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Electric drill"
+      },
+      {
+        "quantity": 1,
+        "name": "Broken GPhone smartphone"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Armasight Vulcan MG 3.5x Bravo night vision scope"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Broken GPhone smartphone"
+      },
+      {
+        "quantity": 3,
+        "name": "Broken LCD"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "L3Harris AN/PVS-14 night vision monocular"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Wilston cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 Badger Ordnance Tactical Charging Handle Latch"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "D Size battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AKS-74U Zenit B-11 handguard"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "AA Battery"
+      },
+      {
+        "quantity": 2,
+        "name": "D Size battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M870 Magpul SGA polymer stock"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "PC CPU"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SKS TAPCO Intrafuse chassis"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Damaged hard drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP-133 custom plastic forestock with rails"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Rechargeable battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M870 Magpul MOE handguard"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Electronic components"
+      },
+      {
+        "quantity": 1,
+        "name": "Portable Powerbank"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "WI-FI Camera"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "CPU fan"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Gas analyzer"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bundle of wires"
+      },
+      {
+        "quantity": 2,
+        "name": "Capacitors"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tokarev TT-33 7.62x25 TT pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Light bulb"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Damaged hard drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Gunsmith - HK MP5",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Kinda cowboy hat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pliers"
+      },
+      {
+        "quantity": 1,
+        "name": "Screwdriver"
+      },
+      {
+        "quantity": 1,
+        "name": "Wrench"
+      },
+      {
+        "quantity": 1,
+        "name": "Insulating tape"
+      },
+      {
+        "quantity": 1,
+        "name": "Construction measuring tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Toolset"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pliers"
+      },
+      {
+        "quantity": 1,
+        "name": "Nippers"
+      },
+      {
+        "quantity": 1,
+        "name": "Round pliers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Pliers Elite"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Pliers Elite"
+      },
+      {
+        "quantity": 1,
+        "name": "Screwdriver"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP-133 12ga pump-action shotgun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Portable Powerbank"
+      },
+      {
+        "quantity": 4,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington Model 870 12ga pump-action shotgun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "DVD drive"
+      },
+      {
+        "quantity": 5,
+        "name": "Ultraviolet lamp"
+      },
+      {
+        "quantity": 2,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SIG MPX 9x19 submachine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Magnet"
+      },
+      {
+        "quantity": 1,
+        "name": "NIXXOR lens"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP5 9x19 submachine gun (Navy 3 Round Burst)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Working LCD"
+      },
+      {
+        "quantity": 1,
+        "name": "NIXXOR lens"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP7A1 4.6x30 submachine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Courier",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of thermite"
+      },
+      {
+        "quantity": 2,
+        "name": "Gunpowder \"Eagle\""
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Ammunition case"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "DVD drive"
+      },
+      {
+        "quantity": 1,
+        "name": "Damaged hard drive"
+      },
+      {
+        "quantity": 2,
+        "name": "Capacitors"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK UMP .45 ACP submachine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Inseq gas pipe wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "IWI UZI 9x19 submachine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Physical Bitcoin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Elektronik's key"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "CPU fan"
+      },
+      {
+        "quantity": 2,
+        "name": "Printed circuit board"
+      },
+      {
+        "quantity": 4,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Health Resort east wing room 328 key"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "UZRGM grenade fuze"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "VOG-17 Khattabka improvised hand grenade"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "BTR Driver",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pipe grip wrench"
+      },
+      {
+        "quantity": 1,
+        "name": "Inseq gas pipe wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RSP-30 reactive signal cartridge (Blue)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Portable Powerbank"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M1A ProMag Archangel chassis"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Bundle of wires"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP5 9x19 X Products X-5 50-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Tube of Poxeram cold welding"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 9x19 SGM Tactical 50-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "T-Shaped plug"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ProMag AK-A-16 73-round 7.62x39 magazine for AKM"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Bundle of wires"
+      },
+      {
+        "quantity": 2,
+        "name": "Capacitors"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SilencerCo Hybrid 46 multi-caliber sound suppressor"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Magnet"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Rotor 43 7.62x39 sound suppressor"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Tech manual"
+      },
+      {
+        "quantity": 1,
+        "name": "AA Battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HK MP5SD B&T tri-rail ring mount"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "SSD drive"
+      },
+      {
+        "quantity": 1,
+        "name": "Flat screwdriver (Long)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ELCAN SpecterDR 1x/4x scope (FDE)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Printed circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M14 UltiMAK M8 Forward Optic mount"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Round pliers"
+      },
+      {
+        "quantity": 1,
+        "name": "Nippers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M14 Leapers UTG 4-Point Locking Deluxe mount"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "DVD drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "IEA Mil-Optics KH/F 34mm one-piece magmount"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "WD-40 (400ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 FAB Defense GL-SHOCK buttstock"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Malboro Cigarettes"
+      },
+      {
+        "quantity": 2,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 5.56x45 10.3 inch barrel"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "CPU fan"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 Daniel Defense RIS II FSP 9.5 handguard (Coyote Brown)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Electronic components"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK Zenit B-30 handguard with B-31S upper handguard rail"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of milk"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AS VAL Rotor 43 pistol grip with buffer tube"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Molot Arms Simonov OP-SKS 7.62x39 carbine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Kinda cowboy hat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": ".308 ME ammo pack (20 pcs)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "WD-40 (400ml)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Broken GPhone smartphone"
+      },
+      {
+        "quantity": 1,
+        "name": "Printed circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Chain with Prokill medallion"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Colt M4A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Tetriz portable game console"
+      },
+      {
+        "quantity": 2,
+        "name": "GreenBat lithium battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Physical Bitcoin"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Electronic components"
+      },
+      {
+        "quantity": 2,
+        "name": "Spark plug"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Steyr AUG A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Insulating tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Springfield Armory M1A 7.62x51 rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Magnet"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Glock 17 9x19 pistol"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Mosin Rifle sniper carbine stock"
+      },
+      {
+        "quantity": 1,
+        "name": "Mosin Rifle 7.62x54R 730mm regular barrel"
+      },
+      {
+        "quantity": 1,
+        "name": "Wilston cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Mosin 7.62x54R bolt-action rifle (Sniper)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Broken LCD"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Working LCD"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Military cable"
+      },
+      {
+        "quantity": 5,
+        "name": "Energy-saving lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Physical Bitcoin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon case"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "BTR Driver",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 7,
+        "name": "Car battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Graphics card"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": {
+      "action": "accepting",
+      "task": "Prapor",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military gyrotachometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": ".300 Blackout CBJ ammo pack (50 pcs)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Malboro Cigarettes"
+      },
+      {
+        "quantity": 1,
+        "name": "Military cable"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-74M 5.45x39 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Psycho Sniper",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "UHF RFID Reader"
+      },
+      {
+        "quantity": 2,
+        "name": "Virtex programmable processor"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov AK-104 7.62x39 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "DS Arms SA58 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bulbex cable cutter"
+      },
+      {
+        "quantity": 1,
+        "name": "Pipe grip wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "TerraGroup Labs access keycard"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 12,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "DS Arms SA58 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Capacitors"
+      },
+      {
+        "quantity": 2,
+        "name": "Weapon parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RPK-16 5.45x39 light machine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Military circuit board"
+      },
+      {
+        "quantity": 1,
+        "name": "Cyclon rechargeable battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Degtyarev RPDN 7.62x39 machine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Secure magnetic tape cassette"
+      },
+      {
+        "quantity": 1,
+        "name": "Flat screwdriver (Long)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN SCAR-H 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Wilston cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Springfield Armory M1A 7.62x51 rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Tube of Poxeram cold welding"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "UZI 9x19 50-round magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Electric motor"
+      },
+      {
+        "quantity": 15,
+        "name": "Bundle of wires"
+      },
+      {
+        "quantity": 4,
+        "name": "Broken LCD"
+      },
+      {
+        "quantity": 1,
+        "name": "Phased array element"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon case"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Goals and Means",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Chain with Prokill medallion"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AS VAL MOD.4 9x39 special assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Prapor",
+    "trader_level": "Prapor LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Special Order",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Chain with Prokill medallion"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "TKPD 9.3x64 carbine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Chemistry Closet",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Physical Bitcoin"
+      },
+      {
+        "quantity": 10,
+        "name": "Gold skull ring"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C Weapon case"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Geiger-Muller counter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "M14 7.62x51 X Products X-14 50-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Broken GPhone smartphone"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SA58/FAL 7.62x51 X Products X-FAL 50-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Round pliers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SOK-12 12ga MaxRounds Powermag 20-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "RAM stick"
+      },
+      {
+        "quantity": 3,
+        "name": "Electronic components"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-15 5.56x45 Beta C-Mag 100-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Baddie's red beard"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "UZI 9x19 Beta C-Mag 100-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Awl"
+      },
+      {
+        "quantity": 3,
+        "name": "TP-200 TNT brick"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AR-10 7.62x51 X Products X-25 50-round drum magazine"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Gunsmith Master - Part 11",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Iridium military thermal vision module"
+      },
+      {
+        "quantity": 4,
+        "name": "Military circuit board"
+      },
+      {
+        "quantity": 4,
+        "name": "Military power filter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Trijicon REAP-IR thermal scope"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Iridium military thermal vision module"
+      },
+      {
+        "quantity": 2,
+        "name": "Military gyrotachometer"
+      },
+      {
+        "quantity": 3,
+        "name": "Military circuit board"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Gunsmith Master - Part 13",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "6-STEN-140-M military battery"
+      },
+      {
+        "quantity": 8,
+        "name": "Cyclon rechargeable battery"
+      },
+      {
+        "quantity": 2,
+        "name": "UHF RFID Reader"
+      },
+      {
+        "quantity": 1,
+        "name": "Secure magnetic tape cassette"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "TerraGroup Labs keycard (Black)"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Lightkeeper",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Broken GPhone X smartphone"
+      },
+      {
+        "quantity": 3,
+        "name": "Virtex programmable processor"
+      },
+      {
+        "quantity": 5,
+        "name": "VPX Flash Storage Module"
+      },
+      {
+        "quantity": 1,
+        "name": "Graphics card"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Microcontroller board"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Lightkeeper",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Military gyrotachometer"
+      },
+      {
+        "quantity": 1,
+        "name": "Military cable"
+      },
+      {
+        "quantity": 5,
+        "name": "UHF RFID Reader"
+      },
+      {
+        "quantity": 8,
+        "name": "Military COFDM Wireless Signal Transmitter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Far-forward GPS Signal Amplifier Unit"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Lightkeeper",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 30,
+        "name": "Electronic components"
+      },
+      {
+        "quantity": 10,
+        "name": "Phased array element"
+      },
+      {
+        "quantity": 12,
+        "name": "Damaged hard drive"
+      },
+      {
+        "quantity": 16,
+        "name": "Virtex programmable processor"
+      },
+      {
+        "quantity": 16,
+        "name": "VPX Flash Storage Module"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Advanced current converter"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "NIXXOR lens"
+      },
+      {
+        "quantity": 1,
+        "name": "LVNDMARK's rat poison"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "DS Arms SA58 7.62x51 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Microcontroller board"
+      },
+      {
+        "quantity": 1,
+        "name": "Iridium military thermal vision module"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Colt M4A1 5.56x45 assault rifle"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "VPX Flash Storage Module"
+      },
+      {
+        "quantity": 2,
+        "name": "Military gyrotachometer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Saiga-12K ver.10 12ga semi-automatic shotgun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Gunsmith Master - Part 13",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "TerraGroup \"Blue Folders\" materials"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kalashnikov PKM 7.62x54R machine gun"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Hobby Club",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Fuel conditioner"
+      },
+      {
+        "quantity": 1,
+        "name": "Pipe grip wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-50 .50 BMG 24 inch barrel"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Hobby Club",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Damaged hard drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-50 dust cover"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Hobby Club",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pressure gauge"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-50 M-LOK handguard with gas tube"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Mechanic",
+    "trader_level": "Mechanic LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Hobby Club",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Gas analyzer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AK-50 .50 BMG muzzle brake"
+      }
+    ],
+    "section": "Mechanic"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bars A-2607 95Kh18 knife"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Ushanka ear flap hat"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Awl"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Soap"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Toilet paper"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "GSSh-01 active headset"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Lower half-mask"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "PACA Soft Armor"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of Max Energy energy drink"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MF-UNTAR body armor"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Raven figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "NPP KlASS Kora-Kulon body armor (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL1",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Fresh Stock",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Memento Server RAM Module"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Rys-T bulletproof helmet (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Slickers chocolate bar"
+      },
+      {
+        "quantity": 1,
+        "name": "Can of Hot Rod energy drink"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tac-Kek JayPC plate carrier (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Pack of instant noodles"
+      },
+      {
+        "quantity": 1,
+        "name": "Can of Hot Rod energy drink"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tac-Kek JayPC plate carrier (OD Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Piece of plexiglass"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ZSh-1-2M face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Construction measuring tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tactical fleece beanie (Tan)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Ox bleach"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B47 Ratnik-BSh helmet (EMR cover)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Ox bleach"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B47 Ratnik-BSh helmet (EMR Arctic cover)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Anti-fragmentation glasses"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "UNTAR helmet"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Classic matches"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Peltor ComTac II headset (OD Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Veritas guitar pick"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MSA Sordin Supreme PRO-X/L headset"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Minibus",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden rooster figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Interceptor OTV body armor (UCP)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Duct tape"
+      },
+      {
+        "quantity": 1,
+        "name": "Alkaline cleaner for heat exchangers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ANA Tactical Alpha chest rig (Olive Drab)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "6B3TM-01 armored rig (Khaki) (damaged)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B3TM-01 armored rig (Khaki)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Chainlet"
+      },
+      {
+        "quantity": 1,
+        "name": "Antique teapot"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "6B3TM-01 armored rig (Khaki)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Slim diary"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "NFM THOR Concealable Reinforced Vest body armor"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Horse figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Hazard 4 Pillbox backpack (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Cordura polyamide fabric"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LBT-1476A 3Day Pack (Woodland)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Cordura polyamide fabric"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LBT-1476A 3Day Pack (MultiCam Alpine)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden rooster figurine"
+      },
+      {
+        "quantity": 5,
+        "name": "Chainlet"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Cottage back door key"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Altyn helmet face shield (damaged)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Altyn helmet face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Piece of plexiglass"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LShZ-2DTM face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "KEKTAPE duct tape"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kinda cowboy hat"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Aquamari water bottle with filter"
+      },
+      {
+        "quantity": 2,
+        "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ANA Tactical M1 plate carrier (OD Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Sewing kit"
+      },
+      {
+        "quantity": 2,
+        "name": "Cordura polyamide fabric"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of Tarkovskaya vodka"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "First Spear Strandhogg plate carrier (Ranger Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Antique teapot"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Poyas-A + Poyas-B gear rig"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Can of condensed milk"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Velocity Systems MPPV Multi-Purpose Patrol Vest (Wolf Grey)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Video cassette with the Cyborg Killer movie"
+      },
+      {
+        "quantity": 1,
+        "name": "Emergency Water Ration"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Shellback Tactical Banshee plate carrier (A-TACS AU)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Golden neck chain"
+      },
+      {
+        "quantity": 2,
+        "name": "Can of Majaica coffee beans"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "BNTI Gzhel-K body armor (Without plates)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Dogtag \u2265 Lvl 15, USEC"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Gruppa 99 T30 backpack (MultiCam)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Viibiin sneaker"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Stich Profi Plate Carrier V2 (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Wooden clock"
+      },
+      {
+        "quantity": 1,
+        "name": "Roler Submariner gold wrist watch"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Crye Precision JPC Plate Carrier (MultiCam)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "Dogtag \u2265 Lvl 20"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Altyn helmet face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Veritas guitar pick"
+      },
+      {
+        "quantity": 2,
+        "name": "Old firesteel"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tasmanian Tiger Plate Carrier MKIII (Coyote Brown)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Piece of plexiglass"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Altyn helmet face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Piece of plexiglass"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of Pevko Light beer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Vulkan-5 helmet face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Piece of plexiglass"
+      },
+      {
+        "quantity": 1,
+        "name": "Bolts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Rys-T face shield"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Axel parrot figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "HighCom Trooper TFO body armor (MultiCam)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "VPX Flash Storage Module"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "IOTV Gen4 body armor (Full Protection Kit, MultiCam) (Without plates)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Scavenger",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 314 marked key"
+      },
+      {
+        "quantity": 1,
+        "name": "Health Resort west wing office room 112 key"
+      },
+      {
+        "quantity": 5,
+        "name": "Paracord"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Crash Axe"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Wooden clock"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Granit Br4 ballistic plate"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Round pliers"
+      },
+      {
+        "quantity": 1,
+        "name": "Hand drill"
+      },
+      {
+        "quantity": 3,
+        "name": "Pack of nails"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Altyn bulletproof helmet (Olive Drab)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Graphics card"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Vulkan-5 LShZ-5 bulletproof helmet (Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Battered antique book"
+      },
+      {
+        "quantity": 4,
+        "name": "Tech manual"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FORT Redut-M body armor"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Battered antique book"
+      },
+      {
+        "quantity": 2,
+        "name": "Tech manual"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FORT Redut-M body armor (Without plates)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Dogtag \u2265 Lvl 20"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ANA Tactical M2 plate carrier (OD Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Axel parrot figurine"
+      },
+      {
+        "quantity": 2,
+        "name": "Can of white salt"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "LBT-1961A Load Bearing Chest Rig (MAS Grey)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Supervisor",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Bronze lion figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FORT Redut-T5 body armor (Smog)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bronze lion figurine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FORT Redut-T5 body armor (Smog) (Without plates)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Fierce Blow sledgehammer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FORT Defender-2 body armor"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Golden neck chain"
+      },
+      {
+        "quantity": 1,
+        "name": "Tokarev TT-33 7.62x25 TT pistol (Golden)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Crye Precision AVS plate carrier (Ranger Green)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Roler Submariner gold wrist watch"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Hexatac HPC Plate Carrier (MultiCam Black)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Chain with Prokill medallion"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SSO Attack 2 raid backpack (Khaki)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Can of condensed milk"
+      },
+      {
+        "quantity": 1,
+        "name": "Pack of milk"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Tasmanian Tiger Trooper 35 backpack (Khaki)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Ragman",
+    "trader_level": "Ragman LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Textile - Part 1",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "VPX Flash Storage Module"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Mystery Ranch Blackjack 50 backpack (MultiCam)"
+      }
+    ],
+    "section": "Ragman"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Deadlyslob's beard oil"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Nippers"
+      },
+      {
+        "quantity": 1,
+        "name": "Wrench"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "CMS surgical kit"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Classic matches"
+      },
+      {
+        "quantity": 1,
+        "name": "Apollo Soyuz cigarettes"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Kiba Arms International SPRM mount"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Ortodontox toothpaste"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Lobaev Arms 30mm scope mount"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Arseniy buckwheat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP-133 12ga pump-action shotgun"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Wrench"
+      },
+      {
+        "quantity": 2,
+        "name": "Screwdriver"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP-153 12ga semi-automatic shotgun"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Video cassette with the Cyborg Killer movie"
+      },
+      {
+        "quantity": 1,
+        "name": "Military flash drive"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dogtag case"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 8,
+        "name": "Classic matches"
+      },
+      {
+        "quantity": 5,
+        "name": "Hunting matches"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Metal fuel tank"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Slickers chocolate bar"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Scav Vest"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Salty Dog beef sausage"
+      },
+      {
+        "quantity": 2,
+        "name": "Bottle of Tarkovskaya vodka"
+      },
+      {
+        "quantity": 1,
+        "name": "Bottle of Fierce Hatchling moonshine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Labrys access keycard"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Pack of Arseniy buckwheat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Schmidt & Bender PM II 1-8x24 30mm riflescope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of sodium bicarbonate"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "20/70 Dangerous Game Slug ammo pack (25 pcs)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Aquapeps water purification tablets"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "26x75mm flare cartridge (Green)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pressure gauge"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Magnum Research Desert Eagle L5 .357 pistol"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Salty Dog beef sausage"
+      },
+      {
+        "quantity": 1,
+        "name": "Army crackers"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Grizzly medical kit"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Broadcast - Part 3",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Antique vase"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Surv12 field surgical kit"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Portable Powerbank"
+      },
+      {
+        "quantity": 2,
+        "name": "Magnet"
+      },
+      {
+        "quantity": 1,
+        "name": "Ultraviolet lamp"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Nightforce ATACR 7-35x56 34mm riflescope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Burris FullField TAC30 1-4x24 30mm riflescope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "D Size battery"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "UNV DLOC-IRD sight mount"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Propane tank (5L)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Nightforce Magmount 34mm ring scope mount"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Repellent"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Pack of Vita juice"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of OLOLO Multivitamins"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Emelya rye croutons"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of sugar"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Factory emergency exit key (used)"
+      },
+      {
+        "quantity": 3,
+        "name": "Iskra ration pack"
+      },
+      {
+        "quantity": 1,
+        "name": "MRE ration pack"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Factory emergency exit key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Tech manual"
+      },
+      {
+        "quantity": 4,
+        "name": "Bottle of Tarkovskaya vodka"
+      },
+      {
+        "quantity": 2,
+        "name": "Can of beef stew (Small)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Military checkpoint key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Can of Hot Rod energy drink"
+      },
+      {
+        "quantity": 5,
+        "name": "Can of TarCola soda"
+      },
+      {
+        "quantity": 5,
+        "name": "Can of herring"
+      },
+      {
+        "quantity": 5,
+        "name": "Can of squash spread"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Mr. Holodilnick thermal bag"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Hunting matches"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Splav Tarzan M22 chest rig (Smog)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Can of white salt"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "20/70 Flechette ammo pack (25 pcs)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Repellent"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "20/70 TSS Armor Piercing Slug ammo pack (25 pcs)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Iskra ration pack"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Mosin Rifle Bramit 7.62x54R sound suppressor"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Fuel conditioner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Magnum Research Desert Eagle L5 .50 AE pistol"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Pack of sugar"
+      },
+      {
+        "quantity": 6,
+        "name": "Aquamari water bottle with filter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Bottle of Pevko Light beer"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Torrey Pines Logic T12W 30Hz thermal reflex sight"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Makarov PM (t) 9x18PM pistol"
+      },
+      {
+        "quantity": 2,
+        "name": "Tokarev TT-33 7.62x25 TT pistol"
+      },
+      {
+        "quantity": 1,
+        "name": "Gunpowder \"Eagle\""
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "ZiD SP-81 26x75 signal pistol"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "RB-VO marked key (used)"
+      },
+      {
+        "quantity": 1,
+        "name": "RB-PKPM marked key (used)"
+      },
+      {
+        "quantity": 1,
+        "name": "RB-BK marked key (used)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Dorm room 314 marked key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Hunting matches"
+      },
+      {
+        "quantity": 2,
+        "name": "SurvL Survivor Lighter"
+      },
+      {
+        "quantity": 1,
+        "name": "Dry fuel"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "OLI logistics department office key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Crickent lighter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Trijicon REAP-IR scope eyecup"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 6,
+        "name": "Toilet paper"
+      },
+      {
+        "quantity": 5,
+        "name": "Repellent"
+      },
+      {
+        "quantity": 2,
+        "name": "SurvL Survivor Lighter"
+      },
+      {
+        "quantity": 2,
+        "name": "Pack of chlorine"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Goshan cash register key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Can of sprats"
+      },
+      {
+        "quantity": 10,
+        "name": "Aquamari water bottle with filter"
+      },
+      {
+        "quantity": 10,
+        "name": "Can of squash spread"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Saiga-12K ver.10 12ga semi-automatic shotgun"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 15,
+        "name": "Propane tank (5L)"
+      },
+      {
+        "quantity": 10,
+        "name": "Fuel conditioner"
+      },
+      {
+        "quantity": 15,
+        "name": "Dry fuel"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Red Rebel ice pick"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Toothpaste"
+      },
+      {
+        "quantity": 5,
+        "name": "Toilet paper"
+      },
+      {
+        "quantity": 2,
+        "name": "Bottle of hydrogen peroxide"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Camper axe"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "SurvL Survivor Lighter"
+      },
+      {
+        "quantity": 15,
+        "name": "Hunting matches"
+      },
+      {
+        "quantity": 1,
+        "name": "Repellent"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Grenade case"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Broadcast - Part 5",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Cultist knife"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Armasight Zeus-Pro 640 2-8x50 30Hz thermal scope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Huntsman Path - Big Game",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "LEDX Skin Transilluminator"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Armasight Zeus-Pro 640 2-8x50 30Hz thermal scope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Tarkov Shooter - Part 6",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Fuel conditioner"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Vortex Razor HD Gen.2 1-6x24 30mm riflescope"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Jar of pickles"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Leupold Mark 5HD 5-25x56mm 35mm riflescope (FDE)"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "NIXXOR lens"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "MP-155 Ultima thermal camera"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Pack of Tarker dried meat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "AI AXMC GTAC AR-type pistol grip adapter"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": {
+      "action": "completing",
+      "task": "The Huntsman Path - Control",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Hand drill"
+      },
+      {
+        "quantity": 1,
+        "name": "SurvL Survivor Lighter"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Remington Model 700 7.62x51 bolt-action sniper rifle"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 4,
+        "name": "Can of RatCola soda"
+      },
+      {
+        "quantity": 8,
+        "name": "Pompon hat"
+      },
+      {
+        "quantity": 4,
+        "name": "Ushanka ear flap hat"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RB-PP key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 7,
+        "name": "Cyclon rechargeable battery"
+      },
+      {
+        "quantity": 5,
+        "name": "Flat screwdriver (Long)"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "RB-PSP2 key"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Slaughterhouse",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "SP-8 Survival Machete"
+      },
+      {
+        "quantity": 1,
+        "name": "6Kh5 Bayonet"
+      },
+      {
+        "quantity": 1,
+        "name": "Crash Axe"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SOG Voodoo Hawk tactical tomahawk"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Paracord"
+      },
+      {
+        "quantity": 15,
+        "name": "Duct tape"
+      },
+      {
+        "quantity": 15,
+        "name": "Insulating tape"
+      },
+      {
+        "quantity": 15,
+        "name": "Pack of nails"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "S I C C organizational pouch"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Pistol case"
+      },
+      {
+        "quantity": 5,
+        "name": "Expeditionary fuel tank"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon case"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Jaeger",
+    "trader_level": "Jaeger LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Weapon case"
+      },
+      {
+        "quantity": 4,
+        "name": "Ammunition case"
+      },
+      {
+        "quantity": 10,
+        "name": "Metal spare parts"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C Weapon case"
+      }
+    ],
+    "section": "Jaeger"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL1",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 100,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Shatun's hideout key"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL2",
+    "task_requirement": {
+      "action": "completing",
+      "task": "To Great Heights! - Part 6",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Lega Medal"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "APOK Tactical Wasteland Gladius"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL2",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 100,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Grumpy's hideout key"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 100,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Voron's hideout key"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 220,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Weapon case"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL3",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 150,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Item case"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Decisions, Decisions",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 5,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 100,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Secure container Theta"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL3",
+    "task_requirement": {
+      "action": "completing",
+      "task": "Fence",
+      "task_display": ""
+    },
+    "trade_items": [
+      {
+        "quantity": 10,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 200,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Secure container Theta"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 15,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "5.56x45mm M855A1 ammo pack (50 pcs)"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 2,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 300,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C Weapon case"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 3,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 500,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "T H I C C item case"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 100,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "Leon's hideout key"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 40,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "FN40GL Mk2 40mm grenade launcher"
+      }
+    ],
+    "section": "Ref"
+  },
+  {
+    "trader_name": "Ref",
+    "trader_level": "Ref LL4",
+    "task_requirement": null,
+    "trade_items": [
+      {
+        "quantity": 1,
+        "name": "Lega Medal"
+      },
+      {
+        "quantity": 80,
+        "name": "GP coin"
+      }
+    ],
+    "result_items": [
+      {
+        "quantity": 1,
+        "name": "SWORD International Mk-18 .338 LM marksman rifle"
+      }
+    ],
+    "section": "Ref"
+  }
+]
