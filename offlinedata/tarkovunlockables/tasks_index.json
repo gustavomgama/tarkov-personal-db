@@ -48,7 +48,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69c2a2d004de49c8f0055a3d",
+        "task_id": "",
         "task_name": "hangover"
       }
     ],
@@ -58,7 +58,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69c27158e350f01390049e77",
+            "task_id": "",
             "task_name": "saving-private-roman"
           }
         ]
@@ -87,7 +87,7 @@
     "name": "a-difficult-choice",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/A_Difficult_Choice",
     "given_by": "Therapist",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [],
     "requirements": [
@@ -200,11 +200,11 @@
     "name": "a-healthy-alternative",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/A_Healthy_Alternative",
     "given_by": "Therapist",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "669fa3a08b4a64b332041ff7",
+        "task_id": "",
         "task_name": "dragnet"
       }
     ],
@@ -214,7 +214,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6179aff8f57fb279792c60a1",
+            "task_id": "",
             "task_name": "overpopulation"
           }
         ]
@@ -247,16 +247,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "673f348dd3346c21670217e7",
-        "task_name": "shipping-delay-part-1"
-      },
-      {
-        "task_id": "673f2cd5d3346c2167020484",
-        "task_name": "shipping-delay-part-2"
-      },
-      {
-        "task_id": "673f4e956f1b89c7bc0f56ef",
-        "task_name": "hot-wheels"
+        "task_id": "",
+        "task_name": "shipping-delay-part-1shipping-delay-part-2hot-wheels"
       }
     ],
     "requirements": [
@@ -265,7 +257,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "657315e4a6af4ab4b50f3459",
+            "task_id": "",
             "task_name": "saving-the-mole"
           }
         ]
@@ -309,7 +301,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c1a6c3ebfd8e6034916",
+        "task_id": "",
         "task_name": "profit-retention"
       }
     ],
@@ -319,7 +311,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67af4c169d95ad16e004fd86",
+            "task_id": "",
             "task_name": "safety-guarantee"
           }
         ]
@@ -406,7 +398,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "675c047fa46173572a0bd878",
+        "task_id": "",
         "task_name": "shipment-tracking"
       }
     ],
@@ -416,7 +408,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6179ad56c760af5ad2053587",
+            "task_id": "",
             "task_name": "seaside-vacation"
           }
         ]
@@ -460,16 +452,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60e729cf5698ee7b05057439",
-        "task_name": "swift"
-      },
-      {
-        "task_id": "5d25e46e86f77409453bce7c",
-        "task_name": "first-aid"
-      },
-      {
-        "task_id": "5d25e2ee86f77443e35162ea",
-        "task_name": "the-huntsman-path-woods-keeper"
+        "task_id": "",
+        "task_name": "swiftfirst-aidthe-huntsman-path-woods-keeper"
       }
     ],
     "requirements": [
@@ -478,7 +462,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d2495a886f77425cd51e403",
+            "task_id": "",
             "task_name": "introduction"
           }
         ]
@@ -1000,12 +984,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "597a0f5686f774273b74f676",
-            "task_name": "chemical-part-4"
-          },
-          {
-            "task_id": "597a171586f77405ba6887d3",
-            "task_name": "big-customer"
+            "task_id": "",
+            "task_name": "chemical-part-4orbig-customer"
           }
         ]
       }
@@ -1037,7 +1017,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314bafd5ca9577902e03a",
+        "task_id": "",
         "task_name": "the-good-times-part-2"
       }
     ],
@@ -1047,7 +1027,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314b696a9349baa021bac",
+            "task_id": "",
             "task_name": "quality-standard"
           }
         ]
@@ -1150,8 +1130,8 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5d25e2ee86f77443e35162ea",
-            "task_name": "the-huntsman-path-woods-keeper"
+            "task_id": "",
+            "task_name": "accept-the-huntsman-path-woods-keeper"
           }
         ]
       }
@@ -1553,16 +1533,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5edabd13218d181e29451442",
-        "task_name": "rigged-game"
-      },
-      {
-        "task_id": "5edac020218d181e29451446",
-        "task_name": "samples"
-      },
-      {
-        "task_id": "5f04886a3937dc337a6b8238",
-        "task_name": "chemistry-closet"
+        "task_id": "",
+        "task_name": "rigged-gamesampleschemistry-closet"
       }
     ],
     "requirements": [
@@ -1571,7 +1543,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5967725e86f774601a446662",
+            "task_id": "",
             "task_name": "shaking-up-the-teller"
           }
         ]
@@ -1625,7 +1597,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "674492b6909d2013670a347a",
+        "task_id": "",
         "task_name": "ask-for-directions"
       }
     ],
@@ -1635,12 +1607,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f4e956f1b89c7bc0f56ef",
-            "task_name": "hot-wheels"
-          },
-          {
-            "task_id": "6740a02a69a58fceba0ff399",
-            "task_name": "natural-exchange"
+            "task_id": "",
+            "task_name": "fail-hot-wheelsnatural-exchange"
           }
         ]
       }
@@ -1808,7 +1776,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6744a4717e3818d5bb0680bb",
+        "task_id": "",
         "task_name": "stabilize-business"
       }
     ],
@@ -1818,7 +1786,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6740b60c60a98cad1b0e0aa0",
+            "task_id": "",
             "task_name": "another-shipping-delay"
           }
         ]
@@ -1862,7 +1830,7 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d6fff4149f1149b5b12c9",
+        "task_id": "",
         "task_name": "assessment-part-2"
       }
     ],
@@ -1872,7 +1840,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d6ffaf7308432be1d44c5",
+            "task_id": "",
             "task_name": "network-provider-part-2"
           }
         ]
@@ -1905,7 +1873,7 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d7001c4874104f230c0c5",
+        "task_id": "",
         "task_name": "assessment-part-3"
       }
     ],
@@ -1915,7 +1883,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d6ffcaa168e51321d69d7",
+            "task_id": "",
             "task_name": "assessment-part-1"
           }
         ]
@@ -1948,8 +1916,8 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d70031ed3bb5bcc5bd9e5",
-        "task_name": "key-to-the-tower"
+        "task_id": "",
+        "task_name": "key-to-the-tower-24hr"
       }
     ],
     "requirements": [
@@ -1958,7 +1926,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d6fff4149f1149b5b12c9",
+            "task_id": "",
             "task_name": "assessment-part-2"
           }
         ]
@@ -1996,12 +1964,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5b478d0f86f7744d190d91b5",
-            "task_name": "minibus"
-          },
-          {
-            "task_id": "639135a7e705511c8a4a1b78",
-            "task_name": "ballet-lover"
+            "task_id": "",
+            "task_name": "minibusballet-lover"
           }
         ]
       }
@@ -2056,7 +2020,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "639135a7e705511c8a4a1b78",
+        "task_id": "",
         "task_name": "ballet-lover"
       }
     ],
@@ -2107,7 +2071,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6089732b59b92115597ad789",
+        "task_id": "",
         "task_name": "surplus-goods"
       }
     ],
@@ -2117,7 +2081,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ac3477486f7741d651d6885",
+            "task_id": "",
             "task_name": "scout"
           }
         ]
@@ -2460,12 +2424,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "639135bbc115f907b14700a6",
-        "task_name": "audiophile"
-      },
-      {
-        "task_id": "65734c186dc1e402c80dc19e",
-        "task_name": "dandies"
+        "task_id": "",
+        "task_name": "audiophiledandies"
       }
     ],
     "requirements": [
@@ -2474,7 +2434,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "638fcd23dc65553116701d33",
+            "task_id": "",
             "task_name": "audit"
           }
         ]
@@ -2681,7 +2641,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "59ca2eb686f77445a80ed049",
+            "task_id": "",
             "task_name": "the-punisher-part-6"
           }
         ]
@@ -2848,7 +2808,7 @@
     "name": "big-customer",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Big_Customer",
     "given_by": "Prapor",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [],
     "requirements": [
@@ -2950,7 +2910,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69ce204c8702b378f9091e4b",
+            "task_id": "",
             "task_name": "war-never-changes"
           }
         ]
@@ -3020,7 +2980,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ac3477486f7741d651d6885",
+            "task_id": "",
             "task_name": "scout"
           }
         ]
@@ -3213,7 +3173,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63913715f8e5dd32bf4e3aaa",
+        "task_id": "",
         "task_name": "broadcast-part-2"
       }
     ],
@@ -3267,16 +3227,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63a511ea30d85e10e375b045",
-        "task_name": "broadcast-part-3"
-      },
-      {
-        "task_id": "639135e8c115f907b14700aa",
-        "task_name": "surveillance"
-      },
-      {
-        "task_id": "639136fa9444fb141f4e6eee",
-        "task_name": "watching-you"
+        "task_id": "",
+        "task_name": "broadcast-part-3surveillancewatching-you"
       }
     ],
     "requirements": [
@@ -3285,7 +3237,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "626bd75e47ea7f506e5493c5",
+            "task_id": "",
             "task_name": "broadcast-part-1"
           }
         ]
@@ -3339,7 +3291,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6391372c8ba6894d155e77d7",
+        "task_id": "",
         "task_name": "broadcast-part-4"
       }
     ],
@@ -3349,7 +3301,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63913715f8e5dd32bf4e3aaa",
+            "task_id": "",
             "task_name": "broadcast-part-2"
           }
         ]
@@ -3388,12 +3340,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "64ee99639878a0569d6ec8c9",
-        "task_name": "broadcast-part-5"
-      },
-      {
-        "task_id": "63a9b36cc31b00242d28a99f",
-        "task_name": "slaughterhouse"
+        "task_id": "",
+        "task_name": "broadcast-part-5slaughterhouse"
       }
     ],
     "requirements": [
@@ -3402,7 +3350,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63a511ea30d85e10e375b045",
+            "task_id": "",
             "task_name": "broadcast-part-3"
           }
         ]
@@ -3458,7 +3406,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6391372c8ba6894d155e77d7",
+            "task_id": "",
             "task_name": "broadcast-part-4"
           }
         ]
@@ -3533,7 +3481,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6740a02a69a58fceba0ff399",
+        "task_id": "",
         "task_name": "natural-exchange"
       }
     ],
@@ -3543,12 +3491,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6745fcded0fbbc74ca0f721d",
-            "task_name": "swift-retribution"
-          },
-          {
-            "task_id": "673f6027352b4da8e00322d2",
-            "task_name": "inevitable-response"
+            "task_id": "",
+            "task_name": "swift-retributionorinevitable-response"
           }
         ]
       }
@@ -3681,12 +3625,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "596b36c586f77450d6045ad2",
-        "task_name": "supplier"
-      },
-      {
-        "task_id": "66058cb22cee99303f1ba067",
-        "task_name": "easy-money-part-1-pvp-zone"
+        "task_id": "",
+        "task_name": "suppliereasy-money-part-1"
       }
     ],
     "requirements": [
@@ -3729,7 +3669,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60e71d6d7fcf9c556f325055",
+        "task_id": "",
         "task_name": "the-courier"
       }
     ],
@@ -3739,7 +3679,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5f04886a3937dc337a6b8238",
+            "task_id": "",
             "task_name": "chemistry-closet"
           }
         ]
@@ -3795,7 +3735,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314c3acf8442f8b0531a3",
+        "task_id": "",
         "task_name": "proper-comeback"
       }
     ],
@@ -3805,7 +3745,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314bf1cd52e3d040a2e78",
+            "task_id": "",
             "task_name": "serious-allegations"
           }
         ]
@@ -3854,7 +3794,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca2eb686f77445a80ed049",
+            "task_id": "",
             "task_name": "the-punisher-part-6"
           }
         ]
@@ -3925,7 +3865,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5969f9e986f7741dde183a50",
+            "task_id": "",
             "task_name": "pharmacist"
           }
         ]
@@ -3936,7 +3876,38 @@
         "loose_items": [],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Pipe grip wrench",
+                    "quantity": 1,
+                    "id": "8caa5b62-1209-49b2-b8bd-18a111a3523e"
+                  },
+                  {
+                    "name": "6-STEN-140-M military battery",
+                    "quantity": 1,
+                    "id": "5d03794386f77420415576f5"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5733279d245977289b77ec24",
+                    "name": "Car battery"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "finish_rewards": [
@@ -4017,7 +3988,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "64f3176921045e77405d63b5",
+        "task_id": "",
         "task_name": "paramedic"
       }
     ],
@@ -4027,7 +3998,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63a88045abf76d719f42d715",
+            "task_id": "",
             "task_name": "the-delicious-sausage"
           }
         ]
@@ -4076,7 +4047,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5969f9e986f7741dde183a50",
+        "task_id": "",
         "task_name": "pharmacist"
       }
     ],
@@ -4140,12 +4111,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "597a0b2986f77426d66c0633",
-        "task_name": "chemical-part-2"
-      },
-      {
-        "task_id": "5979f8bb86f7743ec214c7a6",
-        "task_name": "polikhim-hobo"
+        "task_id": "",
+        "task_name": "chemical-part-2polikhim-hobo"
       }
     ],
     "requirements": [
@@ -4154,7 +4121,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5979eee086f774311955e614",
+            "task_id": "",
             "task_name": "golden-swag"
           }
         ]
@@ -4198,7 +4165,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "597a0e5786f77426d66c0636",
+        "task_id": "",
         "task_name": "chemical-part-3"
       }
     ],
@@ -4208,7 +4175,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5979f9ba86f7740f6c3fe9f2",
+            "task_id": "",
             "task_name": "chemical-part-1"
           }
         ]
@@ -4264,7 +4231,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c51aac186f77432ea65c552",
+        "task_id": "",
         "task_name": "collector"
       }
     ],
@@ -4314,7 +4281,7 @@
     "name": "chemical-part-4",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_4",
     "given_by": "Skier",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [],
     "requirements": [
@@ -4491,12 +4458,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6744aca8d3346c216702c583",
-            "task_name": "discombobulate"
-          },
-          {
-            "task_id": "674605df60a98cad1b0ec799",
-            "task_name": "killer-argument"
+            "task_id": "",
+            "task_name": "discombobulatekiller-argument"
           }
         ]
       }
@@ -4539,20 +4502,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c0bbaa886f7746941031d82",
-        "task_name": "bullshit"
-      },
-      {
-        "task_id": "639dbaf17c898a131e1cffff",
-        "task_name": "debtor"
-      },
-      {
-        "task_id": "658027799634223183395339",
-        "task_name": "no-swiping"
-      },
-      {
-        "task_id": "675c3582f6ddc329a90f9c6d",
-        "task_name": "private-club"
+        "task_id": "",
+        "task_name": "bullshitdebtorno-swipingprivate-club"
       }
     ],
     "requirements": [
@@ -4561,7 +4512,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5b47926a86f7747ccc057c15",
+            "task_id": "",
             "task_name": "informed-means-armed"
           }
         ]
@@ -4594,7 +4545,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314a1920800278d0f6746",
+        "task_id": "",
         "task_name": "special-offer"
       }
     ],
@@ -4604,7 +4555,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6663149cfd5ca9577902e037",
+            "task_id": "",
             "task_name": "the-invisible-hand"
           }
         ]
@@ -4653,7 +4604,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6086c852c945025d41566124",
+            "task_id": "",
             "task_name": "revision-reserve"
           }
         ]
@@ -4707,7 +4658,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
+            "task_id": "",
             "task_name": "the-huntsman-path-forest-cleaning"
           }
         ]
@@ -4838,20 +4789,8 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "597a0e5786f77426d66c0636",
-            "task_name": "chemical-part-3"
-          },
-          {
-            "task_id": "5ae4497b86f7744cf402ed00",
-            "task_name": "sew-it-good-part-2"
-          },
-          {
-            "task_id": "5c0bde0986f77479cf22c2f8",
-            "task_name": "shooter-born-in-heaven"
-          },
-          {
-            "task_id": "5bc480a686f7741af0342e29",
-            "task_name": "the-tarkov-shooter-part-4"
+            "task_id": "",
+            "task_name": "collector-requirements-see-requirements"
           }
         ]
       }
@@ -4894,7 +4833,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314a50aa5c7436c00908a",
+        "task_id": "",
         "task_name": "old-patterns"
       }
     ],
@@ -4904,7 +4843,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314a1920800278d0f6746",
+            "task_id": "",
             "task_name": "special-offer"
           }
         ]
@@ -5113,8 +5052,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a09761e720611a6a01f288",
-        "task_name": "keepers-word"
+        "task_id": "",
+        "task_name": "keeper-s-word"
       }
     ],
     "requirements": [
@@ -5123,7 +5062,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0970744893b9f3f0d9b68",
+            "task_id": "",
             "task_name": "offensive-reconnaissance"
           }
         ]
@@ -5179,12 +5118,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5c0bc91486f7746ab41857a2",
-            "task_name": "silent-caliber"
-          },
-          {
-            "task_id": "5d25e4ca86f77409dd5cdf2c",
-            "task_name": "hunting-trip"
+            "task_id": "",
+            "task_name": "silent-caliber-18-24hr-hunting-trip-18-24hr"
           }
         ]
       }
@@ -5244,12 +5179,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67af4c1a6c3ebfd8e6034916",
-            "task_name": "profit-retention"
-          },
-          {
-            "task_id": "67af4c1991ee75c6d7060a16",
-            "task_name": "get-a-foothold"
+            "task_id": "",
+            "task_name": "profit-retentionorget-a-foothold"
           }
         ]
       }
@@ -5448,7 +5379,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25e4ad86f77443e625e387",
+        "task_id": "",
         "task_name": "nostalgia"
       }
     ],
@@ -5458,7 +5389,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25cf2686f77443e75488d4",
+            "task_id": "",
             "task_name": "the-survivalist-path-tough-guy"
           }
         ]
@@ -5661,10 +5592,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5c0e534186f7747fa1419867",
-            "item_name": "eTG-change regenerative stimulant injector",
-            "hideout_station": "Medstation",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Pile of meds",
+                    "quantity": 2,
+                    "id": "5d1b3a5d86f774252167ba22"
+                  },
+                  {
+                    "name": "Disposable syringe",
+                    "quantity": 2,
+                    "id": "5d1b3f2d86f774253763b735"
+                  },
+                  {
+                    "name": "Propital regenerative stimulant injector",
+                    "quantity": 2,
+                    "id": "5c0e530286f7747fa1419862"
+                  },
+                  {
+                    "name": "Bottle of Norvinsky Yadreniy premium kvass (0.6L)",
+                    "quantity": 1,
+                    "id": "5e8f3423fd7471236e6e3b64"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5c0e534186f7747fa1419867",
+                    "name": "ETG-change regenerative stimulant injector"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -5680,8 +5645,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6615141bfda04449120269a7",
-        "task_name": "drip-out-part-2-usec"
+        "task_id": "",
+        "task_name": "drip-out-part-2"
       }
     ],
     "requirements": [
@@ -5690,7 +5655,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "639135a7e705511c8a4a1b78",
+            "task_id": "",
             "task_name": "ballet-lover"
           }
         ]
@@ -5734,7 +5699,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "671a49f77d49aea42c029b5f",
+            "task_id": "",
             "task_name": "irresistible"
           }
         ]
@@ -5978,10 +5943,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5ed51652f6c34d2cc26336a1",
-            "item_name": "M.U.L.E. stimulant injector",
-            "hideout_station": "Medstation",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Zagustin hemostatic drug injector",
+                    "quantity": 2,
+                    "id": "5c0e533786f7747fa23f4d47"
+                  },
+                  {
+                    "name": "Morphine injector",
+                    "quantity": 1,
+                    "id": "544fb3f34bdc2d03748b456a"
+                  },
+                  {
+                    "name": "Can of Max Energy energy drink",
+                    "quantity": 2,
+                    "id": "5751435d24597720a27126d1"
+                  },
+                  {
+                    "name": "Pile of meds",
+                    "quantity": 2,
+                    "id": "5d1b3a5d86f774252167ba22"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5ed51652f6c34d2cc26336a1",
+                    "name": "M.U.L.E. stimulant injector"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -6090,12 +6089,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6745cbee909d2013670a4a55",
-        "task_name": "the-price-of-independence-2"
-      },
-      {
-        "task_id": "67460662d0fbbc74ca0f7229",
-        "task_name": "choose-your-friends-wisely"
+        "task_id": "",
+        "task_name": "the-price-of-independencechoose-your-friends-wisely"
       }
     ],
     "requirements": [
@@ -6104,7 +6099,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6744ab1def61d56e020b5c56",
+            "task_id": "",
             "task_name": "protect-the-sky"
           }
         ]
@@ -6148,7 +6143,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6179ad56c760af5ad2053587",
+        "task_id": "",
         "task_name": "seaside-vacation"
       }
     ],
@@ -6158,7 +6153,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5969f9e986f7741dde183a50",
+            "task_id": "",
             "task_name": "pharmacist"
           }
         ]
@@ -6256,7 +6251,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "66ab970848ddbe9d4a0c49a8",
+        "task_id": "",
         "task_name": "special-comms"
       }
     ],
@@ -6266,7 +6261,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "60896bca6ee58f38c417d4f2",
+            "task_id": "",
             "task_name": "no-place-for-renegades"
           }
         ]
@@ -6325,12 +6320,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "669fa38fad7f1eac2607ed46",
-            "task_name": "one-less-loose-end"
-          },
-          {
-            "task_id": "669fa3910c828825de06d69f",
-            "task_name": "a-healthy-alternative"
+            "task_id": "",
+            "task_name": "one-less-loose-endora-healthy-alternative"
           }
         ]
       }
@@ -6513,7 +6504,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6179afd0bca27a099552e040",
+            "task_id": "",
             "task_name": "lost-contact"
           }
         ]
@@ -6567,7 +6558,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27b87686f77460de0252a8",
+        "task_id": "",
         "task_name": "humanitarian-supplies"
       }
     ],
@@ -6582,7 +6573,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27b7d686f77460d847e6a6",
+            "task_id": "",
             "task_name": "scrap-metal"
           }
         ]
@@ -6615,7 +6606,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "675c1ff1a757ddd00404f0aa",
+        "task_id": "",
         "task_name": "unique-experience"
       }
     ],
@@ -6625,7 +6616,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6574e0dedc0d635f633a5805",
+            "task_id": "",
             "task_name": "getting-some-air"
           }
         ]
@@ -6679,7 +6670,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "626bd75c71bd851e971b82a5",
+        "task_id": "",
         "task_name": "reconnaissance"
       }
     ],
@@ -6689,7 +6680,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59c50a9e86f7745fef66f4ff",
+            "task_id": "",
             "task_name": "the-punisher-part-2"
           }
         ]
@@ -6903,7 +6894,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca2eb686f77445a80ed049",
+            "task_id": "",
             "task_name": "the-punisher-part-6"
           }
         ]
@@ -6947,10 +6938,54 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5f60c74e3b85f6263c145586",
-            "item_name": "Rys-T bulletproof helmet (Black)",
-            "hideout_station": "Lavatory",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Fierce Blow sledgehammer",
+                    "quantity": 1,
+                    "id": "1c8c9bf7-42d7-491d-b556-1af9ca31635e"
+                  },
+                  {
+                    "name": "Bottle of Tarkovskaya vodka",
+                    "quantity": 1,
+                    "id": "5d40407c86f774318526545a"
+                  },
+                  {
+                    "name": "Altyn bulletproof helmet (Olive Drab)",
+                    "quantity": 1,
+                    "id": "5aa7e276e5b5b000171d0647"
+                  },
+                  {
+                    "name": "Ripstop fabric",
+                    "quantity": 2,
+                    "id": "5e2af4a786f7746d3f3c3400"
+                  },
+                  {
+                    "name": "Aramid fiber fabric",
+                    "quantity": 2,
+                    "id": "5e2af4d286f7746d4159f07a"
+                  },
+                  {
+                    "name": "Fleece fabric",
+                    "quantity": 2,
+                    "id": "5e2af47786f7746d404f3aaa"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5f60c74e3b85f6263c145586",
+                    "name": "Rys-T bulletproof helmet (Black)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -6966,7 +7001,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "66631489acf8442f8b05319f",
+        "task_id": "",
         "task_name": "friend-among-strangers"
       }
     ],
@@ -7020,7 +7055,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "66b38c7bf85b8bf7250f9cb6",
+            "task_id": "",
             "task_name": "rough-tarkov"
           }
         ]
@@ -7066,7 +7101,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "669fa39c64ea11e84c0642a6",
+        "task_id": "",
         "task_name": "the-walls-have-eyes"
       }
     ],
@@ -7076,7 +7111,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ac3477486f7741d651d6885",
+            "task_id": "",
             "task_name": "scout"
           }
         ]
@@ -7120,7 +7155,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "68400953506db3b4db0700e7",
+        "task_id": "",
         "task_name": "fair-price-part-2"
       }
     ],
@@ -7130,8 +7165,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "684009026ceedc792c09b2a7",
-            "task_name": "hobby-club"
+            "task_id": "",
+            "task_name": "accept-hobby-club"
           }
         ]
       }
@@ -7168,7 +7203,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "68400926706e0a55e90b0007",
+            "task_id": "",
             "task_name": "fair-price-part-1"
           }
         ]
@@ -7350,7 +7385,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d24b81486f77439c92d6ba8",
+            "task_id": "",
             "task_name": "acquaintance"
           }
         ]
@@ -7477,12 +7512,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27b7a786f774579c3eb376",
-        "task_name": "tigr-safari"
-      },
-      {
-        "task_id": "5edac020218d181e29451446",
-        "task_name": "samples"
+        "task_id": "",
+        "task_name": "tigr-safarisamples"
       }
     ],
     "requirements": [
@@ -7529,7 +7560,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e4ad86f77443e625e387",
+            "task_id": "",
             "task_name": "nostalgia"
           }
         ]
@@ -7578,8 +7609,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6396700fea19ac7ed845db32",
-        "task_name": "spotter"
+        "task_id": "",
+        "task_name": "spotter-10hr"
       }
     ],
     "requirements": [
@@ -7588,8 +7619,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966ff54c3ef01b6f3ffad8",
-            "task_name": "provocation"
+            "task_id": "",
+            "task_name": "provocation-10hr"
           }
         ]
       }
@@ -7727,7 +7758,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6740a2c17e3818d5bb0648b6",
+        "task_id": "",
         "task_name": "half-empty"
       }
     ],
@@ -7737,12 +7768,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f4e956f1b89c7bc0f56ef",
-            "task_name": "hot-wheels"
-          },
-          {
-            "task_id": "6740a02a69a58fceba0ff399",
-            "task_name": "natural-exchange"
+            "task_id": "",
+            "task_name": "hot-wheelsnatural-exchange"
           }
         ]
       }
@@ -7860,8 +7887,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6663148ca9290f9e0806cca1",
-        "task_name": "immunity"
+        "task_id": "",
+        "task_name": "immunity-quest-immunity"
       }
     ],
     "requirements": [
@@ -7870,7 +7897,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6672d9def1c88688a707d042",
+            "task_id": "",
             "task_name": "establish-contact"
           }
         ]
@@ -8160,7 +8187,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c1d8c9482eca103e477",
+        "task_id": "",
         "task_name": "consolation-prize"
       }
     ],
@@ -8170,7 +8197,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67af4c17f4f1fb58a907f8f6",
+            "task_id": "",
             "task_name": "never-too-late-to-learn"
           }
         ]
@@ -8203,16 +8230,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966faeea19ac7ed845db2c",
-        "task_name": "information-source"
-      },
-      {
-        "task_id": "626bd75d5bef5d7d590bd415",
-        "task_name": "top-secret"
-      },
-      {
-        "task_id": "68db9c7557bc51a8c804c14b",
-        "task_name": "goals-and-means"
+        "task_id": "",
+        "task_name": "information-sourcetop-secretgoals-and-means"
       }
     ],
     "requirements": [
@@ -8221,7 +8240,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d7005a4eb80027c4f2e09",
+            "task_id": "",
             "task_name": "knock-knock"
           }
         ]
@@ -8232,7 +8251,48 @@
         "loose_items": [],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Screwdriver",
+                    "quantity": 1,
+                    "id": "b14fb74e-f7f2-44c4-83a4-5a1ee930c68a"
+                  },
+                  {
+                    "name": "Secure Flash drive V3",
+                    "quantity": 1,
+                    "id": "b80c997e-777f-4e64-813d-9c91127b17d0"
+                  },
+                  {
+                    "name": "Digital secure DSP radio transmitter",
+                    "quantity": 1,
+                    "id": "62e910aaf957f2915e0a5e36"
+                  },
+                  {
+                    "name": "Electronic components",
+                    "quantity": 1,
+                    "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "62e910aaf957f2915e0a5e36",
+                    "name": "Digital secure DSP radio transmitter"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "finish_rewards": [
@@ -8254,7 +8314,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "669fa3a40c828825de06d6a1",
+        "task_id": "",
         "task_name": "easy-breezy"
       }
     ],
@@ -8264,7 +8324,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "64f5deac39e45b527a7c4232",
+            "task_id": "",
             "task_name": "job-for-a-patriot"
           }
         ]
@@ -8318,16 +8378,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "639135534b15ca31f76bc317",
-        "task_name": "your-car-needs-a-service"
-      },
-      {
-        "task_id": "5c0bd01e86f7747cdd799e56",
-        "task_name": "insomnia"
-      },
-      {
-        "task_id": "6942b44f891369fc790e385a",
-        "task_name": "setting-priorities"
+        "task_id": "",
+        "task_name": "your-car-needs-a-serviceinsomniasetting-priorities"
       }
     ],
     "requirements": [
@@ -9321,7 +9373,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6573397ef3f8344c4575cd87",
+        "task_id": "",
         "task_name": "properties-all-around"
       }
     ],
@@ -9587,7 +9639,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67b45467814ab0ffa000c7e7",
+        "task_id": "",
         "task_name": "the-art-of-explosion"
       }
     ],
@@ -9602,7 +9654,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "657315df034d76585f032e01",
+            "task_id": "",
             "task_name": "shooting-cans"
           }
         ]
@@ -9627,7 +9679,43 @@
         ],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Leatherman Multitool",
+                    "quantity": 1,
+                    "id": "544fb5454bdc2df8738b456a"
+                  },
+                  {
+                    "name": "UZRGM grenade fuze",
+                    "quantity": 5,
+                    "id": "755e0a03-3765-4cc6-b57b-a615a82db9d3"
+                  },
+                  {
+                    "name": "40mm VOG-25 grenade",
+                    "quantity": 5,
+                    "id": "5656eb674bdc2d35148b457c"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5e340dcdcb6d5863cc5e5efb",
+                    "name": "VOG-25 Khattabka improvised hand grenade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -10513,7 +10601,63 @@
         ],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Advanced Electronic Materials textbook",
+                    "quantity": 1,
+                    "id": "d45f08bb-6292-4a90-8943-8e21e92dd5db"
+                  },
+                  {
+                    "name": "Silicon Optoelectronic Integrated Circuits textbook",
+                    "quantity": 1,
+                    "id": "774bceae-3555-41b5-8532-1304e0b58898"
+                  },
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  },
+                  {
+                    "name": "Iridium military thermal vision module",
+                    "quantity": 4,
+                    "id": "9ddc82ba-354d-4e6d-982b-1006fdde0cc7"
+                  },
+                  {
+                    "name": "NIXXOR lens",
+                    "quantity": 2,
+                    "id": "5d1b2ffd86f77425243e8d17"
+                  },
+                  {
+                    "name": "Microcontroller board",
+                    "quantity": 1,
+                    "id": "6389c7750ef44505c87f5996"
+                  },
+                  {
+                    "name": "Virtex programmable processor",
+                    "quantity": 2,
+                    "id": "5c05308086f7746b2101e90b"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5a1eaa87fcdbcb001865f75e",
+                    "name": "Trijicon REAP-IR thermal scope"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -11257,7 +11401,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6740a3f4eca8acb2d2055159",
+        "task_id": "",
         "task_name": "stick-in-the-wheel"
       }
     ],
@@ -11267,7 +11411,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6740a15566e6a521aa051b15",
+            "task_id": "",
             "task_name": "forge-a-friendship"
           }
         ]
@@ -11321,7 +11465,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69c277f3ea6da9c23e07f8d2",
+            "task_id": "",
             "task_name": "a-bitter-victory"
           }
         ]
@@ -11354,7 +11498,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a68663e86f774501078f78a",
+        "task_id": "",
         "task_name": "health-care-privacy-part-2"
       }
     ],
@@ -11364,7 +11508,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5969f9e986f7741dde183a50",
+            "task_id": "",
             "task_name": "pharmacist"
           }
         ]
@@ -11415,12 +11559,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a68665c86f774255929b4c7",
-        "task_name": "health-care-privacy-part-3"
-      },
-      {
-        "task_id": "6179afd0bca27a099552e040",
-        "task_name": "lost-contact"
+        "task_id": "",
+        "task_name": "health-care-privacy-part-3lost-contact"
       }
     ],
     "requirements": [
@@ -11429,7 +11569,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68661a86f774500f48afb0",
+            "task_id": "",
             "task_name": "health-care-privacy-part-1"
           }
         ]
@@ -11473,7 +11613,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a68667486f7742607157d28",
+        "task_id": "",
         "task_name": "health-care-privacy-part-4"
       }
     ],
@@ -11483,7 +11623,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68663e86f774501078f78a",
+            "task_id": "",
             "task_name": "health-care-privacy-part-2"
           }
         ]
@@ -11558,7 +11698,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a68669a86f774255929b4d4",
+        "task_id": "",
         "task_name": "health-care-privacy-part-5"
       }
     ],
@@ -11568,7 +11708,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68665c86f774255929b4c7",
+            "task_id": "",
             "task_name": "health-care-privacy-part-3"
           }
         ]
@@ -11619,12 +11759,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c0d1c4cd0928202a02a6f5c",
-        "task_name": "decontamination-service"
-      },
-      {
-        "task_id": "669fa3a3ad7f1eac2607ed48",
-        "task_name": "health-care-privacy-part-6"
+        "task_id": "",
+        "task_name": "decontamination-servicehealth-care-privacy-part-6"
       }
     ],
     "requirements": [
@@ -11633,7 +11769,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68667486f7742607157d28",
+            "task_id": "",
             "task_name": "health-care-privacy-part-4"
           }
         ]
@@ -11682,7 +11818,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68669a86f774255929b4d4",
+            "task_id": "",
             "task_name": "health-care-privacy-part-5"
           }
         ]
@@ -11749,7 +11885,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314b2a9290f9e0806cca3",
+        "task_id": "",
         "task_name": "hell-on-earth-part-2"
       }
     ],
@@ -11759,8 +11895,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314b4d7f171c4c20226c3",
-            "task_name": "the-good-times-part-1"
+            "task_id": "",
+            "task_name": "accept-the-good-times-part-1"
           }
         ]
       }
@@ -11803,7 +11939,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314b0acf8442f8b0531a1",
+            "task_id": "",
             "task_name": "hell-on-earth-part-1"
           }
         ]
@@ -11857,12 +11993,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a0970744893b9f3f0d9b68",
-        "task_name": "offensive-reconnaissance"
-      },
-      {
-        "task_id": "67a0967c003a9986cb0f5ac1",
-        "task_name": "sensory-analysis-part-1"
+        "task_id": "",
+        "task_name": "offensive-reconnaissancesensory-analysis-part-1-30min"
       }
     ],
     "requirements": [
@@ -11871,7 +12003,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0964e972c11a3f507731b",
+            "task_id": "",
             "task_name": "needle-in-a-haystack"
           }
         ]
@@ -12035,7 +12167,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "68400926706e0a55e90b0007",
+        "task_id": "",
         "task_name": "fair-price-part-1"
       }
     ],
@@ -12051,7 +12183,67 @@
         "loose_items": [],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Set of files \"Master\"",
+                    "quantity": 1,
+                    "id": "684c8a74-f68c-4ab8-a11c-bf8bdae28344"
+                  },
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  },
+                  {
+                    "name": "RPK-16 5.45x39 light machine gun",
+                    "quantity": 1,
+                    "id": "bf9ee7da-e50e-40bf-a060-61cbaca5e1bb"
+                  },
+                  {
+                    "name": "Metal spare parts",
+                    "quantity": 5,
+                    "id": "14c2ef8c-d6b3-459c-b59f-39722a064981"
+                  },
+                  {
+                    "name": "Weapon parts",
+                    "quantity": 10,
+                    "id": "5d1c819a86f774771b0acd6c"
+                  },
+                  {
+                    "name": "Tube of Poxeram cold welding",
+                    "quantity": 2,
+                    "id": "a0af7bca-f166-4121-868c-0330c2464f9b"
+                  },
+                  {
+                    "name": "Insulating tape",
+                    "quantity": 1,
+                    "id": "8cb829b2-2a5d-43c2-a86d-a372ed8d917f"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "67d0576f29f580ebc10efd08",
+                    "name": "TheAKGuy AK-50 .50 BMG anti-materiel rifle"
+                  },
+                  {
+                    "id": "67d0576f29f580ebc10efd08",
+                    "name": "TheAKGuy AK-50 .50 BMG anti-materiel rifle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "finish_rewards": [
@@ -12244,7 +12436,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c112d7e86f7740d6f647486",
+        "task_id": "",
         "task_name": "scavenger"
       }
     ],
@@ -12254,7 +12446,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae449b386f77446d8741719",
+            "task_id": "",
             "task_name": "gratitude"
           }
         ]
@@ -12298,12 +12490,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6745fcded0fbbc74ca0f721d",
-        "task_name": "swift-retribution"
-      },
-      {
-        "task_id": "673f5a4976553f78350bdac1",
-        "task_name": "hot-wheels-lets-try-again"
+        "task_id": "",
+        "task_name": "swift-retributionorupon-failure-hot-wheels-let-s-try-again-24hr"
       }
     ],
     "requirements": [
@@ -12312,7 +12500,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f348dd3346c21670217e7",
+            "task_id": "",
             "task_name": "shipping-delay-part-1"
           }
         ]
@@ -12511,8 +12699,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6764174c86addd02bc033d68",
-        "task_name": "connections-up-north"
+        "task_id": "",
+        "task_name": "connections-up-north-18-24hr"
       }
     ],
     "requirements": [
@@ -12521,7 +12709,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2ee86f77443e35162ea",
+            "task_id": "",
             "task_name": "the-huntsman-path-woods-keeper"
           }
         ]
@@ -12582,8 +12770,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a09761e720611a6a01f288",
-        "task_name": "keepers-word"
+        "task_id": "",
+        "task_name": "keeper-s-word"
       }
     ],
     "requirements": [
@@ -12592,7 +12780,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0970744893b9f3f0d9b68",
+            "task_id": "",
             "task_name": "offensive-reconnaissance"
           }
         ]
@@ -12895,7 +13083,43 @@
         "loose_items": [],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Flat screwdriver (Long)",
+                    "quantity": 1,
+                    "id": "a0bf67cf-6c0b-4344-b740-9c2ef9043a37"
+                  },
+                  {
+                    "name": "AK-74 5.45x39 6L23 30-round magazine",
+                    "quantity": 4,
+                    "id": "55d480c04bdc2d1d4e8b456a"
+                  },
+                  {
+                    "name": "KEKTAPE duct tape",
+                    "quantity": 1,
+                    "id": "5e2af29386f7746d4159f077"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "55d482194bdc2d1d4e8b456b",
+                    "name": "AK-74 5.45x39 6L31 60-round magazine"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "finish_rewards": [
@@ -12967,7 +13191,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6663148ed7f171c4c20226c1",
+        "task_id": "",
         "task_name": "small-business-part-1"
       }
     ],
@@ -12977,7 +13201,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "66631489acf8442f8b05319f",
+            "task_id": "",
             "task_name": "friend-among-strangers"
           }
         ]
@@ -13149,16 +13373,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "673f629c5b555b53460cf827",
-        "task_name": "building-foundations"
-      },
-      {
-        "task_id": "6745fae369a58fceba10343d",
-        "task_name": "the-higher-they-fly"
-      },
-      {
-        "task_id": "673f61a066e6a521aa04b62b",
-        "task_name": "order-from-outside"
+        "task_id": "",
+        "task_name": "building-foundationsthe-higher-they-flyorder-from-outside"
       }
     ],
     "requirements": [
@@ -13167,8 +13383,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f5a4976553f78350bdac1",
-            "task_name": "hot-wheels-lets-try-again"
+            "task_id": "",
+            "task_name": "hot-wheels-let-s-try-again"
           }
         ]
       }
@@ -13206,8 +13422,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966fbeea19ac7ed845db2e",
-        "task_name": "missing-informant"
+        "task_id": "",
+        "task_name": "missing-informant-10hr"
       }
     ],
     "requirements": [
@@ -13216,7 +13432,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d700cc48e6c62a440fab5",
+            "task_id": "",
             "task_name": "getting-acquainted"
           }
         ]
@@ -13255,7 +13471,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5b4795fb86f7745876267770",
+        "task_id": "",
         "task_name": "chumming"
       }
     ],
@@ -13270,7 +13486,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5c1234c286f77406fa13baeb",
+            "task_id": "",
             "task_name": "setup"
           }
         ]
@@ -13386,7 +13602,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca2eb686f77445a80ed049",
+            "task_id": "",
             "task_name": "the-punisher-part-6"
           }
         ]
@@ -13407,10 +13623,49 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "59e0d99486f7744a32234762",
-            "item_name": "7.62x39mm BP gzh",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Electric drill",
+                    "quantity": 1,
+                    "id": "96320710-58d0-4135-816b-c29446c96dce"
+                  },
+                  {
+                    "name": "Pipe grip wrench",
+                    "quantity": 1,
+                    "id": "8caa5b62-1209-49b2-b8bd-18a111a3523e"
+                  },
+                  {
+                    "name": "7.62x39mm PP gzh",
+                    "quantity": 90,
+                    "id": "64b7af434b75259c590fa893"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 1,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  },
+                  {
+                    "name": "Can of Hot Rod energy drink",
+                    "quantity": 1,
+                    "id": "5751496424597720a27126da"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "59e0d99486f7744a32234762",
+                    "name": "7.62x39mm BP gzh"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -13555,12 +13810,8 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "597a0f5686f774273b74f676",
-            "task_name": "chemical-part-4"
-          },
-          {
-            "task_id": "597a160786f77477531d39d2",
-            "task_name": "out-of-curiosity"
+            "task_id": "",
+            "task_name": "chemical-part-4orout-of-curiosity"
           }
         ]
       }
@@ -13592,7 +13843,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "671a59e43d73dac1360765cc",
+        "task_id": "",
         "task_name": "dangerous-props"
       }
     ],
@@ -13807,7 +14058,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6574e0dedc0d635f633a5805",
+        "task_id": "",
         "task_name": "getting-some-air"
       }
     ],
@@ -13817,7 +14068,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63a5cf262964a7488f5243ce",
+            "task_id": "",
             "task_name": "power-of-persuasion"
           }
         ]
@@ -13963,8 +14214,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "674605df60a98cad1b0ec799",
-        "task_name": "killer-argument"
+        "task_id": "",
+        "task_name": "killer-argument-6hr"
       }
     ],
     "requirements": [
@@ -13973,8 +14224,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "674602307e3818d5bb069489",
-            "task_name": "hindsight-2020"
+            "task_id": "",
+            "task_name": "hindsight-20-20-6hr"
           }
         ]
       }
@@ -14022,7 +14273,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314c3acf8442f8b0531a3",
+            "task_id": "",
             "task_name": "proper-comeback"
           }
         ]
@@ -14066,7 +14317,7 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d7005a4eb80027c4f2e09",
+        "task_id": "",
         "task_name": "knock-knock"
       }
     ],
@@ -14076,8 +14327,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d7001c4874104f230c0c5",
-            "task_name": "assessment-part-3"
+            "task_id": "",
+            "task_name": "assessment-part-3-24hr"
           }
         ]
       }
@@ -14109,7 +14360,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67460662d0fbbc74ca0f7229",
+        "task_id": "",
         "task_name": "choose-your-friends-wisely"
       }
     ],
@@ -14119,8 +14370,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6746053b5b555b53460d9896",
-            "task_name": "key-partner"
+            "task_id": "",
+            "task_name": "key-partner-6hr"
           }
         ]
       }
@@ -14183,7 +14434,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "59ca264786f77445a80ed044",
+            "task_id": "",
             "task_name": "the-punisher-part-4"
           }
         ]
@@ -14239,7 +14490,7 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d700cc48e6c62a440fab5",
+        "task_id": "",
         "task_name": "getting-acquainted"
       }
     ],
@@ -14249,7 +14500,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d70031ed3bb5bcc5bd9e5",
+            "task_id": "",
             "task_name": "key-to-the-tower"
           }
         ]
@@ -14408,7 +14659,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6179b4f16e9dd54ac275e407",
+        "task_id": "",
         "task_name": "missing-cargo"
       }
     ],
@@ -14459,7 +14710,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "626bd75b05f287031503c7f6",
+        "task_id": "",
         "task_name": "drug-trafficking"
       }
     ],
@@ -14469,7 +14720,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a68663e86f774501078f78a",
+            "task_id": "",
             "task_name": "health-care-privacy-part-2"
           }
         ]
@@ -14539,7 +14790,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5936da9e86f7742d65037edf",
+        "task_id": "",
         "task_name": "background-check"
       }
     ],
@@ -14549,7 +14800,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5936d90786f7742b1420ba5b",
+            "task_id": "",
             "task_name": "debut"
           }
         ]
@@ -14649,7 +14900,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6261482fa4eb80027c4f2e11",
+        "task_id": "",
         "task_name": "make-amends-equipment"
       }
     ],
@@ -14687,8 +14938,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6391d9144b15ca31f76bc323",
-        "task_name": "make-amends-3"
+        "task_id": "",
+        "task_name": "make-amends"
       }
     ],
     "requirements": [
@@ -14697,7 +14948,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "626148251ed3bb5bcc5bd9ed",
+            "task_id": "",
             "task_name": "make-amends-buyout"
           }
         ]
@@ -14730,8 +14981,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6391d9144b15ca31f76bc323",
-        "task_name": "make-amends-3"
+        "task_id": "",
+        "task_name": "make-amends"
       }
     ],
     "requirements": [
@@ -14740,7 +14991,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6261483ac48e6c62a440fab7",
+            "task_id": "",
             "task_name": "make-amends-software"
           }
         ]
@@ -14773,7 +15024,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "62614836f7308432be1d44cc",
+        "task_id": "",
         "task_name": "make-amends-sweep-up"
       }
     ],
@@ -14811,7 +15062,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6261483dc4874104f230c0cd",
+        "task_id": "",
         "task_name": "make-amends-quarantine"
       }
     ],
@@ -14849,8 +15100,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6391d9144b15ca31f76bc323",
-        "task_name": "make-amends-3"
+        "task_id": "",
+        "task_name": "make-amends"
       }
     ],
     "requirements": [
@@ -14859,7 +15110,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "626148334149f1149b5b12ca",
+            "task_id": "",
             "task_name": "make-amends-security"
           }
         ]
@@ -14936,8 +15187,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63967028c4a91c5cb76abd81",
-        "task_name": "trouble-in-the-big-city"
+        "task_id": "",
+        "task_name": "trouble-in-the-big-city-10hr"
       }
     ],
     "requirements": [
@@ -14946,8 +15197,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6396700fea19ac7ed845db32",
-            "task_name": "spotter"
+            "task_id": "",
+            "task_name": "spotter-10hr"
           }
         ]
       }
@@ -15138,10 +15389,49 @@
         ],
         "craft_unlocks": [
           {
-            "item_id": "61bcc89aef0f505f0c6cd0fc",
-            "item_name": "First Spear Strandhogg plate carrier (Ranger Green)",
-            "hideout_station": "Lavatory",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Metal cutting scissors",
+                    "quantity": 1,
+                    "id": "d51aa682-63ad-437f-97d2-e3323340ad2e"
+                  },
+                  {
+                    "name": "Ripstop fabric",
+                    "quantity": 1,
+                    "id": "5e2af4a786f7746d3f3c3400"
+                  },
+                  {
+                    "name": "Aramid fiber fabric",
+                    "quantity": 1,
+                    "id": "5e2af4d286f7746d4159f07a"
+                  },
+                  {
+                    "name": "Cordura polyamide fabric",
+                    "quantity": 2,
+                    "id": "5e2af41e86f774755a234b67"
+                  },
+                  {
+                    "name": "NewSphereTech level III ballistic plate",
+                    "quantity": 1,
+                    "id": "656fb21fa0dce000a2020f7c"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "61bcc89aef0f505f0c6cd0fc",
+                    "name": "First Spear Strandhogg plate carrier (Ranger Green)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -15157,7 +15447,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314bd920800278d0f6748",
+        "task_id": "",
         "task_name": "viewer"
       }
     ],
@@ -15167,7 +15457,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314bafd5ca9577902e03a",
+            "task_id": "",
             "task_name": "the-good-times-part-2"
           }
         ]
@@ -15221,7 +15511,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "626bd75d5bef5d7d590bd415",
+        "task_id": "",
         "task_name": "top-secret"
       }
     ],
@@ -15231,7 +15521,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6193850f60b34236ee0483de",
+            "task_id": "",
             "task_name": "long-road"
           }
         ]
@@ -15289,8 +15579,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966fccac6f8f3c677b9d89",
-        "task_name": "snatch"
+        "task_id": "",
+        "task_name": "snatch-10hr"
       }
     ],
     "requirements": [
@@ -15299,8 +15589,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966faeea19ac7ed845db2c",
-            "task_name": "information-source"
+            "task_id": "",
+            "task_name": "information-source-10hr"
           }
         ]
       }
@@ -15379,16 +15669,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6740a15566e6a521aa051b15",
-        "task_name": "forge-a-friendship"
-      },
-      {
-        "task_id": "673f4e956f1b89c7bc0f56ef",
-        "task_name": "hot-wheels"
-      },
-      {
-        "task_id": "6740b60c60a98cad1b0e0aa0",
-        "task_name": "another-shipping-delay"
+        "task_id": "",
+        "task_name": "forge-a-friendshiporif-failed-hot-wheels-another-shipping-delay"
       }
     ],
     "requirements": [
@@ -15397,7 +15679,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f629c5b555b53460cf827",
+            "task_id": "",
             "task_name": "building-foundations"
           }
         ]
@@ -15441,7 +15723,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a096577e86e067eb045733",
+        "task_id": "",
         "task_name": "hidden-layer"
       }
     ],
@@ -15451,7 +15733,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a09636b8725511260bc421",
+            "task_id": "",
             "task_name": "shady-contractor"
           }
         ]
@@ -15500,15 +15782,20 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d6ffaf7308432be1d44c5",
-        "task_name": "network-provider-part-2"
+        "task_id": "",
+        "task_name": "network-provider-part-2-1-9hr"
       }
     ],
     "requirements": [
       {
         "player_level": 0,
         "trader_level": [],
-        "previous_tasks": []
+        "previous_tasks": [
+          {
+            "task_id": "",
+            "task_name": "network-provider-part-1-requirements-see-requirements"
+          }
+        ]
       }
     ],
     "start_rewards": [
@@ -15538,7 +15825,7 @@
     "lightkeeper_required": true,
     "leads_to": [
       {
-        "task_id": "625d6ffcaa168e51321d69d7",
+        "task_id": "",
         "task_name": "assessment-part-1"
       }
     ],
@@ -15548,8 +15835,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "625d6ff5ddc94657c21a1625",
-            "task_name": "network-provider-part-1"
+            "task_id": "",
+            "task_name": "network-provider-part-1-1-9hr"
           }
         ]
       }
@@ -15559,7 +15846,58 @@
         "loose_items": [],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Pliers Elite",
+                    "quantity": 1,
+                    "id": "5af04b6486f774195a3ebb49"
+                  },
+                  {
+                    "name": "Screwdriver",
+                    "quantity": 1,
+                    "id": "b14fb74e-f7f2-44c4-83a4-5a1ee930c68a"
+                  },
+                  {
+                    "name": "Electronic components",
+                    "quantity": 1,
+                    "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
+                  },
+                  {
+                    "name": "Military COFDM Wireless Signal Transmitter",
+                    "quantity": 1,
+                    "id": "8a1bb9dd-f6e3-4890-965f-6910f5bbb5d7"
+                  },
+                  {
+                    "name": "Gas analyzer",
+                    "quantity": 1,
+                    "id": "590a3efd86f77437d351a25b"
+                  },
+                  {
+                    "name": "Broken GPhone smartphone",
+                    "quantity": 1,
+                    "id": "56742c324bdc2d150f8b456d"
+                  }
+                ],
+                "trader_name": "Mechanic",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "63a0b2eabea67a6d93009e52",
+                    "name": "Radio repeater"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "finish_rewards": [
@@ -15581,7 +15919,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c1991ee75c6d7060a16",
+        "task_id": "",
         "task_name": "get-a-foothold"
       }
     ],
@@ -15591,7 +15929,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67af4c1405c58dc6f7056667",
+            "task_id": "",
             "task_name": "profitable-venture"
           }
         ]
@@ -15888,7 +16226,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "639135f286e646067c176a87",
+            "task_id": "",
             "task_name": "revision-streets-of-tarkov"
           }
         ]
@@ -15974,7 +16312,43 @@
           }
         ],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Adrenaline injector",
+                    "quantity": 1,
+                    "id": "5c10c8fd86f7743d7d706df3"
+                  },
+                  {
+                    "name": "AI-2 medkit",
+                    "quantity": 2,
+                    "id": "5755356824597772cb798962"
+                  },
+                  {
+                    "name": "Pile of meds",
+                    "quantity": 2,
+                    "id": "5d1b3a5d86f774252167ba22"
+                  }
+                ],
+                "trader_name": "Skier",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5fca138c2a7b221b2852a5c6",
+                    "name": "xTG-12 antidote injector"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -16474,7 +16848,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60896b7bfa70fc097863b8f5",
+        "task_id": "",
         "task_name": "documents"
       }
     ],
@@ -16538,7 +16912,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5b4795fb86f7745876267770",
+            "task_id": "",
             "task_name": "chumming"
           }
         ]
@@ -16582,12 +16956,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25e4b786f77408251c4bfc",
-        "task_name": "fishing-place"
-      },
-      {
-        "task_id": "66ab9da7eb102b9bcd08591c",
-        "task_name": "foresters-duty"
+        "task_id": "",
+        "task_name": "fishing-placeforester-s-duty"
       }
     ],
     "requirements": [
@@ -16596,7 +16966,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e48186f77443e625e386",
+            "task_id": "",
             "task_name": "courtesy-visit"
           }
         ]
@@ -16650,7 +17020,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae448e586f7744dcf0c2a67",
+            "task_id": "",
             "task_name": "big-sale"
           }
         ]
@@ -16694,24 +17064,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67d03be712fb5f8fd2096332",
-        "task_name": "vacate-the-premises"
-      },
-      {
-        "task_id": "67a0970f05d1611ed90be75d",
-        "task_name": "hypotheses-testing"
-      },
-      {
-        "task_id": "67a09724972c11a3f5077324",
-        "task_name": "confidential-info"
-      },
-      {
-        "task_id": "67a097379f2068e74603c6ac",
-        "task_name": "indisputable-authority"
-      },
-      {
-        "task_id": "67a0972e77dd677f600804bd",
-        "task_name": "this-tape-sucks"
+        "task_id": "",
+        "task_name": "vacate-the-premiseshypotheses-testingconfidential-infoindisputable-authoritythis-tape-sucks"
       }
     ],
     "requirements": [
@@ -16720,7 +17074,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a096577e86e067eb045733",
+            "task_id": "",
             "task_name": "hidden-layer"
           }
         ]
@@ -16753,7 +17107,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69ce1f84ebbdbf36a200627c",
+        "task_id": "",
         "task_name": "peaceful-atom"
       }
     ],
@@ -16884,7 +17238,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314a31cd52e3d040a2e76",
+            "task_id": "",
             "task_name": "combat-proven"
           }
         ]
@@ -16917,7 +17271,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6179aff8f57fb279792c60a1",
+        "task_id": "",
         "task_name": "overpopulation"
       }
     ],
@@ -16932,7 +17286,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27b87686f77460de0252a8",
+            "task_id": "",
             "task_name": "humanitarian-supplies"
           }
         ]
@@ -16961,11 +17315,11 @@
     "name": "one-less-loose-end",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/One_Less_Loose_End",
     "given_by": "Peacekeeper",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "669fa3a08b4a64b332041ff7",
+        "task_id": "",
         "task_name": "dragnet"
       }
     ],
@@ -16980,7 +17334,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "6179aff8f57fb279792c60a1",
+            "task_id": "",
             "task_name": "overpopulation"
           }
         ]
@@ -17085,8 +17439,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f6027352b4da8e00322d2",
-            "task_name": "inevitable-response"
+            "task_id": "",
+            "task_name": "accept-inevitable-response"
           }
         ]
       }
@@ -17196,7 +17550,7 @@
     "name": "out-of-curiosity",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Out_of_Curiosity",
     "given_by": "Therapist",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [],
     "requirements": [
@@ -17370,12 +17724,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5ae449d986f774453a54a7e1",
-        "task_name": "supervisor"
-      },
-      {
-        "task_id": "5d25e2e286f77444001e2e48",
-        "task_name": "the-huntsman-path-sellout"
+        "task_id": "",
+        "task_name": "supervisorthe-huntsman-path-sellout"
       }
     ],
     "requirements": [
@@ -17384,7 +17734,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae449b386f77446d8741719",
+            "task_id": "",
             "task_name": "gratitude"
           }
         ]
@@ -17461,8 +17811,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966ff54c3ef01b6f3ffad8",
-        "task_name": "provocation"
+        "task_id": "",
+        "task_name": "provocation-10hr"
       }
     ],
     "requirements": [
@@ -17471,8 +17821,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966fe7ea74a47c2d3fc0e6",
-            "task_name": "return-the-favor"
+            "task_id": "",
+            "task_name": "return-the-favor-10hr"
           }
         ]
       }
@@ -17522,7 +17872,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69e5583240c3e6c8ba0edbd5",
+        "task_id": "",
         "task_name": "wiring-the-vessel"
       }
     ],
@@ -17532,7 +17882,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69ce1de03e15cd80bd06f6c9",
+            "task_id": "",
             "task_name": "oil-change"
           }
         ]
@@ -17771,28 +18121,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "596a1e6c86f7741ddc2d3206",
-        "task_name": "general-wares"
-      },
-      {
-        "task_id": "5a68661a86f774500f48afb0",
-        "task_name": "health-care-privacy-part-1"
-      },
-      {
-        "task_id": "596a218586f77420d232807c",
-        "task_name": "car-repair"
-      },
-      {
-        "task_id": "60896e28e4a85c72ef3fa301",
-        "task_name": "disease-history"
-      },
-      {
-        "task_id": "639135d89444fb141f4e6eea",
-        "task_name": "population-census"
-      },
-      {
-        "task_id": "596a0e1686f7741ddf17dbee",
-        "task_name": "supply-plans"
+        "task_id": "",
+        "task_name": "general-wareshealth-care-privacy-part-1car-repairdisease-historypopulation-censussupply-plans"
       }
     ],
     "requirements": [
@@ -17972,7 +18302,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59675ea386f77414b32bded2",
+            "task_id": "",
             "task_name": "postman-pat-part-1"
           }
         ]
@@ -18065,7 +18395,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59675ea386f77414b32bded2",
+            "task_id": "",
             "task_name": "postman-pat-part-1"
           }
         ]
@@ -18226,7 +18556,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5b4795fb86f7745876267770",
+            "task_id": "",
             "task_name": "chumming"
           }
         ]
@@ -18571,7 +18901,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c1d8c9482eca103e477",
+        "task_id": "",
         "task_name": "consolation-prize"
       }
     ],
@@ -18581,7 +18911,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67af4c1cc0e59d55e2010b97",
+            "task_id": "",
             "task_name": "a-life-lesson"
           }
         ]
@@ -18614,7 +18944,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c17f4f1fb58a907f8f6",
+        "task_id": "",
         "task_name": "never-too-late-to-learn"
       }
     ],
@@ -18652,7 +18982,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314c5a9290f9e0806cca5",
+        "task_id": "",
         "task_name": "key-to-the-city"
       }
     ],
@@ -18662,8 +18992,12 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314c10aa5c7436c00908c",
-            "task_name": "camera-action"
+            "task_id": "",
+            "task_name": "camera"
+          },
+          {
+            "task_id": "",
+            "task_name": "action"
           }
         ]
       }
@@ -18765,7 +19099,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6744aca8d3346c216702c583",
+        "task_id": "",
         "task_name": "discombobulate"
       }
     ],
@@ -18775,8 +19109,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6744a9dfef61d56e020b5c4a",
-            "task_name": "battery-change-2"
+            "task_id": "",
+            "task_name": "battery-change"
           }
         ]
       }
@@ -18831,8 +19165,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "66058cb5ae4719735349b9e8",
-            "task_name": "easy-money-part-2-pvp-zone"
+            "task_id": "",
+            "task_name": "accept-easy-money-part-2"
           }
         ]
       }
@@ -18885,8 +19219,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "639670029113f06a7c3b2377",
-        "task_name": "following-the-bread-crumbs"
+        "task_id": "",
+        "task_name": "following-the-bread-crumbs-10hr"
       }
     ],
     "requirements": [
@@ -18895,8 +19229,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966fd9ea19ac7ed845db30",
-            "task_name": "payback"
+            "task_id": "",
+            "task_name": "payback-10hr"
           }
         ]
       }
@@ -18922,10 +19256,59 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5d1b5e94d7ad1a2b865a96b0",
-            "item_name": "FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Silicon Optoelectronic Integrated Circuits textbook",
+                    "quantity": 1,
+                    "id": "774bceae-3555-41b5-8532-1304e0b58898"
+                  },
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  },
+                  {
+                    "name": "NIXXOR lens",
+                    "quantity": 2,
+                    "id": "5d1b2ffd86f77425243e8d17"
+                  },
+                  {
+                    "name": "Iridium military thermal vision module",
+                    "quantity": 2,
+                    "id": "9ddc82ba-354d-4e6d-982b-1006fdde0cc7"
+                  },
+                  {
+                    "name": "Virtex programmable processor",
+                    "quantity": 1,
+                    "id": "5c05308086f7746b2101e90b"
+                  },
+                  {
+                    "name": "Military circuit board",
+                    "quantity": 2,
+                    "id": "5d0376a486f7747d8050965c"
+                  },
+                  {
+                    "name": "Electronic components",
+                    "quantity": 5,
+                    "id": "a1180005-8ed7-4316-b0cf-ee6642a6ea6e"
+                  }
+                ],
+                "trader_name": "Lightkeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5d1b5e94d7ad1a2b865a96b0",
+                    "name": "FLIR RS-32 2.25-9x 35mm 60Hz thermal riflescope"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -18951,7 +19334,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27bc8586f7741b543d8ea4",
+            "task_id": "",
             "task_name": "wet-job-part-6"
           }
         ]
@@ -19068,7 +19451,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314b8312343839d032d24",
+        "task_id": "",
         "task_name": "airmail"
       }
     ],
@@ -19078,7 +19461,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314b4d7f171c4c20226c3",
+            "task_id": "",
             "task_name": "the-good-times-part-1"
           }
         ]
@@ -19244,7 +19627,12 @@
     "given_by": "Prapor",
     "kappa_required": true,
     "lightkeeper_required": false,
-    "leads_to": [],
+    "leads_to": [
+      {
+        "task_id": "",
+        "task_name": ""
+      }
+    ],
     "requirements": [
       {
         "player_level": 0,
@@ -19278,10 +19666,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5d03794386f77420415576f5",
-            "item_name": "6-STEN-140-M military battery",
-            "hideout_station": "Workbench",
-            "station_level": "1"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Car battery",
+                    "quantity": 2,
+                    "id": "5733279d245977289b77ec24"
+                  },
+                  {
+                    "name": "Canister with purified water",
+                    "quantity": 1,
+                    "id": "5d1b33a686f7742523398398"
+                  },
+                  {
+                    "name": "Clin window cleaner",
+                    "quantity": 2,
+                    "id": "59e358a886f7741776641ac3"
+                  },
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5d03794386f77420415576f5",
+                    "name": "6-STEN-140-M military battery"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -19297,7 +19719,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "608a768d82e40b3c727fd17d",
+        "task_id": "",
         "task_name": "pest-control"
       }
     ],
@@ -19307,7 +19729,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63a88045abf76d719f42d715",
+            "task_id": "",
             "task_name": "the-delicious-sausage"
           }
         ]
@@ -19410,8 +19832,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966fd9ea19ac7ed845db30",
-        "task_name": "payback"
+        "task_id": "",
+        "task_name": "payback-10hr"
       }
     ],
     "requirements": [
@@ -19420,8 +19842,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966fccac6f8f3c677b9d89",
-            "task_name": "snatch"
+            "task_id": "",
+            "task_name": "snatch-10hr"
           }
         ]
       }
@@ -19469,8 +19891,8 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "6086c852c945025d41566124",
-            "task_name": "revision-reserve"
+            "task_id": "",
+            "task_name": "accept-revision-reserve"
           }
         ]
       }
@@ -19682,7 +20104,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "66b38e144f2ab7cc530c3fe7",
+        "task_id": "",
         "task_name": "every-hunter-knows-this"
       }
     ],
@@ -19692,7 +20114,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d24b81486f77439c92d6ba8",
+            "task_id": "",
             "task_name": "acquaintance"
           }
         ]
@@ -19736,8 +20158,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "674602307e3818d5bb069489",
-        "task_name": "hindsight-2020"
+        "task_id": "",
+        "task_name": "hindsight-20-20-6hr"
       }
     ],
     "requirements": [
@@ -19746,8 +20168,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6745fae369a58fceba10343d",
-            "task_name": "the-higher-they-fly"
+            "task_id": "",
+            "task_name": "the-higher-they-fly-6hr"
           }
         ]
       }
@@ -19805,16 +20227,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "597a0f5686f774273b74f676",
-            "task_name": "chemical-part-4"
-          },
-          {
-            "task_id": "597a160786f77477531d39d2",
-            "task_name": "out-of-curiosity"
-          },
-          {
-            "task_id": "597a171586f77405ba6887d3",
-            "task_name": "big-customer"
+            "task_id": "",
+            "task_name": "chemical-part-4orout-of-curiosityorbig-customer"
           }
         ]
       }
@@ -19862,7 +20276,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67af4c1cc0e59d55e2010b97",
+        "task_id": "",
         "task_name": "a-life-lesson"
       }
     ],
@@ -19900,7 +20314,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5edac63b930f5454f51e128b",
+        "task_id": "",
         "task_name": "terragroup-employee"
       }
     ],
@@ -19910,12 +20324,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5eda19f0edce541157209cee",
-            "task_name": "anesthesia"
-          },
-          {
-            "task_id": "5a27b75b86f7742e97191958",
-            "task_name": "fishing-gear"
+            "task_id": "",
+            "task_name": "anesthesiafishing-gear"
           }
         ]
       }
@@ -20015,7 +20425,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69c277f3ea6da9c23e07f8d2",
+        "task_id": "",
         "task_name": "a-bitter-victory"
       }
     ],
@@ -20025,7 +20435,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69c26c07683c9831020018c7",
+            "task_id": "",
             "task_name": "stick-to-it"
           }
         ]
@@ -20112,7 +20522,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5b478b1886f7744d1b23c57d",
+            "task_id": "",
             "task_name": "hot-delivery"
           }
         ]
@@ -20189,7 +20599,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27b80086f774429a5d7e20",
+        "task_id": "",
         "task_name": "eagle-eye"
       }
     ],
@@ -20204,7 +20614,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27b7a786f774579c3eb376",
+            "task_id": "",
             "task_name": "tigr-safari"
           }
         ]
@@ -20242,7 +20652,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5936d90786f7742b1420ba5b",
+            "task_id": "",
             "task_name": "debut"
           }
         ]
@@ -20281,7 +20691,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "675c03d1f7da9792a405549a",
+        "task_id": "",
         "task_name": "abandoned-cargo"
       }
     ],
@@ -20291,8 +20701,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "60896e28e4a85c72ef3fa301",
-            "task_name": "disease-history"
+            "task_id": "",
+            "task_name": "accept-disease-history"
           }
         ]
       }
@@ -20440,7 +20850,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27b87686f77460de0252a8",
+            "task_id": "",
             "task_name": "humanitarian-supplies"
           }
         ]
@@ -20527,7 +20937,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a096ed77dd677f600804ba",
+        "task_id": "",
         "task_name": "sensory-analysis-part-2"
       }
     ],
@@ -20537,8 +20947,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a096577e86e067eb045733",
-            "task_name": "hidden-layer"
+            "task_id": "",
+            "task_name": "hidden-layer-30min"
           }
         ]
       }
@@ -20586,8 +20996,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a09761e720611a6a01f288",
-        "task_name": "keepers-word"
+        "task_id": "",
+        "task_name": "keeper-s-word"
       }
     ],
     "requirements": [
@@ -20596,8 +21006,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0967c003a9986cb0f5ac1",
-            "task_name": "sensory-analysis-part-1"
+            "task_id": "",
+            "task_name": "accept-sensory-analysis-part-1"
           }
         ]
       }
@@ -20635,8 +21045,12 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314c10aa5c7436c00908c",
-        "task_name": "camera-action"
+        "task_id": "",
+        "task_name": "camera"
+      },
+      {
+        "task_id": "",
+        "task_name": "action"
       }
     ],
     "requirements": [
@@ -20645,7 +21059,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314bd920800278d0f6748",
+            "task_id": "",
             "task_name": "viewer"
           }
         ]
@@ -20840,10 +21254,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5c0e57ba86f7747fa141986d",
-            "item_name": "6B23-2 body armor (Mountain Flora)",
-            "hideout_station": "Lavatory",
-            "station_level": "1"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "6B33 ballistic plate (Front)",
+                    "quantity": 1,
+                    "id": "656f603f94b480b8a500c0d6"
+                  },
+                  {
+                    "name": "Cordura polyamide fabric",
+                    "quantity": 1,
+                    "id": "5e2af41e86f774755a234b67"
+                  },
+                  {
+                    "name": "Ox bleach",
+                    "quantity": 1,
+                    "id": "59e3556c86f7741776641ac2"
+                  },
+                  {
+                    "name": "Aramid fiber fabric",
+                    "quantity": 1,
+                    "id": "5e2af4d286f7746d4159f07a"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5c0e57ba86f7747fa141986d",
+                    "name": "6B23-2 body armor (Mountain Flora)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -20859,16 +21307,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5e383a6386f77465910ce1f3",
-        "task_name": "textile-part-1-usec"
-      },
-      {
-        "task_id": "5ae4495c86f7744e87761355",
-        "task_name": "sew-it-good-part-3"
-      },
-      {
-        "task_id": "5c51aac186f77432ea65c552",
-        "task_name": "collector"
+        "task_id": "",
+        "task_name": "textile-part-1sew-it-good-part-3collector"
       }
     ],
     "requirements": [
@@ -20877,7 +21317,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae4495086f77443c122bc40",
+            "task_id": "",
             "task_name": "sew-it-good-part-1"
           }
         ]
@@ -20933,12 +21373,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5ae4496986f774459e77beb6",
-        "task_name": "sew-it-good-part-4"
-      },
-      {
-        "task_id": "5ae4498786f7744bde357695",
-        "task_name": "the-key-to-success"
+        "task_id": "",
+        "task_name": "sew-it-good-part-4the-key-to-success"
       }
     ],
     "requirements": [
@@ -20947,7 +21383,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae4497b86f7744cf402ed00",
+            "task_id": "",
             "task_name": "sew-it-good-part-2"
           }
         ]
@@ -21057,7 +21493,53 @@
             ]
           }
         ],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Sewing kit",
+                    "quantity": 1,
+                    "id": "38d8baf4-1d00-4b87-879d-9a186f752aee"
+                  },
+                  {
+                    "name": "Metal cutting scissors",
+                    "quantity": 1,
+                    "id": "d51aa682-63ad-437f-97d2-e3323340ad2e"
+                  },
+                  {
+                    "name": "GAC 3s15m ballistic plate",
+                    "quantity": 1,
+                    "id": "939c1cb4-09a0-429c-8185-77054ec68d3c"
+                  },
+                  {
+                    "name": "Ripstop fabric",
+                    "quantity": 2,
+                    "id": "5e2af4a786f7746d3f3c3400"
+                  },
+                  {
+                    "name": "Aramid fiber fabric",
+                    "quantity": 2,
+                    "id": "5e2af4d286f7746d4159f07a"
+                  }
+                ],
+                "trader_name": "Ragman",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5b44cad286f77402a54ae7e5",
+                    "name": "5.11 Tactical TacTec plate carrier (Ranger Green)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -21071,7 +21553,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a0964e972c11a3f507731b",
+        "task_id": "",
         "task_name": "needle-in-a-haystack"
       }
     ],
@@ -21081,8 +21563,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "657315e4a6af4ab4b50f3459",
-            "task_name": "saving-the-mole"
+            "task_id": "",
+            "task_name": "accept-saving-the-mole"
           }
         ]
       }
@@ -21186,7 +21668,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "675c03d1f7da9792a405549a",
+            "task_id": "",
             "task_name": "abandoned-cargo"
           }
         ]
@@ -21235,8 +21717,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6752f6d83038f7df520c83e8",
-            "task_name": "a-helping-hand"
+            "task_id": "",
+            "task_name": "accept-a-helping-hand"
           }
         ]
       }
@@ -21289,8 +21771,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6752f6d83038f7df520c83e8",
-            "task_name": "a-helping-hand"
+            "task_id": "",
+            "task_name": "accept-a-helping-hand"
           }
         ]
       }
@@ -21338,7 +21820,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c51aac186f77432ea65c552",
+        "task_id": "",
         "task_name": "collector"
       }
     ],
@@ -21531,8 +22013,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6764174c86addd02bc033d68",
-        "task_name": "connections-up-north"
+        "task_id": "",
+        "task_name": "connections-up-north-18-24hr"
       }
     ],
     "requirements": [
@@ -21541,7 +22023,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5c0bbaa886f7746941031d82",
+            "task_id": "",
             "task_name": "bullshit"
           }
         ]
@@ -21590,8 +22072,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6745fcded0fbbc74ca0f721d",
-            "task_name": "swift-retribution"
+            "task_id": "",
+            "task_name": "accept-swift-retribution"
           }
         ]
       }
@@ -21649,12 +22131,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6a45208043b8d7604d00b8d5",
-            "task_name": "the-huntsman-path-administrator-2"
-          },
-          {
-            "task_id": "6391372c8ba6894d155e77d7",
-            "task_name": "broadcast-part-4"
+            "task_id": "",
+            "task_name": "the-huntsman-path-administratorbroadcast-part-4"
           }
         ]
       }
@@ -21728,7 +22206,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6663149196a9349baa021baa",
+        "task_id": "",
         "task_name": "small-business-part-2"
       }
     ],
@@ -21738,8 +22216,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6663148ca9290f9e0806cca1",
-            "task_name": "immunity"
+            "task_id": "",
+            "task_name": "immunity-quest-immunity"
           }
         ]
       }
@@ -21782,7 +22260,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "66631493312343839d032d22",
+        "task_id": "",
         "task_name": "small-business-part-3"
       }
     ],
@@ -21792,7 +22270,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6663148ed7f171c4c20226c1",
+            "task_id": "",
             "task_name": "small-business-part-1"
           }
         ]
@@ -21841,7 +22319,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6663149196a9349baa021baa",
+            "task_id": "",
             "task_name": "small-business-part-2"
           }
         ]
@@ -21955,8 +22433,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "63966fe7ea74a47c2d3fc0e6",
-        "task_name": "return-the-favor"
+        "task_id": "",
+        "task_name": "return-the-favor-10hr"
       }
     ],
     "requirements": [
@@ -21965,8 +22443,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63966fbeea19ac7ed845db2e",
-            "task_name": "missing-informant"
+            "task_id": "",
+            "task_name": "missing-informant-10hr"
           }
         ]
       }
@@ -21999,10 +22477,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5c052fb986f7746b2101e909",
-            "item_name": "UHF RFID Reader",
-            "hideout_station": "Intelligence Center",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Advanced Electronic Materials textbook",
+                    "quantity": 1,
+                    "id": "d45f08bb-6292-4a90-8943-8e21e92dd5db"
+                  },
+                  {
+                    "name": "Secure Flash drive",
+                    "quantity": 1,
+                    "id": "590c621186f774138d11ea29"
+                  },
+                  {
+                    "name": "TerraGroup Labs access keycard",
+                    "quantity": 1,
+                    "id": "5c94bbff86f7747ee735c08f"
+                  },
+                  {
+                    "name": "VPX Flash Storage Module",
+                    "quantity": 1,
+                    "id": "541c3bb6-e792-4434-b55b-42a94097e8b0"
+                  }
+                ],
+                "trader_name": "Lightkeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5c052fb986f7746b2101e909",
+                    "name": "UHF RFID Reader"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -22023,7 +22535,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "60896b7bfa70fc097863b8f5",
+            "task_id": "",
             "task_name": "documents"
           }
         ]
@@ -22145,10 +22657,44 @@
         ],
         "craft_unlocks": [
           {
-            "item_id": "54527ac44bdc2d36668b4567",
-            "item_name": "5.56x45mm M855A1",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Leatherman Multitool",
+                    "quantity": 1,
+                    "id": "544fb5454bdc2df8738b456a"
+                  },
+                  {
+                    "name": "5.56x45mm M855",
+                    "quantity": 180,
+                    "id": "54527a984bdc2d4e668b4567"
+                  },
+                  {
+                    "name": "Gunpowder \"Kite\"",
+                    "quantity": 1,
+                    "id": "590c5a7286f7747884343aea"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 1,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "54527ac44bdc2d36668b4567",
+                    "name": "5.56x45mm M855A1"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -22164,7 +22710,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314a31cd52e3d040a2e76",
+        "task_id": "",
         "task_name": "combat-proven"
       }
     ],
@@ -22174,7 +22720,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6663149f1d3ec95634095e75",
+            "task_id": "",
             "task_name": "circulate"
           }
         ]
@@ -22310,8 +22856,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6396701b9113f06a7c3b2379",
-        "task_name": "make-an-impression"
+        "task_id": "",
+        "task_name": "make-an-impression-10hr"
       }
     ],
     "requirements": [
@@ -22320,8 +22866,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "639670029113f06a7c3b2377",
-            "task_name": "following-the-bread-crumbs"
+            "task_id": "",
+            "task_name": "following-the-bread-crumbs-10hr"
           }
         ]
       }
@@ -22347,10 +22893,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "6389c7750ef44505c87f5996",
-            "item_name": "Microcontroller board",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Silicon Optoelectronic Integrated Circuits textbook",
+                    "quantity": 1,
+                    "id": "774bceae-3555-41b5-8532-1304e0b58898"
+                  },
+                  {
+                    "name": "Flat screwdriver (Long)",
+                    "quantity": 1,
+                    "id": "a0bf67cf-6c0b-4344-b740-9c2ef9043a37"
+                  },
+                  {
+                    "name": "Pliers Elite",
+                    "quantity": 1,
+                    "id": "5af04b6486f774195a3ebb49"
+                  },
+                  {
+                    "name": "Far-forward GPS Signal Amplifier Unit",
+                    "quantity": 1,
+                    "id": "6389c7f115805221fb410466"
+                  }
+                ],
+                "trader_name": "Lightkeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "6389c7750ef44505c87f5996",
+                    "name": "Microcontroller board"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -22366,8 +22946,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6744a9dfef61d56e020b5c4a",
-        "task_name": "battery-change-2"
+        "task_id": "",
+        "task_name": "battery-change"
       }
     ],
     "requirements": [
@@ -22376,7 +22956,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "674492b6909d2013670a347a",
+            "task_id": "",
             "task_name": "ask-for-directions"
           }
         ]
@@ -22469,8 +23049,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6744a9dfef61d56e020b5c4a",
-        "task_name": "battery-change-2"
+        "task_id": "",
+        "task_name": "battery-change"
       }
     ],
     "requirements": [
@@ -22479,7 +23059,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6740a2c17e3818d5bb0648b6",
+            "task_id": "",
             "task_name": "half-empty"
           }
         ]
@@ -22533,7 +23113,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69c27158e350f01390049e77",
+        "task_id": "",
         "task_name": "saving-private-roman"
       }
     ],
@@ -22626,16 +23206,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2c386f77443e7549029",
-            "task_name": "the-huntsman-path-trophy"
-          },
-          {
-            "task_id": "5d25e2e286f77444001e2e48",
-            "task_name": "the-huntsman-path-sellout"
-          },
-          {
-            "task_id": "5d25e2ee86f77443e35162ea",
-            "task_name": "the-huntsman-path-woods-keeper"
+            "task_id": "",
+            "task_name": "the-huntsman-path-trophythe-huntsman-path-selloutthe-huntsman-path-woods-keeper"
           }
         ]
       }
@@ -22892,11 +23464,11 @@
     "name": "supply-plans",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/Supply_Plans",
     "given_by": "Therapist",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25e2ee86f77443e35162ea",
+        "task_id": "",
         "task_name": "the-huntsman-path-woods-keeper"
       }
     ],
@@ -22906,7 +23478,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5969f9e986f7741dde183a50",
+            "task_id": "",
             "task_name": "pharmacist"
           }
         ]
@@ -22950,7 +23522,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6089736efa70fc097863b8f6",
+            "task_id": "",
             "task_name": "back-door"
           }
         ]
@@ -23195,16 +23767,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "673f629c5b555b53460cf827",
-        "task_name": "building-foundations"
-      },
-      {
-        "task_id": "6745fae369a58fceba10343d",
-        "task_name": "the-higher-they-fly"
-      },
-      {
-        "task_id": "6745fdddd3346c216702e0bf",
-        "task_name": "simple-side-job"
+        "task_id": "",
+        "task_name": "building-foundationsthe-higher-they-flysimple-side-job"
       }
     ],
     "requirements": [
@@ -23213,7 +23777,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "673f4e956f1b89c7bc0f56ef",
+            "task_id": "",
             "task_name": "hot-wheels"
           }
         ]
@@ -23499,7 +24063,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5c0d190cd09282029f5390d8",
+            "task_id": "",
             "task_name": "grenadier"
           }
         ]
@@ -23599,7 +24163,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca2eb686f77445a80ed049",
+            "task_id": "",
             "task_name": "the-punisher-part-6"
           }
         ]
@@ -23648,7 +24212,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5c0d4e61d09282029f53920e",
+            "task_id": "",
             "task_name": "the-guide"
           }
         ]
@@ -23823,16 +24387,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "639136e84ed9512be67647db",
-        "task_name": "cease-fire"
-      },
-      {
-        "task_id": "5d25e4d586f77443e625e388",
-        "task_name": "reserve"
-      },
-      {
-        "task_id": "665eeacf5d86b6c8aa03c79b",
-        "task_name": "thirsty-hounds"
+        "task_id": "",
+        "task_name": "cease-fire-reserve-quest-reservethirsty-hounds"
       }
     ],
     "requirements": [
@@ -23841,7 +24397,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25b6be86f77444001e1b89",
+            "task_id": "",
             "task_name": "the-survivalist-path-thrifty"
           }
         ]
@@ -23934,8 +24490,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5979ed3886f77431307dc512",
-        "task_name": "whats-on-the-flash-drive"
+        "task_id": "",
+        "task_name": "what-s-on-the-flash-drive"
       }
     ],
     "requirements": [
@@ -23944,7 +24500,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "596b36c586f77450d6045ad2",
+            "task_id": "",
             "task_name": "supplier"
           }
         ]
@@ -24010,12 +24566,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314b696a9349baa021bac",
-        "task_name": "quality-standard"
-      },
-      {
-        "task_id": "666314b0acf8442f8b0531a1",
-        "task_name": "hell-on-earth-part-1"
+        "task_id": "",
+        "task_name": "quality-standardhell-on-earth-part-1"
       }
     ],
     "requirements": [
@@ -24024,7 +24576,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "657315df034d76585f032e01",
+            "task_id": "",
             "task_name": "shooting-cans"
           }
         ]
@@ -24078,7 +24630,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314bc1d3ec95634095e77",
+        "task_id": "",
         "task_name": "minute-of-fame"
       }
     ],
@@ -24088,7 +24640,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314b8312343839d032d24",
+            "task_id": "",
             "task_name": "airmail"
           }
         ]
@@ -24132,7 +24684,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60e71c9ad54b755a3b53eb66",
+        "task_id": "",
         "task_name": "the-cleaner"
       }
     ],
@@ -24147,7 +24699,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27bc8586f7741b543d8ea4",
+            "task_id": "",
             "task_name": "wet-job-part-6"
           }
         ]
@@ -24181,10 +24733,49 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5ba26835d4351e0035628ff5",
-            "item_name": "4.6x30mm AP SX",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Ultraviolet lamp",
+                    "quantity": 1,
+                    "id": "7c5884a3-0de6-4254-add6-4a74bae9f8ec"
+                  },
+                  {
+                    "name": "Pliers Elite",
+                    "quantity": 1,
+                    "id": "5af04b6486f774195a3ebb49"
+                  },
+                  {
+                    "name": "4.6x30mm FMJ SX",
+                    "quantity": 120,
+                    "id": "5ba2678ad4351e44f824b344"
+                  },
+                  {
+                    "name": "Capacitors",
+                    "quantity": 1,
+                    "id": "5c06782b86f77426df5407d2"
+                  },
+                  {
+                    "name": "Metal spare parts",
+                    "quantity": 1,
+                    "id": "14c2ef8c-d6b3-459c-b59f-39722a064981"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5ba26835d4351e0035628ff5",
+                    "name": "4.6x30mm AP SX"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -24205,7 +24796,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25cf2686f77443e75488d4",
+            "task_id": "",
             "task_name": "the-survivalist-path-tough-guy"
           }
         ]
@@ -24244,8 +24835,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "674600a366e6a521aa05eb66",
-        "task_name": "route-deviation"
+        "task_id": "",
+        "task_name": "route-deviation-6hr"
       }
     ],
     "requirements": [
@@ -24254,12 +24845,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6745fcded0fbbc74ca0f721d",
-            "task_name": "swift-retribution"
-          },
-          {
-            "task_id": "673f6027352b4da8e00322d2",
-            "task_name": "inevitable-response"
+            "task_id": "",
+            "task_name": "swift-retributionorinevitable-response"
           }
         ]
       }
@@ -24351,7 +24938,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
+            "task_id": "",
             "task_name": "the-huntsman-path-forest-cleaning"
           }
         ]
@@ -24405,12 +24992,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
-            "task_name": "the-huntsman-path-forest-cleaning"
-          },
-          {
-            "task_id": "639135e0fa894f0a866afde6",
-            "task_name": "urban-medicine"
+            "task_id": "",
+            "task_name": "the-huntsman-path-forest-cleaningurban-medicine"
           }
         ]
       }
@@ -24559,7 +25142,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
+            "task_id": "",
             "task_name": "the-huntsman-path-forest-cleaning"
           }
         ]
@@ -24696,7 +25279,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60e71e8ed54b755a3b53eb67",
+        "task_id": "",
         "task_name": "the-huntsman-path-relentless"
       }
     ],
@@ -24706,12 +25289,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ac3477486f7741d651d6885",
-            "task_name": "scout"
-          },
-          {
-            "task_id": "5d25e2cc86f77443e47ae019",
-            "task_name": "the-huntsman-path-forest-cleaning"
+            "task_id": "",
+            "task_name": "scoutthe-huntsman-path-forest-cleaning"
           }
         ]
       }
@@ -24808,7 +25387,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2b486f77409de05bba0",
+            "task_id": "",
             "task_name": "the-huntsman-path-secured-perimeter"
           }
         ]
@@ -24937,7 +25516,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
+            "task_id": "",
             "task_name": "the-huntsman-path-forest-cleaning"
           }
         ]
@@ -24964,10 +25543,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5d6e68a8a4b9360b6c0d54e2",
-            "item_name": "12/70 AP-20 armor-piercing slug",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Hand drill",
+                    "quantity": 1,
+                    "id": "5d1b317c86f7742523398392"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 3,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  },
+                  {
+                    "name": "12/70 7mm buckshot",
+                    "quantity": 50,
+                    "id": "560d5e524bdc2d25448b4571"
+                  },
+                  {
+                    "name": "WD-40 (400ml)",
+                    "quantity": 1,
+                    "id": "57a24076-8fb1-4783-81c9-8269aaf7d748"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5d6e68a8a4b9360b6c0d54e2",
+                    "name": "12/70 AP-20 armor-piercing slug"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -25017,7 +25630,7 @@
     "name": "the-huntsman-path-sadist",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Sadist",
     "given_by": "Jaeger",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [],
     "requirements": [
@@ -25224,12 +25837,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "626bdcc3a371ee3a7a3514c5",
-        "task_name": "stray-dogs"
-      },
-      {
-        "task_id": "60e71e8ed54b755a3b53eb67",
-        "task_name": "the-huntsman-path-relentless"
+        "task_id": "",
+        "task_name": "stray-dogsthe-huntsman-path-relentless"
       }
     ],
     "requirements": [
@@ -25238,7 +25847,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25e2b486f77409de05bba0",
+            "task_id": "",
             "task_name": "the-huntsman-path-secured-perimeter"
           }
         ]
@@ -25391,7 +26000,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "6663149f1d3ec95634095e75",
+        "task_id": "",
         "task_name": "circulate"
       }
     ],
@@ -25440,7 +26049,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5ae449d986f774453a54a7e1",
+        "task_id": "",
         "task_name": "supervisor"
       }
     ],
@@ -25450,7 +26059,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5ae4497b86f7744cf402ed00",
+            "task_id": "",
             "task_name": "sew-it-good-part-2"
           }
         ]
@@ -25594,7 +26203,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "59c50a9e86f7745fef66f4ff",
+        "task_id": "",
         "task_name": "the-punisher-part-2"
       }
     ],
@@ -25631,10 +26240,39 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "56dff2ced2720bb4668b4567",
-            "item_name": "5.45x39mm PP gs",
-            "hideout_station": "Workbench",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Nippers",
+                    "quantity": 1,
+                    "id": "57d44fc6-ce7b-427c-9a74-9145343d5859"
+                  },
+                  {
+                    "name": "5.45x39mm PS gs",
+                    "quantity": 180,
+                    "id": "56dff3afd2720bba668b4567"
+                  },
+                  {
+                    "name": "Gunpowder \"Kite\"",
+                    "quantity": 1,
+                    "id": "590c5a7286f7747884343aea"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "56dff2ced2720bb4668b4567",
+                    "name": "5.45x39mm PP gs"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -25650,7 +26288,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "59c50c8886f7745fed3193bf",
+        "task_id": "",
         "task_name": "the-punisher-part-3"
       }
     ],
@@ -25660,7 +26298,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59c512ad86f7741f0d09de9b",
+            "task_id": "",
             "task_name": "the-punisher-part-1"
           }
         ]
@@ -25760,7 +26398,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "59ca264786f77445a80ed044",
+        "task_id": "",
         "task_name": "the-punisher-part-4"
       }
     ],
@@ -25770,7 +26408,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59c50a9e86f7745fef66f4ff",
+            "task_id": "",
             "task_name": "the-punisher-part-2"
           }
         ]
@@ -25821,7 +26459,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "59ca29fb86f77445ab465c87",
+        "task_id": "",
         "task_name": "the-punisher-part-5"
       }
     ],
@@ -25831,7 +26469,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59c50c8886f7745fed3193bf",
+            "task_id": "",
             "task_name": "the-punisher-part-3"
           }
         ]
@@ -25888,7 +26526,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "59ca2eb686f77445a80ed049",
+        "task_id": "",
         "task_name": "the-punisher-part-6"
       }
     ],
@@ -25898,7 +26536,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca264786f77445a80ed044",
+            "task_id": "",
             "task_name": "the-punisher-part-4"
           }
         ]
@@ -25965,7 +26603,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "59ca29fb86f77445ab465c87",
+            "task_id": "",
             "task_name": "the-punisher-part-5"
           }
         ]
@@ -26129,7 +26767,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25c81b86f77443e625dd71",
+            "task_id": "",
             "task_name": "the-survivalist-path-wounded-beast"
           }
         ]
@@ -26173,7 +26811,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25cf2686f77443e75488d4",
+            "task_id": "",
             "task_name": "the-survivalist-path-tough-guy"
           }
         ]
@@ -26271,12 +26909,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25bfd086f77442734d3007",
-        "task_name": "the-survivalist-path-zhivchik"
-      },
-      {
-        "task_id": "63a88045abf76d719f42d715",
-        "task_name": "the-delicious-sausage"
+        "task_id": "",
+        "task_name": "the-survivalist-path-zhivchikthe-delicious-sausage"
       }
     ],
     "requirements": [
@@ -26285,7 +26919,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25aed386f77442734d25d2",
+            "task_id": "",
             "task_name": "the-survivalist-path-unprotected-but-dangerous"
           }
         ]
@@ -26341,20 +26975,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25e48186f77443e625e386",
-        "task_name": "courtesy-visit"
-      },
-      {
-        "task_id": "61904daa7d0d857927447b9c",
-        "task_name": "the-hermit"
-      },
-      {
-        "task_id": "5d25e29d86f7740a22516326",
-        "task_name": "the-survivalist-path-eagle-owl"
-      },
-      {
-        "task_id": "5d25e2b486f77409de05bba0",
-        "task_name": "the-huntsman-path-secured-perimeter"
+        "task_id": "",
+        "task_name": "courtesy-visitthe-hermitthe-survivalist-path-eagle-owlthe-huntsman-path-secured-perimeter"
       }
     ],
     "requirements": [
@@ -26363,7 +26985,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25c81b86f77443e625dd71",
+            "task_id": "",
             "task_name": "the-survivalist-path-wounded-beast"
           }
         ]
@@ -26412,7 +27034,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25b6be86f77444001e1b89",
+        "task_id": "",
         "task_name": "the-survivalist-path-thrifty"
       }
     ],
@@ -26422,7 +27044,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d24b81486f77439c92d6ba8",
+            "task_id": "",
             "task_name": "acquaintance"
           }
         ]
@@ -26471,12 +27093,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25cf2686f77443e75488d4",
-        "task_name": "the-survivalist-path-tough-guy"
-      },
-      {
-        "task_id": "5d25d2c186f77443e35162e5",
-        "task_name": "the-survivalist-path-cold-blooded"
+        "task_id": "",
+        "task_name": "the-survivalist-path-tough-guythe-survivalist-path-cold-blooded"
       }
     ],
     "requirements": [
@@ -26485,7 +27103,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25bfd086f77442734d3007",
+            "task_id": "",
             "task_name": "the-survivalist-path-zhivchik"
           }
         ]
@@ -26531,7 +27149,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5d25c81b86f77443e625dd71",
+        "task_id": "",
         "task_name": "the-survivalist-path-wounded-beast"
       }
     ],
@@ -26541,7 +27159,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d25b6be86f77444001e1b89",
+            "task_id": "",
             "task_name": "the-survivalist-path-thrifty"
           }
         ]
@@ -26637,11 +27255,11 @@
     "name": "the-tarkov-shooter-part-1",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_Shooter_-_Part_1",
     "given_by": "Jaeger",
-    "kappa_required": true,
+    "kappa_required": false,
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5bc479e586f7747f376c7da3",
+        "task_id": "",
         "task_name": "the-tarkov-shooter-part-2"
       }
     ],
@@ -26651,7 +27269,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d24b81486f77439c92d6ba8",
+            "task_id": "",
             "task_name": "acquaintance"
           }
         ]
@@ -26705,7 +27323,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5bc47dbf86f7741ee74e93b9",
+        "task_id": "",
         "task_name": "the-tarkov-shooter-part-3"
       }
     ],
@@ -26715,8 +27333,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5bc4776586f774512d07cf05",
-            "task_name": "the-tarkov-shooter-part-1"
+            "task_id": "",
+            "task_name": "accept-the-tarkov-shooter-part-1"
           }
         ]
       }
@@ -26771,12 +27389,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5bc480a686f7741af0342e29",
-        "task_name": "the-tarkov-shooter-part-4"
-      },
-      {
-        "task_id": "5d25e2b486f77409de05bba0",
-        "task_name": "the-huntsman-path-secured-perimeter"
+        "task_id": "",
+        "task_name": "the-tarkov-shooter-part-4the-huntsman-path-secured-perimeter"
       }
     ],
     "requirements": [
@@ -26785,7 +27399,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5bc479e586f7747f376c7da3",
+            "task_id": "",
             "task_name": "the-tarkov-shooter-part-2"
           }
         ]
@@ -26835,10 +27449,39 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "5f0596629e22f464da6bbdd9",
-            "item_name": ".366 TKM AP-M",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Pliers",
+                    "quantity": 1,
+                    "id": "db32e698-23f7-4835-a62c-2eacdb0b84cb"
+                  },
+                  {
+                    "name": "Gunpowder \"Hawk\"",
+                    "quantity": 2,
+                    "id": "5d6fc87386f77449db3db94e"
+                  },
+                  {
+                    "name": "7.62x39mm PS gzh",
+                    "quantity": 100,
+                    "id": "5656d7c34bdc2d9d198b4587"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5f0596629e22f464da6bbdd9",
+                    "name": ".366 TKM AP-M"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -26854,12 +27497,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5bc4836986f7740c0152911c",
-        "task_name": "the-tarkov-shooter-part-5-2"
-      },
-      {
-        "task_id": "5c51aac186f77432ea65c552",
-        "task_name": "collector"
+        "task_id": "",
+        "task_name": "the-tarkov-shooter-part-5collector"
       }
     ],
     "requirements": [
@@ -26868,7 +27507,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5bc47dbf86f7741ee74e93b9",
+            "task_id": "",
             "task_name": "the-tarkov-shooter-part-3"
           }
         ]
@@ -27001,8 +27640,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5bc4836986f7740c0152911c",
-            "task_name": "the-tarkov-shooter-part-5-2"
+            "task_id": "",
+            "task_name": "the-tarkov-shooter-part-5"
           }
         ]
       }
@@ -27069,7 +27708,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5bc4856986f77454c317bea7",
+            "task_id": "",
             "task_name": "the-tarkov-shooter-part-6"
           }
         ]
@@ -27111,7 +27750,48 @@
           }
         ],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Set of files \"Master\"",
+                    "quantity": 1,
+                    "id": "684c8a74-f68c-4ab8-a11c-bf8bdae28344"
+                  },
+                  {
+                    "name": "7.62x54mm R PS gzh",
+                    "quantity": 50,
+                    "id": "59e77a2386f7742ee578960a"
+                  },
+                  {
+                    "name": "Can of thermite",
+                    "quantity": 1,
+                    "id": "60391a8b3364dc22b04d0ce5"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 2,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  }
+                ],
+                "trader_name": "Jaeger",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5e023d34e8a400319a28ed44",
+                    "name": "7.62x54mm R BT gzh"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -27130,7 +27810,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "669fa395c4c5c04798002497",
+            "task_id": "",
             "task_name": "exit-here"
           }
         ]
@@ -27184,7 +27864,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "665eec4a4dfc83b0ed0a9dca",
+        "task_id": "",
         "task_name": "thirsty-delivery"
       }
     ],
@@ -27194,7 +27874,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "665eeacf5d86b6c8aa03c79b",
+            "task_id": "",
             "task_name": "thirsty-hounds"
           }
         ]
@@ -27238,7 +27918,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "665eeca45d86b6c8aa03c79d",
+        "task_id": "",
         "task_name": "thirsty-echo"
       }
     ],
@@ -27248,7 +27928,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "665eec1f5e47a79f8605565a",
+            "task_id": "",
             "task_name": "thirsty-breadwinner"
           }
         ]
@@ -27292,8 +27972,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "665eeca92f7aedcc900b0437",
-        "task_name": "thirsty-secrets"
+        "task_id": "",
+        "task_name": "thirsty-secrets-12-13hr"
       }
     ],
     "requirements": [
@@ -27302,7 +27982,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "665eec4a4dfc83b0ed0a9dca",
+            "task_id": "",
             "task_name": "thirsty-delivery"
           }
         ]
@@ -27351,7 +28031,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "665eec1f5e47a79f8605565a",
+        "task_id": "",
         "task_name": "thirsty-breadwinner"
       }
     ],
@@ -27361,7 +28041,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63a88045abf76d719f42d715",
+            "task_id": "",
             "task_name": "the-delicious-sausage"
           }
         ]
@@ -27405,8 +28085,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "665eeca45d86b6c8aa03c79d",
-            "task_name": "thirsty-echo"
+            "task_id": "",
+            "task_name": "thirsty-echo-12-13hr"
           }
         ]
       }
@@ -27432,10 +28112,44 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "66507eabf5ddb0818b085b68",
-            "item_name": "2A2-(b-TG) stimulant injector",
-            "hideout_station": "Medstation",
-            "station_level": "2"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Adrenaline injector",
+                    "quantity": 1,
+                    "id": "5c10c8fd86f7743d7d706df3"
+                  },
+                  {
+                    "name": "Bottle of OLOLO Multivitamins",
+                    "quantity": 1,
+                    "id": "62a0a043cf4a99369e2624a5"
+                  },
+                  {
+                    "name": "Medical tools",
+                    "quantity": 1,
+                    "id": "09de1923-751a-47ae-bd7c-031709cd976f"
+                  },
+                  {
+                    "name": "Bottle of saline solution",
+                    "quantity": 1,
+                    "id": "71a6b6db-d0d2-44e0-a5f7-683ad4bb1ff8"
+                  }
+                ],
+                "trader_name": "Therapist",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "66507eabf5ddb0818b085b68",
+                    "name": "2A2-(b-TG) stimulant injector"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -27451,8 +28165,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a09761e720611a6a01f288",
-        "task_name": "keepers-word"
+        "task_id": "",
+        "task_name": "keeper-s-word"
       }
     ],
     "requirements": [
@@ -27461,7 +28175,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0970744893b9f3f0d9b68",
+            "task_id": "",
             "task_name": "offensive-reconnaissance"
           }
         ]
@@ -27520,7 +28234,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27b7d686f77460d847e6a6",
+        "task_id": "",
         "task_name": "scrap-metal"
       }
     ],
@@ -27535,7 +28249,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5a27b75b86f7742e97191958",
+            "task_id": "",
             "task_name": "fishing-gear"
           }
         ]
@@ -27913,12 +28627,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6179b4f16e9dd54ac275e407",
-            "task_name": "missing-cargo"
-          },
-          {
-            "task_id": "625d700cc48e6c62a440fab5",
-            "task_name": "getting-acquainted"
+            "task_id": "",
+            "task_name": "missing-cargogetting-acquainted"
           }
         ]
       }
@@ -28015,7 +28725,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "60e71ce009d7c801eb0c0ec6",
+        "task_id": "",
         "task_name": "special-equipment"
       }
     ],
@@ -28030,7 +28740,7 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "5d25e2cc86f77443e47ae019",
+            "task_id": "",
             "task_name": "the-huntsman-path-forest-cleaning"
           }
         ]
@@ -28081,8 +28791,8 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "6396701b9113f06a7c3b2379",
-            "task_name": "make-an-impression"
+            "task_id": "",
+            "task_name": "make-an-impression-10hr"
           }
         ]
       }
@@ -28190,7 +28900,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "669fa3a40c828825de06d6a1",
+            "task_id": "",
             "task_name": "easy-breezy"
           }
         ]
@@ -28220,7 +28930,43 @@
         ],
         "offer_unlocks": [],
         "barter_unlocks": [],
-        "craft_unlocks": []
+        "craft_unlocks": [
+          {
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  },
+                  {
+                    "name": "5.45x39mm PS gs",
+                    "quantity": 180,
+                    "id": "56dff3afd2720bba668b4567"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 1,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  }
+                ],
+                "trader_name": "Prapor",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "56dfef82d2720bbd668b4567",
+                    "name": "5.45x39mm BP gs"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -28283,8 +29029,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "67a09761e720611a6a01f288",
-        "task_name": "keepers-word"
+        "task_id": "",
+        "task_name": "keeper-s-word"
       }
     ],
     "requirements": [
@@ -28293,7 +29039,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "67a0970744893b9f3f0d9b68",
+            "task_id": "",
             "task_name": "offensive-reconnaissance"
           }
         ]
@@ -28342,7 +29088,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "666314bf1cd52e3d040a2e78",
+        "task_id": "",
         "task_name": "serious-allegations"
       }
     ],
@@ -28352,7 +29098,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "666314bc1d3ec95634095e77",
+            "task_id": "",
             "task_name": "minute-of-fame"
           }
         ]
@@ -28445,7 +29191,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "69ce213a298a6529b30d7134",
+        "task_id": "",
         "task_name": "biochemistry"
       }
     ],
@@ -28504,7 +29250,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "63913715f8e5dd32bf4e3aaa",
+            "task_id": "",
             "task_name": "broadcast-part-2"
           }
         ]
@@ -28636,10 +29382,39 @@
         "barter_unlocks": [],
         "craft_unlocks": [
           {
-            "item_id": "619636be6db0f2477964e710",
-            "item_name": ".300 Blackout M62 Tracer",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "SurvL Survivor Lighter",
+                    "quantity": 1,
+                    "id": "8015f239-63a8-4000-b1a5-861c3ad49958"
+                  },
+                  {
+                    "name": "5.56x45mm M856",
+                    "quantity": 120,
+                    "id": "59e68f6f86f7746c9f75e846"
+                  },
+                  {
+                    "name": "Dry fuel",
+                    "quantity": 1,
+                    "id": "0850ec42-4a23-4b32-a87c-2f706fd289a4"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "619636be6db0f2477964e710",
+                    "name": ".300 Blackout M62 Tracer"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -28655,7 +29430,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27bc1586f7741f6d40fa2f",
+        "task_id": "",
         "task_name": "wet-job-part-3"
       }
     ],
@@ -28665,7 +29440,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27bb8386f7741c770d2d0a",
+            "task_id": "",
             "task_name": "wet-job-part-1"
           }
         ]
@@ -28742,7 +29517,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27bc3686f7741c73584026",
+        "task_id": "",
         "task_name": "wet-job-part-4"
       }
     ],
@@ -28752,7 +29527,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27bbf886f774333a418eeb",
+            "task_id": "",
             "task_name": "wet-job-part-2"
           }
         ]
@@ -28808,7 +29583,7 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27bc6986f7741c7358402b",
+        "task_id": "",
         "task_name": "wet-job-part-5"
       }
     ],
@@ -28818,7 +29593,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27bc1586f7741f6d40fa2f",
+            "task_id": "",
             "task_name": "wet-job-part-3"
           }
         ]
@@ -28869,12 +29644,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5a27bc8586f7741b543d8ea4",
-        "task_name": "wet-job-part-6"
-      },
-      {
-        "task_id": "63a9b229813bba58a50c9ee5",
-        "task_name": "worst-job-in-the-world"
+        "task_id": "",
+        "task_name": "wet-job-part-6worst-job-in-the-world"
       }
     ],
     "requirements": [
@@ -28883,7 +29654,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27bc3686f7741c73584026",
+            "task_id": "",
             "task_name": "wet-job-part-4"
           }
         ]
@@ -28940,12 +29711,8 @@
     "lightkeeper_required": false,
     "leads_to": [
       {
-        "task_id": "5c0be13186f7746f016734aa",
-        "task_name": "psycho-sniper"
-      },
-      {
-        "task_id": "5c0d4e61d09282029f53920e",
-        "task_name": "the-guide"
+        "task_id": "",
+        "task_name": "psycho-sniperthe-guide"
       }
     ],
     "requirements": [
@@ -28954,7 +29721,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5a27bc6986f7741c7358402b",
+            "task_id": "",
             "task_name": "wet-job-part-5"
           }
         ]
@@ -29032,10 +29799,44 @@
         ],
         "craft_unlocks": [
           {
-            "item_id": "6768c25aa7b238f14a08d3f6",
-            "item_name": "7.62x51mm M80A1",
-            "hideout_station": "Workbench",
-            "station_level": "3"
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Leatherman Multitool",
+                    "quantity": 1,
+                    "id": "544fb5454bdc2df8738b456a"
+                  },
+                  {
+                    "name": "7.62x51mm M80",
+                    "quantity": 80,
+                    "id": "58dd3ad986f77403051cba8f"
+                  },
+                  {
+                    "name": "Gunpowder \"Hawk\"",
+                    "quantity": 2,
+                    "id": "5d6fc87386f77449db3db94e"
+                  },
+                  {
+                    "name": "Radiator helix",
+                    "quantity": 1,
+                    "id": "090b69eb-01e2-44e6-8479-73398606c653"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "6768c25aa7b238f14a08d3f6",
+                    "name": "7.62x51mm M80A1"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -29043,7 +29844,7 @@
   },
   {
     "bsg_id": "5979ed3886f77431307dc512",
-    "full_name": "What’s on the Flash Drive?",
+    "full_name": "What\u2019s on the Flash Drive?",
     "name": "whats-on-the-flash-drive",
     "wiki_link": "https://escapefromtarkov.fandom.com/wiki/What%E2%80%99s_on_the_Flash_Drive%3F",
     "given_by": "Skier",
@@ -29120,7 +29921,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "69ce1f84ebbdbf36a200627c",
+            "task_id": "",
             "task_name": "peaceful-atom"
           }
         ]
@@ -29195,7 +29996,7 @@
         "trader_level": [],
         "previous_tasks": [
           {
-            "task_id": "5d24b81486f77439c92d6ba8",
+            "task_id": "",
             "task_name": "acquaintance"
           }
         ]
@@ -29249,12 +30050,8 @@
         ],
         "previous_tasks": [
           {
-            "task_id": "639135f286e646067c176a87",
-            "task_name": "revision-streets-of-tarkov"
-          },
-          {
-            "task_id": "5a27bc6986f7741c7358402b",
-            "task_name": "wet-job-part-5"
+            "task_id": "",
+            "task_name": "revision-streets-of-tarkovwet-job-part-5"
           }
         ]
       }
@@ -29329,10 +30126,39 @@
         ],
         "craft_unlocks": [
           {
-            "item_id": "5fd20ff893a8961fc660a954",
-            "item_name": ".300 Blackout AP",
-            "hideout_station": "",
-            "station_level": ""
+            "requirements": [
+              {
+                "items": [
+                  {
+                    "name": "Toolset",
+                    "quantity": 1,
+                    "id": "590c2e1186f77425357b6124"
+                  },
+                  {
+                    "name": ".300 Blackout CBJ",
+                    "quantity": 90,
+                    "id": "64b8725c4b75259c590fa899"
+                  },
+                  {
+                    "name": "Gunpowder \"Eagle\"",
+                    "quantity": 1,
+                    "id": "5d6fc78386f77449d825f9dc"
+                  }
+                ],
+                "trader_name": "Peacekeeper",
+                "trader_level": ""
+              }
+            ],
+            "result": [
+              {
+                "items": [
+                  {
+                    "id": "5fd20ff893a8961fc660a954",
+                    "name": ".300 Blackout AP"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

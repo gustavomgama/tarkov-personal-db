@@ -1,0 +1,1873 @@
+[
+  {
+    "bsg_id": "",
+    "full_name": "Advertising Business - Part 1",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5648a69d4bdc2ded0b8b457b",
+        "item_name": "BlackRock chest rig (Gray)",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Advertising Business - Part 2",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0e746986f7741453628fe5",
+        "item_name": "WARTECH TV-110 plate carrier (Coyote)",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "600302d73b897b11364cd161",
+    "full_name": "All This Filth...",
+    "name": "all-this-filth",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5fc22d7c187fea44d52eda44",
+        "item_name": "SWORD International Mk-18 .338 LM marksman rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "All for the Show - Death from Above",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5e00903ae9dc277128008b87",
+        "item_name": "B&T MP9 9x19 submachine gun",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "All for the Show - Soldier",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "67124dcfa3541f2a1f0e788b",
+        "item_name": "MPS Auto Assault-12 Gen 2 12ga automatic shotgun",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "639135bbc115f907b14700a6",
+    "full_name": "Audiophile",
+    "name": "audiophile",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "60a3c70cde5f453f634816a3",
+        "item_name": "CQC Osprey MK4A plate carrier (Assault, MTP)",
+        "trader_name": "Ragman",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "638fcd23dc65553116701d33",
+    "full_name": "Audit",
+    "name": "audit",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0e51be86f774598e797894",
+        "item_name": "6B13 assault armor (Flora)",
+        "trader_name": "Ragman",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639135a7e705511c8a4a1b78",
+    "full_name": "Ballet Lover",
+    "name": "ballet-lover",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0e446786f7742013381639",
+        "item_name": "6B5-15 Zh-86 Uley armored rig (Flora)",
+        "trader_name": "Ragman",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63a9ae24009ffc6a551631a5",
+    "full_name": "Best Job in the World",
+    "name": "best-job-in-the-world",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5cadfbf7ae92152ac412eeef",
+        "item_name": "ASh-12 12.7x55 assault rifle",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "64f5e20652fc01298e2c61e3",
+    "full_name": "Beyond the Red Meat",
+    "name": "beyond-the-red-meat",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6130ca3fd92c473c77020dbd",
+        "item_name": "AK CSS knurled charging handle",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5968eb3186f7741dde183a4d",
+    "full_name": "Blood in the Water",
+    "name": "blood-in-the-water",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5751a25924597722c463c472",
+        "item_name": "Army bandage",
+        "trader_name": "Therapist",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6391372c8ba6894d155e77d7",
+    "full_name": "Broadcast - Part 4",
+    "name": "broadcast-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ea2a8e200685063ec28c05a",
+        "item_name": ".45 ACP RIP",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71d23c1bfa3050473b8e6",
+    "full_name": "Calibration",
+    "name": "calibration",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "61962b617c6c7b169525f168",
+        "item_name": "5.45x39mm 7N40",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71b9bbd90872cb85440f3",
+    "full_name": "Capturing Outposts",
+    "name": "capturing-outposts",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "57a0e5022459774d1673f889",
+        "item_name": "9x39mm SP-6 gs",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "597a0b2986f77426d66c0633",
+    "full_name": "Chemical - Part 2",
+    "name": "chemical-part-2",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a966f51a2750c00156aacf6",
+        "item_name": "SOK-12 12ga SAI-02 10-round magazine",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "67a09724972c11a3f5077324",
+    "full_name": "Confidential Info",
+    "name": "confidential-info",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "59c1383d86f774290a37e0ca",
+        "item_name": "AR-15 5.56x45 Magpul PMAG D-60 STANAG 60-round magazine",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6764174c86addd02bc033d68",
+    "full_name": "Connections Up North",
+    "name": "connections-up-north",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "673cab3e03c6a20581028bc1",
+        "item_name": "Sako TRG M10 .338 LM bolt-action sniper rifle",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179b3bdc7560e13d23eeb8d",
+    "full_name": "Corporate Secrets",
+    "name": "corporate-secrets",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ac66d725acfc43b321d4b60",
+        "item_name": "Kalashnikov AK-104 7.62x39 assault rifle",
+        "trader_name": "Ref",
+        "trader_level": "2"
+      },
+      {
+        "item_id": "66bdc28a0b603c26902b2011",
+        "item_name": "DevTac Ronin ballistic helmet",
+        "trader_name": "Mechanic",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179b5eabca27a099552e052",
+    "full_name": "Counteraction",
+    "name": "counteraction-usec",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "60098ad7c2240c0fe85c570a",
+        "item_name": "AFAK tactical individual first aid kit",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179b3a12153c15e937d52bc",
+    "full_name": "Energy Crisis",
+    "name": "energy-crisis",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6184055050224f204c1da540",
+        "item_name": "FN SCAR-L 5.56x45 assault rifle",
+        "trader_name": "Ref",
+        "trader_level": "5"
+      },
+      {
+        "item_id": "59fb137a86f7740adb646af1",
+        "item_name": "Tromix Monster Claw 12ga muzzle brake",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "656f611f94b480b8a500c0db",
+        "item_name": "Granit 4 ballistic plate (Front)",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71b62a0beca400d69efc4",
+    "full_name": "Escort",
+    "name": "escort",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "62e14904c2699c0ec93adc47",
+        "item_name": "SR-2M Veresk 9x21 submachine gun",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "66b38e144f2ab7cc530c3fe7",
+    "full_name": "Every Hunter Knows This",
+    "name": "every-hunter-knows-this",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "666b11055a706400b717cfa5",
+        "item_name": "Tripwire installation kit",
+        "trader_name": "Jaeger",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c1128e386f7746565181106",
+    "full_name": "Fertilizers",
+    "name": "fertilizers",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6193a720f8ee7e52e42109ed",
+        "item_name": "HK USP .45 ACP pistol",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0d0f1886f77457b8210226",
+    "full_name": "From Hand to Hand",
+    "name": "from-hand-to-hand",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5fc3f2d5900b1d5091531e57",
+        "item_name": "TDI KRISS Vector Gen.2 9x19 submachine gun",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "61958c366726521dd96828ec",
+    "full_name": "Gifts from Tarkov",
+    "name": "gifts-from-tarkov",
+    "start_rewards": [
+      {
+        "item_id": "6357c98711fb55120211f7e1",
+        "item_name": "M203 40mm underbarrel grenade launcher",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5ede475b549eed7c6d5c18fb",
+        "item_name": "40x46mm M386 (HE) grenade",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ],
+    "finish_rewards": [
+      {
+        "item_id": "5ede475b549eed7c6d5c18fb",
+        "item_name": "40x46mm M386 (HE) grenade",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Doping - Part 4",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0e534186f7747fa1419867",
+        "item_name": "eTG-change regenerative stimulant injector",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Final Exam",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b432b2f5acfc4771e1c6622",
+        "item_name": "Shattered lightweight armored mask",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 1",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "65709d2d21b9f815e208ff95",
+        "item_name": "Diamond Age NeoSteel High Cut helmet (Black)",
+        "trader_name": "Ref",
+        "trader_level": ""
+      },
+      {
+        "item_id": "5abcbc27d8ce8700182eceeb",
+        "item_name": "Kalashnikov AKMSN 7.62x39 assault rifle",
+        "trader_name": "Ref",
+        "trader_level": ""
+      },
+      {
+        "item_id": "5ab8dced86f774646209ec87",
+        "item_name": "ANA Tactical M2 plate carrier (OD Green)",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 10",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ac66cb05acfc40198510a10",
+        "item_name": "Kalashnikov AK-101 5.56x45 assault rifle",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 2",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5beed0f50db834001c062b12",
+        "item_name": "RPK-16 5.45x39 light machine gun",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 3",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "55801eed4bdc2d89578b4588",
+        "item_name": "SV-98 7.62x54R bolt-action sniper rifle",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 4",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "58948c8e86f77409493f7266",
+        "item_name": "SIG MPX 9x19 submachine gun",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 5",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "669fa39b48fc9f8db6035a0c",
+        "item_name": "Magnum Research Desert Eagle L6 .50 AE pistol",
+        "trader_name": "Ref",
+        "trader_level": "6"
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 6",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5aa2ba71e5b5b000137b758f",
+        "item_name": "MSA Sordin Supreme PRO-X/L headset",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 7",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "60098ad7c2240c0fe85c570a",
+        "item_name": "AFAK tactical individual first aid kit",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 8",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "63920105a83e15700a00f168",
+        "item_name": "SOG Voodoo Hawk tactical tomahawk",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Gladiator Life - Part 9",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5f60e784f2bcbb675b00dac7",
+        "item_name": "Beret (Olive Drab)",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae327c886f7745c7b3f2f3f",
+    "full_name": "Gunsmith - AK-105",
+    "name": "gunsmith-ak-105",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5aafbde786f774389d0cbc0f",
+        "item_name": "Ammunition case",
+        "trader_name": "Mechanic",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae3270f86f77445ba41d4dd",
+    "full_name": "Gunsmith - AKM",
+    "name": "gunsmith-akm",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a0c59791526d8dba737bba7",
+        "item_name": "AK GP-25 accessory kit recoil pad",
+        "trader_name": "Prapor",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac2426c86f774138762edfe",
+    "full_name": "Gunsmith - AKS-74U",
+    "name": "gunsmith-aks-74u",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5cbda392ae92155f3c17c39f",
+        "item_name": "AK 100-series polymer handguard",
+        "trader_name": "Prapor",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae3280386f7742a41359364",
+    "full_name": "Gunsmith - AS VAL",
+    "name": "gunsmith-as-val",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "59eb7ebe86f7740b373438ce",
+        "item_name": "VSS/VAL TOZ 6P29M mount",
+        "trader_name": "Jaeger",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac244eb86f7741356335af1",
+    "full_name": "Gunsmith - M4A1",
+    "name": "gunsmith-m4a1",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "56eabcd4d2720b66698b4574",
+        "item_name": "AR-15 Daniel Defense MK12 Low Profile Gas Block",
+        "trader_name": "Mechanic",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac23c6186f7741247042bad",
+    "full_name": "Gunsmith - MP-133",
+    "name": "gunsmith-mp-133",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "56ea8d2fd2720b7c698b4570",
+        "item_name": "AR-15 Windham Weaponry Rail Gas Block",
+        "trader_name": "Mechanic",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639872f9decada40426d3447",
+    "full_name": "Gunsmith - OP-SKS",
+    "name": "gunsmith-op-sks",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "59984ab886f7743e98271174",
+        "item_name": "PP-19-01 Vityaz 9x19 submachine gun",
+        "trader_name": "Ref",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639872fa9b4fb827b200d8e5",
+    "full_name": "Gunsmith - P226R",
+    "name": "gunsmith-p226r",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5447a9cd4bdc2dbd208b4567",
+        "item_name": "Colt M4A1 5.56x45 assault rifle",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5cc86832d7f00c000d3a6e6c",
+        "item_name": "5.7x28mm R37.F",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639872fc93ae507d5858c3a6",
+    "full_name": "Gunsmith - Vector 9x19",
+    "name": "gunsmith-vector-9x19",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5447a9cd4bdc2dbd208b4567",
+        "item_name": "Colt M4A1 5.56x45 assault rifle",
+        "trader_name": "Ref",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639872fe8871e1272b10ccf6",
+    "full_name": "Gunsmith Master - Part 1",
+    "name": "gunsmith-master-part-1",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5d44069ca4b9361ebd26fc37",
+        "item_name": "AR-15 Magpul PRS GEN3 stock (Black)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "676529af9c90953d090882e7",
+    "full_name": "Gunsmith Master - Part 12",
+    "name": "gunsmith-master-part-12",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "67600929bd0a0549d70993f6",
+        "item_name": "Ballistic plate case",
+        "trader_name": "Mechanic",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ac242ab86f77412464f68b4",
+    "full_name": "Gunsmith Master - Part 3",
+    "name": "gunsmith-master-part-3",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5d43021ca4b9362eab4b5e25",
+        "item_name": "Lone Star TX-15 DML 5.56x45 carbine",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5b47749f86f7746c5d6a5fd4",
+    "full_name": "Gunsmith Master - Part 4",
+    "name": "gunsmith-master-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "588226ef24597767af46e39c",
+        "item_name": "Magpul AFG tactical foregrip (Olive Drab)",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5a33e75ac4a2826c6e06d759",
+        "item_name": "AR-15 Hera Arms CQR pistol grip/buttstock",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "5e21ca18e4d47f0da15e77dd",
+        "item_name": "AK CNC Warrior 5.56x45 muzzle device adapter",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "619b69037b9de8162902673e",
+        "item_name": "AKM/AK-74 Hera Arms CQR47 pistol grip/buttstock",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5b477b6f86f7747290681823",
+    "full_name": "Gunsmith Master - Part 5",
+    "name": "gunsmith-master-part-5",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b07dd285acfc4001754240d",
+        "item_name": "Steiner LAS/TAC 2 tactical flashlight",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "615d8e9867085e45ef1409c6",
+        "item_name": "AKM 7.62x39 Kiba Arms .308 muzzle device adapter",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639873003693c63d86328f25",
+    "full_name": "Gunsmith Master - Part 6",
+    "name": "gunsmith-master-part-6",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6087e663132d4d12c81fd96b",
+        "item_name": "AK Custom Arms AGS-74 PRO + Sniper Kit pistol grip",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5b477f7686f7744d1b23c4d2",
+    "full_name": "Gunsmith Master - Part 7",
+    "name": "gunsmith-master-part-7",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6130c43c67085e45ef1405a1",
+        "item_name": "AR-10 KAC QDC 7.62x51 Muzzle Brake Kit",
+        "trader_name": "Mechanic",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "58d2912286f7744e27117493",
+        "item_name": "Magpul MOE Carbine rubber buttpad",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63987301e11ec11ff5504036",
+    "full_name": "Gunsmith Master - Part 8",
+    "name": "gunsmith-master-part-8",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5d025cc1d7ad1a53845279ef",
+        "item_name": "AR-15 HK Ergo PSG-1 style pistol grip",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "5c793fb92e221644f31bfb64",
+        "item_name": "AR-15 Strike Industries Advanced Receiver Extension",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a68661a86f774500f48afb0",
+    "full_name": "Health Care Privacy - Part 1",
+    "name": "health-care-privacy-part-1",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "590c661e86f7741e566b646a",
+        "item_name": "Car first aid kit",
+        "trader_name": "Therapist",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a68667486f7742607157d28",
+    "full_name": "Health Care Privacy - Part 4",
+    "name": "health-care-privacy-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5af0454c86f7746bf20992e8",
+        "item_name": "Aluminum splint",
+        "trader_name": "Therapist",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "669fa3a3ad7f1eac2607ed48",
+    "full_name": "Health Care Privacy - Part 6",
+    "name": "health-care-privacy-part-6",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "544fb3f34bdc2d03748b456a",
+        "item_name": "Morphine injector",
+        "trader_name": "Therapist",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "5c10c8fd86f7743d7d706df3",
+        "item_name": "Adrenaline injector",
+        "trader_name": "Therapist",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6a5c1578f2689567c30eb0f3",
+    "full_name": "Hiking",
+    "name": "hiking",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5f60b34a41e30a4ab12a6947",
+        "item_name": "Galvion Caiman Hybrid helmet (Grey)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27b87686f77460de0252a8",
+    "full_name": "Humanitarian Supplies",
+    "name": "humanitarian-supplies",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0d5ae286f7741e46554302",
+        "item_name": "5.56x45mm Warmageddon",
+        "trader_name": "Peacekeeper",
+        "trader_level": "2"
+      },
+      {
+        "item_id": "593d493f86f7745e6b2ceb22",
+        "item_name": "AK-74 Hexagon 5.45x39 sound suppressor",
+        "trader_name": "Skier",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25e4ca86f77409dd5cdf2c",
+    "full_name": "Hunting Trip",
+    "name": "hunting-trip",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "627e14b21713922ded6f2c15",
+        "item_name": "Accuracy International AXMC .338 LM bolt-action sniper rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a03296886f774569778596a",
+    "full_name": "I Need More Power",
+    "name": "i-need-more-power",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5d44069ca4b9361ebd26fc37",
+        "item_name": "AR-15 Magpul PRS GEN3 stock (Black)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c139eb686f7747878361a6f",
+    "full_name": "Import",
+    "name": "import",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ba2678ad4351e44f824b344",
+        "item_name": "4.6x30mm FMJ SX",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "67a097379f2068e74603c6ac",
+    "full_name": "Indisputable Authority",
+    "name": "indisputable-authority",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6130ca3fd92c473c77020dbd",
+        "item_name": "AK CSS knurled charging handle",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5c1cd46f2e22164bef5cfedb",
+        "item_name": "Zenit RK-1 tactical foregrip on B-25U mount",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0bd01e86f7747cdd799e56",
+    "full_name": "Insomnia",
+    "name": "insomnia",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "69413241b1ce1e5fbb09ed0a",
+        "item_name": "CENS ProFlex DX5 tactical earplug",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "671a49f77d49aea42c029b5f",
+    "full_name": "Irresistible",
+    "name": "irresistible",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "66ffa9b66e19cc902401c5e8",
+        "item_name": "MPS Auto Assault-12 Gen 1 12ga automatic shotgun",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Jack of All Trades",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "633ec7c2a6918cb895019c6c",
+        "item_name": "RSh-12 12.7x55 revolver",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "64f5deac39e45b527a7c4232",
+    "full_name": "Job for a Patriot",
+    "name": "job-for-a-patriot",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "689166b6c2d6fa42e7044756",
+        "item_name": "Kalashnikov AK-308 7.62x51 assault rifle",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "68d56685f3d7cd248f0a06d9",
+        "item_name": "AK-308 7.62x51 QD sound suppressor",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639136f086e646067c176a8b",
+    "full_name": "Kings of the Rooftops",
+    "name": "kings-of-the-rooftops",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "55801eed4bdc2d89578b4588",
+        "item_name": "SV-98 7.62x54R bolt-action sniper rifle",
+        "trader_name": "Prapor",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6193850f60b34236ee0483de",
+    "full_name": "Long Road",
+    "name": "long-road",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "588892092459774ac91d4b11",
+        "item_name": "Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a0449d586f77474e66227b7",
+    "full_name": "Master Key",
+    "name": "master-key",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5926bb2186f7744b1c6c6e60",
+        "item_name": "HK MP5 9x19 submachine gun (Navy 3 Round Burst)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179b4f16e9dd54ac275e407",
+    "full_name": "Missing Cargo",
+    "name": "missing-cargo",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "56eabf3bd2720b75698b4569",
+        "item_name": "AR-15 Magpul MOE Carbine stock (Black)",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5649ae4a4bdc2d1b2b8b4588",
+        "item_name": "AK Zenit RK-3 pistol grip",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "58d2912286f7744e27117493",
+        "item_name": "Magpul MOE Carbine rubber buttpad",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71c11d54b755a3b53eb65",
+    "full_name": "Night Sweep",
+    "name": "night-sweep",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "606587252535c57a13424cfd",
+        "item_name": "CMMG Mk47 Mutant 7.62x39 assault rifle",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "58d2912286f7744e27117493",
+        "item_name": "Magpul MOE Carbine rubber buttpad",
+        "trader_name": "Skier",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "59c124d686f774189b3c843f",
+    "full_name": "Oil Run",
+    "name": "oil-run",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a26ac0ec4a28200741e1e18",
+        "item_name": "9x21mm BT gzh",
+        "trader_name": "Prapor",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "669fa38fad7f1eac2607ed46",
+    "full_name": "One Less Loose End",
+    "name": "one-less-loose-end",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "58948c8e86f77409493f7266",
+        "item_name": "SIG MPX 9x19 submachine gun",
+        "trader_name": "Peacekeeper",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179b5b06e9dd54ac275e409",
+    "full_name": "Our Own Land",
+    "name": "our-own-land-bear",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5e85a9f4add9fe03027d9bf1",
+        "item_name": "23x75mm Zvezda flashbang round",
+        "trader_name": "Prapor",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5ae449c386f7744bde357697",
+    "full_name": "Pathfinder",
+    "name": "pathfinder",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b40e2bc5acfc40016388216",
+        "item_name": "HighCom Striker ULACH IIIA helmet (Desert Tan)",
+        "trader_name": "Ragman",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63966fd9ea19ac7ed845db30",
+    "full_name": "Payback",
+    "name": "payback",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b4329f05acfc47a86086aa1",
+        "item_name": "DevTac Ronin Respirator",
+        "trader_name": "Ragman",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0d4c12d09282029f539173",
+    "full_name": "Peacekeeping Mission",
+    "name": "peacekeeping-mission",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5dcbd56fdbd3d91b3e5468d5",
+        "item_name": "Desert Tech MDR 7.62x51 assault rifle",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "596760e186f7741e11214d58",
+    "full_name": "Postman Pat - Part 2",
+    "name": "postman-pat-part-2",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "544fb45d4bdc2dee738b4568",
+        "item_name": "Salewa first aid kit",
+        "trader_name": "Therapist",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63a5cf262964a7488f5243ce",
+    "full_name": "Power of Persuasion",
+    "name": "power-of-persuasion",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a26ac0ec4a28200741e1e18",
+        "item_name": "9x21mm BT gzh",
+        "trader_name": "Prapor",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6744ab1def61d56e020b5c56",
+    "full_name": "Protect the Sky",
+    "name": "protect-the-sky",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "674d6121c09f69dfb201a888",
+        "item_name": "Aklys Defense Velociraptor .300 Blackout assault rifle",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0be13186f7746f016734aa",
+    "full_name": "Psycho Sniper",
+    "name": "psycho-sniper",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ba2678ad4351e44f824b344",
+        "item_name": "4.6x30mm FMJ SX",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6572e876dc0d635f633a5714",
+    "full_name": "Pyramid Scheme",
+    "name": "pyramid-scheme",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5fb64bc92b1b027b1f50bcf2",
+        "item_name": "TDI KRISS Vector Gen.2 .45 ACP submachine gun",
+        "trader_name": "Skier",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5edac020218d181e29451446",
+    "full_name": "Samples",
+    "name": "samples",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ac8d6885acfc400180ae7b0",
+        "item_name": "Ops-Core FAST MT Super High Cut helmet (Urban Tan)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "5a16b7e1fcdbcb00165aa6c9",
+        "item_name": "Ops-Core FAST multi-hit ballistic face shield",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6179ad56c760af5ad2053587",
+    "full_name": "Seaside Vacation",
+    "name": "seaside-vacation",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5af0454c86f7746bf20992e8",
+        "item_name": "Aluminum splint",
+        "trader_name": "Therapist",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6942b44f891369fc790e385a",
+    "full_name": "Setting Priorities",
+    "name": "setting-priorities",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "67600929bd0a0549d70993f6",
+        "item_name": "Ballistic plate case",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5967725e86f774601a446662",
+    "full_name": "Shaking Up the Teller",
+    "name": "shaking-up-the-teller",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a26ac0ec4a28200741e1e18",
+        "item_name": "9x21mm BT gzh",
+        "trader_name": "Prapor",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0bde0986f77479cf22c2f8",
+    "full_name": "Shooter Born in Heaven",
+    "name": "shooter-born-in-heaven",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b6d9ce188a4501afc1b2b25",
+        "item_name": "T H I C C Weapon case",
+        "trader_name": "Mechanic",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63966fccac6f8f3c677b9d89",
+    "full_name": "Snatch",
+    "name": "snatch",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "657089638db3adca1009f4ca",
+        "item_name": "Atomic Defense CQCM ballistic mask (Black)",
+        "trader_name": "Ragman",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "68ee1c18b4e5bc9a68018cd7",
+    "full_name": "Special Order",
+    "name": "special-order",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "68bac6ca653ee6b1e406d978",
+        "item_name": "9.3x64mm FMJ",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "",
+    "full_name": "Superhuman",
+    "name": "",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bffe7930db834001b734a39",
+        "item_name": "Crash Axe",
+        "trader_name": "Ref",
+        "trader_level": ""
+      }
+    ]
+  },
+  {
+    "bsg_id": "5edac63b930f5454f51e128b",
+    "full_name": "TerraGroup Employee",
+    "name": "terragroup-employee",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ef1ba28c64c5d0dfc0571a5",
+        "item_name": "Mesa Tactical Crosshair Hydraulic buffer tube",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "68bb2a3831ee03fbc00931e6",
+        "item_name": "AR-15 Magpul ACS Carbine stock (FDE)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "68bb25270e48a3afd7071216",
+        "item_name": "AR-15 Magpul ACS Carbine stock (Black)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5e383a6386f77465910ce1f3",
+    "full_name": "Textile - Part 1",
+    "name": "textile-part-1-usec",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5b44cf1486f77431723e3d05",
+        "item_name": "IOTV Gen4 body armor (Assault Kit, MultiCam)",
+        "trader_name": "Ragman",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "67b45467814ab0ffa000c7e7",
+    "full_name": "The Art of Explosion",
+    "name": "the-art-of-explosion",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "676bf44c5539167c3603e869",
+        "item_name": "RShG-2 72.5mm rocket launcher",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71c9ad54b755a3b53eb66",
+    "full_name": "The Cleaner",
+    "name": "the-cleaner",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "58dd3ad986f77403051cba8f",
+        "item_name": "7.62x51mm M80",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "596b43fb86f77457ca186186",
+    "full_name": "The Extortionist",
+    "name": "the-extortionist",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a7828548dc32e5a9c28b516",
+        "item_name": "Remington Model 870 12ga pump-action shotgun",
+        "trader_name": "Skier",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5c0d4e61d09282029f53920e",
+    "full_name": "The Guide",
+    "name": "the-guide",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c0e66e2d174af02a96252f4",
+        "item_name": "Velocity Systems SLAAP Plate (Tan)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25e2ee86f77443e35162ea",
+    "full_name": "The Huntsman Path - Woods Keeper",
+    "name": "the-huntsman-path-woods-keeper",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bfea6e90db834001b7347f3",
+        "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5bfea6e90db834001b7347f3",
+        "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5bfea6e90db834001b7347f3",
+        "item_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "59c50c8886f7745fed3193bf",
+    "full_name": "The Punisher - Part 3",
+    "name": "the-punisher-part-3",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5656d7c34bdc2d9d198b4587",
+        "item_name": "7.62x39mm PS gzh",
+        "trader_name": "Prapor",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "59ca264786f77445a80ed044",
+    "full_name": "The Punisher - Part 4",
+    "name": "the-punisher-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "59e77a2386f7742ee578960a",
+        "item_name": "7.62x54mm R PS gzh",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "57a0e5022459774d1673f889",
+        "item_name": "9x39mm SP-6 gs",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "59ca29fb86f77445ab465c87",
+    "full_name": "The Punisher - Part 5",
+    "name": "the-punisher-part-5",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "689166b6c2d6fa42e7044756",
+        "item_name": "Kalashnikov AK-308 7.62x51 assault rifle",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "68d56685f3d7cd248f0a06d9",
+        "item_name": "AK-308 7.62x51 QD sound suppressor",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "59ca2eb686f77445a80ed049",
+    "full_name": "The Punisher - Part 6",
+    "name": "the-punisher-part-6",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "651450ce0e00edc794068371",
+        "item_name": "SR-3M 9x39 compact assault rifle",
+        "trader_name": "Prapor",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25b6be86f77444001e1b89",
+    "full_name": "The Survivalist Path - Thrifty",
+    "name": "the-survivalist-path-thrifty",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "590c5d4b86f774784e1b9c45",
+        "item_name": "Iskra ration pack",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5d25c81b86f77443e625dd71",
+    "full_name": "The Survivalist Path - Wounded Beast",
+    "name": "the-survivalist-path-wounded-beast",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "6259b864ebedf17603599e88",
+        "item_name": "Benelli M3 Super 90 12ga dual-mode shotgun",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc479e586f7747f376c7da3",
+    "full_name": "The Tarkov Shooter - Part 2",
+    "name": "the-tarkov-shooter-part-2",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bc5a372d4351e44f824d17f",
+        "item_name": "Mosin Rifle AIM Sports MNG rail mount",
+        "trader_name": "Jaeger",
+        "trader_level": "1"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc47dbf86f7741ee74e93b9",
+    "full_name": "The Tarkov Shooter - Part 3",
+    "name": "the-tarkov-shooter-part-3",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bbdb83fd4351e44f824c44b",
+        "item_name": "Mosin Rifle Tacfire Tanker Style 7.62x54R muzzle brake",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      },
+      {
+        "item_id": "5bbde409d4351e003562b036",
+        "item_name": "Mosin Rifle AIM Sports Recoil Pad",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc480a686f7741af0342e29",
+    "full_name": "The Tarkov Shooter - Part 4",
+    "name": "the-tarkov-shooter-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bbdb811d4351e45020113c7",
+        "item_name": "Mosin Rifle AIM Sports Tri-Rail mount",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      },
+      {
+        "item_id": "5bbde41ed4351e003562b038",
+        "item_name": "Mosin Rifle Tacfire pistol grip",
+        "trader_name": "Jaeger",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc4836986f7740c0152911c",
+    "full_name": "The Tarkov Shooter - Part 5",
+    "name": "the-tarkov-shooter-part-5-2",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bbdb870d4351e00367fb67d",
+        "item_name": "Mosin Rifle ATI Monte Carlo stock",
+        "trader_name": "Jaeger",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc4856986f77454c317bea7",
+    "full_name": "The Tarkov Shooter - Part 6",
+    "name": "the-tarkov-shooter-part-6",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bc5a35cd4351e450201232f",
+        "item_name": "Mosin Rifle Witt Machine 7.62x54R muzzle brake",
+        "trader_name": "Jaeger",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5bc4893c86f774626f5ebf3e",
+    "full_name": "The Tarkov Shooter - Part 7",
+    "name": "the-tarkov-shooter-part-7",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5fc22d7c187fea44d52eda44",
+        "item_name": "SWORD International Mk-18 .338 LM marksman rifle",
+        "trader_name": "Jaeger",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "60e71ccb5688f6424c7bfec4",
+    "full_name": "Trophies",
+    "name": "trophies",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5c17a7ed2e2216152142459c",
+        "item_name": "Crye Precision AirFrame helmet (Tan)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63967028c4a91c5cb76abd81",
+    "full_name": "Trouble in the Big City",
+    "name": "trouble-in-the-big-city",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "65290f395ae2ae97b80fdf2d",
+        "item_name": "SIG MCX-SPEAR 6.8x51 assault rifle",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "65293c7a17e14363030ad308",
+        "item_name": "AR-10 7.62x51 Lancer L7AWM 25-round magazine",
+        "trader_name": "Peacekeeper",
+        "trader_level": "7"
+      },
+      {
+        "item_id": "6529243824cbe3c74a05e5c1",
+        "item_name": "6.8x51mm SIG Hybrid",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27ba1c86f77461ea5a3c56",
+    "full_name": "Weapons Circulation",
+    "name": "weapons-circulation",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5bb2475ed4351e00853264e3",
+        "item_name": "HK 416A5 5.56x45 assault rifle",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27bbf886f774333a418eeb",
+    "full_name": "Wet Job - Part 2",
+    "name": "wet-job-part-2",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5d5e7d28a4b936645d161203",
+        "item_name": "MSA ACH TC-2001 MICH Series helmet (Olive Drab)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27bc3686f7741c73584026",
+    "full_name": "Wet Job - Part 4",
+    "name": "wet-job-part-4",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5dcbd56fdbd3d91b3e5468d5",
+        "item_name": "Desert Tech MDR 7.62x51 assault rifle",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "5a27bc6986f7741c7358402b",
+    "full_name": "Wet Job - Part 5",
+    "name": "wet-job-part-5",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5a367e5dc4a282000e49738f",
+        "item_name": "Remington R11 RSASS 7.62x51 marksman rifle",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      },
+      {
+        "item_id": "60098ad7c2240c0fe85c570a",
+        "item_name": "AFAK tactical individual first aid kit",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "63a9b229813bba58a50c9ee5",
+    "full_name": "Worst Job in the World",
+    "name": "worst-job-in-the-world",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "5ede475b549eed7c6d5c18fb",
+        "item_name": "40x46mm M386 (HE) grenade",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      },
+      {
+        "item_id": "5e00c1ad86f774747333222c",
+        "item_name": "Team Wendy EXFIL Ballistic Helmet (Black)",
+        "trader_name": "Peacekeeper",
+        "trader_level": "4"
+      }
+    ]
+  },
+  {
+    "bsg_id": "6391359b9444fb141f4e6ee6",
+    "full_name": "You've Got Mail",
+    "name": "youve-got-mail",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "57372140245977611f70ee91",
+        "item_name": "9x18mm PM SP7 gzh",
+        "trader_name": "Prapor",
+        "trader_level": "2"
+      }
+    ]
+  },
+  {
+    "bsg_id": "639135534b15ca31f76bc317",
+    "full_name": "Your Car Needs a Service",
+    "name": "your-car-needs-a-service",
+    "start_rewards": [],
+    "finish_rewards": [
+      {
+        "item_id": "58d3db5386f77426186285a0",
+        "item_name": "M67 hand grenade",
+        "trader_name": "Peacekeeper",
+        "trader_level": "3"
+      }
+    ]
+  }
+]
