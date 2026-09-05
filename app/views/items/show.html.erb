@@ -1,0 +1,131 @@
+<div class="space-y-8">
+  <div class="flex items-start gap-6">
+    <div class="w-48 h-48 bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden flex-shrink-0">
+      <img
+        src="<%= @item.images.first || "https://via.placeholder.com/200" %>"
+        alt="<%= @item.full_name %>"
+        class="w-full h-full object-contain"
+      >
+    </div>
+    <div class="flex-1">
+      <h1 class="text-3xl font-bold mb-2"><%= @item.full_name %></h1>
+      <p class="text-gray-500 dark:text-gray-400 mb-4"><%= @item.short_name %></p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <% @item.categories.each do |cat| %>
+          <span class="inline-block px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg">
+            <%= cat.humanize %>
+          </span>
+        <% end %>
+      </div>
+      <div class="flex gap-3">
+        <% @item.links.each do |link| %>
+          <%= link_to link, link, class: "text-blue-600 dark:text-blue-400 hover:underline text-sm", target: "_blank", rel: "noopener" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <% if @item.property %>
+    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6">
+      <h2 class="text-lg font-semibold mb-4">Properties</h2>
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <% if @item.property.properties_type %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Type</dt>
+            <dd class="font-medium"><%= @item.property.properties_type %></dd>
+          </div>
+        <% end %>
+        <% if @item.property.armor_class %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Armor Class</dt>
+            <dd class="font-medium"><%= @item.property.armor_class %></dd>
+          </div>
+        <% end %>
+        <% if @item.property.caliber %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Caliber</dt>
+            <dd class="font-medium"><%= @item.property.caliber %></dd>
+          </div>
+        <% end %>
+        <% if @item.property.damage %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Damage</dt>
+            <dd class="font-medium"><%= @item.property.damage %></dd>
+          </div>
+        <% end %>
+        <% if @item.property.penetration_power %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Penetration</dt>
+            <dd class="font-medium"><%= @item.property.penetration_power %></dd>
+          </div>
+        <% end %>
+        <% if @item.property.armor_type %>
+          <div>
+            <dt class="text-gray-500 dark:text-gray-400">Armor Type</dt>
+            <dd class="font-medium"><%= @item.property.armor_type %></dd>
+          </div>
+        <% end %>
+      </dl>
+    </div>
+  <% end %>
+
+  <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6">
+    <h2 class="text-lg font-semibold mb-4">Where to Get</h2>
+    <% if @item.obtain_from.any? %>
+      <div class="space-y-3">
+        <% @item.obtain_from.each do |entry| %>
+          <div class="flex items-center gap-3 py-2 border-b border-gray-100 dark:border-gray-700 last:border-0">
+            <span class="px-2 py-1 text-xs font-medium rounded
+              <%= case entry.type
+                  when :task_reward then 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300'
+                  when :hideout then 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300'
+                  when :barter then 'bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300'
+                  when :currency then 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+                  end %>">
+              <%= entry.type.to_s.humanize %>
+            </span>
+            <span class="text-sm">
+              <%= case entry.type
+                  when :task_reward then entry.source.task_name
+                  when :hideout then "#{entry.source.station_name} Lv.#{entry.source.station_level}"
+                  when :barter then "#{entry.source.trader_name} LL#{entry.source.trader_level}"
+                  when :currency then "#{entry.source.trader_name} LL#{entry.source.trader_level} (#{entry.source.currency})"
+                  end %>
+            </span>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <p class="text-gray-500 dark:text-gray-400">No obtain methods found.</p>
+    <% end %>
+  </div>
+
+  <% if @item.how_to_unlock.any? %>
+    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6">
+      <h2 class="text-lg font-semibold mb-4">How to Unlock</h2>
+      <div class="space-y-4">
+        <% @item.how_to_unlock.each do |path| %>
+          <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="px-2 py-1 text-xs font-medium rounded
+                <%= case path.unlock_method
+                    when :task_reward then 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300'
+                    when :offer_unlock then 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+                    when :barter_unlock then 'bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300'
+                    when :craft_unlock then 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300'
+                    when :loose_item then 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                    end %>">
+                <%= path.unlock_method.to_s.humanize %>
+              </span>
+              <span class="font-medium"><%= path.task.full_name %></span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              <%= path.task.given_by %> ·
+              <%= path.reward_type == "start_rewards" ? "Start reward" : "Finish reward" %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

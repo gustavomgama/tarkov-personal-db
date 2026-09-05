@@ -1,0 +1,28 @@
+{
+  "name": "tarkov_db",
+  "version": "1.0.0",
+  "description": "System for easy access to unlockables and where and how to get any buyable, craftable or barteable items focusing on task-gated items.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavomgama/tarkov-unlockables.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gustavomgama/tarkov-unlockables/issues"
+  },
+  "homepage": "https://github.com/gustavomgama/tarkov-unlockables#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

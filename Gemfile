@@ -32,3 +32,6 @@ end
 group :test do
   gem "simplecov", require: false
 end
+
+gem "tailwindcss-rails", "~> 4.6"
+gem "view_component", "~> 4.15"
