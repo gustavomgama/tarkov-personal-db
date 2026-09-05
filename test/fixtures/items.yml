@@ -1,73 +1,26 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
 # == Schema Information
 #
 # Table name: items
 #
-#  id                     :bigint           not null, primary key
-#  bsg_id                 :string           not null
-#  slug                   :string           not null
-#  full_name              :string           not null
-#  short_name             :string
-#  types                  :jsonb            not null
-#  links                  :jsonb            not null
-#  images                 :jsonb            not null
-#  properties             :jsonb            not null
-#  conflicting_items      :jsonb            not null
-#  conflicting_slot_ids   :jsonb            not null
-#  conflicting_categories :jsonb            not null
-#  obtain_from            :jsonb            not null
-#  buyables              :jsonb            not null
-#  barteables           :jsonb            not null
-#  craftables           :jsonb            not null
-#  created_at             :datetime         not null
-#  updated_at             :datetime         not null
+#  id         :bigint           not null, primary key
+#  bsg_id     :string
+#  slug       :string
+#  full_name  :string
+#  short_name :string
+#  categories :text             default([]), is an Array
+#  links      :text             default([]), is an Array
+#  images     :text             default([]), is an Array
 #
+one:
+  id: MyString
+  slug: MyString
+  full_name: MyString
+  short_name: MyString
 
-factory_emergency_exit_key:
-  bsg_id: "5448ba0b4bdc2d02308b456c"
-  slug: "factory-emergency-exit-key"
-  full_name: "Factory emergency exit key"
-  short_name: "Factory"
-  types: ["keys", "factory"]
-  links: {}
-  images: {}
-  properties: {}
-  conflicting_items: []
-  conflicting_slot_ids: []
-  conflicting_categories: []
-  obtain_from: []
-  buyables: []
-  barteables:
-    - requirements:
-        - items:
-            - id: "5448ba0b4bdc2d02308b456c"
-              name: "Factory emergency exit key"
-              count: "1"
-          trader_name: "jaeger"
-          trader_level: "LL2"
-      result:
-        - items:
-            - id: "5448ba0b4bdc2d02308b456c"
-              name: "Factory emergency exit key"
-  craftables: []
-
-rgd_5_hand_grenade:
-  bsg_id: "5448be9a4bdc2dfd2f8b456a"
-  slug: "rgd-5-hand-grenade"
-  full_name: "RGD-5 hand grenade"
-  short_name: "RGD-5"
-  types: ["ammo", "grenade", "weapon", "throwables"]
-  links: {}
-  images: {}
-  properties: {}
-  conflicting_items: []
-  conflicting_slot_ids: []
-  conflicting_categories: []
-  obtain_from: []
-  buyables:
-    - item_id: "5448be9a4bdc2dfd2f8b456a"
-      item_name: "RGD-5 hand grenade"
-      trader_name: "prapor"
-      trader_level: "LL3"
-      currency: "RUB"
-  barteables: []
-  craftables: []
+two:
+  id: MyString
+  slug: MyString
+  full_name: MyString
+  short_name: MyString

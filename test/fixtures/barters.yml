@@ -2,17 +2,19 @@
 
 # == Schema Information
 #
-# Table name: traders
+# Table name: barters
 #
-#  name       :string           not null, primary key
-#  full_name  :string
+#  id         :bigint           not null, primary key
+#  item_id    :string(36)       not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Foreign Keys
+#
+#  fk_rails_...  (item_id => items.id)
+#
 one:
-  name: MyString
-  full_name: MyString
+  item: one
 
 two:
-  name: MyString
-  full_name: MyString
+  item: two

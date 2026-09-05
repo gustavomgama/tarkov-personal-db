@@ -1,0 +1,186 @@
+{
+  "task": {
+    "bsg_id": "string",
+    "full_name": "string",
+    "name": "string",
+    "wiki_link": "string",
+    "given_by": "string",
+    "kappa_required": "boolean",
+    "lightkeeper_required": "boolean",
+    "leads_to": [
+      {
+        "task_id": "string",
+        "task_name": "string"
+      }
+    ],
+    "requirements": {
+      "player_level": "integer",
+      "trader_level": [
+        {
+          "trader_name": "string",
+          "trader_level": "integer"
+        }
+      ],
+      "previous_tasks": [
+        {
+          "task_id": "string",
+          "task_name": "string"
+        }
+      ]
+    },
+    "start_rewards": {
+      "loose_items": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "count": "integer"
+        }
+      ],
+      "offer_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "trader_name": "string",
+          "trader_level": "integer"
+        }
+      ],
+      "barter_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "requirements": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string",
+                  "count": "integer"
+                }
+              ],
+              "trader_name": "string",
+              "trader_level": "integer"
+            }
+          ],
+          "result": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "craft_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "hideout_station": "string",
+          "station_level": "integer",
+          "requirements": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string",
+                  "count": "integer"
+                }
+              ],
+              "trader_name": "string",
+              "trader_level": "integer"
+            }
+          ],
+          "result": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "finish_rewards": {
+      "loose_items": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "count": "integer"
+        }
+      ],
+      "offer_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "trader_name": "string",
+          "trader_level": "integer"
+        }
+      ],
+      "barter_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "requirements": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string",
+                  "count": "integer"
+                }
+              ],
+              "trader_name": "string",
+              "trader_level": "integer"
+            }
+          ],
+          "result": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "craft_unlocks": [
+        {
+          "item_id": "string",
+          "item_name": "string",
+          "hideout_station": "string",
+          "station_level": "integer",
+          "requirements": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string",
+                  "count": "integer"
+                }
+              ],
+              "trader_name": "string",
+              "trader_level": "integer"
+            }
+          ],
+          "result": [
+            {
+              "items": [
+                {
+                  "item_id": "string",
+                  "item_name": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

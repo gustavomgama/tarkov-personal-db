@@ -2,17 +2,19 @@
 
 # == Schema Information
 #
-# Table name: traders
+# Table name: task_gated_barters
 #
-#  name       :string           not null, primary key
-#  full_name  :string
+#  id         :bigint           not null, primary key
+#  task_id    :bigint           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Foreign Keys
+#
+#  fk_rails_...  (task_id => tasks.id)
+#
 one:
-  name: MyString
-  full_name: MyString
+  task: one
 
 two:
-  name: MyString
-  full_name: MyString
+  task: two

@@ -2,43 +2,111 @@
 #
 # Table name: items
 #
-#  id                     :bigint           not null, primary key
-#  bsg_id                 :string           not null
-#  slug                   :string           not null
-#  full_name              :string           not null
-#  short_name             :string
-#  types                  :jsonb            not null
-#  links                  :jsonb            not null
-#  images                 :jsonb            not null
-#  properties             :jsonb            not null
-#  conflicting_items      :jsonb            not null
-#  conflicting_slot_ids   :jsonb            not null
-#  conflicting_categories :jsonb            not null
-#  obtain_from            :jsonb            not null
-#  created_at             :datetime         not null
-#  updated_at             :datetime         not null
-#  buyables               :jsonb            not null
-#  barteables             :jsonb            not null
-#  craftables             :jsonb            not null
-#
-# Indexes
-#
-#  index_items_on_bsg_id  (bsg_id) UNIQUE
-#  index_items_on_slug    (slug) UNIQUE
+#  id         :bigint           not null, primary key
+#  bsg_id     :string
+#  slug       :string
+#  full_name  :string
+#  short_name :string
+#  categories :text             default([]), is an Array
+#  links      :text             default([]), is an Array
+#  images     :text             default([]), is an Array
 #
 class Item < ApplicationRecord
-  validates :bsg_id, presence: true, uniqueness: true
-  validates :slug, presence: true, uniqueness: true
+  has_one :property, dependent: :destroy
+  has_many :item_task_rewards, dependent: :destroy
+  has_many :item_hideouts, dependent: :destroy
+  has_many :item_barters, dependent: :destroy
+  has_many :item_currencies, dependent: :destroy
 
-  def buyable?
-    buyables.any?
+  ObtainEntry = Struct.new(:type, :source, keyword_init: true)
+  UnlockPath = Struct.new(:task, :reward_type, :unlock_method, keyword_init: true)
+
+  def obtain_from
+    entries = []
+
+    item_task_rewards.find_each { |r| entries << ObtainEntry.new(type: :task_reward, source: r) }
+    item_hideouts.find_each { |r| entries << ObtainEntry.new(type: :hideout, source: r) }
+    item_barters.find_each { |r| entries << ObtainEntry.new(type: :barter, source: r) }
+    item_currencies.find_each { |r| entries << ObtainEntry.new(type: :currency, source: r) }
+
+    entries
   end
 
-  def barters?
-    barteables.any?
+  def obtain_types
+    obtain_from.map(&:type).uniq
   end
 
-  def craftable?
-    craftables.any?
+  def obtain_from_tasks
+    obtain_from.select { |e| e.type == :task_reward }
+  end
+
+  def obtain_from_hideouts
+    obtain_from.select { |e| e.type == :hideout }
+  end
+
+  def obtain_from_barters
+    obtain_from.select { |e| e.type == :barter }
+  end
+
+  def obtain_from_currencies
+    obtain_from.select { |e| e.type == :currency }
+  end
+
+  def requires_task?
+    %w[OfferUnlock BarterUnlock CraftUnlock].any? do |model_name|
+      model_name.constantize.exists?(item_id: bsg_id)
+    end
+  end
+
+  scope :task_gated, -> {
+    where(bsg_id: [OfferUnlock.pluck(:item_id), BarterUnlock.pluck(:item_id), CraftUnlock.pluck(:item_id)].flatten.uniq)
+  }
+
+  def how_to_unlock
+    paths = []
+
+    item_task_rewards.find_each do |itr|
+      task = Task.find_by(bsg_id: itr.task_id)
+      next unless task
+      paths << UnlockPath.new(
+        task: task,
+        reward_type: itr.reward_type,
+        unlock_method: :task_reward
+      )
+    end
+
+    Reward.joins(:offer_unlocks).where(offer_unlocks: {item_id: bsg_id}).find_each do |reward|
+      paths << UnlockPath.new(
+        task: reward.task,
+        reward_type: reward.reward_type,
+        unlock_method: :offer_unlock
+      )
+    end
+
+    Reward.joins(:barter_unlocks).where(barter_unlocks: {item_id: bsg_id}).find_each do |reward|
+      paths << UnlockPath.new(
+        task: reward.task,
+        reward_type: reward.reward_type,
+        unlock_method: :barter_unlock
+      )
+    end
+
+    Reward.joins(:craft_unlocks).where(craft_unlocks: {item_id: bsg_id}).find_each do |reward|
+      paths << UnlockPath.new(
+        task: reward.task,
+        reward_type: reward.reward_type,
+        unlock_method: :craft_unlock
+      )
+    end
+
+    Reward.joins(:loose_items).where(loose_items: {item_id: bsg_id}).find_each do |reward|
+      paths << UnlockPath.new(
+        task: reward.task,
+        reward_type: reward.reward_type,
+        unlock_method: :loose_item
+      )
+    end
+
+    paths.uniq
   end
 end

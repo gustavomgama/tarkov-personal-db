@@ -1,0 +1,10 @@
+{
+  "trader": {
+    "<normalized_name>": {
+      "id": "string",
+      "name": "string",
+      "normalized_name": "string",
+      "image_link": "string"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "item": {
+    "bsg_id": "string",
+    "slug": "string",
+    "full_name": "string",
+    "short_name": "string",
+    "categories": [
+      "string"
+    ],
+    "links": [
+      "string"
+    ],
+    "images": [
+      "string"
+    ],
+    "properties": {
+      "properties_type": "string",
+      "allowed_ammo": [
+        "string"
+      ],
+      "ammo_type": "string",
+      "armor_slots": [
+        "string"
+      ],
+      "armor_type": "string",
+      "base_item": "string",
+      "caliber": "string",
+      "armor_class": "string",
+      "damage": "integer",
+      "default": "boolean",
+      "default_ammo": "string",
+      "default_preset": "string",
+      "penetration_power": "integer",
+      "presets": [
+        "string"
+      ],
+      "slash_damage": "integer",
+      "slots": [
+        {
+          "id": "string",
+          "name_id": "string",
+          "required": "boolean",
+          "filters": {
+            "allowed_items": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "stab_damage": "integer",
+      "category": "string",
+      "zones": [
+        "string"
+      ]
+    },
+    "obtain_from": {
+      "task_rewards": [
+        {
+          "task_id": "string",
+          "task_name": "string",
+          "reward_type": "string"
+        }
+      ],
+      "hideout": [
+        {
+          "station_name": "string",
+          "station_level": "integer",
+          "quantity": "integer"
+        }
+      ],
+      "barter": [
+        {
+          "trader_name": "string",
+          "trader_level": "integer"
+        }
+      ],
+      "currency": [
+        {
+          "trader_name": "string",
+          "trader_level": "integer",
+          "currency": "string"
+        }
+      ]
+    }
+  }
+}
